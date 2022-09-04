@@ -14,7 +14,6 @@ title-block-banner: false
 ---
 
 :::{.callout-note appearance="simple" icon=false}
-## Series: Competitive Programming
 This page collects editorial-style posts, and they will mostly be based off my NPTEL course on competitive programming. You can subscribe to a feed for this series by [clicking here](cp.xml). If you'd like to guest author a post here, please drop me a line at: mail -AT- neeldhara.com
 :::
 

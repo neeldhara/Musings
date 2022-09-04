@@ -1,5 +1,8 @@
 {
   "listingMap": {
+    "poems.qmd": [
+      "posts/poems"
+    ],
     "tgif.qmd": [
       "posts/tgif"
     ],

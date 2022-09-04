@@ -1,5 +1,14 @@
 [
   {
+    "listing": "/poems.html",
+    "items": [
+      "/posts/poems/on-the-fence/index.html",
+      "/posts/poems/sprinkles-of-the-sky/index.html",
+      "/posts/poems/seek/index.html",
+      "/posts/poems/bloom/index.html"
+    ]
+  },
+  {
     "listing": "/tgif.html",
     "items": [
       "/posts/tgif/turn-the-led-on/index.html",
@@ -49,7 +58,12 @@
       "/posts/tgif/blue-eyed-islanders-puzzle/index.html",
       "/posts/tgif/lighting-up-a-grid/index.html",
       "/posts/massren/index.html",
-      "/posts/django-app/index.html"
+      "/posts/django-app/index.html",
+      "/posts/poems/on-the-fence/index.html",
+      "/posts/poems/sprinkles-of-the-sky/index.html",
+      "/posts/homework-help/index.html",
+      "/posts/poems/seek/index.html",
+      "/posts/poems/bloom/index.html"
     ]
   },
   {
@@ -80,7 +94,12 @@
       "/posts/tgif/blue-eyed-islanders-puzzle/index.html",
       "/posts/tgif/lighting-up-a-grid/index.html",
       "/posts/massren/index.html",
-      "/posts/django-app/index.html"
+      "/posts/django-app/index.html",
+      "/posts/poems/on-the-fence/index.html",
+      "/posts/poems/sprinkles-of-the-sky/index.html",
+      "/posts/homework-help/index.html",
+      "/posts/poems/seek/index.html",
+      "/posts/poems/bloom/index.html"
     ]
   },
   {

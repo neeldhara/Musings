@@ -23,8 +23,8 @@ Heads up: I write with both prerequisites unfulfiled. Proceed with caution.
 
 
 :::{.callout-tip appearance="simple" icon=false}
-## Series
-<a href="cp.html">Competitive Programming</a> ⸱ <a href="dsanotes.html">Data Structures and Algorithms</a> ⸱ <a href="tgif.html">Puzzles from TGIF meetups</a>
+## Collections
+<a href="cp.html">Competitive Programming</a> ⸱ <a href="dsanotes.html">Data Structures and Algorithms</a> ⸱ <a href="tgif.html">Puzzles from TGIF meetups</a> ⸱ <a href="poems.html">Poems</a>
 :::
 
 ---

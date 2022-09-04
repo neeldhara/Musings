@@ -14,7 +14,6 @@ title-block-banner: false
 ---
 
 :::{.callout-note appearance="simple" icon=false}
-## Series: Data Structures and Algorithms
 This page collects lecture notes from my first course on Data Structures and Algorithms. You can subscribe to a feed for this series by [clicking here](dsanotes.xml). These are [cross-posted here](https://dsanotes.netlify.app/) in an undated format.
 :::
 
