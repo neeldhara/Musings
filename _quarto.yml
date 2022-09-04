@@ -3,24 +3,30 @@ project:
 
 
 website:
-  title: "Musings"
-  html-math-method: "katex"
+  title: "Pseudorandom Musings"
+  site-url: https://neeldhara.blog
   twitter-card: true
   navbar:
     right:
-      - icon: eye
-      - icon: linkedin
+      - text: web
         href: https://www.neeldhara.com
+      - icon: youtube
+        href: https://www.youtube.com/c/NeeldharaMisra42
+      - icon: linkedin
+        href: https://www.linkedin.com/in/neeldhara-misra-a54b6920/
       - icon: github
-        href: https://github.com/
+        href: https://github.com/neeldhara
       - icon: twitter
-        href: https://twitter.com
+        href: https://twitter.com/neeldhara
+      - icon: rss
+        href: index.xml
 
 format:
   html:
     theme: theme.scss
     css: styles.css
     include-after-body: footer.html
-
+    html-math-method: "katex"
+    code-copy: true
 
 

@@ -1,5 +1,11 @@
 {
   "listingMap": {
+    "tgif.qmd": [
+      "posts/tgif"
+    ],
+    "dsanotes.qmd": [
+      "posts/dsanotes"
+    ],
     "archive.qmd": [
       "posts/**/*.qmd"
     ],

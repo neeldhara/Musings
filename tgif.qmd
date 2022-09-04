@@ -1,0 +1,35 @@
+---
+title: "Puzzles from the TGIF Group"
+listing:
+  contents: posts/tgif
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: true
+  fields: [date, title, reading-time]
+page-layout: article
+title-block-banner: false
+---
+
+:::{.callout-note appearance="simple" icon=false}
+## Series: Puzzles from TGIF
+This page chronicles puzzles that get shared in the TGIF Puzzle Group, an informal group of puzzle enthusiasts that meets on Fridays at IITGN. Even if you are not at IITGN, you’re welcome to join the discussions over at [our Discord server](https://discord.gg/UNjanRvW52)! You can also subscribe to a feed for this series by [clicking here](tgif.xml).
+
+The easiest way to contribute a puzzle to this list is to hop over the Discord server and post it, but you can also drop me a line at mail -AT- neeldhara.com if you prefer.
+:::
+
+
+:::{.callout-caution}
+## Work in progress
+
+👋🏽 I am in the process of porting things over from an older setup. This site may therefore be rather rough around the edges.
+:::
+
+
+<p>&nbsp;</p>
+
+<style type="text/css">
+  #hyvor-talk-view{display:none;}
+</style>

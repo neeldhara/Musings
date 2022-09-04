@@ -1,7 +1,31 @@
 [
   {
+    "listing": "/tgif.html",
+    "items": [
+      "/posts/tgif/turn-the-led-on/index.html",
+      "/posts/tgif/4-person-gift-exchange/index.html",
+      "/posts/tgif/conways-checkers/index.html",
+      "/posts/tgif/coin-tossing/index.html",
+      "/posts/tgif/estimating-pi/index.html",
+      "/posts/tgif/coming-to-agreement/index.html",
+      "/posts/tgif/deaths-dice/index.html",
+      "/posts/tgif/find-the-puppy/index.html",
+      "/posts/tgif/blue-eyed-islanders-puzzle/index.html",
+      "/posts/tgif/lighting-up-a-grid/index.html"
+    ]
+  },
+  {
+    "listing": "/dsanotes.html",
+    "items": [
+      "/posts/dsanotes/introduction/index.html",
+      "/posts/dsanotes/graphs/index.html"
+    ]
+  },
+  {
     "listing": "/archive.html",
     "items": [
+      "/posts/dsanotes/graphs/index.html",
+      "/posts/dsanotes/introduction/index.html",
       "/posts/solo-chess/index.html",
       "/posts/eight-self-sabotaging-behaviors/index.html",
       "/posts/kidney-exchanges/index.html",
@@ -14,6 +38,16 @@
       "/posts/envelope-budgeting-notion/index.html",
       "/posts/building-websites-with-notion/index.html",
       "/posts/notion-powered-websites/index.html",
+      "/posts/tgif/4-person-gift-exchange/index.html",
+      "/posts/tgif/turn-the-led-on/index.html",
+      "/posts/tgif/coin-tossing/index.html",
+      "/posts/tgif/conways-checkers/index.html",
+      "/posts/tgif/coming-to-agreement/index.html",
+      "/posts/tgif/deaths-dice/index.html",
+      "/posts/tgif/estimating-pi/index.html",
+      "/posts/tgif/find-the-puppy/index.html",
+      "/posts/tgif/blue-eyed-islanders-puzzle/index.html",
+      "/posts/tgif/lighting-up-a-grid/index.html",
       "/posts/massren/index.html",
       "/posts/django-app/index.html"
     ]
@@ -21,6 +55,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/dsanotes/graphs/index.html",
+      "/posts/dsanotes/introduction/index.html",
       "/posts/solo-chess/index.html",
       "/posts/eight-self-sabotaging-behaviors/index.html",
       "/posts/kidney-exchanges/index.html",
@@ -33,6 +69,16 @@
       "/posts/envelope-budgeting-notion/index.html",
       "/posts/building-websites-with-notion/index.html",
       "/posts/notion-powered-websites/index.html",
+      "/posts/tgif/turn-the-led-on/index.html",
+      "/posts/tgif/4-person-gift-exchange/index.html",
+      "/posts/tgif/conways-checkers/index.html",
+      "/posts/tgif/coin-tossing/index.html",
+      "/posts/tgif/estimating-pi/index.html",
+      "/posts/tgif/coming-to-agreement/index.html",
+      "/posts/tgif/deaths-dice/index.html",
+      "/posts/tgif/find-the-puppy/index.html",
+      "/posts/tgif/blue-eyed-islanders-puzzle/index.html",
+      "/posts/tgif/lighting-up-a-grid/index.html",
       "/posts/massren/index.html",
       "/posts/django-app/index.html"
     ]

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Pseudorandom Musings</title>
+<link>https://www.neeldhara.blog/tgif.html</link>
+<atom:link href="https://www.neeldhara.blog/tgif.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.1.189</generator>
+<lastBuildDate>Wed, 24 Mar 2021 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Turn the LED on</title>
+  <link>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Contributed by <a href="https://twitter.com/10kdiver"><span class="citation" data-cites="10kdiver">@10kdiver</span></a>.</p>
+</div>
+</div>
+</div>
+<p>Another fun probability puzzle:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Each switch has a 50/50 chance of being ON or OFF.<br><br>The switches are all independent of each other.<br><br>What’s the probability that the LED is on? <a href="https://t.co/idQnJRqFnL">pic.twitter.com/idQnJRqFnL</a>
+</p>
+— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1507354159690891268?ref_src=twsrc%5Etfw">March 25, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
+  <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>4 Person Gift Exchange</title>
+  <link>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This puzzle by <a href="https://twitter.com/Hendrikc44">Professor Henk Tijms</a> was contributed by <a href="https://twitter.com/10kdiver"><span class="citation" data-cites="10kdiver">@10kdiver</span></a>.</p>
+</div>
+</div>
+</div>
+<p>First the warm-up edition.</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Here's a beautiful probability puzzle inspired by Professor Henk Tijms (<a href="https://twitter.com/Hendrikc44?ref_src=twsrc%5Etfw"><span class="citation" data-cites="Hendrikc44">@Hendrikc44</span></a>).<br><br>See if you can solve it. The answer may surprise you!<br><br>(I'll post a solution tomorrow.) <a href="https://t.co/m1c8u0J5MN">pic.twitter.com/m1c8u0J5MN</a>
+</p>
+— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1506573197310771202?ref_src=twsrc%5Etfw">March 23, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>Now for the harder version.</p>
+<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A number of people will exchange gifts at a holiday party. Each person brings a gift to the party and attaches a label with a unique number to this gift. These numbers are also put on cards, which are deposited in a box and shuffled. Each person at the party then sequentially draws a card from the box, and receives the gift whose label corresponds to the number on the card drawn. If the number corresponds to his or her own gift, the card is returned to the box and the person draws another card. Of course, it is not possible for the last person to draw a second card.</p>
+<p>What is the probability that the last person is left with the card corresponding to his or her own present? In the simple case of two people, the probability is zero. The problem is also easy to solve in the case of three people, using a chance tree. It is no restriction to imagine that the persons are numbered as 1, 2 and 3 like the labels of their presents, and that they draw a card in this order. Then person 1 gets either the present with label 2 or the present with label 3, each with a probability of 1/2. If person 1 gets the present with label 3, then the conditional probability of the last person 3 to get his or her own present is zero. If person 1 gets the present with label 2, then the cards with labels 1 and 3 are left and person 2 draws the card with label 1 with probability of 1/2, in which case the last person 3 is left with the card of his or her own present. Therefore the probability that the last person will be left with the card of his or her own present is ½ × 0 + ½ × ½ = ¼.</p>
+<p>The challenges for this week are these: What is the probability that the card left for the last person corresponds to his or her own present when there are four people at the party? What is the probability when there are five people at the party?</p>
+</div>
+</div>
+<div class="page-columns page-full"><p><a href="https://archive.nytimes.com/wordplay.blogs.nytimes.com/2015/12/28/tijms-gift-exchange/?mtrref=undefined&amp;gwh=AD59BCDA3B5A60F3390C8F341A1F00BB&amp;gwt=pay&amp;assetType=PAYWALL">Source</a> </p><div class="no-row-height column-margin column-container"><span class="aside">NB. may be paywalled</span></div></div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
+  <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Conway’s Checkers</title>
+  <link>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Puzzle attributed to <a href="https://en.wikipedia.org/wiki/John_Horton_Conway">John Horton Conway</a>.</p>
+</div>
+</div>
+</div>
+<p>Suppose you take the infinite square lattice and put solitaire pieces on all points <img src="https://latex.codecogs.com/png.latex?(x,y)"> that lie on or below the x-axis. Using solitaire moves, can you reach a position where the point <img src="https://latex.codecogs.com/png.latex?(0,5)"> is occupied?</p>
+<p>Note: A solitaire move consists in a piece jumping over a neighbouring piece to a vacant square and removing (or “taking”) the neighbouring piece.</p>
+<p>You can attempt this challenge interactively <a href="https://www.cleverlearning.co.uk/blogs/blogConwayInteractive.php">here</a>.</p>
+<p><em>Hint: if you can’t get there, don’t feel too bad about it.</em></p>
+<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Spoilers
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>An introduction to the problem featuring <a href="https://math.berkeley.edu/~stankova/">Zvezdelina Stankova</a>:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FtNWzlfEQgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<p>A description of the original proof based on coming up with an invariant involving the golden ratio:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Or0uWM9bT5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<p>A description of the original proof based on coming up with an invariant involving the golden ratio, but in this case in real-time, while thinking out loud:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vJGdfRXZSGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<p>A description of a more recent proof based on a rather clever and beautiful use of Fibonacci numbers:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BMPa0FA65Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+<p>And by the way, if you are <em>really</em> keen on reaching row 5 <a href="https://www.chiark.greenend.org.uk/~sgtatham/solarmy/">here’s how you can do it</a> with infinitely many moves!</p>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
+  <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Coin Tossing</title>
+  <link>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Contributed by Monali Shah on the Discord Server.</p>
+</div>
+</div>
+</div>
+<p>Suppose you were to keep flipping a coin until it landed either HTHHT or HHHHH on five consecutive flips. Which of these two sequences would you predict would occur first?</p>
+<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="https://sites.math.washington.edu/~mathcircle/circle/2015-16/second/PenneyAnte.pdf">See here.</a> Also, a shorter sequence (HTT vs HTH) but with a similar element of surprise is explained also in this TED Talk:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kLmzxmRcUTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</guid>
+  <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Estimating Pi</title>
+  <link>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Sourced from Twitter on Pi Day (this also doubles up as a hint).</p>
+</div>
+</div>
+</div>
+<p>Take two random numbers <img src="https://latex.codecogs.com/png.latex?X"> and <img src="https://latex.codecogs.com/png.latex?Y"> between <img src="https://latex.codecogs.com/png.latex?0"> and <img src="https://latex.codecogs.com/png.latex?1">.</p>
+<p>What is the probability that the integer nearest to <img src="https://latex.codecogs.com/png.latex?X/Y"> is even?</p>
+<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Folks, here’s one way to reason <em>why</em> this probability should be (5 - pi)/4.<br><br>Even if the math doesn’t appeal to you, please don’t miss the key lesson at the end! <a href="https://t.co/IDEsQCuRVZ">pic.twitter.com/IDEsQCuRVZ</a>
+</p>
+— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1503695159862521860?ref_src=twsrc%5Etfw">March 15, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</guid>
+  <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Coming to Agreement</title>
+  <link>https://www.neeldhara.blog/posts/tgif/coming-to-agreement/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Puzzle by Joel David Hamkins.</p>
+</div>
+</div>
+</div>
+<p>This is apparently a logic puzzle that comes up in admission interviews at Oxford:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+An Oxford University admissions interview question. You are a contestant on a game show, known for having perfectly logical contestants. There is another contestant, whom you've never met, but whom you can count on to be perfectly logical, just as logical as you are.
+</p>
+— Joel David Hamkins (<span class="citation" data-cites="JDHamkins">@JDHamkins</span>) <a href="https://twitter.com/JDHamkins/status/1475088789701726208?ref_src=twsrc%5Etfw">December 26, 2021</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>This puzzle has since been featured on <a href="https://www.theguardian.com/science/2022/feb/21/can-you-solve-it-an-oxford-university-admissions-question">the Guardian</a>. The full setting is reproduced below <a href="http://jdh.hamkins.org/coming-to-agreement-logic-puzzle/">from here</a>. The source also has extended discussions about possible solutions — you have been warned!</p>
+<p>You are a contestant on a game show, known for having perfectly logical contestants. There is another contestant, whom you’ve never met, but whom you can count on to be perfectly logical, just as logical as you are.</p>
+<p>The game is cooperative, so either you will both win or both lose, together. Imagine the stakes are very high—perhaps life and death. You and your partner are separated from one another, in different rooms. The game proceeds in turns—round 1, round 2, round 3, as many as desired to implement your strategy.</p>
+<p>On each round, each contestant may choose either to end the game and announce a color (any color) to the game host or to send a message (any kind of message) to their partner contestant, to be received before the next round. Messages are sent simultaneously, crossing in transit.</p>
+<p>You win the game if on some round both players opt to end the game and announce a color to the host and furthermore they do so with exactly the same color. That is, you win if you both halt the game on the same round with the same color. lf only one player announces a color, or if both do but the colors don’t match, then the game is over, but you have lost.</p>
+<p>Round 1 is about to begin. What do you do?</p>
+<p>Variations:</p>
+<p><strong>Alternation variation.</strong> In this variation of the puzzle, the contestants alternate in their right to send messages—only contestant 1 can send on round 1, then contestant 2 on round 2 and so forth, but still they aim to announce the same color on a round. You are contestant 1—what do you do?</p>
+<p><strong>Collision variation.</strong> In this variation, players may opt on each round either to end the game and announce a color, to send a message, or to do nothing. But the new thing is that if both players opt to send a message, then the messages collide and are not delivered, although an error message is generated (so the players know what happened). What do you do?</p>
+<p><strong>Pigeon variation.</strong> This version is like the alternating turn variation, except that now the contestants are separated at much greater distance, and the messages are sent by carrier pigeon, so neither can be sure that the messages actually arrive. You are contestant 1—what do you do?</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/coming-to-agreement/index.html</guid>
+  <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Death’s Dice</title>
+  <link>https://www.neeldhara.blog/posts/tgif/deaths-dice/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Sourced from <a href="https://twitter.com/3blue1brown"><span class="citation" data-cites="3blue1brown">@3blue1brown</span></a>’s Twitter.</p>
+</div>
+</div>
+</div>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+I'd like to tell you about a game/puzzle to help celebrate today.<br><br>We'll call it "Death's Dice". <br><br>(1/9) <a href="https://t.co/6lportLU9V">pic.twitter.com/6lportLU9V</a>
+</p>
+— Grant Sanderson (<span class="citation" data-cites="3blue1brown">@3blue1brown</span>) <a href="https://twitter.com/3blue1brown/status/1503423352207147010?ref_src=twsrc%5Etfw">March 14, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>A spoiler-free version of the thread above is reproduced below:</p>
+<p>Death finds you. You plead with him that it’s too soon, and he agrees to a concession. Every year, he’ll roll a set of dice, and if it turns up snake eyes (both 1’s) he’ll take your life, otherwise, you get one more year.</p>
+<p>But it’s not necessarily a normal pair of dice.</p>
+<p>On the first year, both “dice” will only have two sides, numbered 1 and 2. So in that first year, there’s a 25% chance of rolling snake eyes and ending things there.</p>
+<p>On the second year, he comes with tetrahedral dice, i.e.&nbsp;both are four-sided, numbered 1 through 4, and again only takes your life if he rolls two 1’s.</p>
+<p>The next year, the dice are six-sided, after that, eight-sided, etc., etc.</p>
+<p>Each year you have a lower and lower chance of dying, but he’ll come back every year with a new set of dice, never stopping.</p>
+<p>You might think the question now is something like “what’s your expected number of remaining years of life?”</p>
+<p>But actually, Death gave you a pretty good deal.</p>
+<p>The better question to ask here is “what’s the probability that you end up immortal?” That is, the probability that Death rolls infinitely many times, with his ever-growing dice, and never once turns up snake eyes.</p>
+<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Hint
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">An image that shows a square circumscribed inside a circle.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/deaths-dice/index.html</guid>
+  <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
+  <media:content url="https://www.neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" medium="image" type="image/png" height="83" width="144"/>
+</item>
+<item>
+  <title>Find The Puppy</title>
+  <link>https://www.neeldhara.blog/posts/tgif/find-the-puppy/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Contributed by <a href="https://debanujnayak.github.io">Debanuj Nayak</a>.</p>
+</div>
+</div>
+</div>
+<p>There are 5 boxes with lids kept in a row.</p>
+<pre><code>[] [] [] [] []</code></pre>
+<p>Let’s call them B[1…5].</p>
+<p>There is a puppy P inside one of these boxes.</p>
+<p>Our goal is to find the puppy.</p>
+<pre><code>[?] [?] [?] [?] [?]</code></pre>
+<p>Every morning you get a chance to open any one of the boxes. If you find the puppy: great, congrats!</p>
+<p>If you don’t, tough luck, you have to wait again for the next day. Meanwhile, during the night, the Puppy will move to one of the neighbouring boxes.(can’t stay in same box). Eg:</p>
+<pre><code>[] [P] [] [] [] -&gt; [P] [] [] [] [] or [] [] [P] [] [].</code></pre>
+<ol type="1">
+<li>Does there exist protocols (ways of opening boxes) in which I can guarantee that I can catch the puppy in a finite time?</li>
+<li>If yes, what is the smallest number of days I have to wait to catch the puppy (Which is the best protocol?)</li>
+<li>How does this protocol work?</li>
+</ol>
+<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Spoilers: based on our discussion in the second TGIF meetup.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Here’s a strategy that uses seven days (h/t: Harshil).</p>
+<p>Morning 1: Open Box 2. If it contains P, we are done. Otherwise, P is in one of Box 1,3,4 or 5.</p>
+<p>Morning 2: Open Box 2. If it contains P, we are done. Otherwise, P is in one of Box 3,4 or 5.</p>
+<p>Morning 3: Open Box 3. If it contains P, we are done. Otherwise, P is in one of Box 2,4 or 5.</p>
+<p>Morning 4: Open Box 4. If it contains P, we are done. Otherwise, P is in one of Box 1,3 or 5.</p>
+<p>Morning 5: Open Box 4. If it contains P, we are done. Otherwise, P is in Box 2.</p>
+<p>Morning 6: Open Box 3. If it contains P, we are done. Otherwise, P is in Box 1.</p>
+<p>Morning 7: Open Box 2. It definitely contains P.</p>
+<hr>
+<p>Here’s a strategy that uses six days (h/t: Debanuj):</p>
+<p>First Observation: The puppy P alternates between odd and even boxes</p>
+<p>Second Observation: The puppy P only has one possible choice to go to, if it is in Box 1 or Box n</p>
+<p>Let us assume that P is in an even box i.e.&nbsp;B[2] or B[4] on the first morning.</p>
+<p>Morning 1: Check B[2], if you find P, done. Otherwise, according to the assumption, P is in B[4]</p>
+<p>Night 1: P moves to B[3] or B[5]</p>
+<p>Morning 2: Check B[3], if you find P, done. Otherwise P is in B[5] according to initial assumption.</p>
+<p>Night 2: P moves to B[4], no other choice.</p>
+<p>Morning 3: Check B[4]. If assumption was true, then P must be in B[4]. If you find P, done. If you don’t find P, that means initial assumption was false.</p>
+<p>Thus on morning 1, P was in an odd box ⇒ on morning3 (today), P is again in an odd box. Which means tomorrow (morning 4), P must be in an even box.</p>
+<p>Night 3: P moves to B[2] or B[4]</p>
+<p>Morning 4: Now our assumption holds true that P is in an even box, and now you can repeat the procedure we followed on mornings 1,2,3 again on mornings 4,5,6 and we are guaranteed to catch P.</p>
+</div>
+</div>
+</div>
+<p>Unresolved questions:</p>
+<ol type="1">
+<li><p>Can we do this in five days? Or can we show that it’s impossible to come up with a protocol that uses only five days?</p></li>
+<li><p>What about six boxes? Or seven? Or n?</p></li>
+<li><p>If the moves are equiprobable and the initial choice is uniformly random, what is the expected number of moves executed by either of the strategies above?</p></li>
+<li><p>How much faster can we do this if we are allowed to open two boxes at once?</p></li>
+<li><p>Question from Bireswar: If the puppy is allowed to stay put, then there’s no protocol to find the puppy even in the trivial setting with two boxes. What if we are allowed to open more than one box? How many more boxes do we need to be able to open per day to catch a potentially non-moving puppy amongst five boxes?</p></li>
+</ol>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/find-the-puppy/index.html</guid>
+  <pubDate>Sat, 13 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>The Blue-Eyed Islanders</title>
+  <link>https://www.neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This puzzle is variously attributed (including to “some dude on the street in Boston named Joel”), and was contributed by <a href="http://people.iitgn.ac.in/~gmanoj/">Manoj Gupta</a> in our first meetup.</p>
+</div>
+</div>
+</div>
+<p>You can read up on a relatively standard version of the puzzle from <a href="https://terrytao.wordpress.com/2008/02/05/the-blue-eyed-islanders-puzzle/">Terrance Tao’s blog</a> or <a href="https://xkcd.com/blue_eyes.html">here at XKCD</a>.</p>
+<p>Akash proposed a variation where not everyone sees everyone, but people see each other via a graph. What goes on in such a setting? We don’t quite know!</p>
+<p>The links have pointers to other variants and the blog also sparked a rather long discussion — enjoy thinking about this and looking things up!</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</guid>
+  <pubDate>Wed, 10 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Lighting Up a Grid</title>
+  <link>https://www.neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This puzzle was sourced from an <a href="https://twitter.com/algopuzzles"><span class="citation" data-cites="algopuzzles">@algopuzzles</span></a> tweet.</p>
+</div>
+</div>
+</div>
+<p>Here’s the puzzle:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+On an nxn grid a few nodes are set on fire at t=0. The fire spreads like this: if at least two neighboring nodes of node x are lit, then node x will also catch fire in the next time step. What's the minimum number of nodes that have to be lit to burn the entire grid?<a href="https://twitter.com/hashtag/exportober?src=hash&amp;ref_src=twsrc%5Etfw">#exportober</a>
+</p>
+— Algorithmic Puzzles (<span class="citation" data-cites="algopuzzles">@algopuzzles</span>) <a href="https://twitter.com/algopuzzles/status/1450120047708409867?ref_src=twsrc%5Etfw">October 18, 2021</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Here’s an argument for the lower bound by Harshil Mittal.
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Consider an arbitrary but fixed solution. Let <img src="https://latex.codecogs.com/png.latex?p"> denote the number of nodes that are lit up at time <img src="https://latex.codecogs.com/png.latex?0">. Let <img src="https://latex.codecogs.com/png.latex?T"> denote the time taken to lit the entire grid. WLOG, assume that for each <img src="https://latex.codecogs.com/png.latex?1%20%5Cleq%20t%20%5Cleq%20T">, exactly one new node is lit up at time <img src="https://latex.codecogs.com/png.latex?t">.</p>
+<p>At any time <img src="https://latex.codecogs.com/png.latex?0%20%5Cleq%20t%20%5Cleq%20T">,</p>
+<ul>
+<li><p>For every lit node <img src="https://latex.codecogs.com/png.latex?(i,j)">, let <img src="https://latex.codecogs.com/png.latex?f(i,j,t)"> denote the number of edges of the node <img src="https://latex.codecogs.com/png.latex?(i,j)"> that are not shared with another lit node.</p></li>
+<li><p>Let <img src="https://latex.codecogs.com/png.latex?g(t)"> denote the sum of <img src="https://latex.codecogs.com/png.latex?f(i,j,t)"> over all lit nodes <img src="https://latex.codecogs.com/png.latex?(i,j)"></p></li>
+</ul>
+<p>We show that <img src="https://latex.codecogs.com/png.latex?g(t+1)%20%5Cleq%20g(t)"> for all <img src="https://latex.codecogs.com/png.latex?0%20%5Cleq%20t%20%5Cleq%20T-1">.</p>
+<p>Let <img src="https://latex.codecogs.com/png.latex?0%20%5Cleq%20t%20%5Cleq%20T-1">. Let <img src="https://latex.codecogs.com/png.latex?(u,v)"> denote the new node which is lit up at time <img src="https://latex.codecogs.com/png.latex?t+1">. Let <img src="https://latex.codecogs.com/png.latex?X"> denote the set of all lit neighbors of <img src="https://latex.codecogs.com/png.latex?(u,v)"> at time <img src="https://latex.codecogs.com/png.latex?t">. For every node <img src="https://latex.codecogs.com/png.latex?(i,j)"> in <img src="https://latex.codecogs.com/png.latex?X">, we have <img src="https://latex.codecogs.com/png.latex?f(i,j,t+1)%20=%20f(i,j,t)%20-%201">. Also, note that <img src="https://latex.codecogs.com/png.latex?f(u,v,t+1)%20=%204-%7CX%7C">. Therefore, <img src="https://latex.codecogs.com/png.latex?g(t+1)%20=%20g(t)%20-%20%7CX%7C%20+%20(4-%7CX%7C)%20=%20g(t)%20+%204-2%7CX%7C">. So, as <img src="https://latex.codecogs.com/png.latex?%7CX%7C%20%5Cgeq%202">, we get <img src="https://latex.codecogs.com/png.latex?g(t+1)%20%5Cleq%20g(t)">.</p>
+<p>Now, we have <img src="https://latex.codecogs.com/png.latex?4n%20=%20g(T)%20%5Cleq%20g(0)%20%5Cleq%204p">. Thus, <img src="https://latex.codecogs.com/png.latex?n%20%5Cleq%20p">, as desired.</p>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://www.neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</guid>
+  <pubDate>Wed, 10 Mar 2021 18:30:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

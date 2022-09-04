@@ -1,0 +1,33 @@
+---
+title: "Notes on Data Structures and Algorithms"
+listing:
+  contents: posts/dsanotes
+  sort: "date asc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  feed: true
+  fields: [date, title, reading-time]
+page-layout: article
+title-block-banner: false
+---
+
+:::{.callout-note appearance="simple" icon=false}
+## Series: Data Structures and Algorithms
+This page collects lecture notes from my first course on Data Structures and Algorithms. You can subscribe to a feed for this series by [clicking here](dsanotes.xml). These are [cross-posted here](https://dsanotes.netlify.app/) in an undated format.
+:::
+
+
+:::{.callout-caution}
+## Work in progress
+
+👋🏽 I am in the process of porting things over from an older setup. This site may therefore be rather rough around the edges.
+:::
+
+
+<p>&nbsp;</p>
+
+<style type="text/css">
+  #hyvor-talk-view{display:none;}
+</style>

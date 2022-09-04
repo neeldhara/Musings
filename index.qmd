@@ -7,14 +7,36 @@ listing:
   sort-ui: true
   filter-ui: true
   fields: [date, title, reading-time, categories]
+  feed: true
 page-layout: full
 title-block-banner: false
 ---
 
-:::{.callout-caution}
-## 👋🏽 Hi!
+:::{.callout-note appearance="simple" icon=false}
+## Ernest Hemingway
+_Real seriousness in regard to writing is one of two absolute necessities. The other, unfortunately, is talent._
+:::
 
-I am in the process of porting things over from an older setup. This site may therefore be rather rough around the edges.
+Heads up: I write with both prerequisites unfulfiled. Proceed with caution.
+
+---
+
+
+:::{.callout-tip appearance="simple" icon=false}
+## Series
+<a href="cp.html">Competitive Programming</a> ⸱ <a href="dsanotes.html">Data Structures and Algorithms</a> ⸱ <a href="tgif.html">Puzzles from TGIF meetups</a>
+:::
+
+---
+
+:::{.callout-caution}
+## Work in progress
+
+👋🏽 I am in the process of porting things over from an older setup. This site may therefore be rather rough around the edges.
 :::
 
 <p>&nbsp;</p>
+
+<style type="text/css">
+  #custom-footer, #hyvor-talk-view{display:none;}
+</style>

@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Pseudorandom Musings</title>
+<link>https://www.neeldhara.blog/dsanotes.html</link>
+<atom:link href="https://www.neeldhara.blog/dsanotes.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.1.189</generator>
+<lastBuildDate>Tue, 09 Aug 2022 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Representing Graphs</title>
+  <link>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="drawing-and-walking-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="drawing-and-walking-challenges">Drawing and Walking Challenges</h2>
+<p>At some point of time in your life, you have likely been challenged to draw a kite-like figure:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A common drawing challenge.</figcaption><p></p>
+</figure>
+</div>
+<p>without ever lifting your pencil/pen/quill off the paper. You may have noticed that there are figures that are particularly elusive to this persistent style of drawing, while others are pleasingly possible to draw in this fashion.</p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+(Spoiler) Beth Thomas demonstrating what drawing challenges are doable
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E0BQrk49tbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</div>
+<p>The city of Königsberg in Prussia (now Kaliningrad, Russia) was set on both sides of the Pregel River, and included two large islands—Kneiphof and Lomse—which were connected to each other, and to the two mainland portions of the city, by seven bridges.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+The Problem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Devise a walk through the city that would cross each of those bridges once and only once. Try this yourself on a few different maps at <a href="https://mathigon.org/course/graph-theory/bridges">Mathigon</a>!</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Konigsberg Classic: Map of Königsberg in Euler’s time showing the actual layout of the seven bridges, highlighting the river Pregel and the bridges. Image by Bogdan Giuşcă, in the public domain (CC BY-SA 3.0) and sourced from Wikipedia.</figcaption><p></p>
+</figure>
+</div>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+(Spoiler) Numberphile commentary on the bridges of Königsberg
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W18FDEA1jRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</div>
+<p>The question was addressed and answered by Euler (1736). He did not solve this by “messing around” with all possible ways of walking around the city and checking if any of the walks satisfied the desired criteria. His more systematic approach involved modeling the problem abstractly, and making some key observations that ultimately led to the solution — not just for this problem, but for all problems with a similar framing!</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Classroom Activity with Eulerian Paths
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The picture below shows a few popular actors, with edges connecting pairs of those who have worked together in a movie together<sup>1</sup>. The example is designed so that there are exactly two actors who participate in an odd number of pairings.</p>
+<p>We can work through the “bridges puzzle” on this graph. In the classroom, we all started with the vertex representing Juhi Chawla, “walked around” using every connection exactly once, and the fun effect is that everyone ends up at the vertex representing Rishi Kapoor (or solves the puzzle incorrectly). From here, you can probably begin to guess the role of the two special vertices in the puzzle.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">An actor collaboration graph</figcaption><p></p>
+</figure>
+</div>
+<p>This activity is an adaptation of the example from the <a href="https://www.udacity.com/course/intro-to-algorithms--cs215">Intro to Algorithms</a> course at Udacity, where it appears in the first chapter with the title “A Social Network Magic Trick”.</p>
+</div>
+</div>
+<p>Here’s another similar-sounding and classic problem involving a chessboard, <a href="https://en.chessbase.com/post/euler-and-the-knights-tour">also posed to Euler</a>:</p>
+<blockquote class="blockquote">
+<p>“I found myself one day in a company where, on the occasion of a game of chess, someone proposed this question: <em>To move with a knight through all the squares of a chess board, without ever moving two times to the same square, and beginning with a given square.</em>”</p>
+</blockquote>
+<p>The origins of this problem — the so-called “Knight’s Tour” — goes all the way back to the 9th century AD, where it is described in <a href="https://www.ias.ac.in/article/fulltext/reso/025/08/1095-1116">Rudraṭa’s Kavyalankara</a>. Here’s an example of a knight’s tour, as seen on Wikipedia:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">An animated example of a knight’s tour.</figcaption><p></p>
+</figure>
+</div>
+<p>Although deceptively similar to the problem of the bridges, this is a different problem with two important contrasts:</p>
+<ol type="1">
+<li>we were previously not allowed to reuse <em>bridges</em>, here we are not allowed to reuse <em>squares</em>, and</li>
+<li>we were previously obliged to use <em>every</em> bridge, here we are <em>not</em> required to make every possible move that exists.</li>
+</ol>
+<p>Generalizing from the 8x8 chessboard, you could ask yourself what <img src="https://latex.codecogs.com/png.latex?(n%20%5Ctimes%20n)"> boards admit such tours.</p>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+(Spoiler) Numberphile commentary on the knight’s tour
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=ab_dY3dZFHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</div>
+</section>
+<section id="abstractions-via-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="abstractions-via-graphs">Abstractions via Graphs</h2>
+<p>It’s useful to model such problems using <em>graphs</em> (aka <em>networks</em>). And we’re not talking sine curves here — a graph in our context is a structure that represents relationships between entities.</p>
+<p>Usually these relationships are between two entities at a time. Indeed, this is typically already quite a bit to keep track of, hence graphs that do more are said to be hyper. That is to say, graphs that model relationships involving more than two entities in one go are generally called <em>hypergraphs</em>, and they will be a story for another day.</p>
+<p>For now, we will variously refer to entities as <em>vertices</em> or <em>nodes</em>, and relationships as <em>edges</em> or <em>connections</em>. Come to think of it, graphs are everywhere:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Entities</th>
+<th>Two entitites are in a relationship if…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>People</td>
+<td>they are in a relationship.</td>
+</tr>
+<tr class="even">
+<td>Cats</td>
+<td>they have fought each other.</td>
+</tr>
+<tr class="odd">
+<td>Actors</td>
+<td>they have been in a movie together.</td>
+</tr>
+<tr class="even">
+<td>Airports</td>
+<td>there is a direct flight between them.</td>
+</tr>
+<tr class="odd">
+<td>Landmasses</td>
+<td>there is a bridge connecting them.</td>
+</tr>
+<tr class="even">
+<td>Songs</td>
+<td>one of the tunes was copied from the other.</td>
+</tr>
+<tr class="odd">
+<td>Subsets of <img src="https://latex.codecogs.com/png.latex?%5B42%5D"></td>
+<td>one is contained in another.</td>
+</tr>
+<tr class="even">
+<td>Ingredients</td>
+<td>there is a recipe that uses them together.</td>
+</tr>
+<tr class="odd">
+<td>Webpages</td>
+<td>one of them has a link leading to the other.</td>
+</tr>
+<tr class="even">
+<td>Twitter Users</td>
+<td>one of them follows the other<sup>2</sup></td>
+</tr>
+<tr class="odd">
+<td>Locations on a Chessboard<sup>3</sup></td>
+<td>one of them is reachable from the other via a knight move.</td>
+</tr>
+</tbody>
+</table>
+<p>We usually like to distinguish between graphs where the relationships are potentially one-sided (such as people in a relationship), and those where they are mutual (such as ingredients in a recipe). Edges like these are called <em>directed</em> and <em>undirected</em>, respectively.</p>
+<p>Depending on what the graph is modeling, we may not allow for entities to entertain relationships with themselves (e.g, flights don’t come back to airports they took off from). In other contexts, it makes sense to allow for this (e.g, a set always contains itself). An edge that connects a vertex to itself is called a <em>self-loop</em><sup>4</sup>.</p>
+<p>Sometimes, it is reasonable that there are multiple edges between a fixed pair of vertices (for example, consider that there are several recipies that use salt and potatoes). Multiple edges are useful to model a multitude of relationships, and are often called <em>multiedges</em> when used.</p>
+<p>A <em>simple</em> graph is one that does not have either self-loops or multiedges.</p>
+<p>Finally, it is worth mentioning that some relationships naturally connect more two entities. For example, in an actor collaboration graph, you would find edges between Amitabh Bachchan, Juhi Chawla, and Shah Rukh Khan. You would also find edges between Akshay Kumar, Dhanush, and Sonam Kapoor. In the first example, there happens to be one film that all three actors feature in together, while this is not the case in the latter, at least at the time of this writing. As such, the graph does not have enough structure to reveal this distinction: it looks exactly the same in both cases!</p>
+<p>For an actor-collaboration graph, allowing for <img src="https://latex.codecogs.com/png.latex?n">-way relationships would make room for accurately capturing information about both actors and movies. Indeed, every movie could be represented by an ‘edge’ — the subset of actors who belonged to the cast. Such graphs are called <em>hypergraphs</em> or <em>set systems</em>.</p>
+<p>While hypergraphs are a very useful generalization of graphs, they will be largely out of scope for our discussions in this course. To make up for that, here is a different workaround to capture all the information we have in the actor-collaboration graph example. Instead of having a vertex for every actor, we introduce a vertex for every actor <em>and</em> for every movie. Now, an actor <img src="https://latex.codecogs.com/png.latex?a"> and a movie <img src="https://latex.codecogs.com/png.latex?m"> are connected by an edge if <img src="https://latex.codecogs.com/png.latex?a"> belongs to the cast of <img src="https://latex.codecogs.com/png.latex?m">. Observe that this approach can be used to “convert” any hypergraph into a graph.</p>
+<p>A little more terminology before we move on: I promise that we’re almost done introducing new words!</p>
+<p>For an undirected graph, a vertex <img src="https://latex.codecogs.com/png.latex?u"> is called a <em>neighbor</em> of a vertex <img src="https://latex.codecogs.com/png.latex?v"> if <img src="https://latex.codecogs.com/png.latex?(u,v)"> is an edge. For a directed graph, the presence of the edge <img src="https://latex.codecogs.com/png.latex?(u,v)"> would make <img src="https://latex.codecogs.com/png.latex?v"> an <em>out-neighbor</em> of <img src="https://latex.codecogs.com/png.latex?u"> and <img src="https://latex.codecogs.com/png.latex?u"> an <em>in-neighbor</em> of <img src="https://latex.codecogs.com/png.latex?v">.</p>
+<p>For an undirected graph, the <em>degree</em> of a vertex <img src="https://latex.codecogs.com/png.latex?v"> is the number of neighbors of <img src="https://latex.codecogs.com/png.latex?v">. For a directed graph, the in-degree and out-degree of <img src="https://latex.codecogs.com/png.latex?v"> is the number of in-neighbors and out-neighbors of <img src="https://latex.codecogs.com/png.latex?v">, respectively.</p>
+</section>
+<section id="representing-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="representing-graphs">Representing Graphs</h2>
+<p>If you wanted to tell your program about a graph, there are a few different ways you could go about it. Let’s assume that we’re trying to represent a graph <img src="https://latex.codecogs.com/png.latex?G"> on <img src="https://latex.codecogs.com/png.latex?n"> nodes, labeled <img src="https://latex.codecogs.com/png.latex?1"> through <img src="https://latex.codecogs.com/png.latex?n">, and <img src="https://latex.codecogs.com/png.latex?m"> edges.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+How would you do it?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before reading further, it would be worth spending some time thinking about how you would represent a graph. Based on our discussions so far, you might counter this with the question: “Well, what do <em>you</em> need it for?” — and that’s a fair reaction!</p>
+<p>Listed below are some fairly common operations that come up when dealing with graphs.</p>
+<pre class="[plaintext]"><code>1. add edge u v
+2. remove edge u v
+3. add vertex v
+4. remove vertex v
+5. is u a neighbor of v?
+6. find degree v</code></pre>
+</div>
+</div>
+<p><strong>Edge Lists.</strong> The most natural way is to perhaps just braindump the full list of edges. This gives us all we need to know about <img src="https://latex.codecogs.com/png.latex?G">.</p>
+<p>Since this is just a plain list, you could implement it either as an array or as a linked list.</p>
+<p><strong>Adjacency Matrix.</strong> The other way is to block off a <img src="https://latex.codecogs.com/png.latex?n%20%5Ctimes%20n"> array <img src="https://latex.codecogs.com/png.latex?A"> of integers. You could then have:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%20%5Cbegin%7Bequation*%7D%0A%20%20%20A%5Bi%5D%5Bj%5D%20=%0A%20%20%20%20%5Cbegin%7Bcases%7D%0A%20%20%20%20%20%201%20&amp;%20%5Ctext%7Bif%20%7D%20(i,j)%20%5Cin%20E,%5C%5C%0A%20%20%20%20%20%200%20&amp;%20%5Ctext%7Botherwise.%7D%0A%20%20%20%20%5Cend%7Bcases%7D%0A%5Cend%7Bequation*%7D%0A"></p>
+<p><strong>Adjacency Lists.</strong> Finally, you could have an array <img src="https://latex.codecogs.com/png.latex?A"> of size <img src="https://latex.codecogs.com/png.latex?n">, with <img src="https://latex.codecogs.com/png.latex?A%5Bi%5D"> pointing to a list of the neighbors of the vertex <img src="https://latex.codecogs.com/png.latex?i"> if the graph is undirected, and out-neighbors if the graph is directed.</p>
+<p>Again, since these are just lists, they could be, in principle, implemented either as arrays or linked lists. We will follow the traditional choice of implementing them as lists.</p>
+<p>It should be no surprise at this point that there is no “right” answer to the choice of representation. You might have noticed, for instance, that an adjacency matrix always reserves <img src="https://latex.codecogs.com/png.latex?n%5E2"> units of space to store <img src="https://latex.codecogs.com/png.latex?G">, while the amount of space consumed by the other two representations is proportional to <img src="https://latex.codecogs.com/png.latex?m">. Notice that the number of edges in a graph can be as large as <img src="https://latex.codecogs.com/png.latex?%5Capprox%20n%5E2"> for simple graphs, so there certainly are graphs for which the space consumption looks the same for all representations. However, for graphs where there aren’t as many edges, then the matrix representation is likely wasteful in terms of space, although you may have other good reasons for sticking to it.</p>
+<p>Let’s classify expenses incurred as follows.</p>
+<ol type="1">
+<li><strong>Brilliant.</strong> When the procedure only needs constant time.</li>
+<li><strong>Decent.</strong> When the procedure always wraps up in, and sometimes needs, time proportional to the maximum degree of the graph.</li>
+<li><strong>(n/m)-tolerable.</strong> When the procedure always wraps up in, and sometimes needs, time proportional to the number of vertices/edges in the graph.</li>
+<li><strong>(n/m)-painful.</strong> When the procedure always wraps up in, and sometimes needs, time proportional to the number of vertices/edges in the graph squared.</li>
+</ol>
+<p>Here’s a run down of how the representations above fare with respect to some of the common operations mentioned in the opening exercise.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Operations</th>
+<th style="text-align: center;">Adj. Matrix</th>
+<th style="text-align: center;">Adj. List</th>
+<th style="text-align: center;">Edge List</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Adding a vertex</td>
+<td style="text-align: center;">n-Painful</td>
+<td style="text-align: center;">n-Tolerable</td>
+<td style="text-align: center;">Decent</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Deleting a vertex</td>
+<td style="text-align: center;">n-Painful</td>
+<td style="text-align: center;">n-Tolerable</td>
+<td style="text-align: center;">m-Tolerable</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Adding an edge</td>
+<td style="text-align: center;">Brilliant</td>
+<td style="text-align: center;">Brilliant</td>
+<td style="text-align: center;">Brilliant</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Deleting an edge</td>
+<td style="text-align: center;">Brilliant</td>
+<td style="text-align: center;">Decent</td>
+<td style="text-align: center;">m-Tolerable</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Finding degree(v)</td>
+<td style="text-align: center;">n-Tolerable</td>
+<td style="text-align: center;">Decent</td>
+<td style="text-align: center;">m-Tolerable</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Check if (u,v) is an edge</td>
+<td style="text-align: center;">Brilliant</td>
+<td style="text-align: center;">Decent</td>
+<td style="text-align: center;">m-Tolerable</td>
+</tr>
+</tbody>
+</table>
+<p>It would be a good exercise to validate that these claims indeed make sense.</p>
+<p>Now that we’re comfortable with storing graphs, next up, we’ll talk about exploring them.</p>
+<p><br></p>
+<hr>
+<p><br></p>
+<div id="hyvor-talk-view">
+
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>I’ve been told that this representation is not complete, and indeed, I have only verified that the connections are justified… some of the missing edges are likely to be inaccurate.↩︎</p></li>
+<li id="fn2"><p>Find out more about <a href="https://dl.acm.org/doi/10.1145/2488388.2488433">Twitter’s WTF (who-to-follow) service</a>.↩︎</p></li>
+<li id="fn3"><p>See how the puzzle about exchanging the positions of black and white knights can be <a href="https://www.nytimes.com/2022/07/05/science/june-huh-heisuke-hironaka-math-chromatic-geometry.html">recast as a graph problem</a>.↩︎</p></li>
+<li id="fn4"><p>There are even graphs that <a href="https://en.wikipedia.org/wiki/Bouquet_graph"><em>only</em> have self-loops</a>.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>dsanotes</category>
+  <category>lecturenotes</category>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
+  <pubDate>Tue, 09 Aug 2022 18:30:00 GMT</pubDate>
+  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Data Structures and Structured Data</title>
+  <link>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><a href="https://slides.com/neeldhara/dsa1-w01">Link to Slides</a></p>
+<section id="wdym-data-structures" class="level2">
+<h2 class="anchored" data-anchor-id="wdym-data-structures">WDYM, data structures?</h2>
+<p>We will keep it casual and skip formal definitions for now. 👀</p>
+<p>Data structures give us principled ways to <em>stow away</em> information. It’s important to do this nicely based on what you want to <em>do</em> with the information.</p>
+<p>For example, the notes you might be taking in this class is information. If you have no plans of revisiting them later, you can take them as you please, or better yet, not take them at all!</p>
+<p>However, you want your notes optimised for giving you quality company during a 2AM revision session on exam day, competing with Maggi for attention, you want your notes to be competently taken: they don’t have to be neat, and it’s enough for them to be useful.</p>
+<p>On the other hand, if you are taking notes so that a special someone who will inevitably miss a few classes will almost certainly ask for later, then you would be making notes to impress, and that potentially requires a different approach.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Throughout this course, we will try to make sense of trade-offs.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We’ll equip ourselves with ideas that will ultimately help you decide questions like: how do you organise the clothes in your cupboard?</p>
+<table class="table">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 37%">
+<col style="width: 43%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Throw ’em in, nobody’s looking</th>
+<th>Keep it where you can find it later</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Time to process</td>
+<td>Negligible</td>
+<td>Forever</td>
+</tr>
+<tr class="even">
+<td>Time to retrieve</td>
+<td>Forever</td>
+<td>Negligible</td>
+</tr>
+</tbody>
+</table>
+<p>Table 1. No free lunches.</p>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+This <em>is</em> in fact a useful framing!
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Table 1 Revisited. No Free Lunches</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="representing-polynomials" class="level2">
+<h2 class="anchored" data-anchor-id="representing-polynomials">Representing Polynomials</h2>
+<p>Let’s say that you are spending a fine evening watching the #LockdownMath playlist from 3blue1brown. The first episode happens to be all about solving quadratics:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A screenshot from #LockdownMath showing Grant Sanderson solving quadratics.</figcaption><p></p>
+</figure>
+</div>
+<p>Now, it’s quite natural to want to “write a program”, so to speak, that can take a quadratic equation such as <img src="https://latex.codecogs.com/png.latex?x%5E2%20-%207x%20+%2012"> as input and output its two roots.</p>
+<p>Given that programs running on your phone are able to make suggestions, even if dubious, for what series to binge-watch next on Netflix, finding roots of quadratics should be a fairly benign exercise.</p>
+<p>You might recall that most programs let you declare variables that can hold on to specific <em>types</em> of information, for instance: numbers, strings, and so forth. Our input doesn’t “look” like a number, so it would be a fair take to simply store it as a string:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1">px <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">"x^2 - 7x + 12"</span><span class="op" style="color: #5E5E5E;">;</span></span></code></pre></div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Now…
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
+</div>
+</div>
+</div>
+<p>While this is a perfectly faithful representation, you can imagine that it would be slightly painful to work with. You would have to write some code that can “pull out” the parts of the string that represent the <em>numbers</em> you care about (in this example, <img src="https://latex.codecogs.com/png.latex?b%20=%20-7"> and <img src="https://latex.codecogs.com/png.latex?c%20=%2012">), so that you can move on to your calculation, which is an <em>expression</em> involving numbers.</p>
+<p>Given that a quadratic with the leading coefficient normalized to one is uniquely determined by two numbers, it seems a lot simpler to directly represent the polynomial as two integers instead:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb2-1">px_b <span class="op" style="color: #5E5E5E;">=</span> <span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">7</span></span>
+<span id="cb2-2">px_c <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">12</span></span></code></pre></div>
+<p>You might appreciate that this saves us quite some circus and we can quite directly get to the computation we’re interested in. What if you cared about higher order polynomials? You may want to solve them (even if you <a href="https://www.youtube.com/watch?t=2543&amp;v=O5eH3x3sTNA&amp;feature=youtu.be">run out of expressions for solutions pretty quickly</a>, you might be interested in <a href="https://math.stackexchange.com/a/1386830">other ways of getting to the roots</a>), or manipulate them in other ways (for example, by adding or <a href="https://www.youtube.com/watch?v=h7apO7q16V0">multiplying</a> them).</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Food for thought.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>How would you represent higher-order polynomials? What about multivariate polynomials? Is there a way that you might be able to capture an algebraic expression for a polynomial without either using strings or just the coefficients?</p>
+</div>
+</div>
+</section>
+<section id="representing-a-game---i" class="level2">
+<h2 class="anchored" data-anchor-id="representing-a-game---i">Representing a Game - I</h2>
+<p>The <a href="https://www.youtube.com/watch?v=846A4rgO_os">game of 100</a> goes like this: I pick a number between 1 and 10, and then you pick one within the next ten numbers, and on and on. The first person to reach 100 wins.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Recall from class and/or figure out that…
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+SPOILER ALERT
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<pre><code>...whoever starts has a way of winning the game:
+
+    0. To begin with, I say 1.
+    1. No matter what number you pick, I can say 12.
+    2. No matter what number you pick, I can say 23.
+    3. No matter what number you pick, I can say 34.
+    4. No matter what number you pick, I can say 45.
+    5. No matter what number you pick, I can say 56.
+    6. No matter what number you pick, I can say 67.
+    7. No matter what number you pick, I can say 78.
+    8. No matter what number you pick, I can say 89.
+    9. No matter what number you pick, I can say 100.</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>What if you want to write a program that mimics the winning strategy?</p>
+<p>Note that this game can go on for at most a 100 steps, and in fact exactly 20 steps (or ten rounds) when you employ said winning strategy. So one way to go about this is to declare 20 variables to track the 20 numbers exchanged between the players. But a moment’s reflection may reveal that you <em>don’t</em> need to store anything at all.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Exercise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Can you write a program that makes the first move, prompts the user for their moves on their turn, uses the winning strategy discussed above, and uses no variables for explicit storage?</p>
+</div>
+</div>
+</section>
+<section id="representing-a-game---ii" class="level2">
+<h2 class="anchored" data-anchor-id="representing-a-game---ii">Representing a Game - II</h2>
+<p>If <del>you missed the first class</del> you haven’t played the <a href="https://ncase.me/trust/">Game of Trust</a>, you are welcome to take a break and experience it now. Let’s recollect the setup:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figure class="figure">
+<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
+</figure>
+<p></p><figcaption class="figure-caption">Illustration from an implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
+</figure>
+</div>
+<p>Suppose you want to implement your own version of this game, where the program responds to inputs from the user and plays according to a specific, pre-meditated strategy. Remember you have seen some strategies already:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figure class="figure">
+<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
+</figure>
+<p></p><figcaption class="figure-caption">A second illustration from the same implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
+</figure>
+</div>
+<p>We reproduce these strategies below:</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Player Strategies
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>COPYCAT: Hello! I start with Cooperate, and afterwards, I just copy whatever you did in the last round. Meow.</li>
+<li>ALWAYS CHEAT: The strong shall eat the weak.</li>
+<li>ALWAYS COOPERATE: Let’s be best friends &lt;3</li>
+<li>GRUDGER: Listen, pardner. I’ll start cooperatin’, and keep cooperatin’, but if y’all ever cheat me, I’LL CHEAT YOU BACK TIL THE END OF TARNATION.</li>
+<li>DETECTIVE: First: I analyze you. start: Cooperate, Cheat, Cooperate, Cooperate. If you cheat back, I’ll act like Copycat. If you never cheat back, I’ll act like Always Cheat, to exploit you. Elementary, my dear Watson.</li>
+</ol>
+</div>
+</div>
+<p>Let’s say that your program is designed to play 5 rounds and that your program is playing the copycat strategy. To begin with, you might want to declare a couple of variables to keep track of the scores of the players, and ten variables to track the moves of both players in each round. With this, your code may start out looking like this:</p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb4-1">my_points <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">0</span></span>
+<span id="cb4-2">user_points <span class="op" style="color: #5E5E5E;">=</span> <span class="dv" style="color: #AD0000;">0</span></span>
+<span id="cb4-3"></span>
+<span id="cb4-4">user_move_1 <span class="op" style="color: #5E5E5E;">=</span> <span class="fu" style="color: #4758AB;">input</span><span class="op" style="color: #5E5E5E;">(</span><span class="st" style="color: #20794D;">"Input 1 for Cooperate and 0 for Cheat."</span><span class="op" style="color: #5E5E5E;">)</span></span>
+<span id="cb4-5"></span>
+<span id="cb4-6"><span class="co" style="color: #5E5E5E;">//Sanity check input:</span></span>
+<span id="cb4-7"><span class="cf" style="color: #003B4F;">if</span><span class="op" style="color: #5E5E5E;">(</span>user_move_1 <span class="op" style="color: #5E5E5E;">!=</span> <span class="dv" style="color: #AD0000;">1</span> and user_move_1 <span class="op" style="color: #5E5E5E;">!=</span> <span class="dv" style="color: #AD0000;">0</span><span class="op" style="color: #5E5E5E;">):</span></span>
+<span id="cb4-8">    express disappointment and abort</span></code></pre></div>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb5-1"><span class="co" style="color: #5E5E5E;">// My first move is to cooperate:</span></span>
+<span id="cb5-2">my_points <span class="op" style="color: #5E5E5E;">+=</span> <span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span></span>
+<span id="cb5-3">user_points <span class="op" style="color: #5E5E5E;">+=</span> <span class="dv" style="color: #AD0000;">3</span></span>
+<span id="cb5-4"></span>
+<span id="cb5-5"><span class="cf" style="color: #003B4F;">if</span><span class="op" style="color: #5E5E5E;">(</span>user_move_1<span class="op" style="color: #5E5E5E;">):</span></span>
+<span id="cb5-6">    my_points <span class="op" style="color: #5E5E5E;">+=</span> <span class="dv" style="color: #AD0000;">3</span></span>
+<span id="cb5-7">    user_points <span class="op" style="color: #5E5E5E;">-=</span> <span class="dv" style="color: #AD0000;">1</span></span></code></pre></div>
+<p>Now your next move is determined by the value of <code>user_move_1</code>, so you might proceed as follows.</p>
+<div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb6-1">user_move_2 <span class="op" style="color: #5E5E5E;">=</span> <span class="fu" style="color: #4758AB;">input</span><span class="op" style="color: #5E5E5E;">(</span><span class="st" style="color: #20794D;">"Input 1 for Cooperate and 0 for Cheat."</span><span class="op" style="color: #5E5E5E;">)</span></span>
+<span id="cb6-2"></span>
+<span id="cb6-3"><span class="co" style="color: #5E5E5E;">//Sanity check input:</span></span>
+<span id="cb6-4"><span class="cf" style="color: #003B4F;">if</span><span class="op" style="color: #5E5E5E;">(</span>user_move_2 <span class="op" style="color: #5E5E5E;">!=</span> <span class="dv" style="color: #AD0000;">1</span> and user_move_2 <span class="op" style="color: #5E5E5E;">!=</span> <span class="dv" style="color: #AD0000;">0</span><span class="op" style="color: #5E5E5E;">):</span></span>
+<span id="cb6-5">    express disappointment and abort</span></code></pre></div>
+<div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb7-1"><span class="co" style="color: #5E5E5E;">// My next move is based on the user's first:</span></span>
+<span id="cb7-2"><span class="cf" style="color: #003B4F;">if</span><span class="op" style="color: #5E5E5E;">(</span>user_move_1<span class="op" style="color: #5E5E5E;">):</span></span>
+<span id="cb7-3">    my_points <span class="op" style="color: #5E5E5E;">+=</span> <span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">1</span></span>
+<span id="cb7-4">    user_points <span class="op" style="color: #5E5E5E;">+=</span> <span class="dv" style="color: #AD0000;">3</span></span>
+<span id="cb7-5"></span>
+<span id="cb7-6"><span class="cf" style="color: #003B4F;">if</span><span class="op" style="color: #5E5E5E;">(</span>user_move_2<span class="op" style="color: #5E5E5E;">):</span></span>
+<span id="cb7-7">    my_points <span class="op" style="color: #5E5E5E;">+=</span> <span class="dv" style="color: #AD0000;">3</span></span>
+<span id="cb7-8">    user_points <span class="op" style="color: #5E5E5E;">-=</span> <span class="dv" style="color: #AD0000;">1</span></span></code></pre></div>
+<p>…and so on and on, you get the drift.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Food for thought.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Do you really need ten variables to track the game? If you were instead implementing the always cheat or always cooperate strategy, how many variables would you need? What about the strategies of the grudger and the detective?</p>
+</div>
+</div>
+<p>Now, suppose we come up with our own player, whom we call the <strong>majority mover</strong>. This player looks at your entire game history, and cooperates if you have cooperated more than you have cheated, and cheats if you have cheated more than you have cooperated, and acts randomly otherwise.</p>
+<p>It seems like implementing the majority mover strategy would really require keeping track of everything. Or would it? You might observe at this point that it’s enough to keep track of two counts: the number of rounds and the <em>number</em> of moves where the user has cheated: note that it does not matter when the cheats happened in the history of the game.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+You could also…
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>…track the number of cooperate moves along with the number of rounds; or the number of cheat moves and the number of cooperate moves.</p>
+<p>At this point it’s a matter of taste :)</p>
+</div>
+</div>
+</div>
+<p>How about a <strong>completely random</strong> player? This one chooses a number <strong>K</strong> between 1 and N uniformly at random (let’s not worry about <em>how</em> this is done for now, because that would be a story for another day), where N is the number of rounds played so far; and mimics the other player’s <strong>K</strong>th move. To implement this strategy, you really would need to keep track of the user’s entire game history with the five variables, and also assume that you have a way of picking a number at random.</p>
+<p>Finally, consider that instead of fixing your program to play five rounds — 🥱 — you want to politely ask the user how m<em>any </em>rounds they want to play.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+After all…
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
+</div>
+</div>
+</div>
+<p>Well, for the first few players, this is just a matter of upgrading your for loop (which you should have switched to already when you realised that you don’t need all. those. variables.) to use N: and you are done.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Food for thought.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>How will you implement this version if you are working with our latest player? If you happen to have a very enthusiastic user who asks for half a million rounds, would you be able to declare that many variables all at once, while your program is running? Notably, you don’t know what the user is going to say ahead of time!</p>
+</div>
+</div>
+</section>
+<section id="representing-a-subset-of-a-deck-of-cards" class="level2">
+<h2 class="anchored" data-anchor-id="representing-a-subset-of-a-deck-of-cards">Representing a subset of a deck of cards</h2>
+<p>If you are implementing a card<sup>1</sup> game, you might need a mechanism for keeping track of “hands”, or various subsets of cards. Let’s say a <em>hand</em> is a subset of cards. For many games, you would need the ability to be able to quickly:</p>
+<ul>
+<li>tell if a particular card belongs to a hand or not,</li>
+<li>add a card to a hand,</li>
+<li>remove a card from a hand, and</li>
+<li>replace a card in a hand with another one.</li>
+</ul>
+<p>One way to meet these requirements is to declare a collection of 52 boolean (i.e, true/false or 0/1) variables to represent the hand: the cards in the hand are set to true while cards that don’t belong are set to false.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Food for thought.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What do you like about this method? What don’t you like about it?</p>
+</div>
+</div>
+<p>Here’a another way, though: you could agree on a notation for the cards in the deck: e.g, a standard one is to use a number, A/J/Q/K to denote the value, and S/C/D/H to denote the suit, so every card can be represented as a pair of characters. For example the Ace of Diamonds would be AD, the five of spades would be 5S and the King of Hearts would be KH. With this in place, you could represent a hand also by simply <em>concatenating</em> these string representations of the cards in the hand.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Food for thought.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What do you like about this method? What don’t you like about it?</p>
+</div>
+</div>
+<p>Now for this toy example, if you were to implement both methods and clock the time taken to implement the four operations above, you may not notice a major difference. However, for actual applications, you may be in a situation where your <em>subsets</em> (here, the “hands”) may be coming from a large <em>universe</em> (here, the “deck”). On the other hand, you may have a very large number of operations to take care of efficiently.</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Food for thought.
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Are there other ways that you might want to store this kind of information, given the things you want to do are as enlisted above?</p>
+</div>
+</div>
+<p>Your choice of method will again be driven by the requirements: the one thing to keep in mind is that you cannot have it all, but we can usually get pretty damn close!</p>
+<p><br></p>
+<hr>
+<p><br></p>
+<div id="hyvor-talk-view">
+
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Assume you are working with the <a href="https://en.wikipedia.org/wiki/Standard_52-card_deck">standard 52-card deck</a>.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>dsanotes</category>
+  <category>lecturenotes</category>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
+  <pubDate>Sun, 31 Jul 2022 18:30:00 GMT</pubDate>
+  <media:content url="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
+</item>
+</channel>
+</rss>

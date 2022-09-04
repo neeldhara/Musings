@@ -1,5 +1,5 @@
 ---
-title: "Competitive Programming Notes"
+title: "Notes on Competitive Programming"
 listing:
   contents: posts/cp
   sort: "date desc"
@@ -7,7 +7,27 @@ listing:
   categories: false
   sort-ui: false
   filter-ui: false
+  feed: true
   fields: [date, title, reading-time]
 page-layout: article
-title-block-banner: true
+title-block-banner: false
 ---
+
+:::{.callout-note appearance="simple" icon=false}
+## Series: Competitive Programming
+This page collects editorial-style posts, and they will mostly be based off my NPTEL course on competitive programming. You can subscribe to a feed for this series by [clicking here](cp.xml). If you'd like to guest author a post here, please drop me a line at: mail -AT- neeldhara.com
+:::
+
+
+:::{.callout-caution}
+## Work in progress
+
+👋🏽 I am in the process of porting things over from an older setup. This site may therefore be rather rough around the edges.
+:::
+
+
+<p>&nbsp;</p>
+
+<style type="text/css">
+  #hyvor-talk-view{display:none;}
+</style>
