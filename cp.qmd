@@ -1,0 +1,13 @@
+---
+title: "Competitive Programming Notes"
+listing:
+  contents: posts/cp
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, reading-time]
+page-layout: article
+title-block-banner: true
+---

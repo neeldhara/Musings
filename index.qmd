@@ -1,0 +1,20 @@
+---
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, reading-time, categories]
+page-layout: full
+title-block-banner: false
+---
+
+:::{.callout-caution}
+## 👋🏽 Hi!
+
+I am in the process of porting things over from an older setup. This site may therefore be rather rough around the edges.
+:::
+
+<p>&nbsp;</p>

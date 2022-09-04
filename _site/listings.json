@@ -1,0 +1,46 @@
+[
+  {
+    "listing": "/archive.html",
+    "items": [
+      "/posts/solo-chess/index.html",
+      "/posts/eight-self-sabotaging-behaviors/index.html",
+      "/posts/kidney-exchanges/index.html",
+      "/posts/women-in-mathematics/index.html",
+      "/posts/communication-complexity-equality/index.html",
+      "/posts/15-puzzle/index.html",
+      "/posts/cp/sam-i-am/index.html",
+      "/posts/new-mac/index.html",
+      "/posts/moving-blocks-ctis/index.html",
+      "/posts/envelope-budgeting-notion/index.html",
+      "/posts/building-websites-with-notion/index.html",
+      "/posts/notion-powered-websites/index.html",
+      "/posts/massren/index.html",
+      "/posts/django-app/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/solo-chess/index.html",
+      "/posts/eight-self-sabotaging-behaviors/index.html",
+      "/posts/kidney-exchanges/index.html",
+      "/posts/women-in-mathematics/index.html",
+      "/posts/communication-complexity-equality/index.html",
+      "/posts/15-puzzle/index.html",
+      "/posts/cp/sam-i-am/index.html",
+      "/posts/new-mac/index.html",
+      "/posts/moving-blocks-ctis/index.html",
+      "/posts/envelope-budgeting-notion/index.html",
+      "/posts/building-websites-with-notion/index.html",
+      "/posts/notion-powered-websites/index.html",
+      "/posts/massren/index.html",
+      "/posts/django-app/index.html"
+    ]
+  },
+  {
+    "listing": "/cp.html",
+    "items": [
+      "/posts/cp/sam-i-am/index.html"
+    ]
+  }
+]
