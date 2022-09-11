@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2020-09-11">
+<meta name="dcterms.date" content="2022-09-09">
 
-<title>Pseudorandom Musings - Massren for fast file renaming</title>
+<title>Pseudorandom Musings - Collective Welfare as a Metric in Algorithmic Decision Making</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,10 +60,26 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
-<link rel="stylesheet" href="../../styles.css">
-<meta name="twitter:title" content="Pseudorandom Musings - Massren for fast file renaming">
-<meta name="twitter:description" content="My tool of choice for bulk file-renaming has become1&nbsp;Massren:">
+<link rel="stylesheet" href="../../../styles.css">
+<meta name="twitter:title" content="Pseudorandom Musings - Collective Welfare as a Metric in Algorithmic Decision Making">
+<meta name="twitter:description" content="The MAB setting model sequential decision making under uncertainty. The model and a bazillion variants thereof have been very well-studied.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -74,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Pseudorandom Musings</span>
     </a>
   </div>
@@ -107,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
  </a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../../index.xml"><i class="bi bi-rss" role="img">
 </i> 
  </a>
   </li>  
@@ -121,9 +137,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Massren for fast file renaming</h1>
+      <h1 class="title">Collective Welfare as a Metric in Algorithmic Decision Making</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">workflows</div>
+                <div class="quarto-category">woce</div>
+                <div class="quarto-category">talknotes</div>
               </div>
                   </div>
   </div>
@@ -135,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 11, 2020</p>
+        <p class="date">September 9, 2022</p>
       </div>
     </div>
       
@@ -146,31 +163,40 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#multi-arm-bandits" id="toc-multi-arm-bandits" class="nav-link active" data-scroll-target="#multi-arm-bandits">Multi-arm bandits</a></li>
+  <li><a href="#nash-social-welfare" id="toc-nash-social-welfare" class="nav-link" data-scroll-target="#nash-social-welfare">Nash Social Welfare</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<div class="page-columns page-full"><p>My tool of choice for bulk file-renaming has become<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>&nbsp;<a href="https://github.com/laurent22/massren">Massren</a>:</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;As opposed to, say, GUI clients.</p></li></div></div>
-<blockquote class="blockquote">
-<p>Massren&nbsp;is a command line tool that can be used to rename multiple files using your own text editor. Multiple-rename tools are usually difficult to use from the command line since any regular e xpression needs to be escaped, and each tool uses its own syntax and flavor of regex. The advantage of massren is that you are using the text editor you use every day, and so you can use all the features you are already used to.</p>
-</blockquote>
-<p>Simply navigate to the directory in which your files are and invoke massren. You can easily set it up to use your favorite text editor, so for example, I have mine configured to use VSCode:</p>
-<pre><code>massren --config editor code</code></pre>
-<p>If you have a text editor you are comfortable with, then this can lead to all kinds of interesting possibilities, especially when combined with regular expression search.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="20180528-screen-massren.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Using Massren, VS Code, and regex for bulk file renaming.</figcaption><p></p>
-</figure>
-</div>
-<p>This workflow is especially convenient in combination with an Alfred wokflow to open the current Finder directory in the terminal, such as&nbsp;<a href="https://github.com/LeEnno/alfred-terminalfinder">this one</a>.</p>
+<section id="multi-arm-bandits" class="level3">
+<h3 class="anchored" data-anchor-id="multi-arm-bandits">Multi-arm bandits</h3>
+<p>The MAB setting model sequential decision making under uncertainty. The model and a bazillion variants thereof have been very well-studied.</p>
+<ul>
+<li><p>The algorithm has sample access to <span class="math inline">k</span> distributions (arms) for <span class="math inline">T</span> rounds.</p></li>
+<li><p>Each round <span class="math inline">t \in [T]</span>, algorithm selects an arm <span class="math inline">I_t \in [k]</span> and recieves arm-specific reward.</p></li>
+<li><p>Expected reward at round <span class="math inline">t</span>: <span class="math inline">\mathbb{E}[\mu_{I_t}]</span></p></li>
+<li><p>Optimal (ex ante) <span class="math inline">\mu^\star := \max_{1 \leq i \leq k} \mu_i</span></p></li>
+<li><p>Regret (rg) <span class="math inline">\mu^\star - \frac{1}{T} \sum_{t = 1}^{T} \mathbb{E}[\mu_{I_t}]</span></p></li>
+</ul>
+<p>Upper confidence bound algorithm achieves <span class="math inline">O\left(\sqrt{\frac{k}{T}}\right)</span>.</p>
+</section>
+<section id="nash-social-welfare" class="level3">
+<h3 class="anchored" data-anchor-id="nash-social-welfare">Nash Social Welfare</h3>
+<p>If we have values: <span class="math inline">v_1, v_2, \ldots, v_T</span> representing the welfare of <span class="math inline">T</span> agents (tying back to the MAB setting, you could think of the <span class="math inline">v_i</span>’s as the regrets in each round).</p>
+<p>Welfare function: <span class="math inline">\mathbb{R}_+^T \rightarrowtail \mathbb{R}_+</span>.</p>
 
 
-
+</section>
 
 </main> <!-- /main -->
 <script type="text/javascript" src="../../js/foo.js"></script>

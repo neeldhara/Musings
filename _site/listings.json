@@ -33,6 +33,7 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/on-teaching/index.html",
       "/posts/dsanotes/graphs/index.html",
       "/posts/dsanotes/introduction/index.html",
       "/posts/solo-chess/index.html",
@@ -69,6 +70,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/on-teaching/index.html",
       "/posts/dsanotes/graphs/index.html",
       "/posts/dsanotes/introduction/index.html",
       "/posts/solo-chess/index.html",

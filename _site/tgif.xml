@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://neeldhara.blog/tgif.html</link>
-<atom:link href="https://neeldhara.blog/tgif.xml" rel="self" type="application/rss+xml"/>
+<link>https://www.neeldhara.blog/tgif.html</link>
+<atom:link href="https://www.neeldhara.blog/tgif.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
 <lastBuildDate>Wed, 24 Mar 2021 18:30:00 GMT</lastBuildDate>
 <item>
   <title>Turn the LED on</title>
-  <link>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
   <description><![CDATA[ 
 
 
@@ -43,12 +43,12 @@ Each switch has a 50/50 chance of being ON or OFF.<br><br>The switches are all i
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>4 Person Gift Exchange</title>
-  <link>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
   <description><![CDATA[ 
 
 
@@ -95,12 +95,12 @@ Here's a beautiful probability puzzle inspired by Professor Henk Tijms (<a href=
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Conway’s Checkers</title>
-  <link>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
   <description><![CDATA[ 
 
 
@@ -154,12 +154,12 @@ Spoilers
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
   <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Coin Tossing</title>
-  <link>https://neeldhara.blog/posts/tgif/coin-tossing/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</link>
   <description><![CDATA[ 
 
 
@@ -200,12 +200,12 @@ Solution
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/coin-tossing/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</guid>
   <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Estimating Pi</title>
-  <link>https://neeldhara.blog/posts/tgif/estimating-pi/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</link>
   <description><![CDATA[ 
 
 
@@ -251,12 +251,12 @@ Folks, here’s one way to reason <em>why</em> this probability should be (5 - p
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/estimating-pi/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</guid>
   <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Coming to Agreement</title>
-  <link>https://neeldhara.blog/posts/tgif/coming-to-agreement/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/coming-to-agreement/index.html</link>
   <description><![CDATA[ 
 
 
@@ -296,12 +296,12 @@ An Oxford University admissions interview question. You are a contestant on a ga
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/coming-to-agreement/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/coming-to-agreement/index.html</guid>
   <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Death’s Dice</title>
-  <link>https://neeldhara.blog/posts/tgif/deaths-dice/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/deaths-dice/index.html</link>
   <description><![CDATA[ 
 
 
@@ -348,7 +348,7 @@ Hint
 <div class="callout-body-container callout-body">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An image that shows a square circumscribed inside a circle.</figcaption><p></p>
 </figure>
 </div>
@@ -361,13 +361,13 @@ Hint
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/deaths-dice/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/deaths-dice/index.html</guid>
   <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" medium="image" type="image/png" height="83" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
   <title>Find The Puppy</title>
-  <link>https://neeldhara.blog/posts/tgif/find-the-puppy/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/find-the-puppy/index.html</link>
   <description><![CDATA[ 
 
 
@@ -447,12 +447,12 @@ Spoilers: based on our discussion in the second TGIF meetup.
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/find-the-puppy/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/find-the-puppy/index.html</guid>
   <pubDate>Sat, 13 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>The Blue-Eyed Islanders</title>
-  <link>https://neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</link>
   <description><![CDATA[ 
 
 
@@ -477,12 +477,12 @@ Spoilers: based on our discussion in the second TGIF meetup.
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</guid>
   <pubDate>Wed, 10 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Lighting Up a Grid</title>
-  <link>https://neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</link>
   <description><![CDATA[ 
 
 
@@ -536,7 +536,7 @@ Here’s an argument for the lower bound by Harshil Mittal.
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</guid>
   <pubDate>Wed, 10 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 </channel>

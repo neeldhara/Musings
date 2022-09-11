@@ -6,7 +6,7 @@ fields: [date, title]
 toc: true
 ---
 
-These are some quick sketchnotes based on  [this lecture](https://www.youtube.com/watch?v=orOJRhlqrvk) by [Ryan O’Donnell](https://www.cs.cmu.edu/~odonnell/), a part of the  [playlist](https://www.youtube.com/watch?v=prI35GmCon4&list=PLm3J0oaFux3ZYpFLwwrlv_EHH9wtH6pnX) for the awesome [CS Theory Toolkit](https://www.diderot.one/course/28/) course. You can walk through the arguments below (or, alternatively, sit back and watch an autoplay version instead — no audio, though).
+These are some quick sketchnotes based on  [this lecture](https://www.youtube.com/watch?v=orOJRhlqrvk) by [Ryan O’Donnell](https://www.cs.cmu.edu/~odonnell/), a part of the  [playlist](https://www.youtube.com/watch?v=prI35GmCon4&list=PLm3J0oaFux3ZYpFLwwrlv_EHH9wtH6pnX) for the awesome [CS Theory Toolkit](https://www.diderot.one/course/28/) course. You can walk through the arguments below.
 
 <iframe src="https://slides.com/neeldhara/deck-85ae95/embed?style=transparent&byline=hidden" width="795" height="420" title="Communication Complexity of Equality" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

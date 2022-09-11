@@ -6,14 +6,145 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://neeldhara.blog/index.html</link>
-<atom:link href="https://neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://www.neeldhara.blog/index.html</link>
+<atom:link href="https://www.neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
-<lastBuildDate>Tue, 09 Aug 2022 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 04 Sep 2022 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>On Teaching</title>
+  <link>https://www.neeldhara.blog/posts/on-teaching/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<!--
+:::{.callout-note appearance="simple" icon="false"}
+These are some parts of the teaching statment that I wrote roughly seven years ago, updated slightly in the interest of clarity and additional context.
+::: -->
+<blockquote class="blockquote">
+<p><em>A teacher does not teach, a student learns.</em></p>
+<p>— snippet from <a href="https://www.facebook.com/425094961174523/videos/5530977776968824/">this interview</a> of <a href="https://en.wikipedia.org/wiki/Zakir_Hussain_(musician)">Ustad Zakir Hussain</a></p>
+</blockquote>
+<p>I’ll pose some how/what/why questions in the context of teaching.</p>
+<section id="how" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="how">How</h2>
+<div class="page-columns page-full"><p>The last couple of decades, especially the last few years, have seen dramatic changes in how information is communicated. A lot of learning happens in online communities, for instance, question-and-answer websites like Quora and StackExchange. Thanks to folks who invest time on these platforms, expert help seems to be nearer than ever before. Specialized and snark-free communities on Discord/Slack/Telegram are enabling peer-to-peer learning at global scale. </p><div class="no-row-height column-margin column-container"><span class="aside">I keep hearing that Quora is not what it used to be, but as long as <a href="https://www.quora.com/profile/Thomas-Cormen-1/">Thomas Cormen</a> is an active user, I am positive it remains a valuable resource.</span></div></div>
+<div class="page-columns page-full"><p>Books are beginning to be injected with exciting new technology: <a href="https://codemirror.net/index.html">CodeMirror</a> makes code interactive and runnable, while tools like <a href="https://pythontutor.com/">PythonTutor</a> can help with visualizing what happens behind-the-scenes when code is executed. <a href="https://github.com/denysdovhan/wtfjs">Say</a> <a href="https://www.destroyallsoftware.com/talks/wat">what</a> <a href="https://wtfjs.com/">you</a> <a href="https://martin-thoma.com/javascript-wtf/">want</a> about JavaScript, but the interactivity that it brings to the written medium has helped make reading less passive. Some of my favorite interactive texts include <a href="https://seeing-theory.brown.edu/">Seeing Theory</a>, <a href="http://probmods.org/">Probabilistic Models of Cognition</a>, courses on <a href="https://brilliant.org/">Brilliant</a>, <a href="https://mathigon.org/">Mathigon</a>, and essays from <a href="https://ncase.me/">Nicky Case</a>, <a href="https://minutelabs.io/">Minute Labs</a>, and others on <a href="https://explorabl.es/">Explorables</a>.</p><div class="no-row-height column-margin column-container"><span class="aside">The name “PythonTutor” is slightly misleading, since the website also lets you visualize code snippets written in C, C++, Java, and JavaScript.</span></div></div>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>And finally there are the online courses. At the time of this writing, it has been just a little over two decades since <a href="https://en.wikipedia.org/wiki/MIT_OpenCourseWare">MIT’s Open Course Ware</a> opened to the public. The early hype around MOOCs roughly coincided with my years in college and graduate school. As far as I remember, it was quite the thrill to have free-flowing access to online lectures — “taught by the best” — for several of the courses I was supposed to be doing as a part of my curriculum.</p>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:51%;">
+<p><a href="https://imgflip.com/i/6s9ym6"><img src="https://www.neeldhara.blog/posts/on-teaching/https:/i.imgflip.com/6s9ym6.jpg" title="made at imgflip.com" width="100%"></a></p>
+</div>
+</div>
+<p>All this is to say that I walked into a career involving a substantial teaching component with plenty of hesitation. The delivery was/is still largely confined to classroom settings in broadcast mode. It is not entirely clear what this format has to offer over YouTube. Basic interactivity is being increasingly solved with questions built into video players. Peer learning is quite doable with WhatsApp/Slack/Discord groups and local chapter meetups. Scale in the context of assessments is somewhat addressed by peer evaluation. And then there are all the things you can do on YouTube that you can’t do with traditional lectures: find a teacher whose style resonates, find an accent you understand, replay, play at 2x, 0.5x, binge watch, don’t watch…</p>
+<div class="page-columns page-full"><p>So: what’s the incentive for <em>anyone</em> to show up in a classroom at a fixed time, especially when said time is 8AM? This question became particularly relevant during the pandemic years: once the novelty wore off, almost nobody† showed up to lectures. If I was a student, I’d likely do the same. This remains largely an open problem in my mind, but here are some pointers that have kept me motivated about the conventional format. </p><div class="no-row-height column-margin column-container"><span class="aside">† Shout out to those of you accounting for the “almost”, thank you!</span></div></div>
+<ol type="1">
+<li>Classroom = theatre. I am increasingly treating it as a ground for practicing standup and <a href="https://twitter.com/neeldhara/status/1542606730701307904?ref_src=twsrc%5Etfw">magic</a> skills. I should admit that this isn’t easy for a clinically shy person like myself, but I got used to making a fool of myself fast — that’s served well. I imagine that some of the fun that comes out performance-first lectures is hard to recreate with recordings and notes.</li>
+</ol>
+<div class="columns">
+<div class="column" style="width:45%;">
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Totally. It's almost always a performance, irrespective of the class size. And the more you rehearse, the better it goes. At least that's what works for me.
+</p>
+— Manu Awasthi (<span class="citation" data-cites="mnwsth">@mnwsth</span>) <a href="https://twitter.com/mnwsth/status/1562372066967359490?ref_src=twsrc%5Etfw">August 24, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div><div class="column" style="width:10%;">
+
+</div><div class="column" style="width:45%;">
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Some musings on teaching from a lunch talk awhile back: <a href="https://t.co/19vOXpxcjs">https://t.co/19vOXpxcjs</a>
+</p>
+— Tim Roughgarden (<span class="citation" data-cites="Tim_Roughgarden">@Tim_Roughgarden</span>) <a href="https://twitter.com/Tim_Roughgarden/status/1379441864072429570?ref_src=twsrc%5Etfw">April 6, 2021</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+<ol start="2" type="1">
+<li><p>In a classroom setting, I can nudge the audience to discover things for themselves. As far as I know, the interactivity in online materials can help with validating understanding, but not as much with developing it from first principles. My hope is for learners to walk out of a classroom with the confidence that they <em>came up</em> with parts of the material in the textbook on their own.</p>
+<p>Again, this is hard to do in time-bound fashion, given that a lot of this kind of understanding comes from brooding and hours of messing around. I can only hope to convince the audience that the process is worth the trouble.</p></li>
+<li><p>The opportunity to show that you care. For learners who may have struggles with and beyond the materials — classrooms, labs, and office hours afford opportunities for us to offer help.</p>
+<p>This was a late realization for me personally: for the longest time, my own sense of self-doubt did not allow me to see that I could potentially be useful to someone else. While self-doubt remains, I have started to compartmentalize it enough to show up for others.</p></li>
+</ol>
+<p>All this said, I believe online and remote formats have substantial potential for making quality education accessible at scale, and that it is only a matter of time before classrooms in their most conventional forms either become obsolete or a ruse.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+I am going to attend college lectures from now on just to increase my attention span. The goal will be to sit for an hour without sleeping or getting distracted from mobile notifications.
+</p>
+— Priyansh Agarwal (<span class="citation" data-cites="Priyansh_31Dec">@Priyansh_31Dec</span>) <a href="https://twitter.com/Priyansh_31Dec/status/1566707282695847937?ref_src=twsrc%5Etfw">September 5, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></div><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Calvin on 21st Century Education</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="what" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="what">What</h2>
+<p>It is also increasingly challenging to formulate a curricula gets people to the bleeding edge starting from the foundations. For instance, there is a growing sentiment that <a href="http://nlpers.blogspot.in/2014/10/machine-learning-is-new-algorithms.html">Machine Learning is the new Algorithms</a> (or <a href="http://blog.geomblog.org/2014/10/algorithms-is-new-algorithms.html">maybe not</a>). On the other hand, the extent of involvement of “mathematics” in introductory CS courses is also <a href="https://twitter.com/boazbaraktcs/status/1561737094866804738">up</a> <a href="https://twitter.com/togelius/status/1561737958385917953">for</a> <a href="https://twitter.com/YannaiGonch/status/1561480166429302784">debate</a>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/on-teaching/https:/www.explainxkcd.com/wiki/images/7/79/obsolete_technology.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Cutting Edge</figcaption><p></p>
+</figure>
+</div>
+</div></div><p>How much theory <a href="https://cstheory.stackexchange.com/questions/8761/what-can-i-do-to-supplement-my-theoretical-undergraduate-cs-curriculum-so-that-i">is needed</a> for competence in practice? How crucial is it to develop competencies that don’t have an immediately visible ROI? How frequently do we <a href="https://twitter.com/ramgopal_rao/status/1566428352398774272">rewrite the textbooks</a> based on developments in industry?</p>
+<p>I once read a collection of answers to the question of what <em>every computer science graduate should know</em> on a Q&amp;A site. As an aspiring graduate myself, I figured I should know what I should know. Unfortunately, I remember it as a mostly unnerving experience: it was a list that started with Voronoi diagrams and ended with incompleteness theorems, and a <em>lot</em> of things in between.</p>
+<p>From the other side of the fence, for whatever it’s worth — the answer to this question <a href="https://twitter.com/togelius/status/1561738432422023175">remains elusive</a>, mainly because I think it’s a context-heavy issue. For better or worse, <a href="https://twitter.com/benmschmidt/status/1562256566631518208">there is a growing interest in computer science</a>, and it will likely remain a non-trivial challenge to find an approach that is both maximally inclusive and sufficiently useful. I can only hope that between ruthless efficiency in teaching things driven purely by need and a curriculum flooded with random adventures, we can find an balance appropriate to our contexts!</p>
+<!-- ![[Comments](https://cstheory.stackexchange.com/questions/8761/what-can-i-do-to-supplement-my-theoretical-undergraduate-cs-curriculum-so-that-i) on a question on cstheory.SE](cstheoryvpractice.png){width=70%} -->
+</section>
+<section id="why" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="why">Why</h2>
+<p>Given that everything that needs to be explained has more or less been done and dusted really well on the interwebs, personally, this is hardest question of the lot. Not from my own POV, that’s the easy bit - <a href="https://dsanghi.blogspot.com/2014/08/why-i-want-to-be-professor.html">as pointed out here</a>, it’s fun to go through the idea exchange process with a captive audience, and in my experience at least one party is sufficiently triggered at the end of it (hopefully in a good way).</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<blockquote class="blockquote">
+<p>The satisfaction that you get when you are able to explain a concept to someone who did not know it earlier is immense. Sometimes it could be straightforward, and sometimes it could be frustrating. But the end point is always the same - a smile on the faces of those students. Money can buy all the books, but can’t buy that smile.</p>
+<p>Prof Dheeraj Sanghi, <a href="https://dsanghi.blogspot.com/2014/08/why-i-want-to-be-professor.html">“Why I want to be a professor”</a></p>
+</blockquote>
+</div></div><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.neeldhara.blog/posts/on-teaching/https:/phdcomics.com/comics/archive/phd062613s.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">On hope in teaching.</figcaption><p></p>
+</figure>
+</div>
+<p>I am just not sure if we create enough of a net positive in a traditional classroom setup from a ROI perspective. Given the few good things that the internet has brought us, perhaps it is time to think beyond classrooms and focusing on making existing resources more accessible to everyone who’s interested.</p>
+
+
+
+<div class="no-row-height column-margin column-container"><section id="join-the-conversation" class="level3">
+<h3 class="anchored" data-anchor-id="join-the-conversation">Join the conversation</h3>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+New blog, new post:<a href="https://t.co/c2lEHM0lTI">https://t.co/c2lEHM0lTI</a><br><br>Meanwhile — happy teachers day to everyone!
+</p>
+— Neeldhara (<span class="citation" data-cites="neeldhara">@neeldhara</span>) <a href="https://twitter.com/neeldhara/status/1566800730001788929?ref_src=twsrc%5Etfw">September 5, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section></div></section>
+
+ ]]></description>
+  <category>funda</category>
+  <guid>https://www.neeldhara.blog/posts/on-teaching/index.html</guid>
+  <pubDate>Sun, 04 Sep 2022 18:30:00 GMT</pubDate>
+  <media:content url="https://www.neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Representing Graphs</title>
-  <link>https://neeldhara.blog/posts/dsanotes/graphs/index.html</link>
+  <link>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</link>
   <description><![CDATA[ 
 
 
@@ -24,7 +155,7 @@
 <p>At some point of time in your life, you have likely been challenged to draw a kite-like figure:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A common drawing challenge.</figcaption><p></p>
 </figure>
 </div>
@@ -62,7 +193,7 @@ The Problem
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Konigsberg Classic: Map of Königsberg in Euler’s time showing the actual layout of the seven bridges, highlighting the river Pregel and the bridges. Image by Bogdan Giuşcă, in the public domain (CC BY-SA 3.0) and sourced from Wikipedia.</figcaption><p></p>
 </figure>
 </div>
@@ -98,7 +229,7 @@ Classroom Activity with Eulerian Paths
 <p>We can work through the “bridges puzzle” on this graph. In the classroom, we all started with the vertex representing Juhi Chawla, “walked around” using every connection exactly once, and the fun effect is that everyone ends up at the vertex representing Rishi Kapoor (or solves the puzzle incorrectly). From here, you can probably begin to guess the role of the two special vertices in the puzzle.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An actor collaboration graph</figcaption><p></p>
 </figure>
 </div>
@@ -112,7 +243,7 @@ Classroom Activity with Eulerian Paths
 <p>The origins of this problem — the so-called “Knight’s Tour” — goes all the way back to the 9th century AD, where it is described in <a href="https://www.ias.ac.in/article/fulltext/reso/025/08/1095-1116">Rudraṭa’s Kavyalankara</a>. Here’s an example of a knight’s tour, as seen on Wikipedia:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An animated example of a knight’s tour.</figcaption><p></p>
 </figure>
 </div>
@@ -320,13 +451,13 @@ How would you do it?
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
   <pubDate>Tue, 09 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Data Structures and Structured Data</title>
-  <link>https://neeldhara.blog/posts/dsanotes/introduction/index.html</link>
+  <link>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</link>
   <description><![CDATA[ 
 
 
@@ -394,7 +525,7 @@ This <em>is</em> in fact a useful framing!
 <div class="callout-body-container callout-body">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Table 1 Revisited. No Free Lunches</figcaption><p></p>
 </figure>
 </div>
@@ -407,7 +538,7 @@ This <em>is</em> in fact a useful framing!
 <p>Let’s say that you are spending a fine evening watching the #LockdownMath playlist from 3blue1brown. The first episode happens to be all about solving quadratics:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A screenshot from #LockdownMath showing Grant Sanderson solving quadratics.</figcaption><p></p>
 </figure>
 </div>
@@ -427,7 +558,7 @@ Now…
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -517,7 +648,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
+<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">Illustration from an implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -526,7 +657,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
+<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">A second illustration from the same implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -628,7 +759,7 @@ After all…
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -718,13 +849,13 @@ Food for thought.
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
   <pubDate>Sun, 31 Jul 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
+  <media:content url="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Solo Chess</title>
-  <link>https://neeldhara.blog/posts/solo-chess/index.html</link>
+  <link>https://www.neeldhara.blog/posts/solo-chess/index.html</link>
   <description><![CDATA[ 
 
 
@@ -737,21 +868,21 @@ Food for thought.
 <p>*when appropriately generalized</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Rules of the Game</figcaption><p></p>
 </figure>
 </div>
 <p>So this is a single-player, peg-solitaire-ish chess variant, where you have to clear board by making a sequence of valid captures, albeit starting with unorthodox — and even unrealistic — positions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.30.34.png" class="img-fluid figure-img" style="width:42.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.30.34.png" class="img-fluid figure-img" style="width:42.0%"></p>
 <p></p><figcaption class="figure-caption">An example position</figcaption><p></p>
 </figure>
 </div>
 <p>To begin with the boards start easy, with a few pieces at a time. Notice, even in the early games, how some positions have just one solution while others may have several.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot%202022-08-30%20at%2008.46.16.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot%202022-08-30%20at%2008.46.16.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">More positions</figcaption><p></p>
 </figure>
 </div>
@@ -771,7 +902,7 @@ Food for thought.
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.47.53.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.47.53.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">1D Boards</figcaption><p></p>
 </figure>
 </div>
@@ -784,13 +915,13 @@ Food for thought.
 <p>No Hamiltonian Path though — this one was from bipartite dominating set 😎</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.58.23.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.58.23.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A reduction from bipartite dominating set - I</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.53.21.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.53.21.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A reduction from bipartite dominating set - II</figcaption><p></p>
 </figure>
 </div>
@@ -808,7 +939,7 @@ Food for thought.
 <p>*at most two.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.23.22.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.23.22.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Lemma for pawns</figcaption><p></p>
 </figure>
 </div>
@@ -818,20 +949,20 @@ Food for thought.
 <p>Knights are special because we don’t have to worry about obstructions. So the game can be described by a more general token game on graphs:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.28.55.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.28.55.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Graph Capture Problem</figcaption><p></p>
 </figure>
 </div>
 <p>We do show that Graph Capture is hard by a reduction, again from bipartite dominating set. This might hint at the hardness for Solo Chess played with knights only, but we are not betting on this yet.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.11.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.11.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Another reduction from bipartite dominating set - I</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.06.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.06.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Another reduction from bipartite dominating set - II</figcaption><p></p>
 </figure>
 </div>
@@ -847,7 +978,7 @@ Food for thought.
 <p>PS. Also if you enjoy chess and algorithms, don’t miss <a href="https://miguel-ambrona.github.io/">Miguel Ambrona’s</a> amazing <a href="https://chasolver.org/">Chess Unwinnability Analyzer</a>, which also appears at FUN 2022!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.56.43.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.56.43.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Chess Unwinnability</figcaption><p></p>
 </figure>
 </div>
@@ -858,13 +989,13 @@ Food for thought.
  ]]></description>
   <category>exposition</category>
   <category>twitterthread</category>
-  <guid>https://neeldhara.blog/posts/solo-chess/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/solo-chess/index.html</guid>
   <pubDate>Wed, 23 Mar 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Eight Self-Sabotaging Behaviors</title>
-  <link>https://neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</link>
+  <link>https://www.neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1041,12 +1172,12 @@ Postpone gratification
  ]]></description>
   <category>funda</category>
   <category>twitterthread</category>
-  <guid>https://neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</guid>
   <pubDate>Mon, 14 Mar 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Kidney Exchanges</title>
-  <link>https://neeldhara.blog/posts/kidney-exchanges/index.html</link>
+  <link>https://www.neeldhara.blog/posts/kidney-exchanges/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1172,12 +1303,12 @@ Postpone gratification
 </ol>
 </section></div> ]]></description>
   <category>exposition</category>
-  <guid>https://neeldhara.blog/posts/kidney-exchanges/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/kidney-exchanges/index.html</guid>
   <pubDate>Thu, 24 Feb 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Women in Mathematics</title>
-  <link>https://neeldhara.blog/posts/women-in-mathematics/index.html</link>
+  <link>https://www.neeldhara.blog/posts/women-in-mathematics/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1235,18 +1366,18 @@ Postpone gratification
  ]]></description>
   <category>books</category>
   <category>list</category>
-  <guid>https://neeldhara.blog/posts/women-in-mathematics/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/women-in-mathematics/index.html</guid>
   <pubDate>Sun, 20 Feb 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>On the Communication Complexity of Equality</title>
-  <link>https://neeldhara.blog/posts/communication-complexity-equality/index.html</link>
+  <link>https://www.neeldhara.blog/posts/communication-complexity-equality/index.html</link>
   <description><![CDATA[ 
 
 
 
 
-<p>These are some quick sketchnotes based on&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=orOJRhlqrvk">this lecture</a>&nbsp;by&nbsp;<a href="https://www.cs.cmu.edu/~odonnell/">Ryan O’Donnell</a>, a part of the&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=prI35GmCon4&amp;list=PLm3J0oaFux3ZYpFLwwrlv_EHH9wtH6pnX">playlist</a>&nbsp;for the awesome&nbsp;<a href="https://www.diderot.one/course/28/">CS Theory Toolkit</a>&nbsp;course. You can walk through the arguments below (or, alternatively, sit back and watch an autoplay version instead — no audio, though).</p>
+<p>These are some quick sketchnotes based on&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=orOJRhlqrvk">this lecture</a>&nbsp;by&nbsp;<a href="https://www.cs.cmu.edu/~odonnell/">Ryan O’Donnell</a>, a part of the&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=prI35GmCon4&amp;list=PLm3J0oaFux3ZYpFLwwrlv_EHH9wtH6pnX">playlist</a>&nbsp;for the awesome&nbsp;<a href="https://www.diderot.one/course/28/">CS Theory Toolkit</a>&nbsp;course. You can walk through the arguments below.</p>
 <iframe src="https://slides.com/neeldhara/deck-85ae95/embed?style=transparent&amp;byline=hidden" width="795" height="420" title="Communication Complexity of Equality" scrolling="no" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
 </iframe>
 <p>I should mention that while the <a href="https://rjlipton.wpcomstaging.com/2009/11/30/the-curious-history-of-the-schwartz-zippel-lemma/">Schwartz-Zippel-DeMillo-Lipton lemma</a> is invoked in the notes below, one could make do with just the fact that over any field <img src="https://latex.codecogs.com/png.latex?F">, any degree <img src="https://latex.codecogs.com/png.latex?n"> polynomial has at most <img src="https://latex.codecogs.com/png.latex?n"> roots, as pointed out by <a href="https://twitter.com/dsivakumar"><span class="citation" data-cites="dsivakumar">@dsivakumar</span></a> — thanks!</p>
@@ -1263,12 +1394,12 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>sketchnotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/communication-complexity-equality/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/communication-complexity-equality/index.html</guid>
   <pubDate>Sun, 03 Oct 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Two approaches to the 15 puzzle</title>
-  <link>https://neeldhara.blog/posts/15-puzzle/index.html</link>
+  <link>https://www.neeldhara.blog/posts/15-puzzle/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1282,14 +1413,14 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>*I do believe the two proofs are essentially the same with slight differences of language.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" class="img-fluid figure-img" style="width:34.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" class="img-fluid figure-img" style="width:34.0%"></p>
 <p></p><figcaption class="figure-caption">An example of the 15 puzzle</figcaption><p></p>
 </figure>
 </div>
 <p>Common to both approaches is the idea of associating a <em>permutation</em> with every state of the puzzle. For the purposes of this discussion, we will think of a permutation simply as a sequence of elements. To turn the grid layout into a sequence, you could, for instance, line up the rows next to each other, in other words, read off the numbers from left-to-right and top-to-bottom:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.45.04_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.45.04_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Associating the puzzle with a permutation</figcaption><p></p>
 </figure>
 </div>
@@ -1326,7 +1457,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>Now, note that the permutation corresponding to our target state is the following:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.04.12_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.04.12_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The permutation corresponding to our target state</figcaption><p></p>
 </figure>
 </div>
@@ -1343,7 +1474,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>The second approach is based on the notion of inversions. This one is based on <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/lecture-3-strong-induction/">the Strong Induction lecture</a> in the MITOCW course on Mathematics for Computer Science. For this proof I’ll actually switch to the <img src="https://latex.codecogs.com/png.latex?3%20%5Ctimes%203"> version of the puzzle because <del>I don’t know how to extend it to the 15-puzzle</del> the case analysis is more manageable for this version:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.30.57_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.30.57_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
 <p></p><figcaption class="figure-caption">A move in the 3 X 3 version of the puzzle</figcaption><p></p>
 </figure>
 </div>
@@ -1356,7 +1487,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>Neither <img src="https://latex.codecogs.com/png.latex?(p,a)"> nor <img src="https://latex.codecogs.com/png.latex?(p,b)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.51.03_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.51.03_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Neither <img src="https://latex.codecogs.com/png.latex?(p,a)"> nor <img src="https://latex.codecogs.com/png.latex?(p,b)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma"></figcaption><p></p>
 </figure>
 </div>
@@ -1366,7 +1497,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>Both <img src="https://latex.codecogs.com/png.latex?(p,a)"> and <img src="https://latex.codecogs.com/png.latex?(p,b)"> are inversions in <img src="https://latex.codecogs.com/png.latex?%5Csigma">.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.09_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.09_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Both <img src="https://latex.codecogs.com/png.latex?(p,a)"> and <img src="https://latex.codecogs.com/png.latex?(p,b)"> are inversions in <img src="https://latex.codecogs.com/png.latex?%5Csigma"></figcaption><p></p>
 </figure>
 </div>
@@ -1376,7 +1507,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is not.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.54.46_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.54.46_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is not</figcaption><p></p>
 </figure>
 </div>
@@ -1386,7 +1517,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is not an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is one.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.39_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.39_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is not an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is one</figcaption><p></p>
 </figure>
 </div>
@@ -1407,13 +1538,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>puzzles</category>
   <category>exposition</category>
-  <guid>https://neeldhara.blog/posts/15-puzzle/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/15-puzzle/index.html</guid>
   <pubDate>Sat, 02 Oct 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" medium="image" type="image/png" height="143" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" medium="image" type="image/png" height="143" width="144"/>
 </item>
 <item>
   <title>Sam I Am</title>
-  <link>https://neeldhara.blog/posts/cp/sam-i-am/index.html</link>
+  <link>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1435,7 +1566,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>So to begin with, we have a grid with some cells identified as locations where Sam’s enemies are positioned, and here’s an example:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A first example of a configuration of Sam’s enemies location</figcaption><p></p>
 </figure>
 </div>
@@ -1443,28 +1574,28 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>We want to <em>hit</em> all of these locations, and what we have at our disposal is giant cannon balls which can destroy all enemies that are positioned on a single row, or a single column. For example, if we were obsessed about only firing along rows, we would need four cannon balls to tackle ’em all, like so:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution were we fire along rows alone</figcaption><p></p>
 </figure>
 </div>
 <p>If Sam was superstitious about shooting along columns only, then he would again need four of these cannon balls to take care of everything:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution were we fire along columns alone</figcaption><p></p>
 </figure>
 </div>
 <p>However, our friend Sam is smart, not superstitious! And if there is anything that he is obsessed about, it is ruthlessly optimal destruction! In other words, he wants to fix everything up, but while using the smallest number of cannon balls possible… and if that means mixing up ranks and files, so be it — notice that you can manage with just three once you combine the use of both axes:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution leveraging a combination of rows and columns</figcaption><p></p>
 </figure>
 </div>
 <p>And for this example in particular, notice that three cannon balls are <em>necessary</em>, because we have at least three enemies positioned at locations that share <em>neither a row nor a column</em>, implying that no row-fire or column-fire can handle more than one of these locations at once:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Demonstrating that three canonballs are in fact necessary</figcaption><p></p>
 </figure>
 </div>
@@ -1495,7 +1626,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The vertices of the auxiliary graph</figcaption><p></p>
 </figure>
 </div>
@@ -1504,13 +1635,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The edges of the auxiliary graph</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A bipartite graph!</figcaption><p></p>
 </figure>
 </div>
@@ -1521,7 +1652,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A vertex cover</figcaption><p></p>
 </figure>
 </div>
@@ -1544,7 +1675,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>So first things first: we are going to setup a flow network around the graph <img src="https://latex.codecogs.com/png.latex?G">, and here’s a partial picture of what it looks like:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The flow graph</figcaption><p></p>
 </figure>
 </div>
@@ -1558,7 +1689,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>That’s it, that’s the flow network <img src="https://latex.codecogs.com/png.latex?(%5Ctilde%7BG%7D,%5Ckappa)"> based on <img src="https://latex.codecogs.com/png.latex?G">, where I’m using <img src="https://latex.codecogs.com/png.latex?%5Ckappa"> to denote the capacity function. Now let’s stare at any valid integral flow in this network — what does it pull out from the middle? 🤔</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A matching hiding in plain sight</figcaption><p></p>
 </figure>
 </div>
@@ -1570,7 +1701,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>Based on these observations, we have that the set of original edges for which <img src="https://latex.codecogs.com/png.latex?f(e)%20=%201"> forms a matching in back in <img src="https://latex.codecogs.com/png.latex?G">, and in particular, if <img src="https://latex.codecogs.com/png.latex?f"> was maximum flow, then this set would correspond to a maximum-sized matching. Now, let’s look at the corresponding mincut by building the residual graph:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Edges in the residual graph that have a residual capacity of zero are not shown. Also, the original edges that were used by <img src="https://latex.codecogs.com/png.latex?f"> have infinite residual capacity but their corresponding back-edges have unit capacity, but this distinction is not emphasised in the picture because it’s not particularly relevant to our discussion.</figcaption><p></p>
 </figure>
 </div>
@@ -1578,7 +1709,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>and considering what vertices are reachable from <img src="https://latex.codecogs.com/png.latex?s">:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> are marked green, while all remaining vertices are marked red.</figcaption><p></p>
 </figure>
 </div>
@@ -1591,14 +1722,14 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>We will refer to these vertices as the <em>misfits —</em> they are highlighted for you in the picture below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The misfits</figcaption><p></p>
 </figure>
 </div>
 <p>Now roll up your sleeves for some magic. Let’s pull up the cut — which we know is in fact a mincut — obtained by considering the set of vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> the residual graph corresponding to the maxflow <img src="https://latex.codecogs.com/png.latex?f">. In pictures, note how we have attracted some column vertices to the <img src="https://latex.codecogs.com/png.latex?s">-side, and pushed away some row vertices to the <img src="https://latex.codecogs.com/png.latex?t">-side:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Some reorganization</figcaption><p></p>
 </figure>
 </div>
@@ -1624,13 +1755,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>cp</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
   <pubDate>Thu, 30 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>New Mac</title>
-  <link>https://neeldhara.blog/posts/new-mac/index.html</link>
+  <link>https://www.neeldhara.blog/posts/new-mac/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1868,12 +1999,12 @@ Omissions
 </section></div> ]]></description>
   <category>apps</category>
   <category>list</category>
-  <guid>https://neeldhara.blog/posts/new-mac/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/new-mac/index.html</guid>
   <pubDate>Wed, 29 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Moving Blocks at CTIS 2021</title>
-  <link>https://neeldhara.blog/posts/moving-blocks-ctis/index.html</link>
+  <link>https://www.neeldhara.blog/posts/moving-blocks-ctis/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1917,12 +2048,12 @@ Omissions
 </section></div> ]]></description>
   <category>puzzles</category>
   <category>exposition</category>
-  <guid>https://neeldhara.blog/posts/moving-blocks-ctis/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/moving-blocks-ctis/index.html</guid>
   <pubDate>Mon, 20 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Envelope Budgeting with Notion</title>
-  <link>https://neeldhara.blog/posts/envelope-budgeting-notion/index.html</link>
+  <link>https://www.neeldhara.blog/posts/envelope-budgeting-notion/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1939,7 +2070,7 @@ Omissions
 <p>That said, onto our own YNAB-esque budgeting template in Notion! We’re on our way to something that looks like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Categories</figcaption><p></p>
 </figure>
 </div>
@@ -1950,7 +2081,7 @@ Omissions
 <p>It may be natural for this table to just have one row for each category. You probably want to have a small number of higher-order categories (e.g: monthly supplies, services, maintenance, health, investments, etc.) and smaller, more specific ones under these broad umbrellas (e.g, services would likely have sub-categories along the lines of internet, phone, electricity, water, etc.). You can do this by setting up a relation property to the table itself, and have it sync two-way, like so:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.29.11_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.29.11_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Screenshot 2021-09-18 at 3.29.11 PM.png</figcaption><p></p>
 </figure>
 </div>
@@ -1960,21 +2091,21 @@ Omissions
 <p>If you want to see just the higher-order categories nicely, you can setup a gallery view with a filter for the main category to be empty, which would look like this (I’ve disabled the preview and added some <a href="https://www.notion.vip/icons/">icons from notion.vip</a>):</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.33.56_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.33.56_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Gallery View</figcaption><p></p>
 </figure>
 </div>
 <p>Next, we want to specify a budget for each of these categories. We can do this directly for the lower-order categories first. Then, we can have the main category budgets calculated automatically by rolling up the budgets of the corresponding child categories and adding up their budget values. To have a clean view of the budget, you could add a formula column that just adds up the values from the direct budgets and the rollup, like so:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.18.35_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.18.35_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Budget View</figcaption><p></p>
 </figure>
 </div>
 <p>You can add two dummy properties with the text <code>Budgeted:</code> and <code>Remaining:</code> for each row, and set them to show along with the budget in the Gallery view so you get something like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.43.12_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.43.12_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Budgeted and Remaining Labels</figcaption><p></p>
 </figure>
 </div>
@@ -1991,7 +2122,7 @@ Omissions
 <p>The most natural property we want for the Accounts database would be a <em>balance</em> column. Instead of maintaining this manually, we will just link this with the transactions database and derive the balance by rolling up the relevant transactions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.49.12_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.49.12_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Accounts View</figcaption><p></p>
 </figure>
 </div>
@@ -2004,7 +2135,7 @@ Omissions
 <p>You might want to optionally add a memo property that lets you add a quick note or explanation for the transaction. However, given that each database entry is also a page, you could also quite flexibly add all the additional information you want to the page corresponding to any transaction. Meanwhile, you might also want to setup relations to other parts of your Notion setup if you find anything relevant — for instance, if you have a books database, or an inventory database, and so on. That said, we’re going to keep it simple here, and here’s an example transaction:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.56.45_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.56.45_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An Example Transaction</figcaption><p></p>
 </figure>
 </div>
@@ -2017,14 +2148,14 @@ Omissions
 <div class="column" style="width:34%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.35.18_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.35.18_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Rollup sum of amounts in accounts</figcaption><p></p>
 </figure>
 </div>
 </div><div class="column" style="width:66%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.37.52_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.37.52_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Gallery view of balances</figcaption><p></p>
 </figure>
 </div>
@@ -2033,7 +2164,7 @@ Omissions
 <p>Now we go back to our categories database and rename the relational column to <strong>transactions</strong> and add a rollup that collects all expenses from the transactions that happened in a particular category, so this is what it looks like:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_5.50.57_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_5.50.57_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Category view</figcaption><p></p>
 </figure>
 </div>
@@ -2042,7 +2173,7 @@ Omissions
 <p>Note that it might feel more natural to subtract expenses, but my expenses are already negative amount transactions, so I just need to bundle it all together.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.30.27_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.30.27_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
 <p></p><figcaption class="figure-caption">Category View</figcaption><p></p>
 </figure>
 </div>
@@ -2051,7 +2182,7 @@ Omissions
 <p>So, it turns out that YNAB would take all this money and automatically categorize it as unassigned, or to be budgeted. We can mimic this by creating a special category called <code>to be assigned</code>, and have all income-type transactions categorized as such. Typically this would be transactions corresponding to a salary, client payments, refunds, credit from interest, and so forth.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.38.19_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.38.19_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The TBA Category</figcaption><p></p>
 </figure>
 </div>
@@ -2059,7 +2190,7 @@ Omissions
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.42.06_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.42.06_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
 <p></p><figcaption class="figure-caption">Accounts View</figcaption><p></p>
 </figure>
 </div>
@@ -2080,14 +2211,14 @@ Omissions
 <p>Meanwhile, here is how we do the budgets for our categories all over again, this time via these virtual transactions:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.57.40_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.57.40_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Budget Overview</figcaption><p></p>
 </figure>
 </div>
 <p>If you go to the <em>to be assigned</em> row in the categories table and look at the rollup value in the expenses column, then you’ll see that it corresponds to either the amount of money that’s still assigned (these are dollars — or in my case, rupees — that don’t have a job yet), or, in case you happen to have overshot the budget, the amount by which you are falling short. In the former situation, the available amount will be a positive number, while in the latter, it’ll be negative.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_7.57.35_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_7.57.35_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">To Be Assigned</figcaption><p></p>
 </figure>
 </div>
@@ -2113,7 +2244,7 @@ Omissions
 <p>will tell you how much you should budget for next month.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.23.47_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.23.47_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">In this example, Ebooks are not a rolling category, so even though I need only 628.95 to meet the original budget, I’ll still set aside the full 750, and the amount that will be available will be 871.05. On the other hand, Phone is a rolling category, and presumably my phone-related expenses in the current month added up to 420, so the recommendation is to budget 420 next time so you’ll still have 500 available total.</figcaption><p></p>
 </figure>
 </div>
@@ -2125,7 +2256,7 @@ Omissions
 <p>Adding transactions is reasonably easy, although admittedly it’s probably not as smooth as a specialized app that might have a Siri command to do this for you or a widget that let’s you quick-add things. However, it’s not too bad, especially if you enter it right away. You could also potentially automate this via API integrations, or enter your transactions in your regular app and export them as a CSV and import them into the Notion system once every so often.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.37.56_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.37.56_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
 <p></p><figcaption class="figure-caption">Transaction Table</figcaption><p></p>
 </figure>
 </div>
@@ -2146,7 +2277,7 @@ Omissions
 <p>Most of the action here is happening in the Transactions database. You could create linked copies of this database anywhere you like and filter things out to see what you want. For instance, if you want to keep tabs on the transactions in specific accounts, you could have this on your account pages:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.47.47_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.47.47_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Account Overview</figcaption><p></p>
 </figure>
 </div>
@@ -2159,7 +2290,7 @@ Omissions
 <p>This is possible to do for the current month though:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.08.56_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.08.56_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Monthly Overview</figcaption><p></p>
 </figure>
 </div>
@@ -2175,13 +2306,13 @@ Omissions
   <category>notion</category>
   <category>workflows</category>
   <category>tutorial</category>
-  <guid>https://neeldhara.blog/posts/envelope-budgeting-notion/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/envelope-budgeting-notion/index.html</guid>
   <pubDate>Fri, 17 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Actually Building a Website with Notion</title>
-  <link>https://neeldhara.blog/posts/building-websites-with-notion/index.html</link>
+  <link>https://www.neeldhara.blog/posts/building-websites-with-notion/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2217,8 +2348,8 @@ Doesn't look like it's for non-geeks like me 😄 or you may prove otherwise. Ho
 <ol type="1">
 <li>By default, both Super and Potion will give you a test subdomain to work with. Eventually, you might want the website to be available from your own domain. This is just a matter of adding a couple of A-records and typically can be done from wherever you registered the domain:</li>
 </ol>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" class="img-fluid"></p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.48.49_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.48.49_AM.png" class="img-fluid"></p>
 <ol start="2" type="1">
 <li>You might want to add custom styles to make the website render uniquely — so you move beyond the standard look-and-feel of a Notion page if you so wish. You could do something on your own here, but the simplest thing is to just borrow the styling from one of the existing templates and tweak it if you want.</li>
 <li>Insert code for Google Analytics (or similar). As an aside, if you are looking for analytics that is user-friendly <em>and</em> privacy-conscious, I’d recommend <a href="https://usefathom.com">Fathom</a>.</li>
@@ -2254,16 +2385,16 @@ Here's a little run through by <a href="https://twitter.com/robhope?ref_src=twsr
 <p>I started with the <a href="https://hq.super.site">Super template HQ</a>. It looks amazing and is apparently free to use — at least at the time of this writing 😀</p>
 <p>Duplicate this template into Notion. If you like, you can duplicate it twice — one, a copy that you actually work on, and the other could be a copy that you don’t edit but just keep handy in case you need to go back to the original for reference.</p>
 <p>The first thing I did was to get rid of most of the content, and just retained this section:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.55_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.55_AM.png" class="img-fluid"></p>
 <p>which, incidentally, will render like this once connected to Super:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.26_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.26_AM.png" class="img-fluid"></p>
 <p>Now the next step is to replace the generic content with yours:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.03.16_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.03.16_AM.png" class="img-fluid"></p>
 <p>Since I’m just starting out, I have added the three courses that I’m teaching this term and they all show up. Eventually, these courses will be filtered out based on the current timing, so that only the current ones show here and the rest get pushed to an archive — which I’m yet to build. But the filter would look something like this in Notion:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.05.42_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.05.42_AM.png" class="img-fluid"></p>
 <p>And for each of those entries, I’d go and setup the course home pages with the content that I have in my typical course homepages. The nice thing about Notion is the wide array of content types that lets you format things nicely. Here are a couple of sections from within Notion:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.32_AM.png" class="img-fluid"></p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.29.01_PM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.32_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.29.01_PM.png" class="img-fluid"></p>
 <p>One thing worth pointing out for this particular setup — for each course, the class plan is just a Notion database, where the columns are:</p>
 <ol type="1">
 <li>Name (text)</li>
@@ -2273,19 +2404,19 @@ Here's a little run through by <a href="https://twitter.com/robhope?ref_src=twsr
 </ol>
 <p>and the rows either correspond to an overview of a whole week or just one individual lecture, tagged with the week that it happened in.</p>
 <p>On the course’s homepage, I display this database set to a Gallery view, and filtered to only those entries where the Module option is <em>unchecked</em>. These are intended to be overview pages. This is what it looks like in Notion:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.41_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.41_AM.png" class="img-fluid"></p>
 <p>and this is what it will end up looking like on the website, once you’ve gotten to the end of Step 3:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.18.07_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.18.07_AM.png" class="img-fluid"></p>
 <p>Further, overview page simply displays the same database again, this time in a list view filtered by the appropriate week:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.11.43_AM.png" class="img-fluid" style="width:77.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.11.43_AM.png" class="img-fluid" style="width:77.0%"></p>
 <p>Check out the views in Notion and the rendered version side-by-side:</p>
 <div class="columns">
 <div class="column" style="width:45%;">
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.08.34_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.08.34_AM.png" class="img-fluid"></p>
 </div><div class="column" style="width:10%;">
 
 </div><div class="column" style="width:45%;">
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.19.08_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.19.08_AM.png" class="img-fluid"></p>
 </div>
 </div>
 <p>You might wonder about the blockquote in the Notion view right at the top of the page. That’s a feature of the HQ template — anything that goes into that first blockquote renders as page navigation on top. I think this now a bit obsolete with Super’s new features on navigation bars, but I still find it handy and use it on most pages. 👍</p>
@@ -2295,13 +2426,13 @@ Here's a little run through by <a href="https://twitter.com/robhope?ref_src=twsr
 <p>2️⃣ Enable sharing to the web from within Notion — this will generate a link for you.</p>
 </aside>
 <p>This is very easy to do, it’s just a toggle on the top-right corner of your Notion app:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.22.38_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.22.38_AM.png" class="img-fluid"></p>
 <p>Now for the final step to have everything come together:</p>
 <aside>
 <p>3️⃣ Copy this link into Super or Potion.</p>
 </aside>
 <p>This is again quite straightforward, head to Super and just share your page’s public URL, give it a name, and optionally set it up to sync with your domain if you have one.</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.26.06_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.26.06_AM.png" class="img-fluid"></p>
 <p>Given that we’re using a particular Super template, you would also need to remember to insert the CSS to make the site look as advertised above 😅</p>
 <p>So remember to add this on the custom code section of your Super dashboard:</p>
 <p><code>&lt;link rel="stylesheet" href="[https://sites.super.so/hq/style.css](https://sites.super.so/hq/style.css)"&gt;</code></p>
@@ -2334,14 +2465,14 @@ Incidentally, if you prefer watching a video tutorial, Potion has you covered al
 </div>
 </div>
 <p>So, for step 1, which is to get our content in Notion, I start with a blank slate and populate it with some content:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.00.36_PM.png" class="img-fluid"></p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.30.40_PM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.00.36_PM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.30.40_PM.png" class="img-fluid"></p>
 <p>For Step 2, I simply make this page public, and you can see the <a href="https://www.notion.so/Manim-Examples-4e4dd0c1071e4a549d90be74a84f3cce">Notion version here</a>.</p>
 <p>For Step 3, I add this page to Potion and just follow <a href="https://www.potion.so/cards-portfolio">step 4 on this page</a> to set this up with a lovely template made by Dr.&nbsp;Gil Pradana (@<a href="https://twitter.com/gildy">gildy</a>). This just amounts to copy-pasting some CSS code into the <em>Snippet Injection</em> section of your Potion dashboard. This template treats horizontal line breaks as breakpoints to create cards, and the headings translate into the highlight boxes that you can see from this preview.</p>
 <p><a href="https://twitter.com/gildy/status/1403680404092035075?s=20">https://twitter.com/gildy/status/1403680404092035075?s=20</a></p>
-<p>After connecting my domain, here’s what the website looks like this<img src="https://neeldhara.blog/posts/building-websites-with-notion/FireShot_Capture_002_-_Manim_Examples_-_manimexamples.com.png" class="img-fluid"></p>
+<p>After connecting my domain, here’s what the website looks like this<img src="https://www.neeldhara.blog/posts/building-websites-with-notion/FireShot_Capture_002_-_Manim_Examples_-_manimexamples.com.png" class="img-fluid"></p>
 <p>And that’s basically it! You have a fully functional page now. 🎉 Changes you make in Notion will reflect <em>instantaneously</em> on Potion!</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/ScreenFlow.gif" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/ScreenFlow.gif" class="img-fluid"></p>
 <p>You might wonder if there is a way of setting things up so that new tweets from the Manim community handle show up automatically on this website. In principle, this should be possible with a little help from tools like automate.io, Zapier, or Integromat — they can watch for new tweets and append them to the page you are working on, although I’m not sure how to set it up so that they respect the two-column layout that I have here. I figure tweets could also be added to a database and shown with a gallery view instead, but the gallery previews will typically not pick up embedded content, so you might have to go via an intermediate service like <a href="https://tweetpik.com/">Tweetpik</a> or <a href="https://pikaso.me/">Pikaso</a> instead so you have screenshots for display.</p>
 <p>So this was Potion - you can probably see the many ways in which Potion and Super are similar to setup. By the way, the templates on these platforms are <em>not</em> mutually compatible — so watch out for the fact that they will not automatically work on the other platform if you are looking to migrate. As far as I can see, neither service has an importer for the other built yet.</p>
 <p>That said, I hope you have fun making your website with Notion with whatever platform you choose to use! 🎉</p>
@@ -2353,13 +2484,13 @@ Incidentally, if you prefer watching a video tutorial, Potion has you covered al
   <category>notion</category>
   <category>workflows</category>
   <category>websites</category>
-  <guid>https://neeldhara.blog/posts/building-websites-with-notion/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/building-websites-with-notion/index.html</guid>
   <pubDate>Sat, 11 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" medium="image" type="image/png" height="78" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 <item>
   <title>Notion-powered websites</title>
-  <link>https://neeldhara.blog/posts/notion-powered-websites/index.html</link>
+  <link>https://www.neeldhara.blog/posts/notion-powered-websites/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2393,7 +2524,7 @@ Yeah, it feels like we are now at a point where it’s easier to make complex we
 <div class="page-columns page-full"><p>There are a few different options out there if you are interested in this as well, and here’s a handwritten TLDR-summary<sup>1</sup> if you find the rest of this little discussion too long:</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;TIL that this style of summarization is also called a <a href="https://en.wikipedia.org/wiki/Decision-matrix_method">Pugh chart</a>, thanks to <a href="https://www.youtube.com/channel/UC1S5O9BP9_46GS5t1t2Uksg/about">Justin Lai.</a></p></li></div></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/NotionWebsiteOptions.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/NotionWebsiteOptions.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Notion Website Options Compared</figcaption><p></p>
 </figure>
 </div>
@@ -2402,7 +2533,7 @@ Yeah, it feels like we are now at a point where it’s easier to make complex we
 <section id="just-use-notion" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="just-use-notion">Just Use Notion</h3>
 <p>The official <a href="https://www.notion.so/guides/build-a-website-with-notion-in-seconds-no-coding-required">Notion documentation</a> shows us how to build nice websites with Notion:</p>
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_2.57.18_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_2.57.18_AM.png" class="img-fluid"></p>
 <p>This is a great option for putting together something quick and temporary or for testing something out. It can be free (if you are on the Notion free plan) and/or will cost you nothing <em>on top of</em> what you might be paying for already if you are paying Notion user.</p>
 <blockquote class="twitter-tweet blockquote">
 <p lang="en" dir="ltr">
@@ -2418,7 +2549,7 @@ Yeah, it feels like we are now at a point where it’s easier to make complex we
 <section id="fruition-and-cloudflare-workers" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="fruition-and-cloudflare-workers">Fruition and Cloudflare Workers</h3>
 <p>A popular way to get your domain to point to your Notion setup and customize the look and feel of the final setup just a little bit is via Fruition:</p>
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_2.55.59_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_2.55.59_AM.png" class="img-fluid"></p>
 <p>As mentioned on the website already, one downside is the setup time — but I don’t think this is a very serious drawback at all, it’s a one-time exercise and not very difficult at all given the very clear instructions given on the website. However, I think there is a more significant concern with this option, which was highlighted by @<a href="https://twitter.com/bensomething">bensomething</a> in this Tweet thread:</p>
 <blockquote class="twitter-tweet blockquote">
 <p lang="en" dir="ltr">
@@ -2443,9 +2574,9 @@ Anything that converts your Notion pages to static versions is fine! It definite
 <section id="nextjs-notion-starter-kit-and-react-notion-x" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="nextjs-notion-starter-kit-and-react-notion-x">nextjs-notion-starter-kit and react-notion-x</h3>
 <p>The <code>nextjs-notion-starterkit</code> is a NextJS template built by @<a href="https://twitter.com/transitive_bs">transitive_bs</a>, which is <a href="https://transitivebullsh.it">in active use here</a>:</p>
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.11.05_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.11.05_AM.png" class="img-fluid"></p>
 <p>You can check out <a href="https://github.com/transitive-bullshit/nextjs-notion-starter-kit">the repository here</a>. If you are feeling even braver, you might even want to explore what powers this under the hood, which is the <code>react-notion-x</code> repository <a href="https://github.com/NotionX/react-notion-x">here</a>:</p>
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.09.44_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.09.44_AM.png" class="img-fluid"></p>
 <aside>
 💡 Using <code>nextjs-notion-starterkit</code> is definitely a whole lot safer than Fruition, but it’s also clearly a whole lot more intensive in terms of setup! This option is great in terms of being free and highly customizable, but is best-suited to those who are already familiar with Next.js and who generally know what they are doing. So if the readme pages on those repositories did not make much sense, it’s probably best to either get some help on the initial setup or move on to more user-friendly, truly <em>no-code</em> options. That’s what we have up next!
 </aside>
@@ -2456,7 +2587,7 @@ Anything that converts your Notion pages to static versions is fine! It definite
 <section id="super" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="super">Super</h3>
 <p><a href="https://super.so">Super</a> (on <a href="https://www.producthunt.com/posts/super-2-0">ProductHunt</a>), built by @<a href="https://twitter.com/traf">Traf</a> and @<a href="https://twitter.com/TrillCyborg">TrillCyborg</a> (Jason Werner) appears to be one of the leading options in terms of a no-code way of porting a Notion page to a website. This will set you back $12/site/month; but you get a substantial feature set in return:</p>
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.47.15_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.47.15_AM.png" class="img-fluid"></p>
 <p>I should point out that some Super templates are premium and will cost separately, but there are some really nice free ones that you can run with right away. <a href="https://hq.super.site">One that I really liked</a> happens to be free and is in use on the <a href="https://neeldhara.courses">website I have for my courses</a>. I had a completely painless setup experience and very responsive support on the minor things that I did get stuck on (h/t: @<a href="https://twitter.com/camincoll">camincoll</a>).</p>
 <p>Sites made with Super are performant, SEO-friendly, and fairly customizable. There are only two minor snags I ran into with Super: one is that updates on Notion take some time to reflect on the website (typically a minute or so — this is no big deal in general, but it’s just not real-time, and can feel slow while in testing and development). The other is that their terms of service seem a bit unusually restrictive — for instance, see the discussion initiated by @<a href="https://twitter.com/kulikalov">kulikalov</a> here:</p>
 <blockquote class="twitter-tweet blockquote">
@@ -2474,7 +2605,7 @@ That's a shaky foundation to work with <a href="https://twitter.com/super_?ref_s
 <section id="potion" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="potion">Potion</h3>
 <p>Finally, we have <a href="https://www.potion.so">Potion</a> (on <a href="https://www.producthunt.com/posts/potion-2">ProductHunt</a>), made by @<a href="https://twitter.com/noahwbragg">noahwbragg</a> (Noah Bragg), which is yet another way of getting a static site out of your Notion content in a fairly straightforward way:</p>
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_4.09.58_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_4.09.58_AM.png" class="img-fluid"></p>
 <aside>
 💡 While oversimplified, it is tempting to summarize Potion’s offering as “Super, but cheaper”. See the next section for a more detailed discussion of differences and similarities between the two. Overall, Potion has a very similar feature set and is slightly more affordable in comparison — definitely worth checking out the same way that Super is.
 </aside>
@@ -2494,9 +2625,9 @@ That's a shaky foundation to work with <a href="https://twitter.com/super_?ref_s
 <li><p>Super has a community forum and an arguably restrictive ToS. Potion has neither at the time of this writing.</p></li>
 <li><p>Potion’s dashboard has a live preview editor which lets you make simple changes to the CSS and preview them real-time — this may not be something you use often if you have made sophisticated customizations, but for quick edits to the default templates, it’s very handy:</p></li>
 </ol>
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_10.49.30_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_10.49.30_AM.png" class="img-fluid"></p>
 <p>Super has a great dashboard too, there’s a page-by-page breakup on the sidebar and a live preview of the site to the right, which shows up even when the individual pages are password-protected (by design):</p>
-<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_10.48.54_AM.png" class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_10.48.54_AM.png" class="img-fluid"></p>
 <ol start="6" type="1">
 <li><p>In terms of custom code, a small difference is that Super allows you to insert your own content inside <em>both</em> the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags while Potion is restricted to just the <code>&lt;head&gt;</code> tag. That said, additional possibilities for custom code injection are on Potion’s roadmap.</p></li>
 <li><p>There are differences of implementation under the hood, but I am not aware of the exact details here. Super uses the Notion API and a Content Delivery Network (CDN) - this explains why changes take 1-2 mins to flow through from Notion in Super automatically, but what it does get you is reliable performance at scale. Potion uses Vercel for hosting and generates static sites that feel fast and robust, and also uses a CDN.</p></li>
@@ -2557,13 +2688,13 @@ Note
   <category>notion</category>
   <category>workflows</category>
   <category>websites</category>
-  <guid>https://neeldhara.blog/posts/notion-powered-websites/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/notion-powered-websites/index.html</guid>
   <pubDate>Fri, 10 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/notion-powered-websites/NotionWebsiteOptions.png" medium="image" type="image/png" height="100" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/notion-powered-websites/NotionWebsiteOptions.png" medium="image" type="image/png" height="100" width="144"/>
 </item>
 <item>
   <title>Turn the LED on</title>
-  <link>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2593,12 +2724,12 @@ Each switch has a 50/50 chance of being ON or OFF.<br><br>The switches are all i
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>4 Person Gift Exchange</title>
-  <link>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2645,12 +2776,12 @@ Here's a beautiful probability puzzle inspired by Professor Henk Tijms (<a href=
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Conway’s Checkers</title>
-  <link>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2704,12 +2835,12 @@ Spoilers
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
   <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Coin Tossing</title>
-  <link>https://neeldhara.blog/posts/tgif/coin-tossing/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2750,12 +2881,12 @@ Solution
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/coin-tossing/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</guid>
   <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Estimating Pi</title>
-  <link>https://neeldhara.blog/posts/tgif/estimating-pi/index.html</link>
+  <link>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2801,52 +2932,7 @@ Folks, here’s one way to reason <em>why</em> this probability should be (5 - p
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/estimating-pi/index.html</guid>
-  <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>Coming to Agreement</title>
-  <link>https://neeldhara.blog/posts/tgif/coming-to-agreement/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Puzzle by Joel David Hamkins.</p>
-</div>
-</div>
-</div>
-<p>This is apparently a logic puzzle that comes up in admission interviews at Oxford:</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-An Oxford University admissions interview question. You are a contestant on a game show, known for having perfectly logical contestants. There is another contestant, whom you've never met, but whom you can count on to be perfectly logical, just as logical as you are.
-</p>
-— Joel David Hamkins (<span class="citation" data-cites="JDHamkins">@JDHamkins</span>) <a href="https://twitter.com/JDHamkins/status/1475088789701726208?ref_src=twsrc%5Etfw">December 26, 2021</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>This puzzle has since been featured on <a href="https://www.theguardian.com/science/2022/feb/21/can-you-solve-it-an-oxford-university-admissions-question">the Guardian</a>. The full setting is reproduced below <a href="http://jdh.hamkins.org/coming-to-agreement-logic-puzzle/">from here</a>. The source also has extended discussions about possible solutions — you have been warned!</p>
-<p>You are a contestant on a game show, known for having perfectly logical contestants. There is another contestant, whom you’ve never met, but whom you can count on to be perfectly logical, just as logical as you are.</p>
-<p>The game is cooperative, so either you will both win or both lose, together. Imagine the stakes are very high—perhaps life and death. You and your partner are separated from one another, in different rooms. The game proceeds in turns—round 1, round 2, round 3, as many as desired to implement your strategy.</p>
-<p>On each round, each contestant may choose either to end the game and announce a color (any color) to the game host or to send a message (any kind of message) to their partner contestant, to be received before the next round. Messages are sent simultaneously, crossing in transit.</p>
-<p>You win the game if on some round both players opt to end the game and announce a color to the host and furthermore they do so with exactly the same color. That is, you win if you both halt the game on the same round with the same color. lf only one player announces a color, or if both do but the colors don’t match, then the game is over, but you have lost.</p>
-<p>Round 1 is about to begin. What do you do?</p>
-<p>Variations:</p>
-<p><strong>Alternation variation.</strong> In this variation of the puzzle, the contestants alternate in their right to send messages—only contestant 1 can send on round 1, then contestant 2 on round 2 and so forth, but still they aim to announce the same color on a round. You are contestant 1—what do you do?</p>
-<p><strong>Collision variation.</strong> In this variation, players may opt on each round either to end the game and announce a color, to send a message, or to do nothing. But the new thing is that if both players opt to send a message, then the messages collide and are not delivered, although an error message is generated (so the players know what happened). What do you do?</p>
-<p><strong>Pigeon variation.</strong> This version is like the alternating turn variation, except that now the contestants are separated at much greater distance, and the messages are sent by carrier pigeon, so neither can be sure that the messages actually arrive. You are contestant 1—what do you do?</p>
-
-
-
- ]]></description>
-  <category>puzzles</category>
-  <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/coming-to-agreement/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</guid>
   <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 </channel>
