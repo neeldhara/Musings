@@ -27,12 +27,16 @@
     "listing": "/dsanotes.html",
     "items": [
       "/posts/dsanotes/introduction/index.html",
-      "/posts/dsanotes/graphs/index.html"
+      "/posts/dsanotes/graphs/index.html",
+      "/posts/dsanotes/eulertours/index.html",
+      "/posts/dsanotes/debruijn/index.html"
     ]
   },
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/dsanotes/debruijn/index.html",
+      "/posts/dsanotes/eulertours/index.html",
       "/posts/on-teaching/index.html",
       "/posts/dsanotes/graphs/index.html",
       "/posts/dsanotes/introduction/index.html",
@@ -70,6 +74,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/dsanotes/debruijn/index.html",
+      "/posts/dsanotes/eulertours/index.html",
       "/posts/on-teaching/index.html",
       "/posts/dsanotes/graphs/index.html",
       "/posts/dsanotes/introduction/index.html",

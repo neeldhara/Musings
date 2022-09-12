@@ -6,14 +6,410 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://www.neeldhara.blog/index.html</link>
-<atom:link href="https://www.neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://neeldhara.blog/index.html</link>
+<atom:link href="https://neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
-<lastBuildDate>Sun, 04 Sep 2022 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 10 Sep 2022 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>On Cards and Graphs</title>
+  <link>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="of-cards-and-graphs-de-bruijn-seuqences" class="level1 page-columns page-full">
+<h1>Of Cards and Graphs: de Bruijn seuqences</h1>
+<p><a href="https://slides.com/neeldhara/dsa1-w04#/1/2">Link to slides</a></p>
+<p><a href="https://twitter.com/neeldhara/status/1569407947100266499">Link to a Tweet thread summarizing these notes</a></p>
+<p>Before we talk about exploring graphs, we will take a small detour to throw in some motivation. In our discussion here we will establish that knowing how to go around a graph can meaningfully help us pull off a spectacular card trick. I trust that this should leave us sufficiently interested in finding out how we can actually find those Euler tours, which is our next stop.</p>
+<section id="the-trick" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="the-trick">The Trick</h2>
+<ul>
+<li><p>A deck with 32 cards is given to someone in the audience.</p></li>
+<li><p>Any number of <em>cut shuffles</em><sup>1</sup> are done.</p></li>
+<li><p>Once the audience is satisfied that the deck is suitably shuffled, it is passed to someone, say P, from where the following happens:</p>
+<pre class="plaintext"><code>P takes the top card and passes the deck to the next person (Q).
+Q takes the top card and passes the deck to the next person (R).
+R takes the top card and passes the deck to the next person (S).
+S takes the top card and passes the deck to the next person (T).</code></pre></li>
+<li><p>All five people look at their cards without revealing them to anyone else.</p></li>
+<li><p>Those who got red cards are requested to stand up.</p></li>
+<li><p>All cards are identified.</p></li>
+</ul>
+<div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;A cut shuffle involves taking some number of cards from the top of the deck, placing them on the table, and then placing the rest of the deck on top of them. So if the stack has cards 1,2,3,4,5 from bottom to top, then it will look like 4,5,1,2,3 after a cut shuffle with two cards shaved off the top.</p></li></div></section>
+<section id="behind-the-scenes" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="behind-the-scenes">Behind the scenes</h2>
+<p>Interpreting reds as 1’s and blacks as 0’s, any sequence of five cards is a signal: a bitstring of length 5. This is — at least in principle — enough to ID one of the cards in a 32-card deck, for sure. But to ID the next five cards too? Wow!</p>
+<p>So to begin with, let’s just focus on ID-ing card. The deck, of course, is setup: the cards appear in a specific order, one whose relevant properties are unperturbed by cut shuffles. Note that we have no control over how many times the deck is cut, so the top card could be effectively anywhere in from the original sequence. So what we need is a sequence of 32 bits:</p>
+<p><img src="https://latex.codecogs.com/png.latex?b_0,%20b_1,%20%5Cldots,%20b_i,%20%5Cldots,%20b_%7B31%7D"></p>
+<div class="page-columns page-full"><p>with the following property. For any <img src="https://latex.codecogs.com/png.latex?i%20%5Cin%20%5C%7B0,%5Cldots,31%5C%7D">, if <img src="https://latex.codecogs.com/png.latex?B_i"> denotes<sup>2</sup> the substring:</p><div class="no-row-height column-margin column-container"><li id="fn2"><p><sup>2</sup>&nbsp;subscripts are mod 32</p></li></div></div>
+<p><img src="https://latex.codecogs.com/png.latex?b_%7Bi%7D,%20b_%7Bi+1%7D,%20b_%7Bi+2%7D,%20b_%7Bi+3%7D,%20b_%7Bi+4%7D,"></p>
+<p>then we would very much like that <img src="https://latex.codecogs.com/png.latex?b_i%20%5Cneq%20b_j"> whenever <img src="https://latex.codecogs.com/png.latex?i%20%5Cneq%20j">. This ensures that no matter how many times the deck is cut, when the members of the audience with the red cards stand up, we have a clean and unambiguous signal, which we can pre-relate by our powers of rote memory to the card at position <img src="https://latex.codecogs.com/png.latex?i"> in said sequence. Because subscripts are read mod 32, note that this is really all we need. For example, here’s a seuquence that does happen to have the property we are after:</p>
+<blockquote class="blockquote">
+<p>00000100101100111110001101110101</p>
+</blockquote>
+<p>The diagram below shows why cut shuffles still result in sequences where the signal from any location continues to be unique, and in some sense, <em>invariant</em> across shuffles: suppose a position <img src="https://latex.codecogs.com/png.latex?x"> corresponds to a certain signal <img src="https://latex.codecogs.com/png.latex?S_x"> before a cut shuffle, then after a cut shuffle, if position <img src="https://latex.codecogs.com/png.latex?x"> shifts to <img src="https://latex.codecogs.com/png.latex?y">, then <img src="https://latex.codecogs.com/png.latex?S_y%20=%20S_x">. Note that this would <em>not</em> be true if someone, say, enthusiastically riffle shuffled the pack — so do make sure to prevent this at all cost.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/dsanotes/debruijn/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Examples of cut shuffles and why they don’t affect the addressing technique. The first column shows the original sequence, the second shows the proposed cut, and the last shows the final sequence after the cut shuffle is excecuted.</figcaption><p></p>
+</figure>
+</div>
+<p>This property makes the sequence a robust device for card discovery: we simply associate a specific card with every 5-length bit string, and position the card corresponding to <img src="https://latex.codecogs.com/png.latex?b_i"> at location <img src="https://latex.codecogs.com/png.latex?i">. By knowing the signature corresponding to the top five cards after any number of cut shuffles, you know where this signal appeared in the original sequence, and by turdging further along in the sequence, you also know the signals for the next five cards.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+You perhaps see now how you can perform the entire trick:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>memorize the sequence <code>00000100101100111110001101110101</code></li>
+<li>associate† a card with each bit-string of length 5</li>
+<li>memorize said association</li>
+<li>place cards as dictated by the sequence and given by the association</li>
+<li>profit and/or impress</li>
+</ul>
+<p>† Note that the association has to respect the semantics of the bitstring: so the <strong>1-positions get red cards and the 0-positions get black</strong> (or the other way round if you please, so long as you are consistent in your conventions throughout).</p>
+</div>
+</div>
+<p>Notice that once you can read off one card, having committed the seuqence and the association to memory, you can also read off any of the cards after that. This does seem like a lot of memorizing, but it’s worth it for the impact.</p>
+</section>
+<section id="mnemonic-improvements-for-an-actual-performance" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="mnemonic-improvements-for-an-actual-performance">Mnemonic improvements for an actual performance</h2>
+<p>If you want to make your life easier, you could use an association that is easy to remember:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/dsanotes/debruijn/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A useful dictionary between 5-bit strings and cards from a standard deck of cards</figcaption><p></p>
+</figure>
+</div>
+<p>So getting to the first card is quite straightforward already:</p>
+<ul>
+<li>If the first person is seated, they have a black card, and otherwise they have a red card. But this is immediate anyway from the convention, so not particularly impressive to point out.
+<ul>
+<li>When the card is black: if the second person is seated, it is a ♣, otherwise a ♠.</li>
+<li>When the card is red: if the second person is seated, it is a ⬥, otherwise a ♥.</li>
+</ul></li>
+<li>Finally, the value of the card is just translating the last three bits to their value in decimal (remembering to map all zeroes to eight).</li>
+</ul>
+<p>If you want to really impress with the next four, you could just memorize the whole sequence, but to avoid visible murmuring, you can also exploit a handy feature of this particular sequence that helps you navigate it with only a little bit of mental math.</p>
+<div class="page-columns page-full"><p>It turns out that if you know <img src="https://latex.codecogs.com/png.latex?b_i"> (which you do based on who stands up), you can obtain the next bit (i.e, the sixth bit relative to the start of <img src="https://latex.codecogs.com/png.latex?b_i">) in the sequence by simply adding the first and third bits from <img src="https://latex.codecogs.com/png.latex?b_i">. In other words, the sequence has the following nice pattern: standing anywhere, you can obtain the next bit by taking the sum (mod 2) of the bits that are three and five bits behind wherever you are standing. Go on, verify this for yourself!<sup>3</sup></p><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;If you do, you’ll find this is not quite true at the fourth and fifth positions. The claimactually works if you drop any one of the leading <code>0</code>’s, e.g.&nbsp;the first one. This gives you a sequence of 31 cards to work with which have this nice pattern. If you want to be a purist, though, you can commit this exception to memory.</p></li></div></div>
+</section>
+<section id="de-bruijn-sequences" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="de-bruijn-sequences">de Bruijn Sequences</h2>
+<p>So how does this lovely self-working card-trick fit, even if as a detour, into our discussion about graphs?</p>
+<p>Let’s step back for a bit. We pulled out the driver of this whole setup, the sequence:</p>
+<blockquote class="blockquote">
+<p>00000100101100111110001101110101</p>
+</blockquote>
+<div class="page-columns page-full"><p>much like a real magician pulls out a real rabbit from a real hat. You very likely raised an eyebrow and wondered about where this sequence came from. It’s a useful exercise to experiment with coming up with one, even if by means of ad-hoc scribbling. As a warmup, it’s worth trying to find one of length eight, where every 3-bit string occurs exactly once<sup>4</sup>.</p><div class="no-row-height column-margin column-container"><li id="fn4"><p><sup>4</sup>&nbsp;Apparently the Sanskrit sutra <em>yamätärajabhänasalagam</em> (and variants thereof), which describes all possible triplets of short and long syllables, is considered evidence that such sequences were known in India from a while ago. Sanskrit meters are based on the system of short (laghu) and long (guru) syllables, and you might count this as a hint for the exercise here. If you are curious about the history of the sutra, look no further than <a href="https://web.archive.org/web/20141029120230/http://202.41.82.144/rawdataupload/upload/insa/INSA_2/200059d2_123.pdf">this article</a>.</p></li></div></div>
+<p>It turns out that such sequences are in fact <a href="https://en.wikipedia.org/wiki/De_Bruijn_sequence">rather well-studied</a>, and one way of generating them involves taking a walk in an appropriate graph! In particular, let us go back to our original task of generating a 32-bit sequence like the one shown above, except that we are on our own this time. Consider a graph where we have:</p>
+<ul>
+<li>a vertex for every bit string of length <em>four</em>, and let us say that the bit string associated with a vertex <img src="https://latex.codecogs.com/png.latex?u"> is denoted by <img src="https://latex.codecogs.com/png.latex?b_u">; and</li>
+<li>an edge from <img src="https://latex.codecogs.com/png.latex?u"> to <img src="https://latex.codecogs.com/png.latex?v"> if the corresponding bit strings are all but the same: i.e, the 3-length suffix of <img src="https://latex.codecogs.com/png.latex?u"> is the same as the <img src="https://latex.codecogs.com/png.latex?3">-length prefix of <img src="https://latex.codecogs.com/png.latex?v">.</li>
+</ul>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+If you want to take a look at the graph, it’s right here…
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>…although a bit of a monstrosity!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/dsanotes/debruijn/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p></p><figcaption class="figure-caption">The de Bruijn graph of order 4</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>The following properties are worth thinking about:</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+the total number of vertices is _____
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>One for every bit string of length four, so sixteen.</p>
+</div>
+</div>
+</div>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+every vertex has indegree and outdegree _____
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Fix a vertex <img src="https://latex.codecogs.com/png.latex?v"> and let <img src="https://latex.codecogs.com/png.latex?s_v"> denote the last three bits of <img src="https://latex.codecogs.com/png.latex?v">. The only outgoing edges are to vertices that represent the bit strings <img src="https://latex.codecogs.com/png.latex?s_v"><code>0</code> and <img src="https://latex.codecogs.com/png.latex?s_v"><code>1</code>.</p>
+<p>Fix a vertex <img src="https://latex.codecogs.com/png.latex?v"> and let <img src="https://latex.codecogs.com/png.latex?p_v"> denote the first three bits of <img src="https://latex.codecogs.com/png.latex?v">. The only incoming edges are from vertices that represent the bit strings <code>0</code><img src="https://latex.codecogs.com/png.latex?p_v"> and <code>1</code><img src="https://latex.codecogs.com/png.latex?p_v">.</p>
+</div>
+</div>
+</div>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+the total number of edges is _____
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There are sixteen vertices and each of them has outdegree two, so the total number of edges is <img src="https://latex.codecogs.com/png.latex?32">. Does that ring a bell yet?</p>
+</div>
+</div>
+</div>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+there are exactly _____ self-loops
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Consider a vertex <img src="https://latex.codecogs.com/png.latex?v">. Let the bit string associated with <img src="https://latex.codecogs.com/png.latex?v"> be denoted by <code>WXYZ</code>. For <img src="https://latex.codecogs.com/png.latex?v"> to be adjacent to itself, we will need <code>XYZ = WXY</code>, which implies that <code>W = X</code>, <code>X = Y</code>, <code>Y = Z</code>.</p>
+<p>So if <code>W = 1</code>, then we have that <code>WXYZ = 1111</code> and if <code>W = 0</code> then we have <code>WXYZ = 0000</code>.</p>
+<p>These are the only two possible scenarios, so our graph has exactly two self-loops.</p>
+</div>
+</div>
+</div>
+<div class="page-columns page-full"><p>If you were to take an Euler tour in this graph, i.e, walk around visiting every edge exactly once, then it very naturally spells out a sequence as follows. Start with an empty string. Now as you move around, going from the vertex <img src="https://latex.codecogs.com/png.latex?u"> to <img src="https://latex.codecogs.com/png.latex?v"> along the edge <img src="https://latex.codecogs.com/png.latex?(u,v)"> amounts to essentially “seeing one new bit”: recall that the suffix of <img src="https://latex.codecogs.com/png.latex?u"> almost fully eats up the prefix of <img src="https://latex.codecogs.com/png.latex?v">, leaving one new bit to observe, which <em>is what we tag on to our sequence</em>. Once you have traveled along every edge exactly once, you’ve collected exactly 32 bits, so we have written out a sequence of length 32 by the time we are done<sup>5</sup>.</p><div class="no-row-height column-margin column-container"><li id="fn5"><p><sup>5</sup>&nbsp;If edges were 1km roads, we would have been just 10km shy of a full marathon.</p></li></div></div>
+<div class="page-columns page-full"><p>Now: our somewhat outrageous claim is that this infact is a valid de Bruijn sequence! Given that we have written out exactly 32 bits, it is enough to show that any bit sequence of length 5 shows up as a substring in this sequence starting from some position. The main intuition here is the following: suppose you want to “see” the bitstring <code>PQRST</code> in your sequence. Well, at some point in our walk on the graph, we moved from the vertex representing <code>PQRS</code> to the one representing <code>QRST</code><sup>6</sup>. This made us add <code>T</code> to whatever sequence we had so far. Let’s rewind our walk a bit and see what happened in the last few steps too:</p><div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup>&nbsp;Indeed, this must have happened at some point, since we visit every edge exactly once.</p></li></div></div>
+<p><code>LMNO</code> → <code>MNOP</code> → <code>NOPQ</code> → <code>OPQR</code> → <code>PQRS</code> → <code>QRST</code></p>
+<p>Retracing our steps, here are the bits that would have been triggered by this walk: <code>PQRST</code>, and thus we are almost done. You might say: perhaps the edge from the vertex representing <code>PQRS</code> to the one representing <code>QRST</code> was taken very early on, at the start of the tour, so we don’t have these many steps to retrace: but here’s the thing — we are on a <em>tour</em>, so you can continue walking back past your starting point and the sequence would still have this overall form: it’s just that a few of those bits would be written at the end, rather than at the start, and that just means that we can find our substring wrapped around the end, which is a perfectly valid place to discover it.</p>
+<p>Notice that there was nothing special about this whole process and the numbers four and five: you can generate so-called “de Bruijn sequences of order <img src="https://latex.codecogs.com/png.latex?k">”, which are bitstrings of length <img src="https://latex.codecogs.com/png.latex?2%5Ek"> with the property that every <img src="https://latex.codecogs.com/png.latex?k">-bit string appears exactly once in the sequence as a substring (including wraparoudns), using exactly the same idea.</p>
+<p>So you should be convinced by now — perhaps after reflecting for a moment or two — that de Bruijn sequences of any order in fact exist, which is not obvious at all from the definition. It turns out that there are actually quite a few of them: <img src="https://latex.codecogs.com/png.latex?2%5E%7B2%5E%7Bk-1%7D-k%7D">, to be precise, a formula we know thanks to de Bruijn, after whom the sequences are named.</p>
+<p>You might wonder if there are other ways of coming up with these sequences, or possibly even enumerating them. These discussions are unfortunately out of scope, but there are several excellent resources for the curious. Much of these notes are based on the third chapter of the book <a href="https://www.amazon.in/Magical-Mathematics-Mathematical-Animate-Tricks/dp/0691169772">Magical Mathematics: The Mathematical Ideas That Animate Great Magic Tricks</a> which is a treasure of a book. Paraphrasing from this chapter, here is a little about the people behind this trick:</p>
+<blockquote class="blockquote">
+<p>The origins of this trick go back to Charles T. Jordan in 1919, and the original version required a color pattern of length 6 to identify all the cards. Later William Larson and T. Page Wright came up with another variant involving 52 cards, and 3 people revealing the suits being enough for the magician to pick up the values. In the 1960s, Karl Fulves and, separately, P. Diaconis working with the chemist Ronald Wohl, derived dozens of tricks based on variations and extensions of Jordan’s idea.</p>
+</blockquote>
+
+
+</section>
+</section>
+
+
+ ]]></description>
+  <category>dsanotes</category>
+  <category>lecturenotes</category>
+  <guid>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</guid>
+  <pubDate>Sat, 10 Sep 2022 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/debruijn/figures/ch5-cutshuffleex.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Walking Around via Euler Tours</title>
+  <link>https://neeldhara.blog/posts/dsanotes/eulertours/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>We revisit the following problem from our introduction to graphs:</p>
+<div class="callout-caution callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+The Problem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The city of Königsberg in Prussia (now Kaliningrad, Russia) was set on both sides of the Pregel River, and included two large islands—Kneiphof and Lomse—which were connected to each other, and to the two mainland portions of the city, by seven bridges.</p>
+<p>Devise a walk through the city that would cross each of those bridges once and only once. Try this yourself on a few different maps at <a href="https://mathigon.org/course/graph-theory/bridges">Mathigon</a>!</p>
+</div>
+</div>
+<p>We also found such traversals useful for computing de Bruijn sequences, so between success on city exploration challenges and impressing with card tricks, there is plenty of motivation to take an Euler tour in a graph.</p>
+<p>In general, we are given a directed or undirected graph <img src="https://latex.codecogs.com/png.latex?G%20=%20(V,E)"> and we want to know if there is a sequence of edges:</p>
+<p><img src="https://latex.codecogs.com/png.latex?W%20:=%20e_0%20=%20(u_0,v_0),%20%5Cldots,%20e_%7Bm-1%7D%20=%20(u_%7Bm-1%7D,v_%7Bm-1%7D)"></p>
+<p>such that <img src="https://latex.codecogs.com/png.latex?v_i%20=%20u_%7Bi+1%20%5Cmod%20m%7D"> for all <img src="https://latex.codecogs.com/png.latex?i%20%5Cin%20%5C%7B0,1,%5Cldots,m-1%5C%7D">, and every edge in <img src="https://latex.codecogs.com/png.latex?E"> features <em>exactly once</em> in this sequence.</p>
+<section id="necessary-and-sufficient-conditions" class="level2">
+<h2 class="anchored" data-anchor-id="necessary-and-sufficient-conditions">Necessary and sufficient conditions</h2>
+<p>Note that if such a sequence does exist for a directed graph <img src="https://latex.codecogs.com/png.latex?G">, then the indegree of every vertex must equal its outdegree, i.e:</p>
+<blockquote class="blockquote">
+<p>indegree<img src="https://latex.codecogs.com/png.latex?(v)"> = outdegree<img src="https://latex.codecogs.com/png.latex?(v)"> for all <img src="https://latex.codecogs.com/png.latex?v%20%5Cin%20V">.</p>
+</blockquote>
+<p>Likewise, if such a sequence exists for an undirected graph <img src="https://latex.codecogs.com/png.latex?G">, then every vertex must have even degree:</p>
+<blockquote class="blockquote">
+<p>degree<img src="https://latex.codecogs.com/png.latex?(v)%20=%202k_v"> for all <img src="https://latex.codecogs.com/png.latex?v%20%5Cin%20V"> and some integer <img src="https://latex.codecogs.com/png.latex?k_v">.</p>
+</blockquote>
+<p>You can observe this based on simulating the sequence on the graph and imagining it from the perspective of your favorite vertex <img src="https://latex.codecogs.com/png.latex?v"> in it. In particular, assume you are walking around in <img src="https://latex.codecogs.com/png.latex?G"> as dictated by <img src="https://latex.codecogs.com/png.latex?W">. Fix your attention on <img src="https://latex.codecogs.com/png.latex?v">: every time you “enter” <img src="https://latex.codecogs.com/png.latex?v">, via, say the edge <img src="https://latex.codecogs.com/png.latex?e_i">, then you must “exit” <img src="https://latex.codecogs.com/png.latex?v"> via the edge <img src="https://latex.codecogs.com/png.latex?e_%7Bi+1%7D">. If <img src="https://latex.codecogs.com/png.latex?G"> is directed, <img src="https://latex.codecogs.com/png.latex?e_i"> is an incoming edge and <img src="https://latex.codecogs.com/png.latex?e_%7Bi+1%7D"> is an outgoing edge, and if <img src="https://latex.codecogs.com/png.latex?G"> is undirected, these are simply two edges incident on <img src="https://latex.codecogs.com/png.latex?v"> that can be naturally “paired off”. So any successful walk witnesses the claims above.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+These conditions are necessary, but are they sufficient?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>It turns out that you could have graphs where these conditions are true, but there are no Euler tours. This happens when the graph is “disconnected”, i.e, when there is a pair of vertices <img src="https://latex.codecogs.com/png.latex?u"> and <img src="https://latex.codecogs.com/png.latex?v"> such that there is no path from <img src="https://latex.codecogs.com/png.latex?u"> to <img src="https://latex.codecogs.com/png.latex?v">. The following are good exercises to work through:</p>
+<ul>
+<li><p>Come up with an example of a graph where the degree conditions are met but there is no Euler tour.</p></li>
+<li><p>Convince yourself that if <img src="https://latex.codecogs.com/png.latex?G"> is connected and satisfies the degree conditions indicated above, you can always find an Euler tour.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="a-naive-algorithm" class="level2">
+<h2 class="anchored" data-anchor-id="a-naive-algorithm">A naive algorithm</h2>
+<p>Now we turn to the procedural question: knowing what it takes to find an Euler tour, how do we actually find one? First, we get the simple degree-based sanity check out of the way. For undirected graphs we have:</p>
+<pre class="plaintext"><code>for v in V(G):
+    if deg[v] % 2 != 0:
+        return False</code></pre>
+<p>and for directed graphs we have:</p>
+<pre class="plaintext"><code>for v in V(G):
+    if indeg[v] != outdeg[v]:
+        return False</code></pre>
+<p>Assuming we pass these sanity checks, we want to embark on an actual tour. Here’s a reasonable starting point, which essentially amounts to saying that you get to start anywhere, and keep going while you can:</p>
+<pre class="plaintext"><code>find_tour(G,v):
+    // G is the graph
+    // and v is our favorite vertex
+    set curr := v
+    set S := empty
+    while there is an outgoing edge e = (curr,u) which is not in S:
+        add e to S
+        set curr := u
+    return S</code></pre>
+<p>This is basically a “keep going until stuck” process. By the very nature of the process, the sequence <img src="https://latex.codecogs.com/png.latex?S"> that we come up with is <em>walkable</em> and does not repeat edges, but it is unclear if this list is exhaustive. Indeed, you should be able to come up with examples of graphs <img src="https://latex.codecogs.com/png.latex?G"> where <img src="https://latex.codecogs.com/png.latex?G"> has an Euler tour but <code>find_tour(G)</code> does not output one.</p>
+</section>
+<section id="fixing-the-naive-approach" class="level2">
+<h2 class="anchored" data-anchor-id="fixing-the-naive-approach">Fixing the naive approach</h2>
+<p>How do we fix this? For one, we need to know if we are done or not: if an edge is missing from <img src="https://latex.codecogs.com/png.latex?S">, then that’s a bad sign, and we need to do something about it. How do we know if every edge is enlisted in the output? One way is to compute the length of <img src="https://latex.codecogs.com/png.latex?S">: if it falls short of <img src="https://latex.codecogs.com/png.latex?m">, we are not done yet.</p>
+<p>But we also need to know what the missing edges are. We could in principle go through our edge list and ask ourselves if the edge made it to <img src="https://latex.codecogs.com/png.latex?S"> or not, but that sounds mildly painstaking. Let’s save ourselves the pain with some additional bookkeeping — let’s track the “residual degree” of the vertices: this is the number of edges incident on <img src="https://latex.codecogs.com/png.latex?v"> that are not yet listed in <img src="https://latex.codecogs.com/png.latex?S">. Any vertex with non-zero residual degree gives us concrete hints about missing edges.</p>
+<p>So for directed graphs we have:</p>
+<pre class="plaintext"><code>find_tour(G,v):
+    init res_deg[v] = outdeg[v]
+    set curr := v
+    set S := empty
+    while there is an outgoing edge e = (curr,u) which is not in S:
+        add e to S
+        res_deg[curr] = res_deg[curr]-1
+        set curr := u
+    return S</code></pre>
+<p>and for undirected graphs we have:</p>
+<pre class="plaintext"><code>find_tour(G,v):
+    init res_deg[v] = deg[v]
+    set curr := v
+    set S := empty
+    while there is an outgoing edge e = (curr,u) which is not in S:
+        add e to S
+        res_deg[curr] = res_deg[curr]-1
+        res_deg[u] = res_deg[u]-1
+        set curr := u
+    return S</code></pre>
+<p>So now we know when our algorithm is a fail. What’s the fix? Well, let’s approach vertices who are not done yet as per our intel from their <code>res_deg</code> value. We use these vertices to trigger more happy-go-lucky tours:</p>
+<pre class="plaintext"><code>find_tour_fr(G):
+    i := 0
+    marked := emptyset
+    res_deg[v] := outdeg[v]
+    S := list of lists
+    while there is some v with res_deg[v] &gt; 0:
+        let S[i] := find_tour(G,v,marked)
+        add every edge in S_i to marked
+        i = i+1</code></pre>
+<p>Since we need to track visited edges across multiple runs now, we actually inform the <code>find_tour</code> function about the edges already visited from past lives. This is tracked with the <code>marked</code> set.</p>
+<p>So our updated <code>find_tour</code> function looks like this:</p>
+<pre class="plaintext"><code>find_tour(G,v,marked):
+    set curr := v
+    set S := empty
+    while there is an outgoing edge e = (curr,u)
+    which is not in S or marked:
+        add e to S
+        res_deg[curr] = res_deg[curr]-1
+        set curr := u
+    return S</code></pre>
+<p>(The change is analogous for the version dealing with undirected graphs.)</p>
+<p>What we have now is a bunch of fragments, each of which is essentially a walk that begins and ends at the same vertex. Because of our relentless and careful pursuit (c.f. the while condition and the marked set), every edge in <img src="https://latex.codecogs.com/png.latex?G"> features in <em>exactly</em> one of these fragments. Now it’s just a matter of putting everything together.</p>
+<p>Start with the first fragment <img src="https://latex.codecogs.com/png.latex?S_0">. If this is the only fragment we have, that means that our first happy-go-lucky tour was in fact also a lucky one! So we have nothing left to do. Otherwise, there are at least two fragments. Let us look at the set of vertices involved in <img src="https://latex.codecogs.com/png.latex?S_0">. The crucial observation is that there must be at least one other fragment, say <img src="https://latex.codecogs.com/png.latex?S_i">, that also features some vertex that appears in <img src="https://latex.codecogs.com/png.latex?S_0">. Indeed, if this is not the case, then you can argue that <img src="https://latex.codecogs.com/png.latex?S_0"> is a sad isolated fragment, and we can actually report that <img src="https://latex.codecogs.com/png.latex?G"> has no Euler tour.</p>
+<p>Otherwise, find the common vertex between <img src="https://latex.codecogs.com/png.latex?S_0"> and <img src="https://latex.codecogs.com/png.latex?S_i">, and extend one of them using the other: for example, if <img src="https://latex.codecogs.com/png.latex?v"> is the common vertex, take a walk in <img src="https://latex.codecogs.com/png.latex?S_0"> until you encounter <img src="https://latex.codecogs.com/png.latex?v">, and then instead of following along on <img src="https://latex.codecogs.com/png.latex?S_0">, take a detour as specified by <img src="https://latex.codecogs.com/png.latex?S_i">. Remember if you start on <img src="https://latex.codecogs.com/png.latex?S_i"> at <img src="https://latex.codecogs.com/png.latex?v">, then you will eventurally exhaust <img src="https://latex.codecogs.com/png.latex?S_i"> by coming back to <img src="https://latex.codecogs.com/png.latex?v">: and at this point you can “resume” your walk on <img src="https://latex.codecogs.com/png.latex?S_0">. Note that this process welds two fragments at the vertex <img src="https://latex.codecogs.com/png.latex?v"> thereby reducing the total number of fragments by one. This should count as a sure sign of progress: repeating for as long as possible, we have to do this at most <img src="https://latex.codecogs.com/png.latex?(f-1)"> many times, where <img src="https://latex.codecogs.com/png.latex?f%20%5Cleq%20%5Cfrac%7Bm%7D%7B2%7D"> is the total number of fragments.</p>
+<pre><code>patchup():
+    Let S[i] for i in 1, 2, ..., f denote the set of all fragments
+    while f &gt; 1:
+        look for a fragment S[i] that intersects S[0]
+        if S[i] does not exist:
+            return false
+        else:
+            expand S[0] along S[i]
+            remove S[i] from the set of all fragments</code></pre>
+</section>
+<section id="expenses" class="level2">
+<h2 class="anchored" data-anchor-id="expenses">Expenses</h2>
+<p>Although arguably a naive algorithm, the cool thing about this procedure is that it is guaranteed to work, and the number of steps involved is not terribly bad either. Here’s a naive back-of-the-envelope analysis, assuming <img src="https://latex.codecogs.com/png.latex?G"> is stored as an adjacency list:</p>
+<ol type="1">
+<li>The degree-based sanity checks are <img src="https://latex.codecogs.com/png.latex?%5Capprox%20m"> since <img src="https://latex.codecogs.com/png.latex?G"> is stored as an adjacency list.</li>
+<li>Consider <code>find_tour_fr(G)</code>:
+<ul>
+<li>The outer <code>while</code> loop runs at most <img src="https://latex.codecogs.com/png.latex?m"> times since each iteration decreases the residual degree of at least two vertices and the sum of residual degrees is <img src="https://latex.codecogs.com/png.latex?2m"> at the start (an analogous argument applies for directed graphs).</li>
+<li>The inner <code>while</code> loop in <code>find_tour(G,v,marked)</code> is executed at most <img src="https://latex.codecogs.com/png.latex?m"> times. To find an appropriate edge, we have to go through the negibors of <code>curr</code> and check if the associated edge is already in <code>S</code> or <code>marked</code>. This takes at most <img src="https://latex.codecogs.com/png.latex?(nm)"> iterations in the worse case, if implemented directly.</li>
+<li>Assuming that <code>S</code> is a linked list and <code>res_deg</code> is an array, the innermost operations are all constant time.</li>
+<li>The overall cost of a direct implementation is therefore <img src="https://latex.codecogs.com/png.latex?nm%5E3">.</li>
+</ul></li>
+<li>The <code>patchup</code> procedure involves a outer <code>while</code> loop that runs at most <img src="https://latex.codecogs.com/png.latex?f"> times if we have <img src="https://latex.codecogs.com/png.latex?f"> fragments. The looking business to merge fragments will take no more than <img src="https://latex.codecogs.com/png.latex?m"> units of time: worst case we have to scan all remaining fragments to find a suitable match, and the merger involves updating a few pointers — noting again that the fragments are stored as lists. This is of course a conservative estimate, but it will do. The overall time here is therefore no worse than <img src="https://latex.codecogs.com/png.latex?%5Capprox%20m%5E2"> since <img src="https://latex.codecogs.com/png.latex?f%20%5Cleq%20%5Cfrac%7Bm%7D%7B2%7D">.</li>
+</ol>
+<p>This gives us <img src="https://latex.codecogs.com/png.latex?m%20+%20nm%5E3%20+%20m%5E2"> in total damages. However, notice that a more careful analysis helps us do better without doing anything substantially different. If you think about <code>find_tour_fr(G)</code> think about how often the instructions:</p>
+<pre><code>add e to S
+res_deg[curr] = res_deg[curr]-1
+set curr := u</code></pre>
+<p>from <code>find_tour(G,v,marked)</code> are actually executed. Every time we execute this set of instructions, we effectively add one edge to the set of marked edges, and since this happens exactly once per edge, these instructions only execute <img src="https://latex.codecogs.com/png.latex?m"> times overall. Recall that what it takes to enter this loop is the discovery of an unused edge:</p>
+<pre><code>while there is an outgoing edge e = (curr,u)
+which is not in S or marked</code></pre>
+<p>This is the bit that took us a while, because we assumed we have to examine all possible edges that go out of <code>curr</code> and then also tally up against <code>S</code> and <code>marked</code>. One way to speed this up is to always commit to pulling out the first element in the adjacency list of the vertex <code>u</code> and then in fact deleting this element from the list. If you are paranoid about subjecting your input to this kind of annihilation, then you can just make a working copy upfront. This way, you can be sure that you can find what you want in constant time, a good case in point to show how the way you store your data can impact the performance of your algorithm.</p>
+<p>Based on the hints above, convince yourself that <code>find_tour_fr(G)</code> in fact has a total expense amounting to <img src="https://latex.codecogs.com/png.latex?%5Capprox%20m">, modulo constants. With this, our overall cost comes down to <img src="https://latex.codecogs.com/png.latex?%5Capprox%202m%20+%20m%5E2">.</p>
+</section>
+<section id="afterthoughts" class="level2">
+<h2 class="anchored" data-anchor-id="afterthoughts">Afterthoughts</h2>
+<p>Can we do better? Indeed, it turns out that with a slightly more careful implementation, the business of merging fragments can also be done with an expense proportional to the number of edges. The careful version goes by Hierholzer’s algorithm, and you can read up about this <a href="https://en.wikipedia.org/wiki/Eulerian_path#Hierholzer's_algorithm">on Wikipedia</a> or watch the video below.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8MpoO2zA2l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+
+
+</section>
+
+ ]]></description>
+  <category>dsanotes</category>
+  <category>lecturenotes</category>
+  <guid>https://neeldhara.blog/posts/dsanotes/eulertours/index.html</guid>
+  <pubDate>Thu, 08 Sep 2022 18:30:00 GMT</pubDate>
+</item>
 <item>
   <title>On Teaching</title>
-  <link>https://www.neeldhara.blog/posts/on-teaching/index.html</link>
+  <link>https://neeldhara.blog/posts/on-teaching/index.html</link>
   <description><![CDATA[ 
 
 
@@ -38,7 +434,7 @@ These are some parts of the teaching statment that I wrote roughly seven years a
 </div><div class="column" style="width:4%;">
 
 </div><div class="column" style="width:51%;">
-<p><a href="https://imgflip.com/i/6s9ym6"><img src="https://www.neeldhara.blog/posts/on-teaching/https:/i.imgflip.com/6s9ym6.jpg" title="made at imgflip.com" width="100%"></a></p>
+<p><a href="https://imgflip.com/i/6s9ym6"><img src="https://neeldhara.blog/posts/on-teaching/https:/i.imgflip.com/6s9ym6.jpg" title="made at imgflip.com" width="100%"></a></p>
 </div>
 </div>
 <p>All this is to say that I walked into a career involving a substantial teaching component with plenty of hesitation. The delivery was/is still largely confined to classroom settings in broadcast mode. It is not entirely clear what this format has to offer over YouTube. Basic interactivity is being increasingly solved with questions built into video players. Peer learning is quite doable with WhatsApp/Slack/Discord groups and local chapter meetups. Scale in the context of assessments is somewhat addressed by peer evaluation. And then there are all the things you can do on YouTube that you can’t do with traditional lectures: find a teacher whose style resonates, find an accent you understand, replay, play at 2x, 0.5x, binge watch, don’t watch…</p>
@@ -85,7 +481,7 @@ I am going to attend college lectures from now on just to increase my attention 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Calvin on 21st Century Education</figcaption><p></p>
 </figure>
 </div>
@@ -97,7 +493,7 @@ I am going to attend college lectures from now on just to increase my attention 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/on-teaching/https:/www.explainxkcd.com/wiki/images/7/79/obsolete_technology.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/on-teaching/https:/www.explainxkcd.com/wiki/images/7/79/obsolete_technology.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Cutting Edge</figcaption><p></p>
 </figure>
 </div>
@@ -117,7 +513,7 @@ I am going to attend college lectures from now on just to increase my attention 
 </blockquote>
 </div></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/on-teaching/https:/phdcomics.com/comics/archive/phd062613s.gif" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/on-teaching/https:/phdcomics.com/comics/archive/phd062613s.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">On hope in teaching.</figcaption><p></p>
 </figure>
 </div>
@@ -138,13 +534,13 @@ New blog, new post:<a href="https://t.co/c2lEHM0lTI">https://t.co/c2lEHM0lTI</a>
 
  ]]></description>
   <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/on-teaching/index.html</guid>
+  <guid>https://neeldhara.blog/posts/on-teaching/index.html</guid>
   <pubDate>Sun, 04 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Representing Graphs</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/graphs/index.html</link>
   <description><![CDATA[ 
 
 
@@ -155,7 +551,7 @@ New blog, new post:<a href="https://t.co/c2lEHM0lTI">https://t.co/c2lEHM0lTI</a>
 <p>At some point of time in your life, you have likely been challenged to draw a kite-like figure:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A common drawing challenge.</figcaption><p></p>
 </figure>
 </div>
@@ -193,7 +589,7 @@ The Problem
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Konigsberg Classic: Map of Königsberg in Euler’s time showing the actual layout of the seven bridges, highlighting the river Pregel and the bridges. Image by Bogdan Giuşcă, in the public domain (CC BY-SA 3.0) and sourced from Wikipedia.</figcaption><p></p>
 </figure>
 </div>
@@ -229,7 +625,7 @@ Classroom Activity with Eulerian Paths
 <p>We can work through the “bridges puzzle” on this graph. In the classroom, we all started with the vertex representing Juhi Chawla, “walked around” using every connection exactly once, and the fun effect is that everyone ends up at the vertex representing Rishi Kapoor (or solves the puzzle incorrectly). From here, you can probably begin to guess the role of the two special vertices in the puzzle.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An actor collaboration graph</figcaption><p></p>
 </figure>
 </div>
@@ -243,7 +639,7 @@ Classroom Activity with Eulerian Paths
 <p>The origins of this problem — the so-called “Knight’s Tour” — goes all the way back to the 9th century AD, where it is described in <a href="https://www.ias.ac.in/article/fulltext/reso/025/08/1095-1116">Rudraṭa’s Kavyalankara</a>. Here’s an example of a knight’s tour, as seen on Wikipedia:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An animated example of a knight’s tour.</figcaption><p></p>
 </figure>
 </div>
@@ -451,13 +847,13 @@ How would you do it?
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
   <pubDate>Tue, 09 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Data Structures and Structured Data</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/introduction/index.html</link>
   <description><![CDATA[ 
 
 
@@ -525,7 +921,7 @@ This <em>is</em> in fact a useful framing!
 <div class="callout-body-container callout-body">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Table 1 Revisited. No Free Lunches</figcaption><p></p>
 </figure>
 </div>
@@ -538,7 +934,7 @@ This <em>is</em> in fact a useful framing!
 <p>Let’s say that you are spending a fine evening watching the #LockdownMath playlist from 3blue1brown. The first episode happens to be all about solving quadratics:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A screenshot from #LockdownMath showing Grant Sanderson solving quadratics.</figcaption><p></p>
 </figure>
 </div>
@@ -558,7 +954,7 @@ Now…
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -648,7 +1044,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
+<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">Illustration from an implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -657,7 +1053,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
+<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">A second illustration from the same implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -759,7 +1155,7 @@ After all…
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -849,13 +1245,13 @@ Food for thought.
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
   <pubDate>Sun, 31 Jul 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Solo Chess</title>
-  <link>https://www.neeldhara.blog/posts/solo-chess/index.html</link>
+  <link>https://neeldhara.blog/posts/solo-chess/index.html</link>
   <description><![CDATA[ 
 
 
@@ -868,21 +1264,21 @@ Food for thought.
 <p>*when appropriately generalized</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Rules of the Game</figcaption><p></p>
 </figure>
 </div>
 <p>So this is a single-player, peg-solitaire-ish chess variant, where you have to clear board by making a sequence of valid captures, albeit starting with unorthodox — and even unrealistic — positions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.30.34.png" class="img-fluid figure-img" style="width:42.0%"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.30.34.png" class="img-fluid figure-img" style="width:42.0%"></p>
 <p></p><figcaption class="figure-caption">An example position</figcaption><p></p>
 </figure>
 </div>
 <p>To begin with the boards start easy, with a few pieces at a time. Notice, even in the early games, how some positions have just one solution while others may have several.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot%202022-08-30%20at%2008.46.16.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot%202022-08-30%20at%2008.46.16.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">More positions</figcaption><p></p>
 </figure>
 </div>
@@ -902,7 +1298,7 @@ Food for thought.
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.47.53.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.47.53.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">1D Boards</figcaption><p></p>
 </figure>
 </div>
@@ -915,13 +1311,13 @@ Food for thought.
 <p>No Hamiltonian Path though — this one was from bipartite dominating set 😎</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.58.23.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.58.23.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A reduction from bipartite dominating set - I</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.53.21.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.53.21.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A reduction from bipartite dominating set - II</figcaption><p></p>
 </figure>
 </div>
@@ -939,7 +1335,7 @@ Food for thought.
 <p>*at most two.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.23.22.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.23.22.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Lemma for pawns</figcaption><p></p>
 </figure>
 </div>
@@ -949,20 +1345,20 @@ Food for thought.
 <p>Knights are special because we don’t have to worry about obstructions. So the game can be described by a more general token game on graphs:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.28.55.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.28.55.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Graph Capture Problem</figcaption><p></p>
 </figure>
 </div>
 <p>We do show that Graph Capture is hard by a reduction, again from bipartite dominating set. This might hint at the hardness for Solo Chess played with knights only, but we are not betting on this yet.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.11.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.11.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Another reduction from bipartite dominating set - I</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.06.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.06.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Another reduction from bipartite dominating set - II</figcaption><p></p>
 </figure>
 </div>
@@ -978,7 +1374,7 @@ Food for thought.
 <p>PS. Also if you enjoy chess and algorithms, don’t miss <a href="https://miguel-ambrona.github.io/">Miguel Ambrona’s</a> amazing <a href="https://chasolver.org/">Chess Unwinnability Analyzer</a>, which also appears at FUN 2022!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.56.43.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.56.43.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Chess Unwinnability</figcaption><p></p>
 </figure>
 </div>
@@ -989,13 +1385,13 @@ Food for thought.
  ]]></description>
   <category>exposition</category>
   <category>twitterthread</category>
-  <guid>https://www.neeldhara.blog/posts/solo-chess/index.html</guid>
+  <guid>https://neeldhara.blog/posts/solo-chess/index.html</guid>
   <pubDate>Wed, 23 Mar 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Eight Self-Sabotaging Behaviors</title>
-  <link>https://www.neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</link>
+  <link>https://neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1172,12 +1568,12 @@ Postpone gratification
  ]]></description>
   <category>funda</category>
   <category>twitterthread</category>
-  <guid>https://www.neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</guid>
+  <guid>https://neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</guid>
   <pubDate>Mon, 14 Mar 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Kidney Exchanges</title>
-  <link>https://www.neeldhara.blog/posts/kidney-exchanges/index.html</link>
+  <link>https://neeldhara.blog/posts/kidney-exchanges/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1303,12 +1699,12 @@ Postpone gratification
 </ol>
 </section></div> ]]></description>
   <category>exposition</category>
-  <guid>https://www.neeldhara.blog/posts/kidney-exchanges/index.html</guid>
+  <guid>https://neeldhara.blog/posts/kidney-exchanges/index.html</guid>
   <pubDate>Thu, 24 Feb 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Women in Mathematics</title>
-  <link>https://www.neeldhara.blog/posts/women-in-mathematics/index.html</link>
+  <link>https://neeldhara.blog/posts/women-in-mathematics/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1366,12 +1762,12 @@ Postpone gratification
  ]]></description>
   <category>books</category>
   <category>list</category>
-  <guid>https://www.neeldhara.blog/posts/women-in-mathematics/index.html</guid>
+  <guid>https://neeldhara.blog/posts/women-in-mathematics/index.html</guid>
   <pubDate>Sun, 20 Feb 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>On the Communication Complexity of Equality</title>
-  <link>https://www.neeldhara.blog/posts/communication-complexity-equality/index.html</link>
+  <link>https://neeldhara.blog/posts/communication-complexity-equality/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1394,12 +1790,12 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>sketchnotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/communication-complexity-equality/index.html</guid>
+  <guid>https://neeldhara.blog/posts/communication-complexity-equality/index.html</guid>
   <pubDate>Sun, 03 Oct 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Two approaches to the 15 puzzle</title>
-  <link>https://www.neeldhara.blog/posts/15-puzzle/index.html</link>
+  <link>https://neeldhara.blog/posts/15-puzzle/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1413,14 +1809,14 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>*I do believe the two proofs are essentially the same with slight differences of language.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" class="img-fluid figure-img" style="width:34.0%"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" class="img-fluid figure-img" style="width:34.0%"></p>
 <p></p><figcaption class="figure-caption">An example of the 15 puzzle</figcaption><p></p>
 </figure>
 </div>
 <p>Common to both approaches is the idea of associating a <em>permutation</em> with every state of the puzzle. For the purposes of this discussion, we will think of a permutation simply as a sequence of elements. To turn the grid layout into a sequence, you could, for instance, line up the rows next to each other, in other words, read off the numbers from left-to-right and top-to-bottom:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.45.04_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.45.04_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Associating the puzzle with a permutation</figcaption><p></p>
 </figure>
 </div>
@@ -1457,7 +1853,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>Now, note that the permutation corresponding to our target state is the following:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.04.12_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.04.12_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The permutation corresponding to our target state</figcaption><p></p>
 </figure>
 </div>
@@ -1474,7 +1870,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>The second approach is based on the notion of inversions. This one is based on <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/lecture-3-strong-induction/">the Strong Induction lecture</a> in the MITOCW course on Mathematics for Computer Science. For this proof I’ll actually switch to the <img src="https://latex.codecogs.com/png.latex?3%20%5Ctimes%203"> version of the puzzle because <del>I don’t know how to extend it to the 15-puzzle</del> the case analysis is more manageable for this version:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.30.57_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.30.57_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
 <p></p><figcaption class="figure-caption">A move in the 3 X 3 version of the puzzle</figcaption><p></p>
 </figure>
 </div>
@@ -1487,7 +1883,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>Neither <img src="https://latex.codecogs.com/png.latex?(p,a)"> nor <img src="https://latex.codecogs.com/png.latex?(p,b)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.51.03_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.51.03_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Neither <img src="https://latex.codecogs.com/png.latex?(p,a)"> nor <img src="https://latex.codecogs.com/png.latex?(p,b)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma"></figcaption><p></p>
 </figure>
 </div>
@@ -1497,7 +1893,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>Both <img src="https://latex.codecogs.com/png.latex?(p,a)"> and <img src="https://latex.codecogs.com/png.latex?(p,b)"> are inversions in <img src="https://latex.codecogs.com/png.latex?%5Csigma">.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.09_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.09_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Both <img src="https://latex.codecogs.com/png.latex?(p,a)"> and <img src="https://latex.codecogs.com/png.latex?(p,b)"> are inversions in <img src="https://latex.codecogs.com/png.latex?%5Csigma"></figcaption><p></p>
 </figure>
 </div>
@@ -1507,7 +1903,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is not.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.54.46_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.54.46_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is not</figcaption><p></p>
 </figure>
 </div>
@@ -1517,7 +1913,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is not an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is one.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.39_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.39_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is not an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is one</figcaption><p></p>
 </figure>
 </div>
@@ -1538,13 +1934,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>puzzles</category>
   <category>exposition</category>
-  <guid>https://www.neeldhara.blog/posts/15-puzzle/index.html</guid>
+  <guid>https://neeldhara.blog/posts/15-puzzle/index.html</guid>
   <pubDate>Sat, 02 Oct 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" medium="image" type="image/png" height="143" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" medium="image" type="image/png" height="143" width="144"/>
 </item>
 <item>
   <title>Sam I Am</title>
-  <link>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</link>
+  <link>https://neeldhara.blog/posts/cp/sam-i-am/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1566,7 +1962,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>So to begin with, we have a grid with some cells identified as locations where Sam’s enemies are positioned, and here’s an example:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A first example of a configuration of Sam’s enemies location</figcaption><p></p>
 </figure>
 </div>
@@ -1574,28 +1970,28 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>We want to <em>hit</em> all of these locations, and what we have at our disposal is giant cannon balls which can destroy all enemies that are positioned on a single row, or a single column. For example, if we were obsessed about only firing along rows, we would need four cannon balls to tackle ’em all, like so:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution were we fire along rows alone</figcaption><p></p>
 </figure>
 </div>
 <p>If Sam was superstitious about shooting along columns only, then he would again need four of these cannon balls to take care of everything:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution were we fire along columns alone</figcaption><p></p>
 </figure>
 </div>
 <p>However, our friend Sam is smart, not superstitious! And if there is anything that he is obsessed about, it is ruthlessly optimal destruction! In other words, he wants to fix everything up, but while using the smallest number of cannon balls possible… and if that means mixing up ranks and files, so be it — notice that you can manage with just three once you combine the use of both axes:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution leveraging a combination of rows and columns</figcaption><p></p>
 </figure>
 </div>
 <p>And for this example in particular, notice that three cannon balls are <em>necessary</em>, because we have at least three enemies positioned at locations that share <em>neither a row nor a column</em>, implying that no row-fire or column-fire can handle more than one of these locations at once:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Demonstrating that three canonballs are in fact necessary</figcaption><p></p>
 </figure>
 </div>
@@ -1626,7 +2022,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The vertices of the auxiliary graph</figcaption><p></p>
 </figure>
 </div>
@@ -1635,13 +2031,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The edges of the auxiliary graph</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A bipartite graph!</figcaption><p></p>
 </figure>
 </div>
@@ -1652,7 +2048,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A vertex cover</figcaption><p></p>
 </figure>
 </div>
@@ -1675,7 +2071,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>So first things first: we are going to setup a flow network around the graph <img src="https://latex.codecogs.com/png.latex?G">, and here’s a partial picture of what it looks like:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The flow graph</figcaption><p></p>
 </figure>
 </div>
@@ -1689,7 +2085,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>That’s it, that’s the flow network <img src="https://latex.codecogs.com/png.latex?(%5Ctilde%7BG%7D,%5Ckappa)"> based on <img src="https://latex.codecogs.com/png.latex?G">, where I’m using <img src="https://latex.codecogs.com/png.latex?%5Ckappa"> to denote the capacity function. Now let’s stare at any valid integral flow in this network — what does it pull out from the middle? 🤔</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A matching hiding in plain sight</figcaption><p></p>
 </figure>
 </div>
@@ -1701,7 +2097,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>Based on these observations, we have that the set of original edges for which <img src="https://latex.codecogs.com/png.latex?f(e)%20=%201"> forms a matching in back in <img src="https://latex.codecogs.com/png.latex?G">, and in particular, if <img src="https://latex.codecogs.com/png.latex?f"> was maximum flow, then this set would correspond to a maximum-sized matching. Now, let’s look at the corresponding mincut by building the residual graph:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Edges in the residual graph that have a residual capacity of zero are not shown. Also, the original edges that were used by <img src="https://latex.codecogs.com/png.latex?f"> have infinite residual capacity but their corresponding back-edges have unit capacity, but this distinction is not emphasised in the picture because it’s not particularly relevant to our discussion.</figcaption><p></p>
 </figure>
 </div>
@@ -1709,7 +2105,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>and considering what vertices are reachable from <img src="https://latex.codecogs.com/png.latex?s">:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> are marked green, while all remaining vertices are marked red.</figcaption><p></p>
 </figure>
 </div>
@@ -1722,14 +2118,14 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>We will refer to these vertices as the <em>misfits —</em> they are highlighted for you in the picture below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The misfits</figcaption><p></p>
 </figure>
 </div>
 <p>Now roll up your sleeves for some magic. Let’s pull up the cut — which we know is in fact a mincut — obtained by considering the set of vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> the residual graph corresponding to the maxflow <img src="https://latex.codecogs.com/png.latex?f">. In pictures, note how we have attracted some column vertices to the <img src="https://latex.codecogs.com/png.latex?s">-side, and pushed away some row vertices to the <img src="https://latex.codecogs.com/png.latex?t">-side:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Some reorganization</figcaption><p></p>
 </figure>
 </div>
@@ -1755,13 +2151,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>cp</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
+  <guid>https://neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
   <pubDate>Thu, 30 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>New Mac</title>
-  <link>https://www.neeldhara.blog/posts/new-mac/index.html</link>
+  <link>https://neeldhara.blog/posts/new-mac/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1999,12 +2395,12 @@ Omissions
 </section></div> ]]></description>
   <category>apps</category>
   <category>list</category>
-  <guid>https://www.neeldhara.blog/posts/new-mac/index.html</guid>
+  <guid>https://neeldhara.blog/posts/new-mac/index.html</guid>
   <pubDate>Wed, 29 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Moving Blocks at CTIS 2021</title>
-  <link>https://www.neeldhara.blog/posts/moving-blocks-ctis/index.html</link>
+  <link>https://neeldhara.blog/posts/moving-blocks-ctis/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2048,12 +2444,12 @@ Omissions
 </section></div> ]]></description>
   <category>puzzles</category>
   <category>exposition</category>
-  <guid>https://www.neeldhara.blog/posts/moving-blocks-ctis/index.html</guid>
+  <guid>https://neeldhara.blog/posts/moving-blocks-ctis/index.html</guid>
   <pubDate>Mon, 20 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Envelope Budgeting with Notion</title>
-  <link>https://www.neeldhara.blog/posts/envelope-budgeting-notion/index.html</link>
+  <link>https://neeldhara.blog/posts/envelope-budgeting-notion/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2070,7 +2466,7 @@ Omissions
 <p>That said, onto our own YNAB-esque budgeting template in Notion! We’re on our way to something that looks like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Categories</figcaption><p></p>
 </figure>
 </div>
@@ -2081,7 +2477,7 @@ Omissions
 <p>It may be natural for this table to just have one row for each category. You probably want to have a small number of higher-order categories (e.g: monthly supplies, services, maintenance, health, investments, etc.) and smaller, more specific ones under these broad umbrellas (e.g, services would likely have sub-categories along the lines of internet, phone, electricity, water, etc.). You can do this by setting up a relation property to the table itself, and have it sync two-way, like so:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.29.11_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.29.11_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Screenshot 2021-09-18 at 3.29.11 PM.png</figcaption><p></p>
 </figure>
 </div>
@@ -2091,21 +2487,21 @@ Omissions
 <p>If you want to see just the higher-order categories nicely, you can setup a gallery view with a filter for the main category to be empty, which would look like this (I’ve disabled the preview and added some <a href="https://www.notion.vip/icons/">icons from notion.vip</a>):</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.33.56_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.33.56_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Gallery View</figcaption><p></p>
 </figure>
 </div>
 <p>Next, we want to specify a budget for each of these categories. We can do this directly for the lower-order categories first. Then, we can have the main category budgets calculated automatically by rolling up the budgets of the corresponding child categories and adding up their budget values. To have a clean view of the budget, you could add a formula column that just adds up the values from the direct budgets and the rollup, like so:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.18.35_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.18.35_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Budget View</figcaption><p></p>
 </figure>
 </div>
 <p>You can add two dummy properties with the text <code>Budgeted:</code> and <code>Remaining:</code> for each row, and set them to show along with the budget in the Gallery view so you get something like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.43.12_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.43.12_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Budgeted and Remaining Labels</figcaption><p></p>
 </figure>
 </div>
@@ -2122,7 +2518,7 @@ Omissions
 <p>The most natural property we want for the Accounts database would be a <em>balance</em> column. Instead of maintaining this manually, we will just link this with the transactions database and derive the balance by rolling up the relevant transactions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.49.12_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.49.12_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Accounts View</figcaption><p></p>
 </figure>
 </div>
@@ -2135,7 +2531,7 @@ Omissions
 <p>You might want to optionally add a memo property that lets you add a quick note or explanation for the transaction. However, given that each database entry is also a page, you could also quite flexibly add all the additional information you want to the page corresponding to any transaction. Meanwhile, you might also want to setup relations to other parts of your Notion setup if you find anything relevant — for instance, if you have a books database, or an inventory database, and so on. That said, we’re going to keep it simple here, and here’s an example transaction:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.56.45_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.56.45_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An Example Transaction</figcaption><p></p>
 </figure>
 </div>
@@ -2148,14 +2544,14 @@ Omissions
 <div class="column" style="width:34%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.35.18_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.35.18_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Rollup sum of amounts in accounts</figcaption><p></p>
 </figure>
 </div>
 </div><div class="column" style="width:66%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.37.52_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.37.52_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Gallery view of balances</figcaption><p></p>
 </figure>
 </div>
@@ -2164,7 +2560,7 @@ Omissions
 <p>Now we go back to our categories database and rename the relational column to <strong>transactions</strong> and add a rollup that collects all expenses from the transactions that happened in a particular category, so this is what it looks like:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_5.50.57_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_5.50.57_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Category view</figcaption><p></p>
 </figure>
 </div>
@@ -2173,7 +2569,7 @@ Omissions
 <p>Note that it might feel more natural to subtract expenses, but my expenses are already negative amount transactions, so I just need to bundle it all together.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.30.27_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.30.27_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
 <p></p><figcaption class="figure-caption">Category View</figcaption><p></p>
 </figure>
 </div>
@@ -2182,7 +2578,7 @@ Omissions
 <p>So, it turns out that YNAB would take all this money and automatically categorize it as unassigned, or to be budgeted. We can mimic this by creating a special category called <code>to be assigned</code>, and have all income-type transactions categorized as such. Typically this would be transactions corresponding to a salary, client payments, refunds, credit from interest, and so forth.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.38.19_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.38.19_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The TBA Category</figcaption><p></p>
 </figure>
 </div>
@@ -2190,7 +2586,7 @@ Omissions
 <hr>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.42.06_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.42.06_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
 <p></p><figcaption class="figure-caption">Accounts View</figcaption><p></p>
 </figure>
 </div>
@@ -2211,14 +2607,14 @@ Omissions
 <p>Meanwhile, here is how we do the budgets for our categories all over again, this time via these virtual transactions:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.57.40_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.57.40_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Budget Overview</figcaption><p></p>
 </figure>
 </div>
 <p>If you go to the <em>to be assigned</em> row in the categories table and look at the rollup value in the expenses column, then you’ll see that it corresponds to either the amount of money that’s still assigned (these are dollars — or in my case, rupees — that don’t have a job yet), or, in case you happen to have overshot the budget, the amount by which you are falling short. In the former situation, the available amount will be a positive number, while in the latter, it’ll be negative.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_7.57.35_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_7.57.35_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">To Be Assigned</figcaption><p></p>
 </figure>
 </div>
@@ -2244,7 +2640,7 @@ Omissions
 <p>will tell you how much you should budget for next month.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.23.47_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.23.47_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">In this example, Ebooks are not a rolling category, so even though I need only 628.95 to meet the original budget, I’ll still set aside the full 750, and the amount that will be available will be 871.05. On the other hand, Phone is a rolling category, and presumably my phone-related expenses in the current month added up to 420, so the recommendation is to budget 420 next time so you’ll still have 500 available total.</figcaption><p></p>
 </figure>
 </div>
@@ -2256,7 +2652,7 @@ Omissions
 <p>Adding transactions is reasonably easy, although admittedly it’s probably not as smooth as a specialized app that might have a Siri command to do this for you or a widget that let’s you quick-add things. However, it’s not too bad, especially if you enter it right away. You could also potentially automate this via API integrations, or enter your transactions in your regular app and export them as a CSV and import them into the Notion system once every so often.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.37.56_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.37.56_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
 <p></p><figcaption class="figure-caption">Transaction Table</figcaption><p></p>
 </figure>
 </div>
@@ -2277,7 +2673,7 @@ Omissions
 <p>Most of the action here is happening in the Transactions database. You could create linked copies of this database anywhere you like and filter things out to see what you want. For instance, if you want to keep tabs on the transactions in specific accounts, you could have this on your account pages:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.47.47_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.47.47_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Account Overview</figcaption><p></p>
 </figure>
 </div>
@@ -2290,7 +2686,7 @@ Omissions
 <p>This is possible to do for the current month though:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.08.56_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.08.56_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Monthly Overview</figcaption><p></p>
 </figure>
 </div>
@@ -2306,13 +2702,13 @@ Omissions
   <category>notion</category>
   <category>workflows</category>
   <category>tutorial</category>
-  <guid>https://www.neeldhara.blog/posts/envelope-budgeting-notion/index.html</guid>
+  <guid>https://neeldhara.blog/posts/envelope-budgeting-notion/index.html</guid>
   <pubDate>Fri, 17 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Actually Building a Website with Notion</title>
-  <link>https://www.neeldhara.blog/posts/building-websites-with-notion/index.html</link>
+  <link>https://neeldhara.blog/posts/building-websites-with-notion/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2348,8 +2744,8 @@ Doesn't look like it's for non-geeks like me 😄 or you may prove otherwise. Ho
 <ol type="1">
 <li>By default, both Super and Potion will give you a test subdomain to work with. Eventually, you might want the website to be available from your own domain. This is just a matter of adding a couple of A-records and typically can be done from wherever you registered the domain:</li>
 </ol>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" class="img-fluid"></p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.48.49_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.48.49_AM.png" class="img-fluid"></p>
 <ol start="2" type="1">
 <li>You might want to add custom styles to make the website render uniquely — so you move beyond the standard look-and-feel of a Notion page if you so wish. You could do something on your own here, but the simplest thing is to just borrow the styling from one of the existing templates and tweak it if you want.</li>
 <li>Insert code for Google Analytics (or similar). As an aside, if you are looking for analytics that is user-friendly <em>and</em> privacy-conscious, I’d recommend <a href="https://usefathom.com">Fathom</a>.</li>
@@ -2385,16 +2781,16 @@ Here's a little run through by <a href="https://twitter.com/robhope?ref_src=twsr
 <p>I started with the <a href="https://hq.super.site">Super template HQ</a>. It looks amazing and is apparently free to use — at least at the time of this writing 😀</p>
 <p>Duplicate this template into Notion. If you like, you can duplicate it twice — one, a copy that you actually work on, and the other could be a copy that you don’t edit but just keep handy in case you need to go back to the original for reference.</p>
 <p>The first thing I did was to get rid of most of the content, and just retained this section:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.55_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.55_AM.png" class="img-fluid"></p>
 <p>which, incidentally, will render like this once connected to Super:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.26_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.26_AM.png" class="img-fluid"></p>
 <p>Now the next step is to replace the generic content with yours:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.03.16_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.03.16_AM.png" class="img-fluid"></p>
 <p>Since I’m just starting out, I have added the three courses that I’m teaching this term and they all show up. Eventually, these courses will be filtered out based on the current timing, so that only the current ones show here and the rest get pushed to an archive — which I’m yet to build. But the filter would look something like this in Notion:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.05.42_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.05.42_AM.png" class="img-fluid"></p>
 <p>And for each of those entries, I’d go and setup the course home pages with the content that I have in my typical course homepages. The nice thing about Notion is the wide array of content types that lets you format things nicely. Here are a couple of sections from within Notion:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.32_AM.png" class="img-fluid"></p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.29.01_PM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.32_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.29.01_PM.png" class="img-fluid"></p>
 <p>One thing worth pointing out for this particular setup — for each course, the class plan is just a Notion database, where the columns are:</p>
 <ol type="1">
 <li>Name (text)</li>
@@ -2404,19 +2800,19 @@ Here's a little run through by <a href="https://twitter.com/robhope?ref_src=twsr
 </ol>
 <p>and the rows either correspond to an overview of a whole week or just one individual lecture, tagged with the week that it happened in.</p>
 <p>On the course’s homepage, I display this database set to a Gallery view, and filtered to only those entries where the Module option is <em>unchecked</em>. These are intended to be overview pages. This is what it looks like in Notion:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.41_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.41_AM.png" class="img-fluid"></p>
 <p>and this is what it will end up looking like on the website, once you’ve gotten to the end of Step 3:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.18.07_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.18.07_AM.png" class="img-fluid"></p>
 <p>Further, overview page simply displays the same database again, this time in a list view filtered by the appropriate week:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.11.43_AM.png" class="img-fluid" style="width:77.0%"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.11.43_AM.png" class="img-fluid" style="width:77.0%"></p>
 <p>Check out the views in Notion and the rendered version side-by-side:</p>
 <div class="columns">
 <div class="column" style="width:45%;">
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.08.34_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.08.34_AM.png" class="img-fluid"></p>
 </div><div class="column" style="width:10%;">
 
 </div><div class="column" style="width:45%;">
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.19.08_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.19.08_AM.png" class="img-fluid"></p>
 </div>
 </div>
 <p>You might wonder about the blockquote in the Notion view right at the top of the page. That’s a feature of the HQ template — anything that goes into that first blockquote renders as page navigation on top. I think this now a bit obsolete with Super’s new features on navigation bars, but I still find it handy and use it on most pages. 👍</p>
@@ -2426,13 +2822,13 @@ Here's a little run through by <a href="https://twitter.com/robhope?ref_src=twsr
 <p>2️⃣ Enable sharing to the web from within Notion — this will generate a link for you.</p>
 </aside>
 <p>This is very easy to do, it’s just a toggle on the top-right corner of your Notion app:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.22.38_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.22.38_AM.png" class="img-fluid"></p>
 <p>Now for the final step to have everything come together:</p>
 <aside>
 <p>3️⃣ Copy this link into Super or Potion.</p>
 </aside>
 <p>This is again quite straightforward, head to Super and just share your page’s public URL, give it a name, and optionally set it up to sync with your domain if you have one.</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.26.06_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.26.06_AM.png" class="img-fluid"></p>
 <p>Given that we’re using a particular Super template, you would also need to remember to insert the CSS to make the site look as advertised above 😅</p>
 <p>So remember to add this on the custom code section of your Super dashboard:</p>
 <p><code>&lt;link rel="stylesheet" href="[https://sites.super.so/hq/style.css](https://sites.super.so/hq/style.css)"&gt;</code></p>
@@ -2465,14 +2861,14 @@ Incidentally, if you prefer watching a video tutorial, Potion has you covered al
 </div>
 </div>
 <p>So, for step 1, which is to get our content in Notion, I start with a blank slate and populate it with some content:</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.00.36_PM.png" class="img-fluid"></p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.30.40_PM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.00.36_PM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.30.40_PM.png" class="img-fluid"></p>
 <p>For Step 2, I simply make this page public, and you can see the <a href="https://www.notion.so/Manim-Examples-4e4dd0c1071e4a549d90be74a84f3cce">Notion version here</a>.</p>
 <p>For Step 3, I add this page to Potion and just follow <a href="https://www.potion.so/cards-portfolio">step 4 on this page</a> to set this up with a lovely template made by Dr.&nbsp;Gil Pradana (@<a href="https://twitter.com/gildy">gildy</a>). This just amounts to copy-pasting some CSS code into the <em>Snippet Injection</em> section of your Potion dashboard. This template treats horizontal line breaks as breakpoints to create cards, and the headings translate into the highlight boxes that you can see from this preview.</p>
 <p><a href="https://twitter.com/gildy/status/1403680404092035075?s=20">https://twitter.com/gildy/status/1403680404092035075?s=20</a></p>
-<p>After connecting my domain, here’s what the website looks like this<img src="https://www.neeldhara.blog/posts/building-websites-with-notion/FireShot_Capture_002_-_Manim_Examples_-_manimexamples.com.png" class="img-fluid"></p>
+<p>After connecting my domain, here’s what the website looks like this<img src="https://neeldhara.blog/posts/building-websites-with-notion/FireShot_Capture_002_-_Manim_Examples_-_manimexamples.com.png" class="img-fluid"></p>
 <p>And that’s basically it! You have a fully functional page now. 🎉 Changes you make in Notion will reflect <em>instantaneously</em> on Potion!</p>
-<p><img src="https://www.neeldhara.blog/posts/building-websites-with-notion/ScreenFlow.gif" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/ScreenFlow.gif" class="img-fluid"></p>
 <p>You might wonder if there is a way of setting things up so that new tweets from the Manim community handle show up automatically on this website. In principle, this should be possible with a little help from tools like automate.io, Zapier, or Integromat — they can watch for new tweets and append them to the page you are working on, although I’m not sure how to set it up so that they respect the two-column layout that I have here. I figure tweets could also be added to a database and shown with a gallery view instead, but the gallery previews will typically not pick up embedded content, so you might have to go via an intermediate service like <a href="https://tweetpik.com/">Tweetpik</a> or <a href="https://pikaso.me/">Pikaso</a> instead so you have screenshots for display.</p>
 <p>So this was Potion - you can probably see the many ways in which Potion and Super are similar to setup. By the way, the templates on these platforms are <em>not</em> mutually compatible — so watch out for the fact that they will not automatically work on the other platform if you are looking to migrate. As far as I can see, neither service has an importer for the other built yet.</p>
 <p>That said, I hope you have fun making your website with Notion with whatever platform you choose to use! 🎉</p>
@@ -2484,13 +2880,13 @@ Incidentally, if you prefer watching a video tutorial, Potion has you covered al
   <category>notion</category>
   <category>workflows</category>
   <category>websites</category>
-  <guid>https://www.neeldhara.blog/posts/building-websites-with-notion/index.html</guid>
+  <guid>https://neeldhara.blog/posts/building-websites-with-notion/index.html</guid>
   <pubDate>Sat, 11 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" medium="image" type="image/png" height="78" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 <item>
   <title>Notion-powered websites</title>
-  <link>https://www.neeldhara.blog/posts/notion-powered-websites/index.html</link>
+  <link>https://neeldhara.blog/posts/notion-powered-websites/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2524,7 +2920,7 @@ Yeah, it feels like we are now at a point where it’s easier to make complex we
 <div class="page-columns page-full"><p>There are a few different options out there if you are interested in this as well, and here’s a handwritten TLDR-summary<sup>1</sup> if you find the rest of this little discussion too long:</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;TIL that this style of summarization is also called a <a href="https://en.wikipedia.org/wiki/Decision-matrix_method">Pugh chart</a>, thanks to <a href="https://www.youtube.com/channel/UC1S5O9BP9_46GS5t1t2Uksg/about">Justin Lai.</a></p></li></div></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/NotionWebsiteOptions.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/NotionWebsiteOptions.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Notion Website Options Compared</figcaption><p></p>
 </figure>
 </div>
@@ -2533,7 +2929,7 @@ Yeah, it feels like we are now at a point where it’s easier to make complex we
 <section id="just-use-notion" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="just-use-notion">Just Use Notion</h3>
 <p>The official <a href="https://www.notion.so/guides/build-a-website-with-notion-in-seconds-no-coding-required">Notion documentation</a> shows us how to build nice websites with Notion:</p>
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_2.57.18_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_2.57.18_AM.png" class="img-fluid"></p>
 <p>This is a great option for putting together something quick and temporary or for testing something out. It can be free (if you are on the Notion free plan) and/or will cost you nothing <em>on top of</em> what you might be paying for already if you are paying Notion user.</p>
 <blockquote class="twitter-tweet blockquote">
 <p lang="en" dir="ltr">
@@ -2549,7 +2945,7 @@ Yeah, it feels like we are now at a point where it’s easier to make complex we
 <section id="fruition-and-cloudflare-workers" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="fruition-and-cloudflare-workers">Fruition and Cloudflare Workers</h3>
 <p>A popular way to get your domain to point to your Notion setup and customize the look and feel of the final setup just a little bit is via Fruition:</p>
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_2.55.59_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_2.55.59_AM.png" class="img-fluid"></p>
 <p>As mentioned on the website already, one downside is the setup time — but I don’t think this is a very serious drawback at all, it’s a one-time exercise and not very difficult at all given the very clear instructions given on the website. However, I think there is a more significant concern with this option, which was highlighted by @<a href="https://twitter.com/bensomething">bensomething</a> in this Tweet thread:</p>
 <blockquote class="twitter-tweet blockquote">
 <p lang="en" dir="ltr">
@@ -2574,9 +2970,9 @@ Anything that converts your Notion pages to static versions is fine! It definite
 <section id="nextjs-notion-starter-kit-and-react-notion-x" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="nextjs-notion-starter-kit-and-react-notion-x">nextjs-notion-starter-kit and react-notion-x</h3>
 <p>The <code>nextjs-notion-starterkit</code> is a NextJS template built by @<a href="https://twitter.com/transitive_bs">transitive_bs</a>, which is <a href="https://transitivebullsh.it">in active use here</a>:</p>
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.11.05_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.11.05_AM.png" class="img-fluid"></p>
 <p>You can check out <a href="https://github.com/transitive-bullshit/nextjs-notion-starter-kit">the repository here</a>. If you are feeling even braver, you might even want to explore what powers this under the hood, which is the <code>react-notion-x</code> repository <a href="https://github.com/NotionX/react-notion-x">here</a>:</p>
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.09.44_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.09.44_AM.png" class="img-fluid"></p>
 <aside>
 💡 Using <code>nextjs-notion-starterkit</code> is definitely a whole lot safer than Fruition, but it’s also clearly a whole lot more intensive in terms of setup! This option is great in terms of being free and highly customizable, but is best-suited to those who are already familiar with Next.js and who generally know what they are doing. So if the readme pages on those repositories did not make much sense, it’s probably best to either get some help on the initial setup or move on to more user-friendly, truly <em>no-code</em> options. That’s what we have up next!
 </aside>
@@ -2587,7 +2983,7 @@ Anything that converts your Notion pages to static versions is fine! It definite
 <section id="super" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="super">Super</h3>
 <p><a href="https://super.so">Super</a> (on <a href="https://www.producthunt.com/posts/super-2-0">ProductHunt</a>), built by @<a href="https://twitter.com/traf">Traf</a> and @<a href="https://twitter.com/TrillCyborg">TrillCyborg</a> (Jason Werner) appears to be one of the leading options in terms of a no-code way of porting a Notion page to a website. This will set you back $12/site/month; but you get a substantial feature set in return:</p>
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.47.15_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_3.47.15_AM.png" class="img-fluid"></p>
 <p>I should point out that some Super templates are premium and will cost separately, but there are some really nice free ones that you can run with right away. <a href="https://hq.super.site">One that I really liked</a> happens to be free and is in use on the <a href="https://neeldhara.courses">website I have for my courses</a>. I had a completely painless setup experience and very responsive support on the minor things that I did get stuck on (h/t: @<a href="https://twitter.com/camincoll">camincoll</a>).</p>
 <p>Sites made with Super are performant, SEO-friendly, and fairly customizable. There are only two minor snags I ran into with Super: one is that updates on Notion take some time to reflect on the website (typically a minute or so — this is no big deal in general, but it’s just not real-time, and can feel slow while in testing and development). The other is that their terms of service seem a bit unusually restrictive — for instance, see the discussion initiated by @<a href="https://twitter.com/kulikalov">kulikalov</a> here:</p>
 <blockquote class="twitter-tweet blockquote">
@@ -2605,7 +3001,7 @@ That's a shaky foundation to work with <a href="https://twitter.com/super_?ref_s
 <section id="potion" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="potion">Potion</h3>
 <p>Finally, we have <a href="https://www.potion.so">Potion</a> (on <a href="https://www.producthunt.com/posts/potion-2">ProductHunt</a>), made by @<a href="https://twitter.com/noahwbragg">noahwbragg</a> (Noah Bragg), which is yet another way of getting a static site out of your Notion content in a fairly straightforward way:</p>
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_4.09.58_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_4.09.58_AM.png" class="img-fluid"></p>
 <aside>
 💡 While oversimplified, it is tempting to summarize Potion’s offering as “Super, but cheaper”. See the next section for a more detailed discussion of differences and similarities between the two. Overall, Potion has a very similar feature set and is slightly more affordable in comparison — definitely worth checking out the same way that Super is.
 </aside>
@@ -2625,9 +3021,9 @@ That's a shaky foundation to work with <a href="https://twitter.com/super_?ref_s
 <li><p>Super has a community forum and an arguably restrictive ToS. Potion has neither at the time of this writing.</p></li>
 <li><p>Potion’s dashboard has a live preview editor which lets you make simple changes to the CSS and preview them real-time — this may not be something you use often if you have made sophisticated customizations, but for quick edits to the default templates, it’s very handy:</p></li>
 </ol>
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_10.49.30_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_10.49.30_AM.png" class="img-fluid"></p>
 <p>Super has a great dashboard too, there’s a page-by-page breakup on the sidebar and a live preview of the site to the right, which shows up even when the individual pages are password-protected (by design):</p>
-<p><img src="https://www.neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_10.48.54_AM.png" class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/notion-powered-websites/Screenshot_2021-09-11_at_10.48.54_AM.png" class="img-fluid"></p>
 <ol start="6" type="1">
 <li><p>In terms of custom code, a small difference is that Super allows you to insert your own content inside <em>both</em> the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> tags while Potion is restricted to just the <code>&lt;head&gt;</code> tag. That said, additional possibilities for custom code injection are on Potion’s roadmap.</p></li>
 <li><p>There are differences of implementation under the hood, but I am not aware of the exact details here. Super uses the Notion API and a Content Delivery Network (CDN) - this explains why changes take 1-2 mins to flow through from Notion in Super automatically, but what it does get you is reliable performance at scale. Potion uses Vercel for hosting and generates static sites that feel fast and robust, and also uses a CDN.</p></li>
@@ -2688,13 +3084,13 @@ Note
   <category>notion</category>
   <category>workflows</category>
   <category>websites</category>
-  <guid>https://www.neeldhara.blog/posts/notion-powered-websites/index.html</guid>
+  <guid>https://neeldhara.blog/posts/notion-powered-websites/index.html</guid>
   <pubDate>Fri, 10 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/notion-powered-websites/NotionWebsiteOptions.png" medium="image" type="image/png" height="100" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/notion-powered-websites/NotionWebsiteOptions.png" medium="image" type="image/png" height="100" width="144"/>
 </item>
 <item>
   <title>Turn the LED on</title>
-  <link>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2724,12 +3120,12 @@ Each switch has a 50/50 chance of being ON or OFF.<br><br>The switches are all i
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>4 Person Gift Exchange</title>
-  <link>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2776,12 +3172,12 @@ Here's a beautiful probability puzzle inspired by Professor Henk Tijms (<a href=
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Conway’s Checkers</title>
-  <link>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2835,105 +3231,8 @@ Spoilers
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
   <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>Coin Tossing</title>
-  <link>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Contributed by Monali Shah on the Discord Server.</p>
-</div>
-</div>
-</div>
-<p>Suppose you were to keep flipping a coin until it landed either HTHHT or HHHHH on five consecutive flips. Which of these two sequences would you predict would occur first?</p>
-<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><a href="https://sites.math.washington.edu/~mathcircle/circle/2015-16/second/PenneyAnte.pdf">See here.</a> Also, a shorter sequence (HTT vs HTH) but with a similar element of surprise is explained also in this TED Talk:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kLmzxmRcUTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</div>
-</div>
-</div>
-
-
-
- ]]></description>
-  <category>puzzles</category>
-  <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</guid>
-  <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>Estimating Pi</title>
-  <link>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Sourced from Twitter on Pi Day (this also doubles up as a hint).</p>
-</div>
-</div>
-</div>
-<p>Take two random numbers <img src="https://latex.codecogs.com/png.latex?X"> and <img src="https://latex.codecogs.com/png.latex?Y"> between <img src="https://latex.codecogs.com/png.latex?0"> and <img src="https://latex.codecogs.com/png.latex?1">.</p>
-<p>What is the probability that the integer nearest to <img src="https://latex.codecogs.com/png.latex?X/Y"> is even?</p>
-<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Solution
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-Folks, here’s one way to reason <em>why</em> this probability should be (5 - pi)/4.<br><br>Even if the math doesn’t appeal to you, please don’t miss the key lesson at the end! <a href="https://t.co/IDEsQCuRVZ">pic.twitter.com/IDEsQCuRVZ</a>
-</p>
-— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1503695159862521860?ref_src=twsrc%5Etfw">March 15, 2022</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-</div>
-</div>
-
-
-
- ]]></description>
-  <category>puzzles</category>
-  <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</guid>
-  <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
