@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://www.neeldhara.blog/poems.html</link>
-<atom:link href="https://www.neeldhara.blog/poems.xml" rel="self" type="application/rss+xml"/>
+<link>https://neeldhara.blog/poems.html</link>
+<atom:link href="https://neeldhara.blog/poems.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
 <lastBuildDate>Sun, 22 Apr 2012 18:30:00 GMT</lastBuildDate>
 <item>
   <title>On the Fence</title>
-  <link>https://www.neeldhara.blog/posts/poems/on-the-fence/index.html</link>
+  <link>https://neeldhara.blog/posts/poems/on-the-fence/index.html</link>
   <description><![CDATA[ 
 
 
@@ -26,12 +26,12 @@
 
  ]]></description>
   <category>poem</category>
-  <guid>https://www.neeldhara.blog/posts/poems/on-the-fence/index.html</guid>
+  <guid>https://neeldhara.blog/posts/poems/on-the-fence/index.html</guid>
   <pubDate>Sun, 22 Apr 2012 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Sprinkles of the Sky</title>
-  <link>https://www.neeldhara.blog/posts/poems/sprinkles-of-the-sky/index.html</link>
+  <link>https://neeldhara.blog/posts/poems/sprinkles-of-the-sky/index.html</link>
   <description><![CDATA[ 
 
 
@@ -48,12 +48,12 @@
 
  ]]></description>
   <category>poem</category>
-  <guid>https://www.neeldhara.blog/posts/poems/sprinkles-of-the-sky/index.html</guid>
+  <guid>https://neeldhara.blog/posts/poems/sprinkles-of-the-sky/index.html</guid>
   <pubDate>Tue, 04 Jan 2011 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Seek</title>
-  <link>https://www.neeldhara.blog/posts/poems/seek/index.html</link>
+  <link>https://neeldhara.blog/posts/poems/seek/index.html</link>
   <description><![CDATA[ 
 
 
@@ -70,12 +70,12 @@
 
  ]]></description>
   <category>poem</category>
-  <guid>https://www.neeldhara.blog/posts/poems/seek/index.html</guid>
+  <guid>https://neeldhara.blog/posts/poems/seek/index.html</guid>
   <pubDate>Mon, 02 Apr 2007 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Bloom</title>
-  <link>https://www.neeldhara.blog/posts/poems/bloom/index.html</link>
+  <link>https://neeldhara.blog/posts/poems/bloom/index.html</link>
   <description><![CDATA[ 
 
 
@@ -90,7 +90,7 @@
 
  ]]></description>
   <category>poem</category>
-  <guid>https://www.neeldhara.blog/posts/poems/bloom/index.html</guid>
+  <guid>https://neeldhara.blog/posts/poems/bloom/index.html</guid>
   <pubDate>Wed, 02 Feb 2005 18:30:00 GMT</pubDate>
 </item>
 </channel>

@@ -53,7 +53,7 @@ S takes the top card and passes the deck to the next person (T).</code></pre></l
 <p>The diagram below shows why cut shuffles still result in sequences where the signal from any location continues to be unique, and in some sense, <em>invariant</em> across shuffles: suppose a position <img src="https://latex.codecogs.com/png.latex?x"> corresponds to a certain signal <img src="https://latex.codecogs.com/png.latex?S_x"> before a cut shuffle, then after a cut shuffle, if position <img src="https://latex.codecogs.com/png.latex?x"> shifts to <img src="https://latex.codecogs.com/png.latex?y">, then <img src="https://latex.codecogs.com/png.latex?S_y%20=%20S_x">. Note that this would <em>not</em> be true if someone, say, enthusiastically riffle shuffled the pack — so do make sure to prevent this at all cost.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/debruijn/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Examples of cut shuffles and why they don’t affect the addressing technique. The first column shows the original sequence, the second shows the proposed cut, and the last shows the final sequence after the cut shuffle is excecuted.</figcaption><p></p>
 </figure>
 </div>
@@ -85,7 +85,7 @@ You perhaps see now how you can perform the entire trick:
 <p>If you want to make your life easier, you could use an association that is easy to remember:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/debruijn/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A useful dictionary between 5-bit strings and cards from a standard deck of cards</figcaption><p></p>
 </figure>
 </div>
@@ -129,7 +129,7 @@ If you want to take a look at the graph, it’s right here…
 <p>…although a bit of a monstrosity!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/debruijn/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
 <p></p><figcaption class="figure-caption">The de Bruijn graph of order 4</figcaption><p></p>
 </figure>
 </div>
@@ -225,7 +225,7 @@ there are exactly _____ self-loops
   <category>lecturenotes</category>
   <guid>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</guid>
   <pubDate>Sat, 10 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dsanotes/debruijn/figures/ch5-cutshuffleex.png" medium="image" type="image/png"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" medium="image" type="image/png" height="185" width="144"/>
 </item>
 <item>
   <title>Walking Around via Euler Tours</title>
