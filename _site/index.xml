@@ -19,8 +19,8 @@
 
 
 
-<section id="dog-bunny-a-cute-puzzle" class="level2">
-<h2 class="anchored" data-anchor-id="dog-bunny-a-cute-puzzle">Dog Bunny: A Cute Puzzle</h2>
+<section id="dog-bunny-a-cute-puzzle" class="level3">
+<h3 class="anchored" data-anchor-id="dog-bunny-a-cute-puzzle">Dog Bunny: A Cute Puzzle</h3>
 <p>Conrad Barski (<a href="https://twitter.com/lisperati"><span class="citation" data-cites="lisperati">@lisperati</span></a>)’s latest, <a href="http://www.dogbunnypuzzle.com/">Dog Bunny Puzzle</a>, had <a href="https://news.ycombinator.com/item?id=32884467">jumped to #1 on HN</a>. The puzzle presents the following somewhat minimalist interface:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -125,8 +125,8 @@ Is the problem NP-complete?
 </div>
 <p>So the last question may strike you as a bit left-field, but that’s what I’m going to ramble about for the rest of this post :) It turns out that the answer is in the affirmative, and <a href="https://twitter.com/lokshtanov/status/1571588360254410752">here</a> is a lovely reduction by <a href="https://twitter.com/lokshtanov"><span class="citation" data-cites="lokshtanov">@lokshtanov</span></a> showing as much.</p>
 </section>
-<section id="the-reduction" class="level2">
-<h2 class="anchored" data-anchor-id="the-reduction">The Reduction</h2>
+<section id="the-reduction" class="level3">
+<h3 class="anchored" data-anchor-id="the-reduction">The Reduction</h3>
 <p>Let’s just set up the game as a computational problem just to be sure that we agree on the abstraction. In fact, we’ll be working with a simpler version that we will call <code>BunnyCarrot</code>.</p>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -150,27 +150,30 @@ BunnyCarrot
 <p></p><figcaption class="figure-caption">A cartoon sketch of the reduced instance of BunnyCarrot from 3SAT.</figcaption><p></p>
 </figure>
 </div>
-<p>What we have here is the following:</p>
+<p>What we have here is the following in terms of the structure of graph:</p>
 <ul>
 <li><p>a path <img src="https://latex.codecogs.com/png.latex?X"> on <img src="https://latex.codecogs.com/png.latex?m+2"> vertices, with the left most vertex in <img src="https://latex.codecogs.com/png.latex?B"> and the rightmost one in <img src="https://latex.codecogs.com/png.latex?C">;</p></li>
 <li><p>a pair of vertices <img src="https://latex.codecogs.com/png.latex?(u_i,v_i)"> for every <img src="https://latex.codecogs.com/png.latex?i%20%5Cin%20%5Bn%5D">, and an edge between them, where all the <img src="https://latex.codecogs.com/png.latex?u_i">’s are in <img src="https://latex.codecogs.com/png.latex?B">’ — the vertex <img src="https://latex.codecogs.com/png.latex?u_i"> represents the literal <img src="https://latex.codecogs.com/png.latex?x_i"> while the vertex <img src="https://latex.codecogs.com/png.latex?v_i"> represents the literal <img src="https://latex.codecogs.com/png.latex?%5Coverline%7Bx_i%7D">;</p></li>
-<li><p>a pair of vertices <img src="https://latex.codecogs.com/png.latex?p"> and <img src="https://latex.codecogs.com/png.latex?q"> in <img src="https://latex.codecogs.com/png.latex?C">, with <img src="https://latex.codecogs.com/png.latex?p"> adjacent to all <img src="https://latex.codecogs.com/png.latex?u_i">’s and <img src="https://latex.codecogs.com/png.latex?q"> adjacent to all <img src="https://latex.codecogs.com/png.latex?v_i">’s;</p></li>
-<li><p>the edge to the <img src="https://latex.codecogs.com/png.latex?%5Cell">-th vertex on <img src="https://latex.codecogs.com/png.latex?P"> is active only if there is a bunny on at least one of the literals present in the clause <img src="https://latex.codecogs.com/png.latex?C_%7B%5Cell-1%7D">;</p></li>
+<li><p>a pair of vertices <img src="https://latex.codecogs.com/png.latex?p"> and <img src="https://latex.codecogs.com/png.latex?q"> in <img src="https://latex.codecogs.com/png.latex?C">, with <img src="https://latex.codecogs.com/png.latex?p"> adjacent to all <img src="https://latex.codecogs.com/png.latex?u_i">’s and <img src="https://latex.codecogs.com/png.latex?q"> adjacent to all <img src="https://latex.codecogs.com/png.latex?v_i">’s.</p></li>
+</ul>
+<p>Now here be the instructions associated with the edges:</p>
+<ul>
+<li><p>the edge to the <img src="https://latex.codecogs.com/png.latex?%5Cell">-th vertex on <img src="https://latex.codecogs.com/png.latex?X"> is active only if there is a bunny on at least one of the literals present in the clause <img src="https://latex.codecogs.com/png.latex?C_%7B%5Cell-1%7D">;</p></li>
 <li><p>the edges between <img src="https://latex.codecogs.com/png.latex?u_i"> and <img src="https://latex.codecogs.com/png.latex?v_i"> are active only when there is a bunny on the leftmost vertex of <img src="https://latex.codecogs.com/png.latex?X">; and</p></li>
 <li><p>finally, the edges incident on <img src="https://latex.codecogs.com/png.latex?p"> and <img src="https://latex.codecogs.com/png.latex?q"> are active only when there is a bunny on the rightmost vertex of <img src="https://latex.codecogs.com/png.latex?X">.</p></li>
 </ul>
 </section>
-<section id="the-forward-direction" class="level2">
-<h2 class="anchored" data-anchor-id="the-forward-direction">The Forward Direction</h2>
+<section id="the-forward-direction" class="level3">
+<h3 class="anchored" data-anchor-id="the-forward-direction">The Forward Direction</h3>
 <p>We first claim that we can “win” this game if <img src="https://latex.codecogs.com/png.latex?%5Cphi"> has a satisfying assignment. Indeed, let <img src="https://latex.codecogs.com/png.latex?%5Ctau:%20%5C%7Bx_1,%5Cldots,x_n%5C%7D%20%5Crightarrow%20%5C%7B0,1%5C%7D"> be a truth assignment that satisfies all the clauses of <img src="https://latex.codecogs.com/png.latex?%5Cphi">. Then:</p>
 <ol type="1">
 <li><p>If <img src="https://latex.codecogs.com/png.latex?%5Ctau(x_i)%20=%200">, move the bunny on <img src="https://latex.codecogs.com/png.latex?u_i"> to <img src="https://latex.codecogs.com/png.latex?v_i">.</p></li>
-<li><p>Move the bunny on the leftmost vertex of the path <img src="https://latex.codecogs.com/png.latex?X"> to the rightmost vertex: note that all edges are active because <img src="https://latex.codecogs.com/png.latex?%5Ctau"> is a satisfying assignment</p></li>
+<li><p>Move the bunny on the leftmost vertex of the path <img src="https://latex.codecogs.com/png.latex?X"> to the rightmost vertex: note that all edges are active because <img src="https://latex.codecogs.com/png.latex?%5Ctau"> is a satisfying assignment.</p></li>
 <li><p>Move all bunnies on <img src="https://latex.codecogs.com/png.latex?u_i">’s to <img src="https://latex.codecogs.com/png.latex?p"> and those on <img src="https://latex.codecogs.com/png.latex?v_i">’s to <img src="https://latex.codecogs.com/png.latex?q">.</p></li>
 </ol>
 </section>
-<section id="the-backward-direction" class="level2">
-<h2 class="anchored" data-anchor-id="the-backward-direction">The Backward Direction</h2>
+<section id="the-backward-direction" class="level3">
+<h3 class="anchored" data-anchor-id="the-backward-direction">The Backward Direction</h3>
 <p>Now suppose there is a winning sequence of moves <img src="https://latex.codecogs.com/png.latex?%5Csigma">. We will show that we can extract from this sequence a satisfying assignment for <img src="https://latex.codecogs.com/png.latex?%5Cphi">, which will firmly establish the equivalence of the generated instance of <code>BunnyCarrot</code> with the OG hard instance <img src="https://latex.codecogs.com/png.latex?%5Cphi">.</p>
 <p>Note that to begin with, all the blue edges are inactive. Now, in the sequence <img src="https://latex.codecogs.com/png.latex?%5Csigma">, let us say that a step is <em>key</em> if it involves a bunny moving along the first edge of the path <img src="https://latex.codecogs.com/png.latex?X"> and <em>critical</em> if it involves a bunny moving along the last edge of the path <img src="https://latex.codecogs.com/png.latex?X">.</p>
 <p>Suppose the <img src="https://latex.codecogs.com/png.latex?%5Cell">-th step is the first critical step in <img src="https://latex.codecogs.com/png.latex?%5Csigma">. Further, suppose that the <img src="https://latex.codecogs.com/png.latex?t">-th step is the <em>last</em> key step to occur <em>before</em> the <img src="https://latex.codecogs.com/png.latex?%5Cell">-th step. Notice that there must be at least one key step before a critical step — we must begin before we can end :)</p>
@@ -194,26 +197,27 @@ BunnyCarrot
 </ul>
 <p>By our assumption that <img src="https://latex.codecogs.com/png.latex?%5Ctau"> falsifies <img src="https://latex.codecogs.com/png.latex?C_k">, <em>all</em> the premises above are true! So there is an edge on the path <img src="https://latex.codecogs.com/png.latex?X"> that is not active between the <img src="https://latex.codecogs.com/png.latex?t">-th and <img src="https://latex.codecogs.com/png.latex?%5Cell">-th steps, which violates our understanding that every edge was crossed between these steps. This is a contradiction, and hence <img src="https://latex.codecogs.com/png.latex?%5Ctau"> must indeed be a satisfying assignment.</p>
 <p>I’ll just remark here that this construction can be modified so that every vertex in the graph has constant degree, and there is only one vertex in <img src="https://latex.codecogs.com/png.latex?C">. It can also be modified to change the “or” condition on the edges to an “and”, by simply separating the conditions out along multiedges.</p>
-<div class="callout-tip callout callout-style-simple no-icon">
+</section>
+<section id="food-for-thought" class="level3">
+<h3 class="anchored" data-anchor-id="food-for-thought">Food for thought</h3>
+<p>Here are some more questions :)</p>
+<div class="callout-important callout callout-style-simple no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Thanks to <a href="https://twitter.com/lokshtanov">Daniel</a> for sharing this reduction!</p>
-</div>
-</div>
-</div>
-<p>To round this off: more questions :)</p>
 <ol type="1">
 <li><p>What’s the complexity of this game when the underlying graph has some simple structure (e.g, a tree)?</p></li>
 <li><p>Does the problem get harder if we introduce attacking entities like wolves?</p></li>
 <li><p>Can we come up with an algorithm that runs in polynomial time on instances where there is a valid winning sequence of constant length?</p></li>
 <li><p>Is the problem hard even for a constant number of bunnies?</p></li>
 </ol>
-<hr>
-<p>Please feel free to share your thoughts in the comments here, or <a href="https://twitter.com/neeldhara/status/1571629379779973121">continue the conversation on Twitter</a>!</p>
-<p>PS. Here’s <a href="https://twitter.com/neeldhara/status/1571522626526515202">a sketch of a slighty different reduction</a> from vertex cover.</p>
+</div>
+</div>
+</div>
+<p>That’s it for now: please feel free to share your thoughts in the comments here, or <a href="https://twitter.com/neeldhara/status/1571629379779973121">continue the conversation on Twitter</a>!</p>
+<p>PS. Here’s <a href="https://twitter.com/neeldhara/status/1571522626526515202">a sketch of a slighty different reduction</a> from vertex cover. Thanks again to <a href="https://twitter.com/lokshtanov">Daniel</a> for sharing the reduction described here!</p>
 
 
 </section>

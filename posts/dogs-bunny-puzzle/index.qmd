@@ -81,15 +81,17 @@ We are going to show that `BunnyCarrot` is NP-complete by reducing from `3SAT`. 
 
 ![A cartoon sketch of the reduced instance of BunnyCarrot from 3SAT.](reduction2.png){width=87%}
 
-What we have here is the following:
+What we have here is the following in terms of the structure of graph:
 
 - a path $X$ on $m+2$ vertices, with the left most vertex in $B$ and the rightmost one in $C$;
 
 - a pair of vertices $(u_i,v_i)$ for every $i \in [n]$, and an edge between them, where all the $u_i$'s are in $B$' --- the vertex $u_i$ represents the literal $x_i$ while the vertex $v_i$ represents the literal $\overline{x_i}$;
 
-- a pair of vertices $p$ and $q$ in $C$, with $p$ adjacent to all $u_i$'s and $q$ adjacent to all $v_i$'s;
+- a pair of vertices $p$ and $q$ in $C$, with $p$ adjacent to all $u_i$'s and $q$ adjacent to all $v_i$'s.
 
-- the edge to the $\ell$-th vertex on $P$ is active only if there is a bunny on at least one of the literals present in the clause $C_{\ell-1}$;
+Now here be the instructions associated with the edges:
+
+- the edge to the $\ell$-th vertex on $X$ is active only if there is a bunny on at least one of the literals present in the clause $C_{\ell-1}$;
 
 - the edges between $u_i$ and $v_i$ are active only when there is a bunny on the leftmost vertex of $X$; and
 
@@ -101,7 +103,7 @@ We first claim that we can "win" this game if $\phi$ has a satisfying assignment
 
 1. If $\tau(x_i) = 0$, move the bunny on $u_i$ to $v_i$.
 
-2. Move the bunny on the leftmost vertex of the path $X$ to the rightmost vertex: note that all edges are active because $\tau$ is a satisfying assignment
+2. Move the bunny on the leftmost vertex of the path $X$ to the rightmost vertex: note that all edges are active because $\tau$ is a satisfying assignment.
 
 3. Move all bunnies on $u_i$'s to $p$ and those on $v_i$'s to $q$.
 

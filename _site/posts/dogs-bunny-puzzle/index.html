@@ -314,12 +314,15 @@ BunnyCarrot
 <p></p><figcaption class="figure-caption">A cartoon sketch of the reduced instance of BunnyCarrot from 3SAT.</figcaption><p></p>
 </figure>
 </div>
-<p>What we have here is the following:</p>
+<p>What we have here is the following in terms of the structure of graph:</p>
 <ul>
 <li><p>a path <span class="math inline">X</span> on <span class="math inline">m+2</span> vertices, with the left most vertex in <span class="math inline">B</span> and the rightmost one in <span class="math inline">C</span>;</p></li>
 <li><p>a pair of vertices <span class="math inline">(u_i,v_i)</span> for every <span class="math inline">i \in [n]</span>, and an edge between them, where all the <span class="math inline">u_i</span>’s are in <span class="math inline">B</span>’ — the vertex <span class="math inline">u_i</span> represents the literal <span class="math inline">x_i</span> while the vertex <span class="math inline">v_i</span> represents the literal <span class="math inline">\overline{x_i}</span>;</p></li>
-<li><p>a pair of vertices <span class="math inline">p</span> and <span class="math inline">q</span> in <span class="math inline">C</span>, with <span class="math inline">p</span> adjacent to all <span class="math inline">u_i</span>’s and <span class="math inline">q</span> adjacent to all <span class="math inline">v_i</span>’s;</p></li>
-<li><p>the edge to the <span class="math inline">\ell</span>-th vertex on <span class="math inline">P</span> is active only if there is a bunny on at least one of the literals present in the clause <span class="math inline">C_{\ell-1}</span>;</p></li>
+<li><p>a pair of vertices <span class="math inline">p</span> and <span class="math inline">q</span> in <span class="math inline">C</span>, with <span class="math inline">p</span> adjacent to all <span class="math inline">u_i</span>’s and <span class="math inline">q</span> adjacent to all <span class="math inline">v_i</span>’s.</p></li>
+</ul>
+<p>Now here be the instructions associated with the edges:</p>
+<ul>
+<li><p>the edge to the <span class="math inline">\ell</span>-th vertex on <span class="math inline">X</span> is active only if there is a bunny on at least one of the literals present in the clause <span class="math inline">C_{\ell-1}</span>;</p></li>
 <li><p>the edges between <span class="math inline">u_i</span> and <span class="math inline">v_i</span> are active only when there is a bunny on the leftmost vertex of <span class="math inline">X</span>; and</p></li>
 <li><p>finally, the edges incident on <span class="math inline">p</span> and <span class="math inline">q</span> are active only when there is a bunny on the rightmost vertex of <span class="math inline">X</span>.</p></li>
 </ul>
@@ -329,7 +332,7 @@ BunnyCarrot
 <p>We first claim that we can “win” this game if <span class="math inline">\phi</span> has a satisfying assignment. Indeed, let <span class="math display">\tau: \{x_1,\ldots,x_n\} \rightarrow \{0,1\}</span> be a truth assignment that satisfies all the clauses of <span class="math inline">\phi</span>. Then:</p>
 <ol type="1">
 <li><p>If <span class="math inline">\tau(x_i) = 0</span>, move the bunny on <span class="math inline">u_i</span> to <span class="math inline">v_i</span>.</p></li>
-<li><p>Move the bunny on the leftmost vertex of the path <span class="math inline">X</span> to the rightmost vertex: note that all edges are active because <span class="math inline">\tau</span> is a satisfying assignment</p></li>
+<li><p>Move the bunny on the leftmost vertex of the path <span class="math inline">X</span> to the rightmost vertex: note that all edges are active because <span class="math inline">\tau</span> is a satisfying assignment.</p></li>
 <li><p>Move all bunnies on <span class="math inline">u_i</span>’s to <span class="math inline">p</span> and those on <span class="math inline">v_i</span>’s to <span class="math inline">q</span>.</p></li>
 </ol>
 </section>
