@@ -852,6 +852,155 @@ How would you do it?
   <media:content url="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
+  <title>Representing Sequences</title>
+  <link>https://neeldhara.blog/posts/dsanotes/sequences/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="of-playlists-and-tweet-threads-representing-sequential-information" class="level1 page-columns page-full">
+<h1>Of Playlists and Tweet Threads: <br>Representing Sequential Information</h1>
+<p><a href="https://slides.com/neeldhara/dsa1-w01#/2/1">Link to Slides</a></p>
+<p>So far, we have worked with <em>atomic</em> types, which is to say variables that can hold a “single kind of data” for us — like integers, characters, strings, booleans, and so on. Often, however, we need to work with compound types, which is to say, a bunch of these things taken together. For example, you may have sensed that when we spoke of maintaining <a href="intro.qmd">a set of cards</a> earlier with 52 booleans, it may have been nicer if they could be strung together into a single, unified structure: for one, it saves you having to keep track of a large number of variables, and further, it might be easier — as we will find out — to manipulate the data in response to operations that we may want to support.</p>
+<p>When you speak of a bunch of objects, it is useful to agree on whether you interpret the collection as an <em>ordered</em> or <em>unordered</em> set. Consider the following examples:</p>
+<ol type="1">
+<li>Your playlist of happy songs</li>
+<li>A stack of cards</li>
+<li>People living in a house</li>
+<li>Teams that played in the Asia Cup 2022</li>
+<li>Chess pieces on a board mid-game</li>
+</ol>
+<div class="page-columns page-full"><p>While some people play their happy songs in shuffle mode, for some the playlist is carefully organized, and the order matters. A stack of cards and chess pieces on a board are clearly collections with a natural sense of order, and one that is very likely to be important. On the other hand, people who live in a particular house or the set of teams that participated in the Asia cup in 2022 can be thought of as sets with no underlying order: of course, if you had to impose one you could cook something up<sup>1</sup> (e.g, alphabetical, favorites, and so on). We will focus on storing ordered lists for now and return to sets in due course.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;For example, the C++ implementation of <code>set</code> maintains a default order even though it is, by nomenclature, modeling unordered sets. On the other hand, the <code>unordered_set</code> data structure in the C++ STL throws all caution to the wind and buys faster operations on average.</p></li></div></div>
+<p>There are a few different ways that you can store a list of things in a computer’s memory. Imagine that you are real estate agent and you want to book some houses in a complex for your current and future clients. Stretching your imagination a little bit further, say all houses are numbered from 1 to 1000 and are positioned on a straight line in the natural order (i.e, 2 after 1, 3 after 2, and so on). Some houses are occupied and others are not. If you reserve <img src="https://latex.codecogs.com/png.latex?k"> houses, management will find some contiguous block of <img src="https://latex.codecogs.com/png.latex?k"> unoccupied houses and give you the number of the first house in the block. For instance, if you ask for 50 houses, you would get a letter from the management saying 50 houses starting from #420 are yours. If you need 20 more houses later, you would get a letter from the management saying 70 houses starting from #777 are yours. That’s right: they are not obiligied to give you houses #470 to #489, indeed, these may not be avaiailable. They <em>could</em> just give you an additional chunk of 20 houses somewhere else, but sadly that’s not how they roll: them management, them rules. There are also no refunds: you can’t give back reserved houses.</p>
+<p>Now here comes our first dilemma: how many houses do we reserve? Say we have 20 clients: it is clear that we need to reserve <em>at least</em> 20 houses, but should we reserve a few more? Reservations are not free, so we don’t want to reserve a very large number of houses either: remember, there are no refunds. But on the other hand, if we reserve too few, and we end up with more clients than the number of houses we’ve reserved, we will be in a sticky situation — worst case some clients may have to move, which is not ideal. You will have to work on coming up with a reasonable estimate of how many clients you will eventually have, and hope for the best.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Expanding your reservations can get tricky</figcaption><p></p>
+</figure>
+</div>
+<p>Over time you find that this business of estimating the number of clients you have is an unpleasant one: both under and overestimates lead to losses, which makes you wonder if there are apartments that have more flexible options. You look around, and why yes, you find a different apartment complex — again a thousand houses on a line neatly numbered 1 to 1000 from left to right, but this time, management reserves one house at a time. You want a new house, you simply ask for one. But there’s a catch: the paperwork here requires you to submit the client’s information, and they directly get their house number. So this is actually quite efficient: the management does all the work and you can reserve exactly what you need. All is well until it’s time for Diwali and you realize you don’t know where your clients are housed, and you can’t send them postcards, sweets, and advertisements.</p>
+<p>You could, of course, just call your clients and ask them for their house numbers, but then this requires you to maintain some kind of register, and let us just say that you are not good with that kind of thing. So here’s what you do instead: you only keep the first client’s address, because that’s just one thing that’s easy to remember. Then you ask your <img src="https://latex.codecogs.com/png.latex?i">-th client to remember the address of the <img src="https://latex.codecogs.com/png.latex?(i+1)">-th client: they are slightly bewildered but you tell them it’s for insurance. Now if you want to pay a visit to your <img src="https://latex.codecogs.com/png.latex?%5Cell">-th client, you just start from your first one, and follow the trail. Peculiar, but works.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-02.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p></p><figcaption class="figure-caption">Walking around to find your clients with new management.</figcaption><p></p>
+</figure>
+</div>
+<p>Note that with the previous maangement this was never a problem: you had a contiguous block of houses that you allocated sequentially, so your <img src="https://latex.codecogs.com/png.latex?i">-th client’s house address was always at hand if you were good with arithmetic or had a calculator: simply add <img src="https://latex.codecogs.com/png.latex?(i-1)"> to the house number of the first client.</p>
+<p>As analogies go this was both unrealistic and imprefect, but I hope it gives you a sense of the main trade-offs involved in the two ways we have to store sequential data — very roughly speaking:</p>
+<ul>
+<li>in contiguous blocks, access is easy, flexibility is hard;</li>
+<li>with elements all over the place, access is indirect but the structure is relatively flexible.</li>
+</ul>
+<section id="arrays" class="level2">
+<h2 class="anchored" data-anchor-id="arrays">Arrays</h2>
+<p>Quoting <a href="https://en.wikipedia.org/wiki/Array_data_structure">Wikipedia</a>:</p>
+<blockquote class="blockquote">
+<p>An array is a data structure consisting of a collection of elements (values or variables), each identified by at least one array index or key. An array is stored such that the position of each element can be computed from its index tuple by a mathematical formula.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>For example, an array of 10 32-bit (4-byte) integer variables, with indices 0 through 9, may be stored as 10 words at memory addresses 2000, 2004, 2008, …, 2036, (in hexadecimal: 0x7D0, 0x7D4, 0x7D8, …, 0x7F4) so that the element with index i has the address 2000 + (i × 4).[4]</p>
+</blockquote>
+</section>
+<section id="linked-lists" class="level2">
+<h2 class="anchored" data-anchor-id="linked-lists">Linked Lists</h2>
+<p>Quoting <a href="https://en.wikipedia.org/wiki/Linked_list">Wikipedia</a>:</p>
+<blockquote class="blockquote">
+<p>A linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence. In its most basic form, each node contains: data, and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>More complex variants add additional links, allowing more efficient insertion or removal of nodes at arbitrary positions. A drawback of linked lists is that access time is linear (and difficult to pipeline). Faster access, such as random access, is not feasible. Arrays have better cache locality compared to linked lists.</p>
+</blockquote>
+</section>
+<section id="comparison" class="level2">
+<h2 class="anchored" data-anchor-id="comparison">Comparison</h2>
+<p>Given a fully occupied array with n elements v/s a linked list with n elements, here are the costs of some operations that you might want to perform:</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 21%">
+<col style="width: 28%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Operations</th>
+<th style="text-align: center;">Arrays</th>
+<th style="text-align: center;">Singly Linked List</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Looking up the i-th element</td>
+<td style="text-align: center;">instant</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Capprox"> i</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Adding a new element at the start</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Capprox"> n</td>
+<td style="text-align: center;">instant</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Adding a new element at the end</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Capprox"> n</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Capprox"> n</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Removing the i-th element</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Capprox"> n-i</td>
+<td style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?%5Capprox"> i</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-should-you-use" class="level2">
+<h2 class="anchored" data-anchor-id="what-should-you-use">What should you use?</h2>
+<p>The correct answer is: it depends. If you expect your lists to be heavily manipulated, then linked lists are likely to be the better choice. On the other hand, if yuo are working with a list of a predictable size (or you at least have a known and reasonable upper bound on the size), and direct access is important to you, then arrays are the way to go. If you are dissatisfied with both methods, then consider transforming your unhappiness into motivation for discovering more sophisticated options!</p>
+
+<!--
+    - index.qmd
+    - intro.qmd
+    - sequences.qmd
+    - cardtricks.qmd
+    - graphs.qmd
+    - traversals.qmd
+    - stablematchings.qmd
+ -->
+
+
+</section>
+</section>
+
+
+ ]]></description>
+  <category>dsanotes</category>
+  <category>lecturenotes</category>
+  <guid>https://neeldhara.blog/posts/dsanotes/sequences/index.html</guid>
+  <pubDate>Mon, 01 Aug 2022 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
+<item>
+  <title>Dog Bunny Puzzle</title>
+  <link>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Conrad Barski (<a href="https://twitter.com/lisperati"><span class="citation" data-cites="lisperati">@lisperati</span></a>)’s latest, <a href="http://www.dogbunnypuzzle.com/">Dog Bunny Puzzle</a> has <a href="https://news.ycombinator.com/item?id=32884467">jumped to #1 on HN</a>. The puzzle presents the following arguabyl minimalist interface:</p>
+<p><img src="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" class="img-fluid"></p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>exposition</category>
+  <guid>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</guid>
+  <pubDate>Mon, 01 Aug 2022 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" medium="image" type="image/png" height="168" width="144"/>
+</item>
+<item>
   <title>Data Structures and Structured Data</title>
   <link>https://neeldhara.blog/posts/dsanotes/introduction/index.html</link>
   <description><![CDATA[ 
@@ -3122,117 +3271,6 @@ Each switch has a 50/50 chance of being ON or OFF.<br><br>The switches are all i
   <category>tgif</category>
   <guid>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>4 Person Gift Exchange</title>
-  <link>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>This puzzle by <a href="https://twitter.com/Hendrikc44">Professor Henk Tijms</a> was contributed by <a href="https://twitter.com/10kdiver"><span class="citation" data-cites="10kdiver">@10kdiver</span></a>.</p>
-</div>
-</div>
-</div>
-<p>First the warm-up edition.</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-Here's a beautiful probability puzzle inspired by Professor Henk Tijms (<a href="https://twitter.com/Hendrikc44?ref_src=twsrc%5Etfw"><span class="citation" data-cites="Hendrikc44">@Hendrikc44</span></a>).<br><br>See if you can solve it. The answer may surprise you!<br><br>(I'll post a solution tomorrow.) <a href="https://t.co/m1c8u0J5MN">pic.twitter.com/m1c8u0J5MN</a>
-</p>
-— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1506573197310771202?ref_src=twsrc%5Etfw">March 23, 2022</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Now for the harder version.</p>
-<div class="callout-caution callout callout-style-simple no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>A number of people will exchange gifts at a holiday party. Each person brings a gift to the party and attaches a label with a unique number to this gift. These numbers are also put on cards, which are deposited in a box and shuffled. Each person at the party then sequentially draws a card from the box, and receives the gift whose label corresponds to the number on the card drawn. If the number corresponds to his or her own gift, the card is returned to the box and the person draws another card. Of course, it is not possible for the last person to draw a second card.</p>
-<p>What is the probability that the last person is left with the card corresponding to his or her own present? In the simple case of two people, the probability is zero. The problem is also easy to solve in the case of three people, using a chance tree. It is no restriction to imagine that the persons are numbered as 1, 2 and 3 like the labels of their presents, and that they draw a card in this order. Then person 1 gets either the present with label 2 or the present with label 3, each with a probability of 1/2. If person 1 gets the present with label 3, then the conditional probability of the last person 3 to get his or her own present is zero. If person 1 gets the present with label 2, then the cards with labels 1 and 3 are left and person 2 draws the card with label 1 with probability of 1/2, in which case the last person 3 is left with the card of his or her own present. Therefore the probability that the last person will be left with the card of his or her own present is ½ × 0 + ½ × ½ = ¼.</p>
-<p>The challenges for this week are these: What is the probability that the card left for the last person corresponds to his or her own present when there are four people at the party? What is the probability when there are five people at the party?</p>
-</div>
-</div>
-<div class="page-columns page-full"><p><a href="https://archive.nytimes.com/wordplay.blogs.nytimes.com/2015/12/28/tijms-gift-exchange/?mtrref=undefined&amp;gwh=AD59BCDA3B5A60F3390C8F341A1F00BB&amp;gwt=pay&amp;assetType=PAYWALL">Source</a> </p><div class="no-row-height column-margin column-container"><span class="aside">NB. may be paywalled</span></div></div>
-
-
-
- ]]></description>
-  <category>puzzles</category>
-  <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
-  <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>Conway’s Checkers</title>
-  <link>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Puzzle attributed to <a href="https://en.wikipedia.org/wiki/John_Horton_Conway">John Horton Conway</a>.</p>
-</div>
-</div>
-</div>
-<p>Suppose you take the infinite square lattice and put solitaire pieces on all points <img src="https://latex.codecogs.com/png.latex?(x,y)"> that lie on or below the x-axis. Using solitaire moves, can you reach a position where the point <img src="https://latex.codecogs.com/png.latex?(0,5)"> is occupied?</p>
-<p>Note: A solitaire move consists in a piece jumping over a neighbouring piece to a vacant square and removing (or “taking”) the neighbouring piece.</p>
-<p>You can attempt this challenge interactively <a href="https://www.cleverlearning.co.uk/blogs/blogConwayInteractive.php">here</a>.</p>
-<p><em>Hint: if you can’t get there, don’t feel too bad about it.</em></p>
-<div class="callout-tip callout callout-style-simple no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Spoilers
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>An introduction to the problem featuring <a href="https://math.berkeley.edu/~stankova/">Zvezdelina Stankova</a>:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FtNWzlfEQgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-<p>A description of the original proof based on coming up with an invariant involving the golden ratio:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Or0uWM9bT5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-<p>A description of the original proof based on coming up with an invariant involving the golden ratio, but in this case in real-time, while thinking out loud:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vJGdfRXZSGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-<p>A description of a more recent proof based on a rather clever and beautiful use of Fibonacci numbers:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BMPa0FA65Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-<p>And by the way, if you are <em>really</em> keen on reaching row 5 <a href="https://www.chiark.greenend.org.uk/~sgtatham/solarmy/">here’s how you can do it</a> with infinitely many moves!</p>
-</div>
-</div>
-</div>
-
-
-
- ]]></description>
-  <category>puzzles</category>
-  <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
-  <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

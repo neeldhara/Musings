@@ -8,7 +8,7 @@ website:
   twitter-card: true
   navbar:
     right:
-      - text: web
+      - icon: globe
         href: https://www.neeldhara.com
       - icon: youtube
         href: https://www.youtube.com/c/NeeldharaMisra42
