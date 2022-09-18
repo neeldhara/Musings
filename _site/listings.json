@@ -36,11 +36,11 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/dogs-bunny-puzzle/index.html",
       "/posts/dsanotes/debruijn/index.html",
       "/posts/dsanotes/eulertours/index.html",
       "/posts/on-teaching/index.html",
       "/posts/dsanotes/graphs/index.html",
-      "/posts/dogs-bunny-puzzle/index.html",
       "/posts/dsanotes/sequences/index.html",
       "/posts/dsanotes/introduction/index.html",
       "/posts/solo-chess/index.html",
@@ -77,12 +77,12 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/dogs-bunny-puzzle/index.html",
       "/posts/dsanotes/debruijn/index.html",
       "/posts/dsanotes/eulertours/index.html",
       "/posts/on-teaching/index.html",
       "/posts/dsanotes/graphs/index.html",
       "/posts/dsanotes/sequences/index.html",
-      "/posts/dogs-bunny-puzzle/index.html",
       "/posts/dsanotes/introduction/index.html",
       "/posts/solo-chess/index.html",
       "/posts/eight-self-sabotaging-behaviors/index.html",

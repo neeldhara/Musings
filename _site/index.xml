@@ -10,7 +10,221 @@
 <atom:link href="https://neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
-<lastBuildDate>Sat, 10 Sep 2022 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 18 Sep 2022 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>Dog Bunny Puzzle</title>
+  <link>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="dog-bunny-a-cute-puzzle" class="level2">
+<h2 class="anchored" data-anchor-id="dog-bunny-a-cute-puzzle">Dog Bunny: A Cute Puzzle</h2>
+<p>Conrad Barski (<a href="https://twitter.com/lisperati"><span class="citation" data-cites="lisperati">@lisperati</span></a>)’s latest, <a href="http://www.dogbunnypuzzle.com/">Dog Bunny Puzzle</a>, had <a href="https://news.ycombinator.com/item?id=32884467">jumped to #1 on HN</a>. The puzzle presents the following somewhat minimalist interface:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p></p><figcaption class="figure-caption">The Dogs Bunny Puzzle</figcaption><p></p>
+</figure>
+</div>
+<p>If you haven’t played it yet, you might want to go ahead and <a href="http://www.dogbunnypuzzle.com/">give it a shot</a> first. Most people figured out the mechanics without any explicit instructions. A couple of things that may not be immediately clear, but typically discovered quickly within a few moves:</p>
+<ul>
+<li><p>The edges are labeled with conditions, and can be used only if <em>all</em> of the said conditions are met.</p></li>
+<li><p>The bunny or dog icons may sometimes cover up what kind of location they are at. You can drag them away to find out!</p></li>
+<li><p>Multiple animals can occupy the same spot at a time.</p></li>
+<li><p>It is possible to get into a dead end, a situation from where no legal moves are possible. In the verison of the game that is available at the time of this writing, the game offers no sign that you might be in this situation. This may <a href="https://twitter.com/lokshtanov/status/1571597503795167232">however change</a>.</p></li>
+</ul>
+<p>After winging it on the puzzle, several questions seemed natural:</p>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+What’s the smallest number of moves to win?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="https://gist.github.com/wrbs/5824e9b17c55b5ad3d8467f93e12ed8b">Apparently 26.</a></p>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Can you write a program to find a solution?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="https://github.com/polkerty/dog-bunny-puzzle-solver/blob/master/main.py">Yes</a> (Python) and <a href="http://hakank.org/picat/dogbunny_puzzle.pi">yes</a> (Picat).</p>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Can a script generate more of these puzzles?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Indeed:</p>
+<blockquote class="twitter-tweet blockquote" data-conversation="none">
+<p lang="en" dir="ltr">
+For those paying attention, yes I am two days late :(<br><br>FYI, I also have a program now that can create an infinite number of these puzzles at differing difficulty<br><br>How would you rate the puzzle I posted today?
+</p>
+— Conrad Barski (<span class="citation" data-cites="lisperati">@lisperati</span>) <a href="https://twitter.com/lisperati/status/1571232335043112960?ref_src=twsrc%5Etfw">September 17, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Are there connections with other well-known puzzles?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Why yes, check out the <a href="https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_problem">Wolf puzzle</a> (as pointed out by <a href="https://twitter.com/RianNeogi/status/1571608738791817217"><span class="citation" data-cites="RianNeogi">@RianNeogi</span></a>) and this <a href="https://www.youtube.com/watch?v=ZCVAGb1ee8A">Numberphile video</a> about it.</p>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Is the problem NP-complete?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Before you ask, <a href="https://twitter.com/gfredericks_/status/1571247392321671174">I am not the only one</a> who’s asking!</p>
+</div>
+</div>
+</div>
+<p>So the last question may strike you as a bit left-field, but that’s what I’m going to ramble about for the rest of this post :) It turns out that the answer is in the affirmative, and <a href="https://twitter.com/lokshtanov/status/1571588360254410752">here</a> is a lovely reduction by <a href="https://twitter.com/lokshtanov"><span class="citation" data-cites="lokshtanov">@lokshtanov</span></a> showing as much.</p>
+</section>
+<section id="the-reduction" class="level2">
+<h2 class="anchored" data-anchor-id="the-reduction">The Reduction</h2>
+<p>Let’s just set up the game as a computational problem just to be sure that we agree on the abstraction. In fact, we’ll be working with a simpler version that we will call <code>BunnyCarrot</code>.</p>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+BunnyCarrot
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In the <code>BunnyCarrot</code> problem, the input is a simple undirected graph <img src="https://latex.codecogs.com/png.latex?G%20=%20(V,E)">, subsets <img src="https://latex.codecogs.com/png.latex?B"> and <img src="https://latex.codecogs.com/png.latex?C"> of <img src="https://latex.codecogs.com/png.latex?V"> indicating the initial positions of bunnies and carrots, and a (possibly empty) instruction <img src="https://latex.codecogs.com/png.latex?r_e"> for every <img src="https://latex.codecogs.com/png.latex?e%20%5Cin%20E">, which is a collection of conditions, <em>at least</em> one† of which must be true for the edge <img src="https://latex.codecogs.com/png.latex?e"> to be “active”.</p>
+<p>The question is if there is a sequence of movements of bunnies along active edges such that at the end of the sequence, every bunny is located at one of the vertices from <img src="https://latex.codecogs.com/png.latex?C">.</p>
+<p>† In the original version of the problem, we need <em>all</em> conditions associated with an edge to be satisfied, not at least one. The construction that we will describe can be easily adapted to this setting as well, but is simpler to describe for this variant :)</p>
+</div>
+</div>
+<p>We are going to show that <code>BunnyCarrot</code> is NP-complete by reducing from <code>3SAT</code>. So let <img src="https://latex.codecogs.com/png.latex?%5Cphi%20:=%20%5C%7BC_1,%20%5Cldots,%20C_m%5C%7D"> be a collection of <img src="https://latex.codecogs.com/png.latex?m"> 3SAT clauses over variables <img src="https://latex.codecogs.com/png.latex?%5C%7Bx_1,%20%5Cldots,%20x_n%5C%7D">. The reduced instance of <code>BunnyCarrot</code> corresponding to <img src="https://latex.codecogs.com/png.latex?%5Cphi"> looks like this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/dogs-bunny-puzzle/reduction2.png" class="img-fluid figure-img" style="width:87.0%"></p>
+<p></p><figcaption class="figure-caption">A cartoon sketch of the reduced instance of BunnyCarrot from 3SAT.</figcaption><p></p>
+</figure>
+</div>
+<p>What we have here is the following:</p>
+<ul>
+<li><p>a path <img src="https://latex.codecogs.com/png.latex?X"> on <img src="https://latex.codecogs.com/png.latex?m+2"> vertices, with the left most vertex in <img src="https://latex.codecogs.com/png.latex?B"> and the rightmost one in <img src="https://latex.codecogs.com/png.latex?C">;</p></li>
+<li><p>a pair of vertices <img src="https://latex.codecogs.com/png.latex?(u_i,v_i)"> for every <img src="https://latex.codecogs.com/png.latex?i%20%5Cin%20%5Bn%5D">, and an edge between them, where all the <img src="https://latex.codecogs.com/png.latex?u_i">’s are in <img src="https://latex.codecogs.com/png.latex?B">’ — the vertex <img src="https://latex.codecogs.com/png.latex?u_i"> represents the literal <img src="https://latex.codecogs.com/png.latex?x_i"> while the vertex <img src="https://latex.codecogs.com/png.latex?v_i"> represents the literal <img src="https://latex.codecogs.com/png.latex?%5Coverline%7Bx_i%7D">;</p></li>
+<li><p>a pair of vertices <img src="https://latex.codecogs.com/png.latex?p"> and <img src="https://latex.codecogs.com/png.latex?q"> in <img src="https://latex.codecogs.com/png.latex?C">, with <img src="https://latex.codecogs.com/png.latex?p"> adjacent to all <img src="https://latex.codecogs.com/png.latex?u_i">’s and <img src="https://latex.codecogs.com/png.latex?q"> adjacent to all <img src="https://latex.codecogs.com/png.latex?v_i">’s;</p></li>
+<li><p>the edge to the <img src="https://latex.codecogs.com/png.latex?%5Cell">-th vertex on <img src="https://latex.codecogs.com/png.latex?P"> is active only if there is a bunny on at least one of the literals present in the clause <img src="https://latex.codecogs.com/png.latex?C_%7B%5Cell-1%7D">;</p></li>
+<li><p>the edges between <img src="https://latex.codecogs.com/png.latex?u_i"> and <img src="https://latex.codecogs.com/png.latex?v_i"> are active only when there is a bunny on the leftmost vertex of <img src="https://latex.codecogs.com/png.latex?X">; and</p></li>
+<li><p>finally, the edges incident on <img src="https://latex.codecogs.com/png.latex?p"> and <img src="https://latex.codecogs.com/png.latex?q"> are active only when there is a bunny on the rightmost vertex of <img src="https://latex.codecogs.com/png.latex?X">.</p></li>
+</ul>
+</section>
+<section id="the-forward-direction" class="level2">
+<h2 class="anchored" data-anchor-id="the-forward-direction">The Forward Direction</h2>
+<p>We first claim that we can “win” this game if <img src="https://latex.codecogs.com/png.latex?%5Cphi"> has a satisfying assignment. Indeed, let <img src="https://latex.codecogs.com/png.latex?%5Ctau:%20%5C%7Bx_1,%5Cldots,x_n%5C%7D%20%5Crightarrow%20%5C%7B0,1%5C%7D"> be a truth assignment that satisfies all the clauses of <img src="https://latex.codecogs.com/png.latex?%5Cphi">. Then:</p>
+<ol type="1">
+<li><p>If <img src="https://latex.codecogs.com/png.latex?%5Ctau(x_i)%20=%200">, move the bunny on <img src="https://latex.codecogs.com/png.latex?u_i"> to <img src="https://latex.codecogs.com/png.latex?v_i">.</p></li>
+<li><p>Move the bunny on the leftmost vertex of the path <img src="https://latex.codecogs.com/png.latex?X"> to the rightmost vertex: note that all edges are active because <img src="https://latex.codecogs.com/png.latex?%5Ctau"> is a satisfying assignment</p></li>
+<li><p>Move all bunnies on <img src="https://latex.codecogs.com/png.latex?u_i">’s to <img src="https://latex.codecogs.com/png.latex?p"> and those on <img src="https://latex.codecogs.com/png.latex?v_i">’s to <img src="https://latex.codecogs.com/png.latex?q">.</p></li>
+</ol>
+</section>
+<section id="the-backward-direction" class="level2">
+<h2 class="anchored" data-anchor-id="the-backward-direction">The Backward Direction</h2>
+<p>Now suppose there is a winning sequence of moves <img src="https://latex.codecogs.com/png.latex?%5Csigma">. We will show that we can extract from this sequence a satisfying assignment for <img src="https://latex.codecogs.com/png.latex?%5Cphi">, which will firmly establish the equivalence of the generated instance of <code>BunnyCarrot</code> with the OG hard instance <img src="https://latex.codecogs.com/png.latex?%5Cphi">.</p>
+<p>Note that to begin with, all the blue edges are inactive. Now, in the sequence <img src="https://latex.codecogs.com/png.latex?%5Csigma">, let us say that a step is <em>key</em> if it involves a bunny moving along the first edge of the path <img src="https://latex.codecogs.com/png.latex?X"> and <em>critical</em> if it involves a bunny moving along the last edge of the path <img src="https://latex.codecogs.com/png.latex?X">.</p>
+<p>Suppose the <img src="https://latex.codecogs.com/png.latex?%5Cell">-th step is the first critical step in <img src="https://latex.codecogs.com/png.latex?%5Csigma">. Further, suppose that the <img src="https://latex.codecogs.com/png.latex?t">-th step is the <em>last</em> key step to occur <em>before</em> the <img src="https://latex.codecogs.com/png.latex?%5Cell">-th step. Notice that there must be at least one key step before a critical step — we must begin before we can end :)</p>
+<p>Now, for all steps after the <img src="https://latex.codecogs.com/png.latex?t">-th step and before the <img src="https://latex.codecogs.com/png.latex?%5Cell">-th step, note that edges incident to <img src="https://latex.codecogs.com/png.latex?u_i"> and <img src="https://latex.codecogs.com/png.latex?v_i"> are <strong>inactive</strong> for all <img src="https://latex.codecogs.com/png.latex?i%20%5Cin%20%5Bn%5D">. This implies that every step between the <img src="https://latex.codecogs.com/png.latex?t">-th and <img src="https://latex.codecogs.com/png.latex?%5Cell">-th steps involves a bunny moving along <img src="https://latex.codecogs.com/png.latex?X">, and in particular, every edge in <img src="https://latex.codecogs.com/png.latex?X"> is crossed at least once in this phase of the game.</p>
+<p>Let us note the positions of the bunnies who are on the <img src="https://latex.codecogs.com/png.latex?u_i">’s and <img src="https://latex.codecogs.com/png.latex?v_i">’s after the <img src="https://latex.codecogs.com/png.latex?t">-th step is executed. Observe that this naturally translates to an assignment on the variables as follows:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbegin%7Bequation*%7D%0A%20%20%20%20%5Ctau(x_i)%20=%0A%20%20%20%20%5Cbegin%7Bcases%7D%0A%20%20%20%20%20%201%20&amp;%20%5Ctext%7Bif%20%7D%20u_i%20%5Cin%20B,%5C%5C%0A%20%20%20%20%20%200%20&amp;%20%5Ctext%7Bif%20%7D%20v_i%20%5Cin%20B.%0A%20%20%20%20%5Cend%7Bcases%7D%0A%5Cend%7Bequation*%7D%0A"></p>
+<p>We argue that <img src="https://latex.codecogs.com/png.latex?%5Ctau"> must in fact be a satisfying assignment.</p>
+<p>Assume to the contrary: suppose some clause <img src="https://latex.codecogs.com/png.latex?C_k"> is, in fact, not satisfied by <img src="https://latex.codecogs.com/png.latex?%5Ctau">.</p>
+<p>Then, we claim that the edge connecting the <img src="https://latex.codecogs.com/png.latex?k">-th and <img src="https://latex.codecogs.com/png.latex?(k+1)">-th vertices is not active.</p>
+<p>As an example, suppose <img src="https://latex.codecogs.com/png.latex?C_k%20=%20%5C%7Bx_1,x_2,%5Coverline%7Bx_3%7D%5C%7D">. Since <img src="https://latex.codecogs.com/png.latex?%5Ctau"> does not satisfy <img src="https://latex.codecogs.com/png.latex?C_k">, it must be the case that:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctau(x_1)%20=%200"> — and hence there is a bunny on <img src="https://latex.codecogs.com/png.latex?v_1">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctau(x_2)%20=%200"> — and hence there is a bunny on <img src="https://latex.codecogs.com/png.latex?v_2">;</li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctau(x_3)%20=%201"> — and hence there is a bunny on <img src="https://latex.codecogs.com/png.latex?u_3">.</li>
+</ul>
+<p>However, the condition for the edge to the <img src="https://latex.codecogs.com/png.latex?(k+1)">-th vertex on <img src="https://latex.codecogs.com/png.latex?X"> to be active is simply that there is a bunny present on at least one of the literals present in the clause <img src="https://latex.codecogs.com/png.latex?C_%7Bk%7D">, i.e, one of <img src="https://latex.codecogs.com/png.latex?u_1">, <img src="https://latex.codecogs.com/png.latex?u_2"> or <img src="https://latex.codecogs.com/png.latex?v_3">. However, because of the structure of the graph, and the fact that all edges incident on <img src="https://latex.codecogs.com/png.latex?p"> and <img src="https://latex.codecogs.com/png.latex?q"> are inactive at all times before the first critical step, observe that:</p>
+<ul>
+<li>If there is a bunny on <img src="https://latex.codecogs.com/png.latex?v_1">, there is no bunny on <img src="https://latex.codecogs.com/png.latex?u_1">.</li>
+<li>If there is a bunny on <img src="https://latex.codecogs.com/png.latex?v_2">, there is no bunny on <img src="https://latex.codecogs.com/png.latex?u_2">.</li>
+<li>If there is a bunny on <img src="https://latex.codecogs.com/png.latex?u_3">, there is no bunny on <img src="https://latex.codecogs.com/png.latex?v_3">.</li>
+</ul>
+<p>By our assumption that <img src="https://latex.codecogs.com/png.latex?%5Ctau"> falsifies <img src="https://latex.codecogs.com/png.latex?C_k">, <em>all</em> the premises above are true! So there is an edge on the path <img src="https://latex.codecogs.com/png.latex?X"> that is not active between the <img src="https://latex.codecogs.com/png.latex?t">-th and <img src="https://latex.codecogs.com/png.latex?%5Cell">-th steps, which violates our understanding that every edge was crossed between these steps. This is a contradiction, and hence <img src="https://latex.codecogs.com/png.latex?%5Ctau"> must indeed be a satisfying assignment.</p>
+<p>I’ll just remark here that this construction can be modified so that every vertex in the graph has constant degree, and there is only one vertex in <img src="https://latex.codecogs.com/png.latex?C">. It can also be modified to change the “or” condition on the edges to an “and”, by simply separating the conditions out along multiedges.</p>
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Thanks to <a href="https://twitter.com/lokshtanov">Daniel</a> for sharing this reduction!</p>
+</div>
+</div>
+</div>
+<p>To round this off: more questions :)</p>
+<ol type="1">
+<li><p>What’s the complexity of this game when the underlying graph has some simple structure (e.g, a tree)?</p></li>
+<li><p>Does the problem get harder if we introduce attacking entities like wolves?</p></li>
+<li><p>Can we come up with an algorithm that runs in polynomial time on instances where there is a valid winning sequence of constant length?</p></li>
+<li><p>Is the problem hard even for a constant number of bunnies?</p></li>
+</ol>
+<hr>
+<p>Please feel free to share your thoughts in the comments here, or <a href="https://twitter.com/neeldhara/status/1571629379779973121">continue the conversation on Twitter</a>!</p>
+<p>PS. Here’s <a href="https://twitter.com/neeldhara/status/1571522626526515202">a sketch of a slighty different reduction</a> from vertex cover.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>exposition</category>
+  <guid>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</guid>
+  <pubDate>Sun, 18 Sep 2022 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" medium="image" type="image/png" height="168" width="144"/>
+</item>
 <item>
   <title>On Cards and Graphs</title>
   <link>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</link>
@@ -979,26 +1193,6 @@ How would you do it?
   <guid>https://neeldhara.blog/posts/dsanotes/sequences/index.html</guid>
   <pubDate>Mon, 01 Aug 2022 18:30:00 GMT</pubDate>
   <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Dog Bunny Puzzle</title>
-  <link>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Conrad Barski (<a href="https://twitter.com/lisperati"><span class="citation" data-cites="lisperati">@lisperati</span></a>)’s latest, <a href="http://www.dogbunnypuzzle.com/">Dog Bunny Puzzle</a> has <a href="https://news.ycombinator.com/item?id=32884467">jumped to #1 on HN</a>. The puzzle presents the following arguabyl minimalist interface:</p>
-<p><img src="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" class="img-fluid"></p>
-
-
-
- ]]></description>
-  <category>puzzles</category>
-  <category>exposition</category>
-  <guid>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</guid>
-  <pubDate>Mon, 01 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" medium="image" type="image/png" height="168" width="144"/>
 </item>
 <item>
   <title>Data Structures and Structured Data</title>

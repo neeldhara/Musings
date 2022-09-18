@@ -1,6 +1,6 @@
 ---
 title: "Dog Bunny Puzzle"
-date: "2022-08-02"
+date: "2022-09-19"
 categories: [puzzles, exposition]
 fields: [date, title]
 page-layout: article
@@ -8,7 +8,7 @@ reference-location: margin
 toc: true
 ---
 
-## Dog Bunny: A Cute Puzzle
+### Dog Bunny: A Cute Puzzle
 
 Conrad Barski ([@lisperati](https://twitter.com/lisperati))'s latest, [Dog Bunny Puzzle](http://www.dogbunnypuzzle.com/), had [jumped to #1 on HN](https://news.ycombinator.com/item?id=32884467). The puzzle presents the following somewhat minimalist interface:
 
@@ -28,19 +28,19 @@ If you haven't played it yet, you might want to go ahead and [give it a shot](ht
 After winging it on the puzzle, several questions seemed natural:
 
 :::{.callout-note collapse="true" icon="false"}
-## What's the smallest number of moves to win?
+### What's the smallest number of moves to win?
 [Apparently 26.](https://gist.github.com/wrbs/5824e9b17c55b5ad3d8467f93e12ed8b)
 :::
 
 
 :::{.callout-note collapse="true" icon="false"}
-## Can you write a program to find a solution?
+### Can you write a program to find a solution?
 [Yes](https://github.com/polkerty/dog-bunny-puzzle-solver/blob/master/main.py) (Python) and [yes](http://hakank.org/picat/dogbunny_puzzle.pi) (Picat).
 :::
 
 
 :::{.callout-note collapse="true" icon="false"}
-## Can a script generate more of these puzzles?
+### Can a script generate more of these puzzles?
 Indeed:
 
 <blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">For those paying attention, yes I am two days late :(<br><br>FYI, I also have a program now that can create an infinite number of these puzzles at differing difficulty<br><br>How would you rate the puzzle I posted today?</p>&mdash; Conrad Barski (@lisperati) <a href="https://twitter.com/lisperati/status/1571232335043112960?ref_src=twsrc%5Etfw">September 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -49,13 +49,13 @@ Indeed:
 
 
 :::{.callout-note collapse="true" icon="false"}
-## Are there connections with other well-known puzzles?
+### Are there connections with other well-known puzzles?
 Why yes, check out the [Wolf puzzle](https://en.wikipedia.org/wiki/Wolf,_goat_and_cabbage_problem) (as pointed out by [@RianNeogi](https://twitter.com/RianNeogi/status/1571608738791817217)) and this [Numberphile video](https://www.youtube.com/watch?v=ZCVAGb1ee8A) about it.
 :::
 
 
 :::{.callout-note collapse="true" icon="false"}
-## Is the problem NP-complete?
+### Is the problem NP-complete?
 
 Before you ask, [I am not the only one](https://twitter.com/gfredericks_/status/1571247392321671174) who's asking!
 
@@ -63,12 +63,12 @@ Before you ask, [I am not the only one](https://twitter.com/gfredericks_/status/
 
 So the last question may strike you as a bit left-field, but that's what I'm going to ramble about for the rest of this post :) It turns out that the answer is in the affirmative, and [here](https://twitter.com/lokshtanov/status/1571588360254410752) is a lovely reduction by [@lokshtanov](https://twitter.com/lokshtanov) showing as much.
 
-## The Reduction
+### The Reduction
 
 Let's just set up the game as a computational problem just to be sure that we agree on the abstraction. In fact, we'll be working with a simpler version that we will call `BunnyCarrot`.
 
 :::{.callout-tip icon="false"}
-## BunnyCarrot
+### BunnyCarrot
 
 In the `BunnyCarrot` problem, the input is a simple undirected graph $G = (V,E)$, subsets $B$ and $C$ of $V$ indicating the initial positions of bunnies and carrots, and a (possibly empty) instruction $r_e$ for every $e \in E$, which is a collection of conditions, _at least_ one† of which must be true for the edge $e$ to be "active".
 
@@ -95,7 +95,7 @@ What we have here is the following:
 
 - finally, the edges incident on $p$ and $q$ are active only when there is a bunny on the rightmost vertex of $X$.
 
-## The Forward Direction
+### The Forward Direction
 
 We first claim that we can "win" this game if $\phi$ has a satisfying assignment. Indeed, let $$\tau: \{x_1,\ldots,x_n\} \rightarrow \{0,1\}$$ be a truth assignment that satisfies all the clauses of $\phi$. Then:
 
@@ -105,7 +105,7 @@ We first claim that we can "win" this game if $\phi$ has a satisfying assignment
 
 3. Move all bunnies on $u_i$'s to $p$ and those on $v_i$'s to $q$.
 
-## The Backward Direction
+### The Backward Direction
 
 Now suppose there is a winning sequence of moves $\sigma$. We will show that we can extract from this sequence a satisfying assignment for $\phi$, which will firmly establish the equivalence of the generated instance of `BunnyCarrot` with the OG hard instance $\phi$.
 
@@ -150,11 +150,11 @@ By our assumption that $\tau$ falsifies $C_k$, _all_ the premises above are true
 
 I'll just remark here that this construction can be modified so that every vertex in the graph has constant degree, and there is only one vertex in $C$. It can also be modified to change the "or" condition on the edges to an "and", by simply separating the conditions out along multiedges.
 
-:::{.callout-tip icon="false" appearance="minimal"}
-Thanks to [Daniel](https://twitter.com/lokshtanov) for sharing this reduction!
-:::
+### Food for thought
 
-To round this off: more questions :)
+Here are some more questions :)
+
+:::{.callout-important icon="false" appearance="minimal"}
 
 1. What's the complexity of this game when the underlying graph has some simple structure (e.g, a tree)?
 
@@ -163,7 +163,8 @@ To round this off: more questions :)
 3. Can we come up with an algorithm that runs in polynomial time on instances where there is a valid winning sequence of constant length?
 
 4. Is the problem hard even for a constant number of bunnies?
+:::
 
----
+That's it for now: please feel free to share your thoughts in the comments here, or [continue the conversation on Twitter](https://twitter.com/neeldhara/status/1571629379779973121)!
 
-Please feel free to share your thoughts in the comments here, or continue the conversation on Twitter!
+PS. Here's [a sketch of a slighty different reduction](https://twitter.com/neeldhara/status/1571522626526515202) from vertex cover. Thanks again to [Daniel](https://twitter.com/lokshtanov) for sharing the reduction described here!

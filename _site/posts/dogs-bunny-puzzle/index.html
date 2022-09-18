@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-08-02">
+<meta name="dcterms.date" content="2022-09-19">
 
 <title>Pseudorandom Musings - Dog Bunny Puzzle</title>
 <style>
@@ -154,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 2, 2022</p>
+        <p class="date">September 19, 2022</p>
       </div>
     </div>
       
@@ -173,6 +173,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#the-reduction" id="toc-the-reduction" class="nav-link" data-scroll-target="#the-reduction">The Reduction</a></li>
   <li><a href="#the-forward-direction" id="toc-the-forward-direction" class="nav-link" data-scroll-target="#the-forward-direction">The Forward Direction</a></li>
   <li><a href="#the-backward-direction" id="toc-the-backward-direction" class="nav-link" data-scroll-target="#the-backward-direction">The Backward Direction</a></li>
+  <li><a href="#food-for-thought" id="toc-food-for-thought" class="nav-link" data-scroll-target="#food-for-thought">Food for thought</a></li>
   </ul>
 </nav>
     </div>
@@ -182,8 +183,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="dog-bunny-a-cute-puzzle" class="level2">
-<h2 class="anchored" data-anchor-id="dog-bunny-a-cute-puzzle">Dog Bunny: A Cute Puzzle</h2>
+<section id="dog-bunny-a-cute-puzzle" class="level3">
+<h3 class="anchored" data-anchor-id="dog-bunny-a-cute-puzzle">Dog Bunny: A Cute Puzzle</h3>
 <p>Conrad Barski (<a href="https://twitter.com/lisperati"><span class="citation" data-cites="lisperati">@lisperati</span></a>)’s latest, <a href="http://www.dogbunnypuzzle.com/">Dog Bunny Puzzle</a>, had <a href="https://news.ycombinator.com/item?id=32884467">jumped to #1 on HN</a>. The puzzle presents the following somewhat minimalist interface:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -288,8 +289,8 @@ Is the problem NP-complete?
 </div>
 <p>So the last question may strike you as a bit left-field, but that’s what I’m going to ramble about for the rest of this post :) It turns out that the answer is in the affirmative, and <a href="https://twitter.com/lokshtanov/status/1571588360254410752">here</a> is a lovely reduction by <a href="https://twitter.com/lokshtanov"><span class="citation" data-cites="lokshtanov">@lokshtanov</span></a> showing as much.</p>
 </section>
-<section id="the-reduction" class="level2">
-<h2 class="anchored" data-anchor-id="the-reduction">The Reduction</h2>
+<section id="the-reduction" class="level3">
+<h3 class="anchored" data-anchor-id="the-reduction">The Reduction</h3>
 <p>Let’s just set up the game as a computational problem just to be sure that we agree on the abstraction. In fact, we’ll be working with a simpler version that we will call <code>BunnyCarrot</code>.</p>
 <div class="callout-tip callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center">
@@ -323,8 +324,8 @@ BunnyCarrot
 <li><p>finally, the edges incident on <span class="math inline">p</span> and <span class="math inline">q</span> are active only when there is a bunny on the rightmost vertex of <span class="math inline">X</span>.</p></li>
 </ul>
 </section>
-<section id="the-forward-direction" class="level2">
-<h2 class="anchored" data-anchor-id="the-forward-direction">The Forward Direction</h2>
+<section id="the-forward-direction" class="level3">
+<h3 class="anchored" data-anchor-id="the-forward-direction">The Forward Direction</h3>
 <p>We first claim that we can “win” this game if <span class="math inline">\phi</span> has a satisfying assignment. Indeed, let <span class="math display">\tau: \{x_1,\ldots,x_n\} \rightarrow \{0,1\}</span> be a truth assignment that satisfies all the clauses of <span class="math inline">\phi</span>. Then:</p>
 <ol type="1">
 <li><p>If <span class="math inline">\tau(x_i) = 0</span>, move the bunny on <span class="math inline">u_i</span> to <span class="math inline">v_i</span>.</p></li>
@@ -332,8 +333,8 @@ BunnyCarrot
 <li><p>Move all bunnies on <span class="math inline">u_i</span>’s to <span class="math inline">p</span> and those on <span class="math inline">v_i</span>’s to <span class="math inline">q</span>.</p></li>
 </ol>
 </section>
-<section id="the-backward-direction" class="level2">
-<h2 class="anchored" data-anchor-id="the-backward-direction">The Backward Direction</h2>
+<section id="the-backward-direction" class="level3">
+<h3 class="anchored" data-anchor-id="the-backward-direction">The Backward Direction</h3>
 <p>Now suppose there is a winning sequence of moves <span class="math inline">\sigma</span>. We will show that we can extract from this sequence a satisfying assignment for <span class="math inline">\phi</span>, which will firmly establish the equivalence of the generated instance of <code>BunnyCarrot</code> with the OG hard instance <span class="math inline">\phi</span>.</p>
 <p>Note that to begin with, all the blue edges are inactive. Now, in the sequence <span class="math inline">\sigma</span>, let us say that a step is <em>key</em> if it involves a bunny moving along the first edge of the path <span class="math inline">X</span> and <em>critical</em> if it involves a bunny moving along the last edge of the path <span class="math inline">X</span>.</p>
 <p>Suppose the <span class="math inline">\ell</span>-th step is the first critical step in <span class="math inline">\sigma</span>. Further, suppose that the <span class="math inline">t</span>-th step is the <em>last</em> key step to occur <em>before</em> the <span class="math inline">\ell</span>-th step. Notice that there must be at least one key step before a critical step — we must begin before we can end :)</p>
@@ -365,25 +366,27 @@ BunnyCarrot
 </ul>
 <p>By our assumption that <span class="math inline">\tau</span> falsifies <span class="math inline">C_k</span>, <em>all</em> the premises above are true! So there is an edge on the path <span class="math inline">X</span> that is not active between the <span class="math inline">t</span>-th and <span class="math inline">\ell</span>-th steps, which violates our understanding that every edge was crossed between these steps. This is a contradiction, and hence <span class="math inline">\tau</span> must indeed be a satisfying assignment.</p>
 <p>I’ll just remark here that this construction can be modified so that every vertex in the graph has constant degree, and there is only one vertex in <span class="math inline">C</span>. It can also be modified to change the “or” condition on the edges to an “and”, by simply separating the conditions out along multiedges.</p>
-<div class="callout-tip callout callout-style-simple no-icon">
+</section>
+<section id="food-for-thought" class="level3">
+<h3 class="anchored" data-anchor-id="food-for-thought">Food for thought</h3>
+<p>Here are some more questions :)</p>
+<div class="callout-important callout callout-style-simple no-icon">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Thanks to <a href="https://twitter.com/lokshtanov">Daniel</a> for sharing this reduction!</p>
-</div>
-</div>
-</div>
-<p>To round this off: more questions :)</p>
 <ol type="1">
 <li><p>What’s the complexity of this game when the underlying graph has some simple structure (e.g, a tree)?</p></li>
 <li><p>Does the problem get harder if we introduce attacking entities like wolves?</p></li>
 <li><p>Can we come up with an algorithm that runs in polynomial time on instances where there is a valid winning sequence of constant length?</p></li>
 <li><p>Is the problem hard even for a constant number of bunnies?</p></li>
 </ol>
-<hr>
-<p>Please feel free to share your thoughts in the comments here, or continue the conversation on Twitter!</p>
+</div>
+</div>
+</div>
+<p>That’s it for now: please feel free to share your thoughts in the comments here, or <a href="https://twitter.com/neeldhara/status/1571629379779973121">continue the conversation on Twitter</a>!</p>
+<p>PS. Here’s <a href="https://twitter.com/neeldhara/status/1571522626526515202">a sketch of a slighty different reduction</a> from vertex cover. Thanks again to <a href="https://twitter.com/lokshtanov">Daniel</a> for sharing the reduction described here!</p>
 
 
 </section>
