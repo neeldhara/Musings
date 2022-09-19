@@ -167,6 +167,4 @@ Here are some more questions :)
 4. Is the problem hard even for a constant number of bunnies?
 :::
 
-That's it for now: please feel free to share your thoughts in the comments here, or [continue the conversation on Twitter](https://twitter.com/neeldhara/status/1571629379779973121)!
-
-PS. Here's [a sketch of a slighty different reduction](https://twitter.com/neeldhara/status/1571522626526515202) from vertex cover. Thanks again to [Daniel](https://twitter.com/lokshtanov) for sharing the reduction described here!
+PS. Here's [a sketch of a slighty different reduction](https://twitter.com/neeldhara/status/1571522626526515202) from vertex cover. Thanks again to [Daniel](https://twitter.com/lokshtanov) for sharing the reduction described here! Comments welcome here, or [continue the conversation on Twitter](https://twitter.com/neeldhara/status/1571629379779973121)!
