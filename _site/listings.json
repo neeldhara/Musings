@@ -36,6 +36,8 @@
   {
     "listing": "/archive.html",
     "items": [
+      "/posts/comms/index.html",
+      "/posts/skj/index.html",
       "/posts/dogs-bunny-puzzle/index.html",
       "/posts/dsanotes/debruijn/index.html",
       "/posts/dsanotes/eulertours/index.html",
@@ -77,6 +79,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/skj/index.html",
+      "/posts/comms/index.html",
       "/posts/dogs-bunny-puzzle/index.html",
       "/posts/dsanotes/debruijn/index.html",
       "/posts/dsanotes/eulertours/index.html",
