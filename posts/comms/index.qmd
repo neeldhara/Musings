@@ -56,7 +56,7 @@ She has now joined the Ph.D. program in the Humanities and Social Sciences and i
 
 ## Dhara
 
-[Dhara](https://www.linkedin.com/in/dhara-vora-1019/) joined us in the summer of 2019, and immediately got to work on managing our social media channels. She also streamlined the process of collecting information: a lot of what we do revolves around robust archival, and IITGN being a happening place does not make this easy! We get dozens of emails every day announcing events of varying scales, updates of various kinds.
+[Dhara](https://www.linkedin.com/in/dhara-vora-1019/) joined us in the summer of 2018, and immediately got to work on managing our social media channels. She also streamlined the process of collecting information: a lot of what we do revolves around robust archival, and IITGN being a happening place does not make this easy! We get dozens of emails every day announcing events of varying scales, updates of various kinds.
 
 Anticipating that the volume would only get worse, we devised a system for manually cataloging every bit of news in a bunch of Airtable bases. The long-term vision was that the Airtable API exposes this data to anyone who needs it: the web team could draw from it and filter appropriately to display upcoming events, an archival team could write a report generating app that used this as the backend, and so forth. We even had a web app developed by a team of undergraduates that pulled data from these bases to show off upcoming events on a big screen.
 
