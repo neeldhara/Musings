@@ -6,7 +6,9 @@ fields: [date, title]
 toc: true
 ---
 
-This is a copy of a speech I gave at the farewell event for Prof. Sudhir Jain as he left IITGN for BHU.
+This is the text of a short speech I gave at the farewell event for Prof. Sudhir Jain as he left IITGN for BHU.
+
+![Prof. Jain at the farewell event held on the 3rd January, 2022.](skj.jpg){width=87%}
 
 ---
 
