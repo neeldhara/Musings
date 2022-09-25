@@ -19,13 +19,14 @@
 
 
 
-<p>This is a copy of a speech I gave at the farewell event for Prof.&nbsp;Sudhir Jain as he left IITGN for BHU.</p>
+<p>This is the text of a short speech I gave at the farewell event for <a href="https://sudhirjain.info/">Prof.&nbsp;Sudhir Jain</a> as he left IITGN for BHU.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://neeldhara.blog/posts/skj/skj.jpg" class="img-fluid figure-img" style="width:87.0%"></p>
 <p></p><figcaption class="figure-caption">Prof.&nbsp;Jain at the farewell event held on the 3rd January, 2022.</figcaption><p></p>
 </figure>
 </div>
+<p>You can find out more about Prof.&nbsp;Jain’s own take on the cultural foundations of IIT Gandhinagar <a href="https://iitgn.ac.in/about/cultural_foundations">here</a>, where he is in conversation with <a href="https://www.linkedin.com/in/achal-mehra-13037931/">Achal Mehra</a>.</p>
 <hr>
 <blockquote class="blockquote">
 <p>Canadian astronaut Chris Hadfield has said that leadership is not about glorious crowning acts. It’s about keeping your team focused on a goal and motivated to do their best to achieve it, especially when the stakes are high and the consequences really matter. It is about laying the groundwork for others’ success, and then standing back and letting them shine. If that sounds familiar, I think it’s because we have lived this experience at IIT Gandhinagar, thanks to Prof.&nbsp;Jain.</p>
@@ -2906,6 +2907,186 @@ Omissions
   <pubDate>Wed, 29 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
+  <title>2021 Exportober Tracker</title>
+  <link>https://neeldhara.blog/posts/exportober/2021-tracker/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="the-leaderboard" class="level2">
+<h2 class="anchored" data-anchor-id="the-leaderboard">The Leaderboard</h2>
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrVfH6aH5n09dDY0?backgroundColor=yellow&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
+</iframe>
+</section>
+<section id="the-tweets" class="level2">
+<h2 class="anchored" data-anchor-id="the-tweets">The Tweets</h2>
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrD3Cw0YYB79LzDP?backgroundColor=yellow&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
+</iframe>
+</section>
+<section id="what-was-this-about-again" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="what-was-this-about-again">What was this about again?</h2>
+<p>You can find the original announcement <a href="../2021/">here</a> and more specifics clarifying the format (or the lack of it) <a href="../about/">here</a>. Here’s the short version:</p>
+<ul>
+<li>Put up a piece of content everyday between 27th September and 30th October, with the possibility of skipping one day per week;</li>
+<li>Post a link to your content on Twitter with #exportober</li>
+<li>That’s it, actually. 🤷‍♀️</li>
+</ul>
+<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="aside">📝 If you’d like to participate <del>you can sign up below</del>; and if you’d like to help, please encourage everyone participating by checking out the tweets coming in above!</span></div></div>
+<p>Psst. It’s quite fine to sign up even if you’re reading this after the 27th of September. The automated tracking exercise here will stop after the 30th of October, so you can be a part of this by just contributing in this window. It certainly does’t <em>have</em> to be daily and it doesn’t <em>have</em> to be 30 things, although I found those to be useful default targets to work with for myself.</p>
+</section>
+<section id="sign-up" class="level2">
+<h2 class="anchored" data-anchor-id="sign-up">Sign up!</h2>
+<p><del>While you can participate simply by using #exportober in your tweets, it’ll be great if you could explicitly enter your Twitter username in the form below, so we can check in on each other!</del> 🤝</p>
+<p>While I’m not going to write a Twitter bot that will send you daily reminders over DM, I do hope to create a separate page for each registered participant at the end of the challenge that shows off just their entries in one place, so it’s helpful to know who you are 😀</p>
+
+
+</section>
+
+ ]]></description>
+  <category>exportober</category>
+  <category>funda</category>
+  <guid>https://neeldhara.blog/posts/exportober/2021-tracker/index.html</guid>
+  <pubDate>Fri, 24 Sep 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>About Exportober</title>
+  <link>https://neeldhara.blog/posts/exportober/about/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="grid">
+<div class="g-col-6">
+<p>In a massively impulsive move nudged by some Twitter feedback, I recently launched <a href="../2021/">the Exportober challenge</a>.</p>
+<p>The TL;DR version:</p>
+<ul>
+<li>Put up a <strong>piece of content</strong>* everyday between 27th September and 30th October, with the possibility of skipping one day per week;</li>
+<li>Post a link to your content on Twitter with #exportober</li>
+<li>That’s it, actually. 🤷‍♀️</li>
+</ul>
+</div>
+<div class="g-col-6">
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Anyone else procrastinating on starting a blog, CS or otherwise? Would you be interested in being held mutually accountable for a few weeks to overcome the initial inertia? <br><br>Do let me know! I’ll try to setup something systematic-looking if there’s interest 🙂
+</p>
+— Neeldhara (<span class="citation" data-cites="neeldhara">@neeldhara</span>) <a href="https://twitter.com/neeldhara/status/1439607978445869057?ref_src=twsrc%5Etfw">September 19, 2021</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+<section id="whats-allowed-in-exportober" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="whats-allowed-in-exportober">What’s allowed in #exportober?</h2>
+<p>I was deliberately vague about the terms-and-conditions that goes with the piece of content piece above. The rules I mentioned were minimal: since there are no restrictions of age, keep the content SFW and generally legal. Other than that, anything goes, for example:</p>
+<ul>
+<li>Can I doodle? Yes.</li>
+<li>Can I meme? Yes.</li>
+<li>Can I make a comic? Yes.</li>
+<li>Can I quip? Yes.</li>
+<li>Can I tweet a thread? Yes.</li>
+<li>Can I tweet a single tweet? Yes.</li>
+<li>Can I song and/or hum and/or dance? Yes.</li>
+<li>Can I react? I am unfamiliar with this genre, but yeah, why not?</li>
+<li>Can I just quote? Uhh, ok-fine, sure — maybe be sure to include a reaction?</li>
+<li>Can I commit? Yes, please! Oh, you mean — can it be a GitHub commit? Right, yeah, sure.</li>
+</ul>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<blockquote class="twitter-tweet blockquote" data-conversation="none">
+<p lang="en" dir="ltr">
+One a day is a lot! (Unless tweets count). I used to blog regularly but not even one a week at its peak, I think.
+</p>
+— Rahul Siddharthan (<span class="citation" data-cites="rsidd120">@rsidd120</span>) <a href="https://twitter.com/rsidd120/status/1440537832980828165?ref_src=twsrc%5Etfw">September 22, 2021</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div><div class="">
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+in case anyone is looking for inspiration, in true student fashion, i am already planning on cheating by turning all the math puns i have in mind to comics ['ring arthur and his knights of the round table' but where ring arthur is a noncommutative ring without unity]
+</p>
+— tiiiiredddd (<span class="citation" data-cites="vuisnotabot">@vuisnotabot</span>) <a href="https://twitter.com/vuisnotabot/status/1440752412298399744?ref_src=twsrc%5Etfw">September 22, 2021</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></div>
+<p>As you can see, there are no restrictions on format or length or quality. It can be whatever you want, and however long or short you want it to be. The point is to <em>get into the habit</em> of putting a bit of yourself into something tangible that you’d want to share.</p>
+<p>So while you could technically schedule thirty pieces of Harry Potter trivia in advance — <em>that</em> would kind of defeat the purpose.</p>
+</section>
+<section id="is-this-for-me-whybother-with-exportober" class="level2">
+<h2 class="anchored" data-anchor-id="is-this-for-me-whybother-with-exportober">Is this for me? #whybother with #exportober</h2>
+<p>In general, I imagine only you would know if this is for you — this may not be a priority or a point of interest for you right now, but if you’re reading this, possibly your interest is at least mildly piqued?</p>
+<p>What this is about is setting aside some time for yourself and to participate alongside friends who’re in it for fun and profit:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+We often avoid taking action because we think "I need to learn more," but the best way to learn is often by taking action.
+</p>
+— James Clear (<span class="citation" data-cites="JamesClear">@JamesClear</span>) <a href="https://twitter.com/JamesClear/status/1308857494983323650?ref_src=twsrc%5Etfw">September 23, 2020</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<ul>
+<li>The fun bit is in the making and sharing.</li>
+<li>The profit bit is the hope that we trick ourselves into making this a bit of a regular habit for life.</li>
+</ul>
+<p>Longer term, you may or may not want to be sharing or publishing on a daily basis. But hopefully, longer term, <strong>you are engaged with the process on a regular basis</strong>.</p>
+<p>Personally, there’s almost nothing that I do consistently on a daily basis, not counting the things one needs to do continue being alive. I’d like to see if I can change that a bit<sup>1</sup>, and apparently doing such things bit by bit — and with some public commitment — <a href="https://jamesclear.com/atomic-habits">is a good idea</a>, hence the micro-nature of the challenge.</p>
+<blockquote class="twitter-tweet blockquote" data-conversation="none">
+<p lang="en" dir="ltr">
+So overall I’ve gotten to a point where I’m just afraid to even think about putting something together because I think it’s an unrealistic commitment of time. <br><br>I’m also really bad at chunking - everything I do of this sort manifests at the wrong end of an all-nighter 🙈
+</p>
+— Neeldhara (<span class="citation" data-cites="neeldhara">@neeldhara</span>) <a href="https://twitter.com/neeldhara/status/1439682627837980675?ref_src=twsrc%5Etfw">September 19, 2021</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+<section id="i-want-to-be-in-but-i-stoop-no-lower-than-meaningful-masterpieces" class="level2">
+<h2 class="anchored" data-anchor-id="i-want-to-be-in-but-i-stoop-no-lower-than-meaningful-masterpieces">I want to be in, but I stoop no lower than meaningful masterpieces…</h2>
+<p>Hmm. One way that you could still make this work for you is to build out your masterpiece bit by bit. If it’s a tutorial, you could plan it out in advance and work through one coherent section a day. If it’s a sketch, you could share your partial progress as you go along, and even put it together in a timelapse at the end? That would be great to see!</p>
+<p>There are some types of long-form content that aren’t naturally amenable to this type of chunking; say you want to put together a video exposition, make an origami sculpture, or crochet a Klein bottle. In this situation, you could either use the challenge to document your process and progress; or you could just claim to engage in #exportoberlite with a reduced frequency of production — say once a week, or one masterpiece at the end — you’ll just have to still tweet it out so I can catalog it ❤️</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+I really don’t like the illusion that there is one process for making and that it involves writing every day. Thinking is work to. So is reading. So is doing things that seem unrelated to writing. Our brains are always thinking about what we’re making, whether we’re typing or not
+</p>
+— ChristianAntonGerard (<span class="citation" data-cites="CAGerardPoet">@CAGerardPoet</span>) <a href="https://twitter.com/CAGerardPoet/status/1221128922982690818?ref_src=twsrc%5Etfw">January 25, 2020</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>Also, while on the subject of masterpieces, there’s the <a href="https://austinkleon.com/2020/12/10/quantity-leads-to-quality-the-origin-of-a-parable/">parable of the pots</a>. On the other hand, everyone does have their own process, and the idea isn’t to force a format: this process is temporary, flexible, and optional 🙌</p>
+</section>
+<section id="this-sounds-like-fun-but-i-have-no-idea-what-to-make." class="level2">
+<h2 class="anchored" data-anchor-id="this-sounds-like-fun-but-i-have-no-idea-what-to-make.">This sounds like fun, but I have no idea what to make.</h2>
+<p>Oooh. Maybe just ping on Twitter if you are in this situation. I do imagine that there are folks who have more ideas than they can handle, so if you have the bandwidth, it’ll even out nicely! For some starter inspiration, just in case it is useful, here are some of the post types that I’m planning for the duration of this challenge, in roughly increasing order of desperation:</p>
+<ol type="1">
+<li>Trying some of the <a href="https://www.tifr.res.in/~outreach/chai_and_why.html">Chai and Why? experiments</a> and documenting <del>any accidents</del> learnings.</li>
+<li>Puzzles and programming contest roundups.</li>
+<li>Lecture notes for classes/talks I’m teaching and/or attending.</li>
+<li>Highlights from whatever podcasts I’m tuned into.</li>
+<li>Clean up draft essays from previous lives.</li>
+<li>Random doodles. And VSCode keyboard shortcuts.</li>
+<li>Hot takes on inconsequential debates.<sup>2</sup></li>
+</ol>
+<p>I also have a few black holes nurtured over time — I’m looking at you, all my Read-It-<del>Never</del>Later apps, the starred section in my RSS app, my YouTube watchlist, and relatives. Maybe about time to go down some of these rabbit holes with the excuse of commentary to follow.</p>
+<p>So yes, that’ll be all for now! Let’s see how this goes 🤞 Meanwhile, <a href="../2021/">please hop on</a> and <a href="https://twitter.com/neeldhara/status/1439668714178105347">spread the word</a> for all of us? Thank you! 🎉</p>
+<hr>
+<p>PS. You might be curious about what participating will <em>look like</em>. I’m trying to setup a separate page for each participant in the challenge that will pull in all your tagged tweets. I’ll share a preview soon!</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>c.f. the next section for a different perspective.↩︎</p></li>
+<li id="fn2"><p>Let me know if you want prompts.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>exportober</category>
+  <category>funda</category>
+  <guid>https://neeldhara.blog/posts/exportober/about/index.html</guid>
+  <pubDate>Thu, 23 Sep 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
   <title>Moving Blocks at CTIS 2021</title>
   <link>https://neeldhara.blog/posts/moving-blocks-ctis/index.html</link>
   <description><![CDATA[ 
@@ -2953,443 +3134,6 @@ Omissions
   <category>exposition</category>
   <guid>https://neeldhara.blog/posts/moving-blocks-ctis/index.html</guid>
   <pubDate>Mon, 20 Sep 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>Envelope Budgeting with Notion</title>
-  <link>https://neeldhara.blog/posts/envelope-budgeting-notion/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p><a href="https://www.youneedabudget.com">YNAB</a> (c.f. <a href="https://www.reddit.com/r/ynab">r/YNAB</a>) (short for <em>You Need a Budget</em>) is a budgeting application that lets you track and manage your finances. Like most apps in this category, it provides a slick interface to enter all your transactions. YNAB is more than just cataloging transactions and tracking account balances, though. The design here revolves around (and goes beyond) what is called <a href="https://en.wikipedia.org/wiki/Envelope_system">envelope budgeting</a>, which basically boils down to this:</p>
-<blockquote class="blockquote">
-<p>Give every dollar a job.</p>
-</blockquote>
-<p>You can dig a little deeper into how YNAB works by looking up their <a href="https://www.youneedabudget.com/the-four-rules/">four rules</a> here. I am going to try and create an envelope budgeting system in Notion that is loosely inspired by my use of YNAB.</p>
-<p>To be clear, I don’t expect to stop using YNAB, nor do I expect to replicate many of its sophisticated features. Also, there are some nice envelope budgeting systems on Notion already! For instance, you might want to check out the one <a href="https://www.reddit.com/r/Notion/comments/mzfog5/envelope_budget_zerobased_budget_system/">here</a> by <a href="https://www.reddit.com/user/sff_fan_17/">u/sff_fan_17</a> or <a href="https://www.notion.so/Zero-based-Budget-21f015953116430ba4c3414a4691081e">the one here</a> by <a href="https://t.co/3Vv2zRGQuy?amp=1">Ben Smith</a>. These are really neat, but the only reason I’m not just duplicating one of them is that what I have in mind looks slightly different from the setups here. In particular, I would like the transactions to be dated and tied to specific accounts, and I would also like the system here to account for <em>all</em> the inflows and outflows in my actual system. Neither of these templates feature a hierarchy of categories either, which is something that we will attempt to do here.</p>
-<p>In the first template above, I think the total income is mentioned separately, outside of the database system; and the budget covers a part of the total available income. There are explicit instructions on how to update this month-to-month, so do check this out — perhaps it works for what you might have in mind! The second template explicitly accounts for inflows, and is apparently based on <a href="https://docs.google.com/spreadsheets/d/1JVQzq20raZGwxnjsJhLjBrMDswOHL028dwPXdIHoeOQ/template/preview">this Google sheet</a>. It does seem that the transactions are missing information about accounts and dates, which could be a little limiting if you wanted to generate a report or a dashboard for a particular period of time. Again, a great starting point, and if it resonates with your kind of setup, it’s definitely worth duplicating and playing with. Both templates are free to access and replicate.</p>
-<p>Incidentally, if you don’t use Notion and are hesitant to try YNAB, you could take a look at <a href="https://www.youneedabudget.com/how-to-create-a-budget-template/">their guide to building your own budgeting template</a> — this does not require using YNAB at all and can even be made to work pen and paper. Many people have also recreated YNAB’s core features using their own favourite tools, the most popular among which appears to be Google sheets — see, for example: <a href="https://aspirebudget.com">Aspire Budget</a> (c.f. <a href="https://www.reddit.com/r/aspirebudgeting">r/aspirebudgeting</a>) — I have not tried this myself, but it appears to be very feature-rich and neat overall.</p>
-<p>That said, onto our own YNAB-esque budgeting template in Notion! We’re on our way to something that looks like this:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Categories</figcaption><p></p>
-</figure>
-</div>
-<p>If you want to just skip ahead and play with the template, you can duplicate it by following <a href="http://42templates.notion.site/Template-Envelope-Budgeting-in-Notion-447cacf529dd4149b18317460b8f9805">this link</a>:</p>
-<p>There are three key pieces to this setup: the first is the categories (these are the labels on the envelopes, if you like), the second is the actual transactions that take take place, and the third is a list of accounts that you have (could be bank accounts, credit accounts, virtual wallets, and so on). You would want the transactions database to be linked to both categories and the accounts. More on the exact table designs below. I’m going to assume some familiarity with Notion terminology, if this is your first time with Notion then some of this may not make sense right away, but if you could just <a href="https://www.notion.vip/how-to-create-your-first-relational-database-in-notion/">look up how Notion databases work</a> — especially the relational aspect — then I think you’d have all you need to follow along!</p>
-<section id="budgeting-categories" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="budgeting-categories">Budgeting Categories</h2>
-<p>It may be natural for this table to just have one row for each category. You probably want to have a small number of higher-order categories (e.g: monthly supplies, services, maintenance, health, investments, etc.) and smaller, more specific ones under these broad umbrellas (e.g, services would likely have sub-categories along the lines of internet, phone, electricity, water, etc.). You can do this by setting up a relation property to the table itself, and have it sync two-way, like so:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.29.11_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Screenshot 2021-09-18 at 3.29.11 PM.png</figcaption><p></p>
-</figure>
-</div>
-<aside>
-⚡ We want to make a database that captures the categories that our expenses fall under, and the budget that’s available for these categories.
-</aside>
-<p>If you want to see just the higher-order categories nicely, you can setup a gallery view with a filter for the main category to be empty, which would look like this (I’ve disabled the preview and added some <a href="https://www.notion.vip/icons/">icons from notion.vip</a>):</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.33.56_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The Gallery View</figcaption><p></p>
-</figure>
-</div>
-<p>Next, we want to specify a budget for each of these categories. We can do this directly for the lower-order categories first. Then, we can have the main category budgets calculated automatically by rolling up the budgets of the corresponding child categories and adding up their budget values. To have a clean view of the budget, you could add a formula column that just adds up the values from the direct budgets and the rollup, like so:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.18.35_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Budget View</figcaption><p></p>
-</figure>
-</div>
-<p>You can add two dummy properties with the text <code>Budgeted:</code> and <code>Remaining:</code> for each row, and set them to show along with the budget in the Gallery view so you get something like this:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_3.43.12_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Budgeted and Remaining Labels</figcaption><p></p>
-</figure>
-</div>
-<p>There are two natural questions at this point:</p>
-<ul>
-<li>How do we know that we have budgeted what we actually have?</li>
-<li>How do we know what amounts are remaining at any given point of time in the month?</li>
-</ul>
-<p>To address both of these questions, we will need to flesh out the transactions database, link it to the categories and come back to this. But before that, let’s do a quick detour with an accounts database just to setup the foundation we need for the transactions database.</p>
-</section>
-<section id="accounts" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="accounts">Accounts</h2>
-<p>For this demonstration, I am just going to add two accounts — one savings bank account and one credit card account:</p>
-<p>The most natural property we want for the Accounts database would be a <em>balance</em> column. Instead of maintaining this manually, we will just link this with the transactions database and derive the balance by rolling up the relevant transactions.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.49.12_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Accounts View</figcaption><p></p>
-</figure>
-</div>
-<aside>
-⚡ The accounts database simply has one row for every account you have — these could be savings accounts, credit card accounts, a cash account, or your virtual wallets.
-</aside>
-</section>
-<section id="transactions" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="transactions">Transactions</h2>
-<p>You might want to optionally add a memo property that lets you add a quick note or explanation for the transaction. However, given that each database entry is also a page, you could also quite flexibly add all the additional information you want to the page corresponding to any transaction. Meanwhile, you might also want to setup relations to other parts of your Notion setup if you find anything relevant — for instance, if you have a books database, or an inventory database, and so on. That said, we’re going to keep it simple here, and here’s an example transaction:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.56.45_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">An Example Transaction</figcaption><p></p>
-</figure>
-</div>
-<aside>
-⚡ Every transaction has the following: an amount, a payee, the account to which the amount was debited or credited to, the date the transaction happened, and and the expense category that the transaction belonged to. We set these up as columns with the appropriate properties, with the accounts and categories being relational links.
-</aside>
-<p>You’ll notice that I’ve linked to both the child and the parent category for this transaction. It would be nice if the parent category was pulled up automatically — and this is possible with a formula, but as far as I know the formula will not actually <em>link</em> the transaction to the main category. So for now, we assign both categories manually. 🤷‍♀️</p>
-<p>One quick thing to do now is to go back to the Accounts database and add a rollup property that takes on the sum of the amounts property from the related transactions table, and once done, the balances show up nicely in the gallery view:</p>
-<div class="columns">
-<div class="column" style="width:34%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.35.18_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Rollup sum of amounts in accounts</figcaption><p></p>
-</figure>
-</div>
-</div><div class="column" style="width:66%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_4.37.52_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Gallery view of balances</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Now we go back to our categories database and rename the relational column to <strong>transactions</strong> and add a rollup that collects all expenses from the transactions that happened in a particular category, so this is what it looks like:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_5.50.57_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Category view</figcaption><p></p>
-</figure>
-</div>
-<p>Now add a formula column <strong>available</strong> that simply adds up the budget and the expense columns so you can find out how much of your budget is still available for use. My formula looks like this:</p>
-<p><code>prop("Final Budget") + prop("Expenses")</code></p>
-<p>Note that it might feel more natural to subtract expenses, but my expenses are already negative amount transactions, so I just need to bundle it all together.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.30.27_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
-<p></p><figcaption class="figure-caption">Category View</figcaption><p></p>
-</figure>
-</div>
-<p>Just for fun, you could also add a <strong>status</strong> column that visually indicates how much of your budget you have left. The progress-bar style of the status property here is inspired <a href="https://www.notion.vip/notion-formulas-create-a-progress-bar/">by this guide</a>, and the formula I used requires a couple of auxiliary columns that calculate the percentage and determine if a half-star should be used or not based on the value of the decimal part. It also first checks that the available balance is in fact positive, if not, it’s going to display a suitably scary warning emoji. I won’t bore you with the specifics here, but you can find the formula in the template that I’ve linked to at the end of this post.</p>
-<p>So now we are at a point where the remaining amounts are calculated based on the transactions. However, we still have to think about how to link the budgeted amounts to the actual money available. In fact, speaking of money available, I haven’t really touched upon how to handle transactions that are not expenses; i.e, transactions with a positive amount value and that reflect money coming <em>into</em> the system as opposed to leaving it. These are, of course, just regular transactions — but what category do we assign them to? All the ones we have so far really capture spends, not inflows…</p>
-<p>So, it turns out that YNAB would take all this money and automatically categorize it as unassigned, or to be budgeted. We can mimic this by creating a special category called <code>to be assigned</code>, and have all income-type transactions categorized as such. Typically this would be transactions corresponding to a salary, client payments, refunds, credit from interest, and so forth.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.38.19_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The TBA Category</figcaption><p></p>
-</figure>
-</div>
-<div class="page-columns page-full"><p>Notice that the so-called <strong>expenses</strong><sup>1</sup> that are now accumulating in this category is actually the total amount of money that came into the system. Incidentally, if you were to just look at the sum of the <strong>balance</strong> column in the accounts database, that’s the net amount of money in the system at any given point of time.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Remember that the expenses column just rolled up the transaction amounts in a particular category.</p></li></div></div>
-<hr>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_6.42.06_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
-<p></p><figcaption class="figure-caption">Accounts View</figcaption><p></p>
-</figure>
-</div>
-<aside>
-⚡ Note that transactions that just move money within your accounts, like a credit card payment, don’t need any explicit expense categories.
-</aside>
-<p>You also don’t need to budget separately for credit card payments, because your credit card bill is composed of transactions that were already budgeted for! Even if they were items corresponding to, say, credit card fees, you probably categorized them under Services, for example. So we won’t have a separate budget for credit card bill payments (although I should mention that YNAB does this explicitly and handles it automatically).</p>
-<p>Alright, so it seems like we are nearly there, except that our current situation is the following:</p>
-<ol type="1">
-<li>The amount the <em>to be assigned</em> category is a true reflection of incoming funds.</li>
-<li>The amounts that we added to our category budgets were setup manually and generally divorced from the reality in the transactions database.</li>
-</ol>
-<aside>
-<p>⚡ To fix this, we need some way to move funds from the <em>to be assigned</em> category to the other ones.</p>
-</aside>
-<p>For example, let’s say I want to budget 750 for ebooks this month. I could do this by adding a dummy transaction that debits an amount of 750 to the <em>to be assigned</em> category and credits it to the <em>ebooks</em> category<em>.</em> What this means is that when we roll up the amounts from all transactions, we directly obtain the amount remaining for us to spend!</p>
-<p>So for the very first month, when we have a clean slate, we just have a bunch of such transactions — these won’t have any explicit account associated with them because they aren’t real transactions; and in fact you can always filter your transactions table so that you only see the meaningful ones by setting the condition that the accounts column should be non-empty.</p>
-<p>Meanwhile, here is how we do the budgets for our categories all over again, this time via these virtual transactions:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.57.40_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Budget Overview</figcaption><p></p>
-</figure>
-</div>
-<p>If you go to the <em>to be assigned</em> row in the categories table and look at the rollup value in the expenses column, then you’ll see that it corresponds to either the amount of money that’s still assigned (these are dollars — or in my case, rupees — that don’t have a job yet), or, in case you happen to have overshot the budget, the amount by which you are falling short. In the former situation, the available amount will be a positive number, while in the latter, it’ll be negative.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_7.57.35_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">To Be Assigned</figcaption><p></p>
-</figure>
-</div>
-<p>Ideally, we just want this number to be <em>zero</em>, indicating that everything has been assigned appropriately. To achieve this:</p>
-<ol type="1">
-<li>If your budgets have collectively overshot the amount of money available, re-adjust them them — specifically, reduce some of the amounts — so that this is no longer the case. Of course, I am saying this from a theoretical standpoint; if your situation is that you have real expenses that you don’t have real money for, then you would want to plan for this by bringing the differential amount of money into the system via a loan, and then planning the repayment by budgeting for it as well. Dealing with debt is beyond the scope of this discussion, but I think the <a href="https://www.youneedabudget.com/blog/">YNAB blog</a>, <a href="https://www.youneedabudget.com/ynab-the-book/">book</a>, and <a href="https://www.youtube.com/user/youneedabudget">videos</a> go into this at length.</li>
-<li>If you have money left over, you could either add it to your budgets, giving yourself some extra wiggle room; but I prefer to budget for fixed amounts generally, so in this situation I’ll just add this amount to something I call a <em>Miscellaneous</em> or <em>Scratchpad</em> category. It’s something you can borrow from if you fall short later, it has no particular semantics. Some people like to sweep off any excess money into deposit accounts, and if you do this, then you might want to create those accounts in the system and enter those transactions to get rid of this positive balance.</li>
-</ol>
-<p>At the end of this, you are in a situation where all money is nice and assigned. Since we started off by specifying budgets manually, we should go back and fix some formulas in our database of categories. In particular, here’s what I did to simplify things:</p>
-<ul>
-<li>Remove the <code>Available</code> column (previously this was the difference of the manually set budget and the rolled up expenses).</li>
-<li>Rename <code>Expenses</code> to <code>Available</code>, since the rollup now just reflects what’s truly available.</li>
-</ul>
-<p>I’m going to leave the manually added budgets in — although we won’t use them to calculate what’s truly available any more, they will help us plan our budgets going forward.</p>
-<p>Everything so far should make sense for an initial setup, but what do we do when we have new incoming transactions that need to be assigned to categories? I generally like to do the budgeting exercise once at the start of every month, so any intermediate positive transactions into the system will either remain in the <em>To be assigned</em> category, or if you are OCD about wanting that that category to be set to zero always, you can always push this number out into your scratchpad.</p>
-<p>At the start of the month (this could be another day and a different frequency; but I do recommend being consistent for simplicity), we need to refuel the categories with the funds available. There are two kinds of things that could happen here, broadly speaking:</p>
-<ol type="1">
-<li>For categories that represent a plan to save up to something, like a vacation, or a category where you feel like you want to have a certain amount of money set aside every month irrespective of how much you spent in the last month, you just want to push <code>budget</code> amount of money into that category via the virtual transactions we discussed earlier.</li>
-<li>For other categories, which I like to think of as those having <em>rolling</em> budgets, you want to only assign the difference between what was budgeted and what was spent… and hopefully this is a non-negative quantity!</li>
-</ol>
-<p>You could setup a checkbox to indicate which categories have rolling budgets and which ones do not, and then this formula:</p>
-<p><code>prop("IsRolling?") ? (prop("Budget") - prop("Available")) : prop("Budget")</code></p>
-<p>will tell you how much you should budget for next month.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.23.47_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">In this example, Ebooks are not a rolling category, so even though I need only 628.95 to meet the original budget, I’ll still set aside the full 750, and the amount that will be available will be 871.05. On the other hand, Phone is a rolling category, and presumably my phone-related expenses in the current month added up to 420, so the recommendation is to budget 420 next time so you’ll still have 500 available total.</figcaption><p></p>
-</figure>
-</div>
-<p>In this example, Ebooks are not a rolling category, so even though I need only 628.95 to meet the original budget, I’ll still set aside the full 750, and the amount that will be available will be 871.05. On the other hand, Phone is a rolling category, and presumably my phone-related expenses in the current month added up to 420, so the recommendation is to budget 420 next time so you’ll still have 500 available total.</p>
-</section>
-<section id="the-process-after-setting-up" class="level2">
-<h2 class="anchored" data-anchor-id="the-process-after-setting-up">The Process After Setting Up</h2>
-<p>There are two main times that you’ll interact with this budget: whenever a transaction is made, and once every X days to reset the budgets for the individual categories.</p>
-<p>Adding transactions is reasonably easy, although admittedly it’s probably not as smooth as a specialized app that might have a Siri command to do this for you or a widget that let’s you quick-add things. However, it’s not too bad, especially if you enter it right away. You could also potentially automate this via API integrations, or enter your transactions in your regular app and export them as a CSV and import them into the Notion system once every so often.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.37.56_PM.png" class="img-fluid figure-img" style="width:42.0%"></p>
-<p></p><figcaption class="figure-caption">Transaction Table</figcaption><p></p>
-</figure>
-</div>
-<p>The budgeting bit is going to be a little more work, especially if you work with a gazillion categories. The formulas will guide to you what needs to be done, but those virtual transactions still need to be added manually. On YNAB, you can do what I described above (adding the deficit to rollup categories and the originally intended budgets to the others) in one click — and there are other options too, for example, you may have moved to a new location and you’re still getting the hang of what you’ll need to set aside for groceries, so YNAB will offer to budget what you spent last month, or your average expenses from the last six months, and so on. Here, since you are assigning things manually, you can definitely tweak as you go; the <strong>next month</strong> column is just a suggestion.</p>
-<p>You can probably prepare a CSV file with the default budget amounts and just merge this in at the start of every month if your expenses are super predictable, and just adjust the entries that need adjusting. This will save you some time, but remember that the categories still need to be linked to manually. It’s not too bad for something that happens once a month and that will hopefully bring you some sense of control and awareness 😇</p>
-<p>Perhaps also try and not have a gazillion categories and sub-categories, at least to begin with — it helps to keep things simple, especially when starting out.</p>
-</section>
-<section id="common-pitfalls" class="level2">
-<h2 class="anchored" data-anchor-id="common-pitfalls">Common Pitfalls</h2>
-<p>Here are a couple of mistakes I made frequently, even while just setting up this template!</p>
-<ul>
-<li>Forgetting that transaction amounts corresponding to expenses should be recorded as negative numbers! If this happens very very frequently to you, you could also set this up a little differently — have a checkbox to indicate if a transaction is an expense or an inflow, and always enter a positive number reflecting the amount, and let a formula do the work of adding the sign!</li>
-<li>Forgetting to add the parent category — this can mess up the views of what’s available in the high-level categories and cause the numbers to not tally. So if you need to debug your numbers, check for whether you have added both categories to your transactions or not!</li>
-</ul>
-</section>
-<section id="dashboards" class="level2">
-<h2 class="anchored" data-anchor-id="dashboards">Dashboards</h2>
-<p>Most of the action here is happening in the Transactions database. You could create linked copies of this database anywhere you like and filter things out to see what you want. For instance, if you want to keep tabs on the transactions in specific accounts, you could have this on your account pages:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_8.47.47_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Account Overview</figcaption><p></p>
-</figure>
-</div>
-<p>You could filter out transactions for a particular month, a particular category (either a top-level category or an atomic one), and so on. I think there’s plenty you can do here, but I am not sure how much of this can be automated. For instance, you might want to generate — or have over email — a monthly report of your expenses across various categories and how did relative to your estimated budgets. This should be possible by leveraging the API and tools like Integromat/Zapier/Automate.io - but I haven’t really explored the possibilities here.</p>
-</section>
-<section id="missing-features" class="level2">
-<h2 class="anchored" data-anchor-id="missing-features">Missing Features</h2>
-<p>It would be nice to have a gallery view of the months of the year showing spends and budgets in each (high-level?) category. For this though I’d need the rows to correspond to months, columns corresponding to categories, which pull up transactions that happened in a particular month from said category.</p>
-<p>Even if I manually linked the transactions database to this calendar one, and made sure each transaction was linked to the correct row, I don’t see how I can split up those transactions across categories, since it’s not possible to add a filter to relational columns or rollups as far as I know. It’s a similar bottleneck going through the Categories database as well. This information is of course implicit in the system, I just can’t think of a neat way of visualizing it.</p>
-<p>This is possible to do for the current month though:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.08.56_PM.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Monthly Overview</figcaption><p></p>
-</figure>
-</div>
-<p>YNAB also has more sophisticated category types — apart from budgets that roll or accumulate, you could have categories that aim to have a certain amount of funds assigned by a certain date and so on. For those who are freelancers with incomes spread over the days of the month, I think YNAB has a lot of little features that allow for a more flexible way of budgeting, which I’m not super familiar with because I’m not in this situation. This is just to say that this setup here may be both limiting and feeing because of how much of the setup is manually done. At least that’s my optimistic view right now 😀</p>
-<p>Finally, YNAB also has an option to reconcile accounts, which is when you declare that the numbers in YNAB match the book balance according to your bank or credit card agency. This is a neat little thing that I like to check off every so often. Here, I suppose you could just glance through the balances on the Accounts database (remember the gallery view from earlier?), but it won’t have the same song-and-dance-y feeling — but maybe this could be a recurring task that you can check off, and hopefully <em>that</em> will feel good 😅</p>
-<p>So that’s about it! I’d love to hear any feedback on this, and suggestions for improving the setup would be very welcome too. You can duplicate the template <a href="https://www.notion.so/Template-Envelope-Budgeting-in-Notion-447cacf529dd4149b18317460b8f9805">from here</a>.</p>
-
-
-</section>
-
-
- ]]></description>
-  <category>notion</category>
-  <category>workflows</category>
-  <category>tutorial</category>
-  <guid>https://neeldhara.blog/posts/envelope-budgeting-notion/index.html</guid>
-  <pubDate>Fri, 17 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/envelope-budgeting-notion/Screenshot_2021-09-18_at_9.11.50_PM.png" medium="image" type="image/png" height="81" width="144"/>
-</item>
-<item>
-  <title>Actually Building a Website with Notion</title>
-  <link>https://neeldhara.blog/posts/building-websites-with-notion/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>My attempted <a href="https://neeldhara.blog/notion-powered-websites">overview of options</a> for making websites with <a href="https://notion.so">Notion</a> does not go into the mechanics of <em>how</em> to setup a site with Notion, so I’m going to post a couple of short walkthroughs of the process here. I’ll demonstrate with both <a href="https://super.so">Super</a> and <a href="https://potion.so">Potion</a>. For Super, I’ll share how I setup my course catalog. With Potion, a natural choice would have been to take you behind the scenes of <em>this</em> blog, but this did involve a little bit of customization that might be a bit distracting, so I’ll just make something quick from scratch for this post.</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-Doesn't look like it's for non-geeks like me 😄 or you may prove otherwise. However, if you can record a 10 min video setting up a basic one, that'll have a greater impact, I believe, if it's already not there.
-</p>
-— Swaprava Nath (<span class="citation" data-cites="swaprava">@swaprava</span>) <a href="https://twitter.com/swaprava/status/1436887668143497219?ref_src=twsrc%5Etfw">September 12, 2021</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr>
-<section id="the-overall-process" class="level3">
-<h3 class="anchored" data-anchor-id="the-overall-process">The Overall Process</h3>
-<p>For either framework, this is typically a three-step process:</p>
-<ol type="1">
-<li><p>Setup your content in Notion. You can start from scratch, or use one of the templates provided by Super or Potion that feel like a closest match to what you want your website to eventually look like.</p></li>
-<li><p>Enable sharing to the web from within Notion — this will generate a link for you.</p></li>
-<li><p>Copy this link into Super or Potion.</p></li>
-</ol>
-<p>At the end of step 2, in fact, you already have a URL that you can share with anyone and, depending on how the content is laid out in Notion, can already look like a decent website.</p>
-<p>What step 3 allows you to do, however is:</p>
-<ol type="1">
-<li><p>Add some styling with CSS.</p></li>
-<li><p>Add custom code snippets (useful, for example, if you want to add things like Google Analytics).</p></li>
-<li><p>Be assured that the webpage is good in terms of SEO, performance, etc.</p></li>
-<li><p>If using Super, you can selectively password-protect pages (coming soon to Potion, where you can presently password-protect your whole site if you want to).</p></li>
-<li><p>Have automatically generated user-friendly URLs for the individual pages, and if on Potion, you get nice preview images for all your pages as well.</p></li>
-</ol>
-<p>A few optional steps that you might want to consider:</p>
-<ol type="1">
-<li>By default, both Super and Potion will give you a test subdomain to work with. Eventually, you might want the website to be available from your own domain. This is just a matter of adding a couple of A-records and typically can be done from wherever you registered the domain:</li>
-</ol>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" class="img-fluid"></p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.48.49_AM.png" class="img-fluid"></p>
-<ol start="2" type="1">
-<li>You might want to add custom styles to make the website render uniquely — so you move beyond the standard look-and-feel of a Notion page if you so wish. You could do something on your own here, but the simplest thing is to just borrow the styling from one of the existing templates and tweak it if you want.</li>
-<li>Insert code for Google Analytics (or similar). As an aside, if you are looking for analytics that is user-friendly <em>and</em> privacy-conscious, I’d recommend <a href="https://usefathom.com">Fathom</a>.</li>
-</ol>
-</section>
-<section id="a-course-catalog-with-super" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="a-course-catalog-with-super">A Course Catalog with Super</h3>
-<div class="callout-warning callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Heads up!
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This content is deprecated because I’ve moved this domain out to a different setup now. So please ignore the links, and hopefully the steps are still useful in principle!</p>
-</div>
-</div>
-<p>Let’s apply this process to an actual website now! I’ll demonstrate how I setup the website at <a href="https://neeldhara.courses"><code>neeldhara.courses</code></a>. Incidentally, if you want a quick overview without some details that will be specific to my website, you might want to watch the video made by <span class="citation" data-cites="robhope">@robhope</span> and pointed out by <span class="citation" data-cites="traf">@traf</span>.</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-Here's a little run through by <a href="https://twitter.com/robhope?ref_src=twsrc%5Etfw"><span class="citation" data-cites="robhope">@robhope</span></a> on creating a site <a href="https://twitter.com/super_?ref_src=twsrc%5Etfw"><span class="citation" data-cites="super_">@super_</span></a>:<a href="https://t.co/SCMdDMRfBd">https://t.co/SCMdDMRfBd</a>
-</p>
-— traf (<span class="citation" data-cites="traf">@traf</span>) <a href="https://twitter.com/traf/status/1436888874165411847?ref_src=twsrc%5Etfw">September 12, 2021</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Back to the setup for <a href="http://neeldhara.courses"><code>neeldhara.courses</code></a>. You can check out the page on Notion <a href="https://www.notion.so/Courses-722e231ca8e549159af5a8e7700a5025">here</a>, but I’ll describe some pieces of it below. First, recall Step 1:</p>
-<aside>
-<p>1️⃣ <em>Setup your content in Notion.</em></p>
-</aside>
-<p>I started with the <a href="https://hq.super.site">Super template HQ</a>. It looks amazing and is apparently free to use — at least at the time of this writing 😀</p>
-<p>Duplicate this template into Notion. If you like, you can duplicate it twice — one, a copy that you actually work on, and the other could be a copy that you don’t edit but just keep handy in case you need to go back to the original for reference.</p>
-<p>The first thing I did was to get rid of most of the content, and just retained this section:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.55_AM.png" class="img-fluid"></p>
-<p>which, incidentally, will render like this once connected to Super:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.00.26_AM.png" class="img-fluid"></p>
-<p>Now the next step is to replace the generic content with yours:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.03.16_AM.png" class="img-fluid"></p>
-<p>Since I’m just starting out, I have added the three courses that I’m teaching this term and they all show up. Eventually, these courses will be filtered out based on the current timing, so that only the current ones show here and the rest get pushed to an archive — which I’m yet to build. But the filter would look something like this in Notion:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.05.42_AM.png" class="img-fluid"></p>
-<p>And for each of those entries, I’d go and setup the course home pages with the content that I have in my typical course homepages. The nice thing about Notion is the wide array of content types that lets you format things nicely. Here are a couple of sections from within Notion:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.32_AM.png" class="img-fluid"></p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.29.01_PM.png" class="img-fluid"></p>
-<p>One thing worth pointing out for this particular setup — for each course, the class plan is just a Notion database, where the columns are:</p>
-<ol type="1">
-<li>Name (text)</li>
-<li>Week (single-select with 12 options; one for each week of the course)</li>
-<li>Module (a checkbox property)</li>
-<li>Description (text)</li>
-</ol>
-<p>and the rows either correspond to an overview of a whole week or just one individual lecture, tagged with the week that it happened in.</p>
-<p>On the course’s homepage, I display this database set to a Gallery view, and filtered to only those entries where the Module option is <em>unchecked</em>. These are intended to be overview pages. This is what it looks like in Notion:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.06.41_AM.png" class="img-fluid"></p>
-<p>and this is what it will end up looking like on the website, once you’ve gotten to the end of Step 3:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.18.07_AM.png" class="img-fluid"></p>
-<p>Further, overview page simply displays the same database again, this time in a list view filtered by the appropriate week:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.11.43_AM.png" class="img-fluid" style="width:77.0%"></p>
-<p>Check out the views in Notion and the rendered version side-by-side:</p>
-<div class="columns">
-<div class="column" style="width:45%;">
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.08.34_AM.png" class="img-fluid"></p>
-</div><div class="column" style="width:10%;">
-
-</div><div class="column" style="width:45%;">
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.19.08_AM.png" class="img-fluid"></p>
-</div>
-</div>
-<p>You might wonder about the blockquote in the Notion view right at the top of the page. That’s a feature of the HQ template — anything that goes into that first blockquote renders as page navigation on top. I think this now a bit obsolete with Super’s new features on navigation bars, but I still find it handy and use it on most pages. 👍</p>
-<p>So that’s all of Step 1, getting all your content inside Notion. I’d say this is really the bulk of the process. The process is iterative, so you don’t need literally <em>all</em> your content in before you can move on. However, getting an indicative amount thrown in is, I think, useful.</p>
-<p>Once you’re done with this bit, up next:</p>
-<aside>
-<p>2️⃣ Enable sharing to the web from within Notion — this will generate a link for you.</p>
-</aside>
-<p>This is very easy to do, it’s just a toggle on the top-right corner of your Notion app:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.22.38_AM.png" class="img-fluid"></p>
-<p>Now for the final step to have everything come together:</p>
-<aside>
-<p>3️⃣ Copy this link into Super or Potion.</p>
-</aside>
-<p>This is again quite straightforward, head to Super and just share your page’s public URL, give it a name, and optionally set it up to sync with your domain if you have one.</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_11.26.06_AM.png" class="img-fluid"></p>
-<p>Given that we’re using a particular Super template, you would also need to remember to insert the CSS to make the site look as advertised above 😅</p>
-<p>So remember to add this on the custom code section of your Super dashboard:</p>
-<p><code>&lt;link rel="stylesheet" href="[https://sites.super.so/hq/style.css](https://sites.super.so/hq/style.css)"&gt;</code></p>
-<p>If you do just this and are literally following along your site may still look a little different from mine, which is probably because I tweaked the CSS a bit to incorporate fonts of my liking (the fonts in the screenshot are from Google fonts — <a href="https://fonts.google.com/specimen/Andika+New+Basic">Andika New Basic</a> and <a href="https://fonts.google.com/specimen/Shadows+Into+Light+Two">Shadows into Light Two</a>).</p>
-<p>You might want to take care of some minor things at this stage, such as adding a favicon, a site description that will show up on Google searches, inserting any code you need to for analytics, and so forth.</p>
-<p>The very first time that you setup your site, you may need to wait for a bit for it to build and render. But after this first time, any edits you make on Notion are reflected automatically on your website — you may need to give it a minute or two, it’s not instantaneous, but trust that the changes will show up. Clear your cache if they don’t even after a couple of minutes.</p>
-<p>Super generates pretty URLs automatically for all your pages, but because of the slightly peculiar setup I have, involving a particular nested structure and filtered views, I’ve been doing my pretty URLs manually. For example, to go to the second module of Week 5 in the competitive programming course, the URL is:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">https:<span class="op" style="color: #5E5E5E;">//</span>neeldhara.courses<span class="op" style="color: #5E5E5E;">/</span>competitive<span class="op" style="color: #5E5E5E;">-</span>programming<span class="op" style="color: #5E5E5E;">/</span>week<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">0</span><span class="er" style="color: #AD0000;">5</span><span class="op" style="color: #5E5E5E;">/</span>mod<span class="op" style="color: #5E5E5E;">-</span><span class="dv" style="color: #AD0000;">0</span><span class="er" style="color: #AD0000;">2</span></span></code></pre></div>
-<p>This can be setup quite easily from inside the Super dashboard, and once it’s done once, it’s done for good.</p>
-<p>So, that’s about it! I’d like to think I covered most major aspects, but if anything is unclear, ping me <span class="citation" data-cites="neeldhara">@neeldhara</span> on Twitter and I’ll be sure to update this appropriately 🙂</p>
-</section>
-<section id="the-manim-examples-collection-with-potion" class="level3">
-<h3 class="anchored" data-anchor-id="the-manim-examples-collection-with-potion">The Manim Examples Collection with Potion</h3>
-<p>For the Potion example, I’d like to build out a quick page with latest tweets from <span class="citation" data-cites="manim_community">@manim_community</span>. Manim&nbsp;is a community-maintained Python library for creating mathematical animations, and the twitter handle pulls in a lot of great examples.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Incidentally, if you prefer watching a video tutorial, Potion has you covered already…
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qhqEqh9shik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-</iframe>
-</div>
-</div>
-</div>
-<p>So, for step 1, which is to get our content in Notion, I start with a blank slate and populate it with some content:</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.00.36_PM.png" class="img-fluid"></p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_1.30.40_PM.png" class="img-fluid"></p>
-<p>For Step 2, I simply make this page public, and you can see the <a href="https://www.notion.so/Manim-Examples-4e4dd0c1071e4a549d90be74a84f3cce">Notion version here</a>.</p>
-<p>For Step 3, I add this page to Potion and just follow <a href="https://www.potion.so/cards-portfolio">step 4 on this page</a> to set this up with a lovely template made by Dr.&nbsp;Gil Pradana (@<a href="https://twitter.com/gildy">gildy</a>). This just amounts to copy-pasting some CSS code into the <em>Snippet Injection</em> section of your Potion dashboard. This template treats horizontal line breaks as breakpoints to create cards, and the headings translate into the highlight boxes that you can see from this preview.</p>
-<p><a href="https://twitter.com/gildy/status/1403680404092035075?s=20">https://twitter.com/gildy/status/1403680404092035075?s=20</a></p>
-<p>After connecting my domain, here’s what the website looks like this<img src="https://neeldhara.blog/posts/building-websites-with-notion/FireShot_Capture_002_-_Manim_Examples_-_manimexamples.com.png" class="img-fluid"></p>
-<p>And that’s basically it! You have a fully functional page now. 🎉 Changes you make in Notion will reflect <em>instantaneously</em> on Potion!</p>
-<p><img src="https://neeldhara.blog/posts/building-websites-with-notion/ScreenFlow.gif" class="img-fluid"></p>
-<p>You might wonder if there is a way of setting things up so that new tweets from the Manim community handle show up automatically on this website. In principle, this should be possible with a little help from tools like automate.io, Zapier, or Integromat — they can watch for new tweets and append them to the page you are working on, although I’m not sure how to set it up so that they respect the two-column layout that I have here. I figure tweets could also be added to a database and shown with a gallery view instead, but the gallery previews will typically not pick up embedded content, so you might have to go via an intermediate service like <a href="https://tweetpik.com/">Tweetpik</a> or <a href="https://pikaso.me/">Pikaso</a> instead so you have screenshots for display.</p>
-<p>So this was Potion - you can probably see the many ways in which Potion and Super are similar to setup. By the way, the templates on these platforms are <em>not</em> mutually compatible — so watch out for the fact that they will not automatically work on the other platform if you are looking to migrate. As far as I can see, neither service has an importer for the other built yet.</p>
-<p>That said, I hope you have fun making your website with Notion with whatever platform you choose to use! 🎉</p>
-
-
-</section>
-
- ]]></description>
-  <category>notion</category>
-  <category>workflows</category>
-  <category>websites</category>
-  <guid>https://neeldhara.blog/posts/building-websites-with-notion/index.html</guid>
-  <pubDate>Sat, 11 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/building-websites-with-notion/Screenshot_2021-09-12_at_10.49.57_AM.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 </channel>
 </rss>

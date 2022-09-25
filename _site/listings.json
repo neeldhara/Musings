@@ -53,7 +53,10 @@
       "/posts/15-puzzle/index.html",
       "/posts/cp/sam-i-am/index.html",
       "/posts/new-mac/index.html",
+      "/posts/exportober/2021-tracker/index.html",
+      "/posts/exportober/about/index.html",
       "/posts/moving-blocks-ctis/index.html",
+      "/posts/exportober/2021/index.html",
       "/posts/envelope-budgeting-notion/index.html",
       "/posts/building-websites-with-notion/index.html",
       "/posts/notion-powered-websites/index.html",
@@ -96,7 +99,10 @@
       "/posts/15-puzzle/index.html",
       "/posts/cp/sam-i-am/index.html",
       "/posts/new-mac/index.html",
+      "/posts/exportober/2021-tracker/index.html",
+      "/posts/exportober/about/index.html",
       "/posts/moving-blocks-ctis/index.html",
+      "/posts/exportober/2021/index.html",
       "/posts/envelope-budgeting-notion/index.html",
       "/posts/building-websites-with-notion/index.html",
       "/posts/notion-powered-websites/index.html",
@@ -123,6 +129,14 @@
     "listing": "/cp.html",
     "items": [
       "/posts/cp/sam-i-am/index.html"
+    ]
+  },
+  {
+    "listing": "/exportober.html",
+    "items": [
+      "/posts/exportober/2021-tracker/index.html",
+      "/posts/exportober/about/index.html",
+      "/posts/exportober/2021/index.html"
     ]
   }
 ]

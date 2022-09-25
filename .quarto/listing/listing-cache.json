@@ -17,6 +17,9 @@
     ],
     "cp.qmd": [
       "posts/cp"
+    ],
+    "exportober.qmd": [
+      "posts/exportober"
     ]
   }
 }
