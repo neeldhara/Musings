@@ -6,14 +6,64 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://www.neeldhara.blog/index.html</link>
-<atom:link href="https://www.neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://neeldhara.blog/index.html</link>
+<atom:link href="https://neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
 <lastBuildDate>Thu, 06 Oct 2022 18:30:00 GMT</lastBuildDate>
 <item>
+  <title>AB Separation</title>
+  <link>https://neeldhara.blog/posts/tgif/ab-separation/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Shared by <a href="https://twitter.com/10kdiver"><span class="citation" data-cites="10kdiver">@10kdiver</span></a>.</p>
+</div>
+</div>
+</div>
+<p>A probability puzzle involving tournaments and elimination matches:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Here’s a neat probability puzzle — somewhat counter-intuitive: <a href="https://t.co/QA6jxaIYFT">pic.twitter.com/QA6jxaIYFT</a>
+</p>
+— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1573280126061740032?ref_src=twsrc%5Etfw">September 23, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="page-columns page-full"><p>To begin with, a clarification: to say that Alex is the best player is to say that Alex will always win a match that he plays; and to say that Bob is the second best player is to say that Bob will win any match that he plays other than one against Alex. The puzzle asks for the probability that Bob emerges the runner up in the tournament. </p><div class="no-row-height column-margin column-container"><span class="aside">This is indicated in the tweet but the crop seems to hide it.</span></div></div>
+<p>Suppose we denote the players <img src="https://latex.codecogs.com/png.latex?%5C%7Ba_1,a_2,a_3,a_4,b_1,b_2,b_3,b_4%5C%7D">, and say the players are initially matched up like so:</p>
+<p><img src="https://latex.codecogs.com/png.latex?(a_1,a_2);%20(a_3,a_4);%20(b_1,b_2);%20(b_3,b_4),"></p>
+<p>and in particular we have:</p>
+<ul>
+<li>one of the quarter finals will be between <img src="https://latex.codecogs.com/png.latex?a_p"> and <img src="https://latex.codecogs.com/png.latex?a_q"> for <img src="https://latex.codecogs.com/png.latex?p%20%5Cin%20%5C%7B1,2%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?q%20%5Cin%20%5C%7B3,4%5C%7D">,</li>
+<li>the quarter finals will be between <img src="https://latex.codecogs.com/png.latex?b_r"> and <img src="https://latex.codecogs.com/png.latex?b_s"> for <img src="https://latex.codecogs.com/png.latex?r%20%5Cin%20%5C%7B1,2%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?s%20%5Cin%20%5C%7B3,4%5C%7D">, and</li>
+<li>the semi finals will be between an <img src="https://latex.codecogs.com/png.latex?a">-player and a <img src="https://latex.codecogs.com/png.latex?b">-player.</li>
+</ul>
+<p>A moment’s reflection reveals that for Bob to be a runner up, he should not meet Alex in the quarter-finals or earlier. This happens if and only if:</p>
+<ul>
+<li>either Alex is one of the <img src="https://latex.codecogs.com/png.latex?a">-players and Bob is one of the <img src="https://latex.codecogs.com/png.latex?b">-players, or</li>
+<li>Bob is one of the <img src="https://latex.codecogs.com/png.latex?a">-players and Alex is one of the <img src="https://latex.codecogs.com/png.latex?b">-players.</li>
+</ul>
+<p>From here it is a counting argument. I was distracted by some idea of symmetry and originally <a href="https://twitter.com/neeldhara/status/1573691611002769408?s=20&amp;t=-A9VW9YgGCp2qDAyY_Yw6Q">jumped to the conclusion</a> that the answer is one-half. Spoiler alert: I quickly learned that it’s not!</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/ab-separation/index.html</guid>
+  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
+</item>
+<item>
   <title>2022 Exportober Tracker</title>
-  <link>https://www.neeldhara.blog/posts/exportober/2022-tracker/index.html</link>
+  <link>https://neeldhara.blog/posts/exportober/2022-tracker/index.html</link>
   <description><![CDATA[ 
 
 
@@ -49,12 +99,12 @@
  ]]></description>
   <category>exportober</category>
   <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/exportober/2022-tracker/index.html</guid>
+  <guid>https://neeldhara.blog/posts/exportober/2022-tracker/index.html</guid>
   <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>SKJ</title>
-  <link>https://www.neeldhara.blog/posts/skj/index.html</link>
+  <link>https://neeldhara.blog/posts/skj/index.html</link>
   <description><![CDATA[ 
 
 
@@ -63,7 +113,7 @@
 <p>This is the text of a short speech I gave at the farewell event for <a href="https://sudhirjain.info/">Prof.&nbsp;Sudhir Jain</a> as he left IITGN for BHU.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/skj/skj.jpg" class="img-fluid figure-img" style="width:87.0%"></p>
+<p><img src="https://neeldhara.blog/posts/skj/skj.jpg" class="img-fluid figure-img" style="width:87.0%"></p>
 <p></p><figcaption class="figure-caption">Prof.&nbsp;Jain at the farewell event held on the 3rd January, 2022.</figcaption><p></p>
 </figure>
 </div>
@@ -86,13 +136,13 @@
 
  ]]></description>
   <category>iitgn</category>
-  <guid>https://www.neeldhara.blog/posts/skj/index.html</guid>
+  <guid>https://neeldhara.blog/posts/skj/index.html</guid>
   <pubDate>Thu, 22 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/skj/skj.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://neeldhara.blog/posts/skj/skj.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>External Communications</title>
-  <link>https://www.neeldhara.blog/posts/comms/index.html</link>
+  <link>https://neeldhara.blog/posts/comms/index.html</link>
   <description><![CDATA[ 
 
 
@@ -104,7 +154,7 @@
 <p>Here’s collection of some randomly chosen memories: my hat-tip to a stellar team.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/comms/1.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/comms/1.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The External Communications Team. From left to right: Hatim, Dilip, Tej, Apeksha, Dhara, Divyangi, Yours Truly, Chandni, Vandana, Shivangi, Gaurav, and Devarsh.</figcaption><p></p>
 </figure>
 </div>
@@ -124,14 +174,14 @@
 <p>One of my most memorable projects with Tej (along with Dilip, Divyangi, and the rest of the team) is the revamp of the main IITGN website. We went from this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/comms/old.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://neeldhara.blog/posts/comms/old.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">The old IITGN website, <a href="https://legacy.iitgn.ac.in">here</a>.</figcaption><p></p>
 </figure>
 </div>
 <p>to this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/comms/new.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://neeldhara.blog/posts/comms/new.gif" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">The current IITGN website, <a href="https://www.iitgn.ac.in">here</a>.</figcaption><p></p>
 </figure>
 </div>
@@ -160,7 +210,7 @@
 <p>Chandni joined us in the summer of 2019 for a year. She was already a very talented photographer at the time of joining us. As our events and activities grew in number and scale, we found very valuable support in Chandni’s presence. Check out her <a href="https://www.instagram.com/visi_lens/">Instagram</a> here!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/comms/chand.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://neeldhara.blog/posts/comms/chand.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">A sample of Chandni’s photography</figcaption><p></p>
 </figure>
 </div>
@@ -210,13 +260,13 @@
 </ol>
 </section></div> ]]></description>
   <category>iitgn</category>
-  <guid>https://www.neeldhara.blog/posts/comms/index.html</guid>
+  <guid>https://neeldhara.blog/posts/comms/index.html</guid>
   <pubDate>Thu, 22 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/comms/1.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://neeldhara.blog/posts/comms/1.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Dog Bunny Puzzle</title>
-  <link>https://www.neeldhara.blog/posts/dogs-bunny-puzzle/index.html</link>
+  <link>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</link>
   <description><![CDATA[ 
 
 
@@ -227,7 +277,7 @@
 <p>Conrad Barski (<a href="https://twitter.com/lisperati"><span class="citation" data-cites="lisperati">@lisperati</span></a>)’s latest, <a href="http://www.dogbunnypuzzle.com/">Dog Bunny Puzzle</a>, had <a href="https://news.ycombinator.com/item?id=32884467">jumped to #1 on HN</a>. The puzzle presents the following somewhat minimalist interface:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" class="img-fluid figure-img" style="width:77.0%"></p>
 <p></p><figcaption class="figure-caption">The Dogs Bunny Puzzle</figcaption><p></p>
 </figure>
 </div>
@@ -349,7 +399,7 @@ BunnyCarrot
 <p>We are going to show that <code>BunnyCarrot</code> is NP-complete by reducing from <code>3SAT</code>. So let <img src="https://latex.codecogs.com/png.latex?%5Cphi%20:=%20%5C%7BC_1,%20%5Cldots,%20C_m%5C%7D"> be a collection of <img src="https://latex.codecogs.com/png.latex?m"> 3SAT clauses over variables <img src="https://latex.codecogs.com/png.latex?%5C%7Bx_1,%20%5Cldots,%20x_n%5C%7D">. The reduced instance of <code>BunnyCarrot</code> corresponding to <img src="https://latex.codecogs.com/png.latex?%5Cphi"> looks like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dogs-bunny-puzzle/reduction2.png" class="img-fluid figure-img" style="width:87.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dogs-bunny-puzzle/reduction2.png" class="img-fluid figure-img" style="width:87.0%"></p>
 <p></p><figcaption class="figure-caption">A cartoon sketch of the reduced instance of BunnyCarrot from 3SAT.</figcaption><p></p>
 </figure>
 </div>
@@ -427,13 +477,13 @@ BunnyCarrot
  ]]></description>
   <category>puzzles</category>
   <category>exposition</category>
-  <guid>https://www.neeldhara.blog/posts/dogs-bunny-puzzle/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</guid>
   <pubDate>Sun, 18 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" medium="image" type="image/png" height="168" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" medium="image" type="image/png" height="168" width="144"/>
 </item>
 <item>
   <title>On Cards and Graphs</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/debruijn/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</link>
   <description><![CDATA[ 
 
 
@@ -473,7 +523,7 @@ S takes the top card and passes the deck to the next person (T).</code></pre></l
 <p>The diagram below shows why cut shuffles still result in sequences where the signal from any location continues to be unique, and in some sense, <em>invariant</em> across shuffles: suppose a position <img src="https://latex.codecogs.com/png.latex?x"> corresponds to a certain signal <img src="https://latex.codecogs.com/png.latex?S_x"> before a cut shuffle, then after a cut shuffle, if position <img src="https://latex.codecogs.com/png.latex?x"> shifts to <img src="https://latex.codecogs.com/png.latex?y">, then <img src="https://latex.codecogs.com/png.latex?S_y%20=%20S_x">. Note that this would <em>not</em> be true if someone, say, enthusiastically riffle shuffled the pack — so do make sure to prevent this at all cost.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Examples of cut shuffles and why they don’t affect the addressing technique. The first column shows the original sequence, the second shows the proposed cut, and the last shows the final sequence after the cut shuffle is excecuted.</figcaption><p></p>
 </figure>
 </div>
@@ -505,7 +555,7 @@ You perhaps see now how you can perform the entire trick:
 <p>If you want to make your life easier, you could use an association that is easy to remember:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A useful dictionary between 5-bit strings and cards from a standard deck of cards</figcaption><p></p>
 </figure>
 </div>
@@ -549,7 +599,7 @@ If you want to take a look at the graph, it’s right here…
 <p>…although a bit of a monstrosity!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
 <p></p><figcaption class="figure-caption">The de Bruijn graph of order 4</figcaption><p></p>
 </figure>
 </div>
@@ -643,13 +693,13 @@ there are exactly _____ self-loops
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/debruijn/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</guid>
   <pubDate>Sat, 10 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" medium="image" type="image/png" height="185" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" medium="image" type="image/png" height="185" width="144"/>
 </item>
 <item>
   <title>Walking Around via Euler Tours</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/eulertours/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/eulertours/index.html</link>
   <description><![CDATA[ 
 
 
@@ -824,12 +874,12 @@ which is not in S or marked</code></pre>
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/eulertours/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/eulertours/index.html</guid>
   <pubDate>Thu, 08 Sep 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>On Teaching</title>
-  <link>https://www.neeldhara.blog/posts/on-teaching/index.html</link>
+  <link>https://neeldhara.blog/posts/on-teaching/index.html</link>
   <description><![CDATA[ 
 
 
@@ -854,7 +904,7 @@ These are some parts of the teaching statment that I wrote roughly seven years a
 </div><div class="column" style="width:4%;">
 
 </div><div class="column" style="width:51%;">
-<p><a href="https://imgflip.com/i/6s9ym6"><img src="https://www.neeldhara.blog/posts/on-teaching/https:/i.imgflip.com/6s9ym6.jpg" title="made at imgflip.com" width="100%"></a></p>
+<p><a href="https://imgflip.com/i/6s9ym6"><img src="https://neeldhara.blog/posts/on-teaching/https:/i.imgflip.com/6s9ym6.jpg" title="made at imgflip.com" width="100%"></a></p>
 </div>
 </div>
 <p>All this is to say that I walked into a career involving a substantial teaching component with plenty of hesitation. The delivery was/is still largely confined to classroom settings in broadcast mode. It is not entirely clear what this format has to offer over YouTube. Basic interactivity is being increasingly solved with questions built into video players. Peer learning is quite doable with WhatsApp/Slack/Discord groups and local chapter meetups. Scale in the context of assessments is somewhat addressed by peer evaluation. And then there are all the things you can do on YouTube that you can’t do with traditional lectures: find a teacher whose style resonates, find an accent you understand, replay, play at 2x, 0.5x, binge watch, don’t watch…</p>
@@ -901,7 +951,7 @@ I am going to attend college lectures from now on just to increase my attention 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Calvin on 21st Century Education</figcaption><p></p>
 </figure>
 </div>
@@ -913,7 +963,7 @@ I am going to attend college lectures from now on just to increase my attention 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/on-teaching/https:/www.explainxkcd.com/wiki/images/7/79/obsolete_technology.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/on-teaching/https:/www.explainxkcd.com/wiki/images/7/79/obsolete_technology.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Cutting Edge</figcaption><p></p>
 </figure>
 </div>
@@ -933,7 +983,7 @@ I am going to attend college lectures from now on just to increase my attention 
 </blockquote>
 </div></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/on-teaching/https:/phdcomics.com/comics/archive/phd062613s.gif" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/on-teaching/https:/phdcomics.com/comics/archive/phd062613s.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">On hope in teaching.</figcaption><p></p>
 </figure>
 </div>
@@ -954,13 +1004,13 @@ New blog, new post:<a href="https://t.co/c2lEHM0lTI">https://t.co/c2lEHM0lTI</a>
 
  ]]></description>
   <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/on-teaching/index.html</guid>
+  <guid>https://neeldhara.blog/posts/on-teaching/index.html</guid>
   <pubDate>Sun, 04 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Representing Graphs</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/graphs/index.html</link>
   <description><![CDATA[ 
 
 
@@ -971,7 +1021,7 @@ New blog, new post:<a href="https://t.co/c2lEHM0lTI">https://t.co/c2lEHM0lTI</a>
 <p>At some point of time in your life, you have likely been challenged to draw a kite-like figure:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A common drawing challenge.</figcaption><p></p>
 </figure>
 </div>
@@ -1009,7 +1059,7 @@ The Problem
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Konigsberg Classic: Map of Königsberg in Euler’s time showing the actual layout of the seven bridges, highlighting the river Pregel and the bridges. Image by Bogdan Giuşcă, in the public domain (CC BY-SA 3.0) and sourced from Wikipedia.</figcaption><p></p>
 </figure>
 </div>
@@ -1045,7 +1095,7 @@ Classroom Activity with Eulerian Paths
 <p>We can work through the “bridges puzzle” on this graph. In the classroom, we all started with the vertex representing Juhi Chawla, “walked around” using every connection exactly once, and the fun effect is that everyone ends up at the vertex representing Rishi Kapoor (or solves the puzzle incorrectly). From here, you can probably begin to guess the role of the two special vertices in the puzzle.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An actor collaboration graph</figcaption><p></p>
 </figure>
 </div>
@@ -1059,7 +1109,7 @@ Classroom Activity with Eulerian Paths
 <p>The origins of this problem — the so-called “Knight’s Tour” — goes all the way back to the 9th century AD, where it is described in <a href="https://www.ias.ac.in/article/fulltext/reso/025/08/1095-1116">Rudraṭa’s Kavyalankara</a>. Here’s an example of a knight’s tour, as seen on Wikipedia:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An animated example of a knight’s tour.</figcaption><p></p>
 </figure>
 </div>
@@ -1267,13 +1317,13 @@ How would you do it?
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
   <pubDate>Tue, 09 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Representing Sequences</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/sequences/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/sequences/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1296,7 +1346,7 @@ How would you do it?
 <p>Now here comes our first dilemma: how many houses do we reserve? Say we have 20 clients: it is clear that we need to reserve <em>at least</em> 20 houses, but should we reserve a few more? Reservations are not free, so we don’t want to reserve a very large number of houses either: remember, there are no refunds. But on the other hand, if we reserve too few, and we end up with more clients than the number of houses we’ve reserved, we will be in a sticky situation — worst case some clients may have to move, which is not ideal. You will have to work on coming up with a reasonable estimate of how many clients you will eventually have, and hope for the best.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">Expanding your reservations can get tricky</figcaption><p></p>
 </figure>
 </div>
@@ -1304,7 +1354,7 @@ How would you do it?
 <p>You could, of course, just call your clients and ask them for their house numbers, but then this requires you to maintain some kind of register, and let us just say that you are not good with that kind of thing. So here’s what you do instead: you only keep the first client’s address, because that’s just one thing that’s easy to remember. Then you ask your <img src="https://latex.codecogs.com/png.latex?i">-th client to remember the address of the <img src="https://latex.codecogs.com/png.latex?(i+1)">-th client: they are slightly bewildered but you tell them it’s for insurance. Now if you want to pay a visit to your <img src="https://latex.codecogs.com/png.latex?%5Cell">-th client, you just start from your first one, and follow the trail. Peculiar, but works.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-02.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-02.gif" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">Walking around to find your clients with new management.</figcaption><p></p>
 </figure>
 </div>
@@ -1396,13 +1446,13 @@ How would you do it?
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/sequences/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/sequences/index.html</guid>
   <pubDate>Mon, 01 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Data Structures and Structured Data</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/introduction/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1470,7 +1520,7 @@ This <em>is</em> in fact a useful framing!
 <div class="callout-body-container callout-body">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Table 1 Revisited. No Free Lunches</figcaption><p></p>
 </figure>
 </div>
@@ -1483,7 +1533,7 @@ This <em>is</em> in fact a useful framing!
 <p>Let’s say that you are spending a fine evening watching the #LockdownMath playlist from 3blue1brown. The first episode happens to be all about solving quadratics:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A screenshot from #LockdownMath showing Grant Sanderson solving quadratics.</figcaption><p></p>
 </figure>
 </div>
@@ -1503,7 +1553,7 @@ Now…
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1593,7 +1643,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
+<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">Illustration from an implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -1602,7 +1652,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
+<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">A second illustration from the same implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -1704,7 +1754,7 @@ After all…
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1794,13 +1844,13 @@ Food for thought.
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
   <pubDate>Sun, 31 Jul 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Solo Chess</title>
-  <link>https://www.neeldhara.blog/posts/solo-chess/index.html</link>
+  <link>https://neeldhara.blog/posts/solo-chess/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1813,21 +1863,21 @@ Food for thought.
 <p>*when appropriately generalized</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Rules of the Game</figcaption><p></p>
 </figure>
 </div>
 <p>So this is a single-player, peg-solitaire-ish chess variant, where you have to clear board by making a sequence of valid captures, albeit starting with unorthodox — and even unrealistic — positions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.30.34.png" class="img-fluid figure-img" style="width:42.0%"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.30.34.png" class="img-fluid figure-img" style="width:42.0%"></p>
 <p></p><figcaption class="figure-caption">An example position</figcaption><p></p>
 </figure>
 </div>
 <p>To begin with the boards start easy, with a few pieces at a time. Notice, even in the early games, how some positions have just one solution while others may have several.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot%202022-08-30%20at%2008.46.16.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot%202022-08-30%20at%2008.46.16.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">More positions</figcaption><p></p>
 </figure>
 </div>
@@ -1847,7 +1897,7 @@ Food for thought.
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.47.53.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.47.53.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">1D Boards</figcaption><p></p>
 </figure>
 </div>
@@ -1860,13 +1910,13 @@ Food for thought.
 <p>No Hamiltonian Path though — this one was from bipartite dominating set 😎</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.58.23.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.58.23.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A reduction from bipartite dominating set - I</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.53.21.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.53.21.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A reduction from bipartite dominating set - II</figcaption><p></p>
 </figure>
 </div>
@@ -1884,7 +1934,7 @@ Food for thought.
 <p>*at most two.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.23.22.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.23.22.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Lemma for pawns</figcaption><p></p>
 </figure>
 </div>
@@ -1894,20 +1944,20 @@ Food for thought.
 <p>Knights are special because we don’t have to worry about obstructions. So the game can be described by a more general token game on graphs:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.28.55.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.28.55.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Graph Capture Problem</figcaption><p></p>
 </figure>
 </div>
 <p>We do show that Graph Capture is hard by a reduction, again from bipartite dominating set. This might hint at the hardness for Solo Chess played with knights only, but we are not betting on this yet.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.11.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.11.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Another reduction from bipartite dominating set - I</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.06.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.06.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Another reduction from bipartite dominating set - II</figcaption><p></p>
 </figure>
 </div>
@@ -1923,7 +1973,7 @@ Food for thought.
 <p>PS. Also if you enjoy chess and algorithms, don’t miss <a href="https://miguel-ambrona.github.io/">Miguel Ambrona’s</a> amazing <a href="https://chasolver.org/">Chess Unwinnability Analyzer</a>, which also appears at FUN 2022!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.56.43.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.56.43.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Chess Unwinnability</figcaption><p></p>
 </figure>
 </div>
@@ -1934,13 +1984,13 @@ Food for thought.
  ]]></description>
   <category>exposition</category>
   <category>twitterthread</category>
-  <guid>https://www.neeldhara.blog/posts/solo-chess/index.html</guid>
+  <guid>https://neeldhara.blog/posts/solo-chess/index.html</guid>
   <pubDate>Wed, 23 Mar 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Eight Self-Sabotaging Behaviors</title>
-  <link>https://www.neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</link>
+  <link>https://neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2117,12 +2167,12 @@ Postpone gratification
  ]]></description>
   <category>funda</category>
   <category>twitterthread</category>
-  <guid>https://www.neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</guid>
+  <guid>https://neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</guid>
   <pubDate>Mon, 14 Mar 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Kidney Exchanges</title>
-  <link>https://www.neeldhara.blog/posts/kidney-exchanges/index.html</link>
+  <link>https://neeldhara.blog/posts/kidney-exchanges/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2248,12 +2298,12 @@ Postpone gratification
 </ol>
 </section></div> ]]></description>
   <category>exposition</category>
-  <guid>https://www.neeldhara.blog/posts/kidney-exchanges/index.html</guid>
+  <guid>https://neeldhara.blog/posts/kidney-exchanges/index.html</guid>
   <pubDate>Thu, 24 Feb 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Women in Mathematics</title>
-  <link>https://www.neeldhara.blog/posts/women-in-mathematics/index.html</link>
+  <link>https://neeldhara.blog/posts/women-in-mathematics/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2311,12 +2361,194 @@ Postpone gratification
  ]]></description>
   <category>books</category>
   <category>list</category>
-  <guid>https://www.neeldhara.blog/posts/women-in-mathematics/index.html</guid>
+  <guid>https://neeldhara.blog/posts/women-in-mathematics/index.html</guid>
   <pubDate>Sun, 20 Feb 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
+  <title>Hat Puzzles</title>
+  <link>https://neeldhara.blog/posts/tgif/hat-puzzles/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>We discussed a variety of puzzles in the genre of hat puzzles, which roughly have following story arc:</p>
+<ul>
+<li>a bunch of (not necessarily finite (!!!)) people are in a location</li>
+<li>all of them are wearing hats of one of <img src="https://latex.codecogs.com/png.latex?c"> colors, typically <img src="https://latex.codecogs.com/png.latex?c%20=%202"> (we will assume that hats are either red or blue)</li>
+<li>nobody knows the color of their own hat</li>
+<li>folks can see the colors of other’s hats (but not necessarily all of them; this depends on the setting)</li>
+<li>everyone is tasked with determining/guessing the color of their own hat, and failure to get it right (most of the time) will usually lead to unpleasant outcomes</li>
+</ul>
+<p>A traditional special case is the following:</p>
+<ul>
+<li>There are <img src="https://latex.codecogs.com/png.latex?n"> people standing on a line.</li>
+<li>Everyone can see the colors of the hats of everyone ahead of them.</li>
+<li>A strategy for how one’s own hat color is determined can be coordinated in advance.</li>
+<li>Starting from the person who can see everyone else (and their hats, more importantly), to the person at the end who sees nothing, everyone spells out their guess of the color of their own hat loudly and clearly for everyone else to hear. There is no communication between poeple other than this.</li>
+<li>All but one person must figure out the color of their hat correctly.</li>
+</ul>
+<div class="callout-caution callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+A Strategy for the Finite Case
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The first person says “red” if the number of red hats s/he sees is even, and “blue” otherwise. This person may be mistaken about the color of their own hat. However, knowing the rationale for what the first person called out, the second can tally up parities to determine the color of their own hat (e.g, if the first person said red and the second person sees an even number of red hats, they conclude they are wearing a blue hat, otherwise they know they are wearing a read hat; and so on).</p>
+</div>
+</div>
+</div>
+<p>A crazier version is the following:</p>
+<ul>
+<li>There are infinitely many people in a room.</li>
+<li>Everyone can see the colors of the hats of everyone else, but not their own.</li>
+<li>Nobody can hear anyone else’s guess.</li>
+<li>Everyone guesses simultaneously.</li>
+<li>Is there a strategy to ensure that infinitely many guesses are correct?</li>
+<li>[Level Up]: Is there a strategy to ensure that at most finitely many guesses are wrong?</li>
+</ul>
+<div class="page-columns page-full"><p>This is fun to think about, and you’re probably going to have to invoke something something <a href="https://divisbyzero.com/2009/08/11/infinite-hat-problems-solutions/">axiom of choice</a> something something to tackle the situation! </p><div class="no-row-height column-margin column-container"><span class="aside">Spoiler Alert!</span></div></div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/hat-puzzles/index.html</guid>
+  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Folding Stamps</title>
+  <link>https://neeldhara.blog/posts/tgif/folding-stamps/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Source: Dave Richeson <a href="https://twitter.com/divbyzero"><span class="citation" data-cites="divbyzero">@divbyzero</span></a> and Henry Dudeny.</p>
+</div>
+</div>
+</div>
+<p>The following is perhaps best attempted with a physical prop.</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Yesterday's puzzles seem to be a hit, so here's another one, due to Henry Dudeny. Fold the paper so the squares end up in numerical order (1 on top, 8 on bottom, sequential in between, not necessarily "face up" in the stack, as shown). The first one is easier than the second. <a href="https://t.co/oRGXl90mKp">pic.twitter.com/oRGXl90mKp</a>
+</p>
+— Dave Richeson (<span class="citation" data-cites="divbyzero">@divbyzero</span>) <a href="https://twitter.com/divbyzero/status/1577640987412807680?ref_src=twsrc%5Etfw">October 5, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Here’s <a href="https://twitter.com/divbyzero/status/1577680402289917952">a bit from the original</a> source:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/tgif/folding-stamps/source.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of a text containing the original problem</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/folding-stamps/index.html</guid>
+  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/tgif/folding-stamps/source.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Iwahiro’s Square in Bag Puzzle</title>
+  <link>https://neeldhara.blog/posts/tgif/square-in-bag/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Source: Dave Richeson <a href="https://twitter.com/divbyzero"><span class="citation" data-cites="divbyzero">@divbyzero</span></a>.</p>
+</div>
+</div>
+</div>
+<p>Here’s a very fun packing puzzle.</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+One of my all-time favorite puzzles: Iwahiro's "Square in a Bag" puzzle. Put a square piece of paper (14 cm x 14 cm) completely inside a bag (20 cm x 11 cm) without folding, cutting, or rolling up the paper; it should end up lying completely flat. <a href="https://t.co/nGv2TwR8Wp">pic.twitter.com/nGv2TwR8Wp</a>
+</p>
+— Dave Richeson (<span class="citation" data-cites="divbyzero">@divbyzero</span>) <a href="https://twitter.com/divbyzero/status/1577308868476108806?ref_src=twsrc%5Etfw">October 4, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>When we discussed this in the meetup, it was a little hard to describe what’s allowed and what’s not with the <em>bag</em>. Another thing that was important to emphasize is the side of the bag that is open: I am not sure this is even possible if the bag is sealed on both the long sides and only the short side is the one that is open.</p>
+<p>A quick sanity check with respect to surface areas reassures us of the potential feasibility of the task: the total surface area of the square is indeed smaller than the surface area of the bag. So if you imagine cutting the bag along the short sides, and using it as a gift wrap to cover up the square, that’s very much doable.</p>
+<p>The other hint was the fact that the length of the diagonal of the square is less than the length of the longer side of the bag. This prompts us to line up the square so that it’s opposite corners align with the long and open edge of the bag.</p>
+<div class="callout-caution callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Spoiler Alert
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The solution does indeed involve starting here and squishing the bag gradually so that it engulfs the square. Here’s a nice video demonstration:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SACE14qPVo0?start=80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</div>
+<p>We did wonder about formalizing the question and the process above a little more, but we were not able to come up with any appropriate language. At least as an activity-based puzzle I think the instructions are quite clear:</p>
+<blockquote class="twitter-tweet blockquote" data-conversation="none">
+<p lang="en" dir="ltr">
+Ah. The bag can stretch and fold as much as any ordinary kitchen bag can. And for that matter, the paper can warp and bend as you'd expect it would. But in the end everything will end up flat on the tabletop.
+</p>
+— Dave Richeson (<span class="citation" data-cites="divbyzero">@divbyzero</span>) <a href="https://twitter.com/divbyzero/status/1578482477869715457?ref_src=twsrc%5Etfw">October 7, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>It would be nice to be come up with a procedure that, given the dimensions of the square and the bag, can determine if the square can in fact be accommodated in the bag playing by the rules here. Already here, it was pointed out later that it would have worked with <a href="https://twitter.com/divbyzero/status/1577322638783004675?s=20&amp;t=346fCpYPw5ZtAIAQJZ-PtA">a slightly smaller bag too</a>, and at least for the purpose of getting to this particular solution, all that matters is the <a href="https://twitter.com/divbyzero/status/1577322638783004675?s=20&amp;t=346fCpYPw5ZtAIAQJZ-PtA">proportions of the side lengths</a>.</p>
+<p>It might also be interesting to think about what happens with other combinations of shapes.</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/square-in-bag/index.html</guid>
+  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
   <title>On the Communication Complexity of Equality</title>
-  <link>https://www.neeldhara.blog/posts/communication-complexity-equality/index.html</link>
+  <link>https://neeldhara.blog/posts/communication-complexity-equality/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2339,12 +2571,12 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>sketchnotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/communication-complexity-equality/index.html</guid>
+  <guid>https://neeldhara.blog/posts/communication-complexity-equality/index.html</guid>
   <pubDate>Sun, 03 Oct 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Two approaches to the 15 puzzle</title>
-  <link>https://www.neeldhara.blog/posts/15-puzzle/index.html</link>
+  <link>https://neeldhara.blog/posts/15-puzzle/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2358,14 +2590,14 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>*I do believe the two proofs are essentially the same with slight differences of language.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" class="img-fluid figure-img" style="width:34.0%"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" class="img-fluid figure-img" style="width:34.0%"></p>
 <p></p><figcaption class="figure-caption">An example of the 15 puzzle</figcaption><p></p>
 </figure>
 </div>
 <p>Common to both approaches is the idea of associating a <em>permutation</em> with every state of the puzzle. For the purposes of this discussion, we will think of a permutation simply as a sequence of elements. To turn the grid layout into a sequence, you could, for instance, line up the rows next to each other, in other words, read off the numbers from left-to-right and top-to-bottom:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.45.04_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.45.04_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Associating the puzzle with a permutation</figcaption><p></p>
 </figure>
 </div>
@@ -2402,7 +2634,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>Now, note that the permutation corresponding to our target state is the following:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.04.12_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.04.12_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The permutation corresponding to our target state</figcaption><p></p>
 </figure>
 </div>
@@ -2419,7 +2651,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>The second approach is based on the notion of inversions. This one is based on <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/lecture-3-strong-induction/">the Strong Induction lecture</a> in the MITOCW course on Mathematics for Computer Science. For this proof I’ll actually switch to the <img src="https://latex.codecogs.com/png.latex?3%20%5Ctimes%203"> version of the puzzle because <del>I don’t know how to extend it to the 15-puzzle</del> the case analysis is more manageable for this version:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.30.57_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.30.57_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
 <p></p><figcaption class="figure-caption">A move in the 3 X 3 version of the puzzle</figcaption><p></p>
 </figure>
 </div>
@@ -2432,7 +2664,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>Neither <img src="https://latex.codecogs.com/png.latex?(p,a)"> nor <img src="https://latex.codecogs.com/png.latex?(p,b)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.51.03_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.51.03_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Neither <img src="https://latex.codecogs.com/png.latex?(p,a)"> nor <img src="https://latex.codecogs.com/png.latex?(p,b)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma"></figcaption><p></p>
 </figure>
 </div>
@@ -2442,7 +2674,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>Both <img src="https://latex.codecogs.com/png.latex?(p,a)"> and <img src="https://latex.codecogs.com/png.latex?(p,b)"> are inversions in <img src="https://latex.codecogs.com/png.latex?%5Csigma">.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.09_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.09_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Both <img src="https://latex.codecogs.com/png.latex?(p,a)"> and <img src="https://latex.codecogs.com/png.latex?(p,b)"> are inversions in <img src="https://latex.codecogs.com/png.latex?%5Csigma"></figcaption><p></p>
 </figure>
 </div>
@@ -2452,7 +2684,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is not.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.54.46_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.54.46_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is not</figcaption><p></p>
 </figure>
 </div>
@@ -2462,7 +2694,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is not an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is one.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.39_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.39_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is not an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is one</figcaption><p></p>
 </figure>
 </div>
@@ -2483,649 +2715,9 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>puzzles</category>
   <category>exposition</category>
-  <guid>https://www.neeldhara.blog/posts/15-puzzle/index.html</guid>
+  <guid>https://neeldhara.blog/posts/15-puzzle/index.html</guid>
   <pubDate>Sat, 02 Oct 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" medium="image" type="image/png" height="143" width="144"/>
-</item>
-<item>
-  <title>Sam I Am</title>
-  <link>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is mostly about solving Sam I Am (<a href="https://onlinejudge.org/external/114/11419.pdf">UVa 11419</a>); en route, we will end up discovering Kőnig’s theorem, which is a delightful fact about the special relationship shared by vertex covers and maximum matchings in bipartite graphs.</p>
-<section id="the-problem" class="level2">
-<h2 class="anchored" data-anchor-id="the-problem">The Problem</h2>
-<p>Here’s an abridged version of the problem statement.</p>
-<blockquote class="blockquote">
-<p>Sam is facing a temple which can be described by a <img src="https://latex.codecogs.com/png.latex?m%20%5Ctimes%20n"> grid and <strong>he has the locations of all enemies in the temple</strong> (each location can be thought of as the intersection of a row and a column in this grid).</p>
-</blockquote>
-<p>All of a sudden, he realizes that he can kill the enemies without entering the temple using the great cannon ball which spits out a gigantic ball bigger than him killing anything it runs into and keeps on rolling until it finally explodes.</p>
-<p><strong>But the cannonball can only shoot horizontally or vertically and all the enemies along the path of that cannon ball will be killed.</strong></p>
-<p>Sam wants to know the <strong>minimum number of cannon balls</strong> and the positions from which he can shoot the cannonballs <strong>to eliminate all enemies</strong> from outside that temple. &gt;</p>
-</section>
-<section id="some-initial-observations-with-an-example" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="some-initial-observations-with-an-example">Some initial observations with an example</h2>
-<p>So to begin with, we have a grid with some cells identified as locations where Sam’s enemies are positioned, and here’s an example:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A first example of a configuration of Sam’s enemies location</figcaption><p></p>
-</figure>
-</div>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="aside">Conveniently for us, the enemies don’t move around.</span></div></div>
-<p>We want to <em>hit</em> all of these locations, and what we have at our disposal is giant cannon balls which can destroy all enemies that are positioned on a single row, or a single column. For example, if we were obsessed about only firing along rows, we would need four cannon balls to tackle ’em all, like so:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A solution were we fire along rows alone</figcaption><p></p>
-</figure>
-</div>
-<p>If Sam was superstitious about shooting along columns only, then he would again need four of these cannon balls to take care of everything:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A solution were we fire along columns alone</figcaption><p></p>
-</figure>
-</div>
-<p>However, our friend Sam is smart, not superstitious! And if there is anything that he is obsessed about, it is ruthlessly optimal destruction! In other words, he wants to fix everything up, but while using the smallest number of cannon balls possible… and if that means mixing up ranks and files, so be it — notice that you can manage with just three once you combine the use of both axes:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A solution leveraging a combination of rows and columns</figcaption><p></p>
-</figure>
-</div>
-<p>And for this example in particular, notice that three cannon balls are <em>necessary</em>, because we have at least three enemies positioned at locations that share <em>neither a row nor a column</em>, implying that no row-fire or column-fire can handle more than one of these locations at once:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Demonstrating that three canonballs are in fact necessary</figcaption><p></p>
-</figure>
-</div>
-<p>So for this example, we know that:</p>
-<ul>
-<li>three cannon balls are necessary &amp;</li>
-<li>three cannon balls are sufficient.</li>
-</ul>
-<p>In general, let’s say that two enemy positions are <em>mutually independent</em> if they are on different columns <em>and</em> on different rows. Let <img src="https://latex.codecogs.com/png.latex?k"> be the size of a largest collection of mutually independent positions. Then it is clear that:</p>
-<ul>
-<li><img src="https://latex.codecogs.com/png.latex?k"> cannon balls are necessary to handle all enemy locations;</li>
-</ul>
-<p>because any <img src="https://latex.codecogs.com/png.latex?%5Cell"> fires that handle <em>all</em> enemy locations must in particular handle these <img src="https://latex.codecogs.com/png.latex?k"> mutually independent ones, and each individual fire can get to (at best) one of them — by definition of what it means for two positions to be mutually independent. So if we have a valid solution involving <img src="https://latex.codecogs.com/png.latex?%5Cell"> cannon balls, then <img src="https://latex.codecogs.com/png.latex?%5Cell%20%5Cgeq%20k">.</p>
-<p>What is a less obvious, but considerably fascinating, is the fact that:</p>
-<ul>
-<li>there is always a strategy to hit <em>all</em> locations using just <img src="https://latex.codecogs.com/png.latex?k"> cannon balls. 🤯</li>
-</ul>
-<p>A striking situation, no pun intended — the obvious estimate of what is needed turns out to be enough as well! The easy lower bound has a matching upper bound ❤️</p>
-</section>
-<section id="an-auxiliary-graph" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="an-auxiliary-graph">An auxiliary graph</h2>
-<p>Alright, I think that’s enough with the advertising.</p>
-<p>How does this work?</p>
-<p>Let’s construct the following graph <img src="https://latex.codecogs.com/png.latex?G%20=%20(V,E)"> associated with the grid and the information about enemy positions:</p>
-<ul>
-<li>Introduce a vertex for every row in the grid; say <img src="https://latex.codecogs.com/png.latex?r_i"> for <img src="https://latex.codecogs.com/png.latex?1%20%5Cleq%20i%20%5Cleq%20m">. These are the <em>row vertices.</em></li>
-<li>Introduce a vertex for every column in the grid; say <img src="https://latex.codecogs.com/png.latex?c_j"> for <img src="https://latex.codecogs.com/png.latex?1%20%5Cleq%20j%20%5Cleq%20n">. These are the <em>column vertices.</em></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The vertices of the auxiliary graph</figcaption><p></p>
-</figure>
-</div>
-<ul>
-<li>Introduce the edge <img src="https://latex.codecogs.com/png.latex?(r_i,c_j)">, <img src="https://latex.codecogs.com/png.latex?1%20%5Cleq%20i%20%5Cleq%20n;%201%20%5Cleq%20j%20%5Cleq%20m"> if and only if the location at the intersection of the <img src="https://latex.codecogs.com/png.latex?i%5E%7Bth%7D"> row and the <img src="https://latex.codecogs.com/png.latex?j%5E%7Bth%7D"> column corresponds to an enemy position.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The edges of the auxiliary graph</figcaption><p></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A bipartite graph!</figcaption><p></p>
-</figure>
-</div>
-<p>Observe that:</p>
-<ul>
-<li>Any matching in <img src="https://latex.codecogs.com/png.latex?G"> (a collection of mutually disjoint edges) corresponds to a collection of mutually independent enemy positions back in the grid.</li>
-<li>What we are looking for is a smallest-sized subset <img src="https://latex.codecogs.com/png.latex?S"> of <img src="https://latex.codecogs.com/png.latex?V(G)"> such that every edge <img src="https://latex.codecogs.com/png.latex?e"> in <img src="https://latex.codecogs.com/png.latex?G"> has at least one of its endpoints in <img src="https://latex.codecogs.com/png.latex?S">. Such a subset is called a vertex cover.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A vertex cover</figcaption><p></p>
-</figure>
-</div>
-<p>So our claim in the language of grids now translates to:</p>
-<blockquote class="blockquote">
-<p>📝 The size of a maximum matching in <img src="https://latex.codecogs.com/png.latex?G"> is equal to the size of a minimum vertex cover in <img src="https://latex.codecogs.com/png.latex?G">.</p>
-</blockquote>
-<p>in the language of graphs. Keep in mind that as graphs go <img src="https://latex.codecogs.com/png.latex?G">, happens to be a bipartite graph; which is to say that its vertex set can be parittioned into two parts† such that every edge has exactly one endpoint in each part.</p>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="aside">† In this example, these parts correspond to subsets of row vertices and column vertices.</span></div></div>
-</section>
-<section id="bring-in-the-flows" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="bring-in-the-flows">Bring in the flows</h2>
-<p>Is this much ado for nothing? We seem to have done some translation work, but there’s no proof of this bold claim in sight just yet… 😬</p>
-<p>Fair. So here’s a roadmap for what we plan to do next:</p>
-<ul>
-<li>Use the graph <img src="https://latex.codecogs.com/png.latex?G"> as the basis of a flow network.</li>
-<li>Recall the maxflow-mincut duality.</li>
-<li><del>Profit.</del> Show the duality that we are interested in by hooking it up the known one.</li>
-</ul>
-<p>So first things first: we are going to setup a flow network around the graph <img src="https://latex.codecogs.com/png.latex?G">, and here’s a partial picture of what it looks like:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The flow graph</figcaption><p></p>
-</figure>
-</div>
-<p>Here’s the official description of how we build this up:</p>
-<ul>
-<li>Start with the graph <img src="https://latex.codecogs.com/png.latex?G">, and orient every edge between a row vertex and a column vertex so that every such edge originates <em>from</em> the row vertex and latches on <em>to</em> the column vertex.</li>
-<li>We assign infinite capacities to all the edges in <img src="https://latex.codecogs.com/png.latex?G">. Go unlimited on the originals! We will even dub these edges <em>original edges</em> going forward.</li>
-<li>Add a source vertex <img src="https://latex.codecogs.com/png.latex?s"> and add unit-capacity edges <img src="https://latex.codecogs.com/png.latex?(s,r)"> for every row vertex <img src="https://latex.codecogs.com/png.latex?r">. We will call these edges the <em>row selectors.</em></li>
-<li>Add a target vertex <img src="https://latex.codecogs.com/png.latex?t"> and add unit-capacity edges <img src="https://latex.codecogs.com/png.latex?(c,t)"> for every column vertex <img src="https://latex.codecogs.com/png.latex?c">. We will refer to these edges as <em>column selectors.</em></li>
-</ul>
-<p>That’s it, that’s the flow network <img src="https://latex.codecogs.com/png.latex?(%5Ctilde%7BG%7D,%5Ckappa)"> based on <img src="https://latex.codecogs.com/png.latex?G">, where I’m using <img src="https://latex.codecogs.com/png.latex?%5Ckappa"> to denote the capacity function. Now let’s stare at any valid integral flow in this network — what does it pull out from the middle? 🤔</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A matching hiding in plain sight</figcaption><p></p>
-</figure>
-</div>
-<p>Let’s make the following quick observations in the context of a valid integral flow <img src="https://latex.codecogs.com/png.latex?f"> in <img src="https://latex.codecogs.com/png.latex?(%5Ctilde%7BG%7D,%5Ckappa)">:</p>
-<ul>
-<li>The flow on any edge <img src="https://latex.codecogs.com/png.latex?e"> from <img src="https://latex.codecogs.com/png.latex?G"> (i.e, an original edge) is either zero or one. Indeed, if <img src="https://latex.codecogs.com/png.latex?f(e)%20%3E%201">, then we violate conservation constraints at both endpoints of <img src="https://latex.codecogs.com/png.latex?e">.</li>
-<li>For any row or column vertex, at most one original edge incident to it is used by the flow <img src="https://latex.codecogs.com/png.latex?f">. In other words, <img src="https://latex.codecogs.com/png.latex?f(e)%20=%200"> for all but at most one original edge incident to any row or column vertex. Again, if not, combined with the fact that <img src="https://latex.codecogs.com/png.latex?f"> is integral and that the row and column selectors have unit capacity, we will violate conservation constraints on the vertex under consideration.</li>
-</ul>
-<p>Based on these observations, we have that the set of original edges for which <img src="https://latex.codecogs.com/png.latex?f(e)%20=%201"> forms a matching in back in <img src="https://latex.codecogs.com/png.latex?G">, and in particular, if <img src="https://latex.codecogs.com/png.latex?f"> was maximum flow, then this set would correspond to a maximum-sized matching. Now, let’s look at the corresponding mincut by building the residual graph:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Edges in the residual graph that have a residual capacity of zero are not shown. Also, the original edges that were used by <img src="https://latex.codecogs.com/png.latex?f"> have infinite residual capacity but their corresponding back-edges have unit capacity, but this distinction is not emphasised in the picture because it’s not particularly relevant to our discussion.</figcaption><p></p>
-</figure>
-</div>
-<p>Edges in the residual graph that have a residual capacity of zero are not shown. Also, the original edges that were used by <img src="https://latex.codecogs.com/png.latex?f"> have infinite residual capacity but their corresponding back-edges have unit capacity, but this distinction is not emphasised in the picture because it’s not particularly relevant to our discussion.</p>
-<p>and considering what vertices are reachable from <img src="https://latex.codecogs.com/png.latex?s">:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> are marked green, while all remaining vertices are marked red.</figcaption><p></p>
-</figure>
-</div>
-<p>The vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> are marked green, while all remaining vertices are marked red.</p>
-<p>In the residual graph, I would like to draw your attention to:</p>
-<ul>
-<li>row vertices that are unreachable from <img src="https://latex.codecogs.com/png.latex?s">,</li>
-<li>column vertices from where it is impossible to reach <img src="https://latex.codecogs.com/png.latex?t">.</li>
-</ul>
-<p>We will refer to these vertices as the <em>misfits —</em> they are highlighted for you in the picture below:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">The misfits</figcaption><p></p>
-</figure>
-</div>
-<p>Now roll up your sleeves for some magic. Let’s pull up the cut — which we know is in fact a mincut — obtained by considering the set of vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> the residual graph corresponding to the maxflow <img src="https://latex.codecogs.com/png.latex?f">. In pictures, note how we have attracted some column vertices to the <img src="https://latex.codecogs.com/png.latex?s">-side, and pushed away some row vertices to the <img src="https://latex.codecogs.com/png.latex?t">-side:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Some reorganization</figcaption><p></p>
-</figure>
-</div>
-<div class="page-columns page-full"><p>Note that this is a minimum cut, that is to say, the total capacity of the edges crossing the cut is as small as possible — which means that, in particular, the total capacity is at least (or should that be at most?) finite, and that implies, even more particularly, that <em>none</em><sup>1</sup> of the original edges cross this cut.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;Remember how their capacities were infinite? So they just cannot afford to cross a minimum-capacity cut.</p></li></div></div>
-<p>So every original edge is confined to the <img src="https://latex.codecogs.com/png.latex?s">-camp or the <img src="https://latex.codecogs.com/png.latex?t">-camp; but note that every original edge is an edge between a row vertex and a column vertex; so if you put two and two together, you see that, in fact, <em>every edge must be incident to a misfit vertex.</em> This means that the misfits are what we were looking for all along — they form a vertex cover of <img src="https://latex.codecogs.com/png.latex?G">!</p>
-<p>So at least we have <em>some</em> solution. Is this the best we can hope for?</p>
-<p>Why yes!</p>
-<p>Note that every misfit vertex contributes <em>exactly one unit-capacity edge</em> to the minimum cut: the misfits on the <img src="https://latex.codecogs.com/png.latex?s">-side are incident to column selectors, and these edges connect with <img src="https://latex.codecogs.com/png.latex?t"> on the other side; while misfits on the <img src="https://latex.codecogs.com/png.latex?t">-side are incident to row selectors, and these edges connect with <img src="https://latex.codecogs.com/png.latex?s">, which is again on the opposite end. So every misfit vertex contributes exactly one edge to the minimum cut — and there are no other edges that cross the cut, so we have the following sequence of equalities:</p>
-<ul>
-<li>size of the proposed solution = #misfits</li>
-<li>#misfits = capacity of the minimum cut</li>
-<li>capacity of the minimum cut = value of the maximum flow</li>
-<li>value of the maximum flow = size of a maximum matching back in <img src="https://latex.codecogs.com/png.latex?G"></li>
-<li>size of a maximum matching back in <img src="https://latex.codecogs.com/png.latex?G"> = lower bound on our solution</li>
-</ul>
-<p>Therefore, we have proposed a solution whose cost matches a lower bound on it, making it optimal! With a slight adjustment of language (dropping misfits in favor of vertex cover), the sequence of inequalities above also shows that the size of a minimum vertex cover in a bipartite graph equals the size of a maximum matching in the graph.</p>
-<p>This was the relationship I’d promised to cover when we started, and it goes by Kőnig’s theorem in case you’d like to find out more — the argument we came up with here isn’t perhaps the traditional proof, and this is a fact that can be established in several different ways, all fun in their own way ❤️</p>
-
-
-</section>
-
-
- ]]></description>
-  <category>cp</category>
-  <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
-  <pubDate>Thu, 30 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>New Mac</title>
-  <link>https://www.neeldhara.blog/posts/new-mac/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Here’s a list of 50 things<sup>1</sup> (with occasional additional context) that I install whenever I’m setting up macOS from scratch.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-via Setapp
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p>Bartender</p>
-<p>Keeps the menubar clean. Very handy!</p></li>
-<li><p>Better Touch Tool</p>
-<p>I really need to leverage this a lot more, but even simple actions like swipe down with three fingers to close a tab, or tip-tap right left to move between tabs is pretty awesome already. Also use four-finger double tap to make the mouse pointer larger when it’s lost between screens… I’d guess this app can probably subsume a lot of the functionality offered by apps like Keyboard Maestro and Alfred.</p></li>
-<li><p>iStat Menus</p>
-<p>Good-looking stats in the menubar 👍️</p></li>
-<li><p>Yoink</p>
-<p>Has to be one of the best shelf apps out there. I know that there are a bunch of others in this space right now (👀, Filepane), however I have been using Yoink for so long that I haven’t considered switching. My common use-cases:</p>
-<ul>
-<li>Alfred actions to send-to-Yoink</li>
-<li>Using Yoink to stash away screenshots before the floating image disappears</li>
-<li>A KM shortcut that can send any Finder item to Yoink</li>
-</ul></li>
-<li><p>CleanMyMac</p>
-<p>Mostly to keep track of file sizes via the Space Lens.</p>
-<p>Alternative if using only this feature: Daisy Disk</p></li>
-<li><p>Default Folder X</p>
-<p>Use this all the time to stash away stuff where it belongs to keep Downloads clutter-free. Also the Alfred DFX collection is handy for finding recent items even if not 100% reliable.</p></li>
-<li><p>Timing</p>
-<p>Use this to supplement manual time-tracking. Do not use it to its full potential at all, I think a little investment with setting up the right projects etc. can go a long way.</p></li>
-<li><p>Dropzone</p>
-<p>I mostly use this as a longer-term stash than Yoink. I think there are some very nice possibilities here, but the only things I’ve done with it so far include:</p>
-<ul>
-<li>uploading images online</li>
-<li>opening a finder path in a terminal (superseded by an Alfred shortcut)</li>
-<li>dropping files in select locations</li>
-<li>URL shortening</li>
-</ul></li>
-<li><p>Permute</p>
-<p>Handy for all kinds of (bulk) file conversions.</p></li>
-<li><p>Text Sniper</p>
-<p>Impressive OCR “from anywhere”.</p></li>
-<li><p>Swish</p>
-<p>Intuitive gestures for window management. Pretty confident all this can be done in Better Touch Tool (above), but the actions are inspiring, and I’m lazy, so yeah, this is explicitly installed.</p></li>
-<li><p>Downie</p>
-<p>Use this for downloading videos from Youtube for offline viewing/listening. Fairly robust.</p></li>
-<li><p>IconJar</p>
-<p>Icon collection, enough said. 🎁</p></li>
-<li><p>Sip</p>
-<p>Handy 🎨 color picker.</p></li>
-<li><p>World Clock Pro</p>
-<p>Visually appealing world-clock, nice for scheduling stuff across timezones, great screensaver option as well.</p></li>
-<li><p>Dash</p>
-<p>Documentation lookup, handy that it works inside VS Code (via an extension).</p></li>
-<li><p>MindNode</p>
-<p>Lovely mindmaps.</p></li>
-<li><p>PDFPen</p>
-<p>Although I mostly use Preview, PDFPen is useful for quickly rearranging and removing pages. Not sure about the several other features claimed, I find that it sadly crashes more often than not, so not my default application.</p></li>
-<li><p>TextSoap</p>
-<p>Occasional use, but very useful when I do need it for some pesky hidden-unicode-character-removal exercise.</p></li>
-<li><p>MathKey</p>
-<p>Niche app - on the rare occasion that I have a complicated LaTeX formula to write, I can write it in the iOS version of this app and receive it on the Mac (I don’t think the desktop app is even necessary for this; the iOS purchase can be bypassed by using the Mac app via Sidecar, but this is where I discovered the app so it makes the list).</p></li>
-<li><p>Marked</p>
-<p>Powerful previews for Markdown documents. Lots of interesting export features.</p></li>
-<li><p>ChronoSync Express</p>
-<p>This helps with keeping certain folders in sync, and setting up some backup schedules. Nothing that can’t be done with a few scripts (?) and/or Time Machine, but I did end up setting (and forgetting) a few things in here.</p></li>
-</ol>
-</div>
-</div>
-</div>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-General
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p>Notion</p>
-<p>I’m (admittedly* experimentally) using Notion as my primary PKM tool, and it’s also where I am keeping most of my public-facing content (including this blog). My usage of Notion is gradually expanding in scope to include time/task/finance tracking as well. Too slow.</p>
-<p>*and also admittedly yet-again, after a fairly committed detour through Obsidian, Craft, and VSCode extensions for several months…</p></li>
-<li><p>Bibdesk</p>
-<p>Fairly robust reference management that has most of what I need — priority features include speed, reliability, flexibility in generating citekeys and decent auto-filing of papers added to the database (popular free and paid alternatives that I’ve tried briefly: Zotero, Mendeley, Setne, Papers, Readcube, JabRef, Bookends).</p>
-<p>Incidentally, if you are into Obsidian and Zotero, you might enjoy <a href="https://www.google.co.in/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwi1paKtpqfzAhWKH7cAHXO2A_EQwqsBegQIDBAB&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DXbGJH08ZfCs&amp;usg=AOvVaw2d18ZYU4nJEvB_CM-7-efu">this video</a>.</p></li>
-<li><p>MacTeX</p>
-<p>LaTeX and related tools, including TeX-friendly IDEs and reference management tools.</p></li>
-<li><p>Xcode Tools, pandoc, and homebrew</p>
-<p>Need these to work with code.</p></li>
-<li><p>Contexts</p>
-<p>The app that I miss the first when on a machine that doesn’t have it, next to Alfred. Makes window switching much more search and keyboard-driven.</p></li>
-<li><p>Alfred</p>
-<p>Apart from using it as a launcher (even for files), I almost use Alfred as a Finder replacement. Here are some of my favorite Alfred workflows:</p>
-<ul>
-<li>Menubar Search</li>
-<li>Simple Folder Search (only search for folders)</li>
-<li>Case Switch (combined with send-text-to-Alfred below, this can be quite nifty)</li>
-<li>Symbols Search (unicode goodness)</li>
-<li>Send to Yoink</li>
-<li>Quit Applications</li>
-<li>Send text to Alfred (double-tap the option key)</li>
-<li>Color</li>
-<li>Currency Exchanges</li>
-</ul></li>
-<li><p>Keyboard Maestro</p>
-<p>Really elaborate shortcut/automation app. I’ve only scratched the surface with my use cases, but one of the things I really dig about my setup is simulating keypress sequences.</p>
-<p>The way I do this is to activate a macro group for one action with one keyboard shortcut (e.g, CMD + ;) and then have all macros within that have one-letter or one-letter + one-modifier triggers - basically <em>very easy triggers.</em> This way, I only have to remember a bunch of high-level shortcuts for things in various categories, and from there it’s just a letter (and the same letter can be overloaded in different contexts).</p>
-<p>As a concrete example, I have a macro group called launchers, and a shortcut within that for launching chrome. So something like CMD+L followed by c would launch Chrome. Although I have to confess that I mostly launch stuff through Alfred still (at the cost of one or two extra keystrokes).</p>
-<p>Keypress-sequence-triggers are native to Better Touch Tool and since BTT supports AppleScript, you could also run KM macros from BTT. I haven’t quite tried this yet.</p>
-<p>More advice on this <a href="https://wiki.keyboardmaestro.com/Frequently_Asked_Questions#How_do_I_use_a_multiple_keystroke_trigger">here</a>.</p></li>
-<li><p>Typinator</p>
-<p>Fast snippet expansion - faster than TextExpander (one of the main competitors in this space) in my experience. Recent updates have some rad features, which of course I’m yet to explore and exploit!</p></li>
-<li><p>1Password</p>
-<p>Reasonably user-friendly and robust password management. Syncs to iOS, but I haven’t managed to leverage it so much on iOS. 1Password is ideal for storing confidential information nicely (IDs, bank stuff, and the like) - if used only for passwords I suppose the Keychain does a good job too.</p></li>
-<li><p>Fantastical and Calendar</p>
-<p>Fantastical is a nice (but expensive!) calendar app, mostly use it because of the calendar sets feature that keeps my <a href="https://www.macsparky.com/blog/2018/2/hyper-scheduling-mechanics">time blocking calendars</a> separate from the official one that is public within the organization. Of late, I especially like the way you can join online meetings from the notifications.</p>
-<p><del>Having said that, I realized that much of what I was doing with Fantastical was overkill and I’ve switched to the default calendar app for now, and it’s one paid subscription less<sup>2</sup> to have.</del></p>
-<p>Ok so I am back on Fantastical, because I am kind of</p></li>
-<li><p>VS Code</p>
-<p>This is where I am supposed to be spending most of my time, perhaps next only to Craft/Notion. A few things from my VSCode workflow:</p>
-<ul>
-<li>Use different themes for different file types (I mostly dabble in LaTeX, C++, Python, JavaScript, and Markdown)</li>
-<li>Little utility extensions save a lot of time: e.g, sort lines, increment value at cursor, file management, etc.</li>
-<li>Multicursor-powered find and replace is amazing.</li>
-<li>Workspaces are handy and I usually launch them from Alfred.</li>
-</ul></li>
-<li><p>Hook</p>
-<p>Looks very promising for cross-linking stuff across apps that have a common context (say, a project). I really need to explore this more!</p></li>
-<li><p>Stream Deck (best with accompanying hardware)</p>
-<p>Particularly useful for switching OBS scenes although I use it less than I thought I would!</p>
-<p>In particular, I want to explore their VSCode and KM integrations.</p>
-<p>If without the physical device, Streamdeck does have a nice iOS app that simulates the hardware, but the pricing is based on a subscription model.</p></li>
-<li><p>Google Chrome</p>
-<p>I can’t make up my mind between Chrome/FF/Brave/Safari. I mostly switch between Chrome and Safari, with a mild preference for Chrome because of it’s more comprehensive extensions space, but I often end up with Safari as default for speed and privacy.</p></li>
-<li><p>Readkit</p>
-<p>Use this for RSS, although I’ve mostly migrated away to DEVONthink. Still looking for a nice stand-alone RSS reader though, Readkit doesn’t always render everything the way I expect, sadly.</p></li>
-<li><p>OBS</p>
-<p>For recording and live-streaming videos. Also useful as a virtual camera for meeting apps.</p></li>
-<li><p>Screenflow and Camtasia</p>
-<p>For recording videos, lots of features, still finding my way around them.</p></li>
-<li><p>Slack and Discord</p>
-<p>Online communities. I sometimes wish there was a native app for discourse too (is there?)</p></li>
-<li><p>Keynote</p>
-<p>Presentations - main alternative: Beamer + LaTeX + pgf/TikZ; or one of the JS-based slide generator tools from Markdown files (I did use react.js for one entire term).</p></li>
-<li><p>DEVONthink</p>
-<p>Use this fairly minimally (especially relative to the possibilities). At the moment DT indexes a couple of key finder folders and pulls in information from a lot of RSS feeds and even Twitter accounts. I try to review the stuff that automatically piles up in DT regularly, but — at the moment — it’s mostly a dumping ground and… messy.</p></li>
-<li><p>Microsoft Teams, Skype, and Zoom</p>
-<p>Use this for classes and online meetings.</p></li>
-<li><p>Office suite: Word/Powerpoint/Excel</p>
-<p>Use it only to open files I receive.</p></li>
-<li><p>Fruitjuice</p>
-<p>Useful battery health monitoring, discovered the app from a MPU podcast episode IIRC.</p></li>
-<li><p>Mathsnip</p>
-<p>Surprisingly good LaTeX-aware OCR.</p></li>
-</ol>
-</div>
-</div>
-</div>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Webapps
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li><p>YNAB</p>
-<p>Budgeting and finance management.</p></li>
-<li><p>Gmail</p>
-<p>Until I setup Mailmate again, I’m checking email in my browser. 🙈</p></li>
-<li><p>GSuite (Docs, Sheets, Slides, and Calendar)</p>
-<p>I use these when others use them.</p></li>
-<li><p>Zapier, IFTTT, Integromat</p>
-<p>A few automations here and there, still on my bucket list to take full advantage here. Integromat has been great for <a href="https://www.notion.so/Tracking-Exportober-2416e14ae9254bc0b97532f73058b1bb">tracking Exportober</a> contributions, incidentally!</p></li>
-</ol>
-</div>
-</div>
-</div>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Omissions
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>(aka stuff I used to use but don’t use as much now.)</p>
-<ol type="1">
-<li><p>Karabiner Elements. I was quite taken in by the possibilities offered by <a href="https://medium.com/@nikitavoloboev/karabiner-god-mode-7407a5ddc8f6">“God Mode”</a>, but I realised that I prefer sequential shortcuts - like the ones I managed to setup in KM - to ones powered by arbitrary combinations of simultaneous keypresses.</p></li>
-<li><p>Mailmate. Will very likely be back in the workflow soon!</p></li>
-<li><p>Things. Retired when I switched to “Notion for Everything”. That said, Things is absolutely awesome!</p></li>
-<li><p>Ulyssess. Replaced by Notion → Craft → Obsidian → Notion.</p></li>
-<li><p>Bear. Replaced by Notion → Craft → Obsidian → Notion.</p></li>
-<li><p>Sublime Text. Replaced by VSCode.</p></li>
-<li><p>2Do. Replaced by Things a long time ago, but a really nice app!</p></li>
-<li><p>Shift. Combines many windows in one, basically. Not sure if it was sufficiently useful, living without it and not missing it much.</p></li>
-<li><p>IM+. Similar to Shift in scope, although this one is available on Setapp.</p></li>
-</ol>
-</div>
-</div>
-</div>
-<p>What’s on your list? Do share in the comments below!</p>
-
-
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>NB. This list does not include fonts and scripts — that’s for a separate round up in due course.↩︎</p></li>
-<li id="fn2"><p>I have nothing against paid subscriptions for software in general, but Fantastical’s pricing for the feature set does seem to have an unclear cost-benefit tradeoff, at least for users like me. I haven’t missed much since moving on.↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>apps</category>
-  <category>list</category>
-  <guid>https://www.neeldhara.blog/posts/new-mac/index.html</guid>
-  <pubDate>Wed, 29 Sep 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>2021 Exportober Tracker</title>
-  <link>https://www.neeldhara.blog/posts/exportober/2021-tracker/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="the-leaderboard" class="level2">
-<h2 class="anchored" data-anchor-id="the-leaderboard">The Leaderboard</h2>
-
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrVfH6aH5n09dDY0?backgroundColor=yellow&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
-</iframe>
-</section>
-<section id="the-tweets" class="level2">
-<h2 class="anchored" data-anchor-id="the-tweets">The Tweets</h2>
-
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrD3Cw0YYB79LzDP?backgroundColor=yellow&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
-</iframe>
-</section>
-<section id="what-was-this-about-again" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="what-was-this-about-again">What was this about again?</h2>
-<p>You can find the original announcement <a href="../2021/">here</a> and more specifics clarifying the format (or the lack of it) <a href="../about/">here</a>. Here’s the short version:</p>
-<ul>
-<li>Put up a piece of content everyday between 27th September and 30th October, with the possibility of skipping one day per week;</li>
-<li>Post a link to your content on Twitter with #exportober</li>
-<li>That’s it, actually. 🤷‍♀️</li>
-</ul>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="aside">📝 If you’d like to participate <del>you can sign up below</del>; and if you’d like to help, please encourage everyone participating by checking out the tweets coming in above!</span></div></div>
-<p>Psst. It’s quite fine to sign up even if you’re reading this after the 27th of September. The automated tracking exercise here will stop after the 30th of October, so you can be a part of this by just contributing in this window. It certainly does’t <em>have</em> to be daily and it doesn’t <em>have</em> to be 30 things, although I found those to be useful default targets to work with for myself.</p>
-</section>
-<section id="sign-up" class="level2">
-<h2 class="anchored" data-anchor-id="sign-up">Sign up!</h2>
-<p><del>While you can participate simply by using #exportober in your tweets, it’ll be great if you could explicitly enter your Twitter username in the form below, so we can check in on each other!</del> 🤝</p>
-<p>While I’m not going to write a Twitter bot that will send you daily reminders over DM, I do hope to create a separate page for each registered participant at the end of the challenge that shows off just their entries in one place, so it’s helpful to know who you are 😀</p>
-
-
-</section>
-
- ]]></description>
-  <category>exportober</category>
-  <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/exportober/2021-tracker/index.html</guid>
-  <pubDate>Fri, 24 Sep 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>About Exportober</title>
-  <link>https://www.neeldhara.blog/posts/exportober/about/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="grid">
-<div class="g-col-6">
-<p>In a massively impulsive move nudged by some Twitter feedback, I recently launched <a href="../2021/">the Exportober challenge</a>.</p>
-<p>The TL;DR version:</p>
-<ul>
-<li>Put up a <strong>piece of content</strong>* everyday between 27th September and 30th October, with the possibility of skipping one day per week;</li>
-<li>Post a link to your content on Twitter with #exportober</li>
-<li>That’s it, actually. 🤷‍♀️</li>
-</ul>
-</div>
-<div class="g-col-6">
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-Anyone else procrastinating on starting a blog, CS or otherwise? Would you be interested in being held mutually accountable for a few weeks to overcome the initial inertia? <br><br>Do let me know! I’ll try to setup something systematic-looking if there’s interest 🙂
-</p>
-— Neeldhara (<span class="citation" data-cites="neeldhara">@neeldhara</span>) <a href="https://twitter.com/neeldhara/status/1439607978445869057?ref_src=twsrc%5Etfw">September 19, 2021</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-</div>
-<section id="whats-allowed-in-exportober" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="whats-allowed-in-exportober">What’s allowed in #exportober?</h2>
-<p>I was deliberately vague about the terms-and-conditions that goes with the piece of content piece above. The rules I mentioned were minimal: since there are no restrictions of age, keep the content SFW and generally legal. Other than that, anything goes, for example:</p>
-<ul>
-<li>Can I doodle? Yes.</li>
-<li>Can I meme? Yes.</li>
-<li>Can I make a comic? Yes.</li>
-<li>Can I quip? Yes.</li>
-<li>Can I tweet a thread? Yes.</li>
-<li>Can I tweet a single tweet? Yes.</li>
-<li>Can I song and/or hum and/or dance? Yes.</li>
-<li>Can I react? I am unfamiliar with this genre, but yeah, why not?</li>
-<li>Can I just quote? Uhh, ok-fine, sure — maybe be sure to include a reaction?</li>
-<li>Can I commit? Yes, please! Oh, you mean — can it be a GitHub commit? Right, yeah, sure.</li>
-</ul>
-
-<div class="no-row-height column-margin column-container"><div class="">
-<blockquote class="twitter-tweet blockquote" data-conversation="none">
-<p lang="en" dir="ltr">
-One a day is a lot! (Unless tweets count). I used to blog regularly but not even one a week at its peak, I think.
-</p>
-— Rahul Siddharthan (<span class="citation" data-cites="rsidd120">@rsidd120</span>) <a href="https://twitter.com/rsidd120/status/1440537832980828165?ref_src=twsrc%5Etfw">September 22, 2021</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div><div class="">
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-in case anyone is looking for inspiration, in true student fashion, i am already planning on cheating by turning all the math puns i have in mind to comics ['ring arthur and his knights of the round table' but where ring arthur is a noncommutative ring without unity]
-</p>
-— tiiiiredddd (<span class="citation" data-cites="vuisnotabot">@vuisnotabot</span>) <a href="https://twitter.com/vuisnotabot/status/1440752412298399744?ref_src=twsrc%5Etfw">September 22, 2021</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div></div>
-<p>As you can see, there are no restrictions on format or length or quality. It can be whatever you want, and however long or short you want it to be. The point is to <em>get into the habit</em> of putting a bit of yourself into something tangible that you’d want to share.</p>
-<p>So while you could technically schedule thirty pieces of Harry Potter trivia in advance — <em>that</em> would kind of defeat the purpose.</p>
-</section>
-<section id="is-this-for-me-whybother-with-exportober" class="level2">
-<h2 class="anchored" data-anchor-id="is-this-for-me-whybother-with-exportober">Is this for me? #whybother with #exportober</h2>
-<p>In general, I imagine only you would know if this is for you — this may not be a priority or a point of interest for you right now, but if you’re reading this, possibly your interest is at least mildly piqued?</p>
-<p>What this is about is setting aside some time for yourself and to participate alongside friends who’re in it for fun and profit:</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-We often avoid taking action because we think "I need to learn more," but the best way to learn is often by taking action.
-</p>
-— James Clear (<span class="citation" data-cites="JamesClear">@JamesClear</span>) <a href="https://twitter.com/JamesClear/status/1308857494983323650?ref_src=twsrc%5Etfw">September 23, 2020</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<ul>
-<li>The fun bit is in the making and sharing.</li>
-<li>The profit bit is the hope that we trick ourselves into making this a bit of a regular habit for life.</li>
-</ul>
-<p>Longer term, you may or may not want to be sharing or publishing on a daily basis. But hopefully, longer term, <strong>you are engaged with the process on a regular basis</strong>.</p>
-<p>Personally, there’s almost nothing that I do consistently on a daily basis, not counting the things one needs to do continue being alive. I’d like to see if I can change that a bit<sup>1</sup>, and apparently doing such things bit by bit — and with some public commitment — <a href="https://jamesclear.com/atomic-habits">is a good idea</a>, hence the micro-nature of the challenge.</p>
-<blockquote class="twitter-tweet blockquote" data-conversation="none">
-<p lang="en" dir="ltr">
-So overall I’ve gotten to a point where I’m just afraid to even think about putting something together because I think it’s an unrealistic commitment of time. <br><br>I’m also really bad at chunking - everything I do of this sort manifests at the wrong end of an all-nighter 🙈
-</p>
-— Neeldhara (<span class="citation" data-cites="neeldhara">@neeldhara</span>) <a href="https://twitter.com/neeldhara/status/1439682627837980675?ref_src=twsrc%5Etfw">September 19, 2021</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</section>
-<section id="i-want-to-be-in-but-i-stoop-no-lower-than-meaningful-masterpieces" class="level2">
-<h2 class="anchored" data-anchor-id="i-want-to-be-in-but-i-stoop-no-lower-than-meaningful-masterpieces">I want to be in, but I stoop no lower than meaningful masterpieces…</h2>
-<p>Hmm. One way that you could still make this work for you is to build out your masterpiece bit by bit. If it’s a tutorial, you could plan it out in advance and work through one coherent section a day. If it’s a sketch, you could share your partial progress as you go along, and even put it together in a timelapse at the end? That would be great to see!</p>
-<p>There are some types of long-form content that aren’t naturally amenable to this type of chunking; say you want to put together a video exposition, make an origami sculpture, or crochet a Klein bottle. In this situation, you could either use the challenge to document your process and progress; or you could just claim to engage in #exportoberlite with a reduced frequency of production — say once a week, or one masterpiece at the end — you’ll just have to still tweet it out so I can catalog it ❤️</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-I really don’t like the illusion that there is one process for making and that it involves writing every day. Thinking is work to. So is reading. So is doing things that seem unrelated to writing. Our brains are always thinking about what we’re making, whether we’re typing or not
-</p>
-— ChristianAntonGerard (<span class="citation" data-cites="CAGerardPoet">@CAGerardPoet</span>) <a href="https://twitter.com/CAGerardPoet/status/1221128922982690818?ref_src=twsrc%5Etfw">January 25, 2020</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Also, while on the subject of masterpieces, there’s the <a href="https://austinkleon.com/2020/12/10/quantity-leads-to-quality-the-origin-of-a-parable/">parable of the pots</a>. On the other hand, everyone does have their own process, and the idea isn’t to force a format: this process is temporary, flexible, and optional 🙌</p>
-</section>
-<section id="this-sounds-like-fun-but-i-have-no-idea-what-to-make." class="level2">
-<h2 class="anchored" data-anchor-id="this-sounds-like-fun-but-i-have-no-idea-what-to-make.">This sounds like fun, but I have no idea what to make.</h2>
-<p>Oooh. Maybe just ping on Twitter if you are in this situation. I do imagine that there are folks who have more ideas than they can handle, so if you have the bandwidth, it’ll even out nicely! For some starter inspiration, just in case it is useful, here are some of the post types that I’m planning for the duration of this challenge, in roughly increasing order of desperation:</p>
-<ol type="1">
-<li>Trying some of the <a href="https://www.tifr.res.in/~outreach/chai_and_why.html">Chai and Why? experiments</a> and documenting <del>any accidents</del> learnings.</li>
-<li>Puzzles and programming contest roundups.</li>
-<li>Lecture notes for classes/talks I’m teaching and/or attending.</li>
-<li>Highlights from whatever podcasts I’m tuned into.</li>
-<li>Clean up draft essays from previous lives.</li>
-<li>Random doodles. And VSCode keyboard shortcuts.</li>
-<li>Hot takes on inconsequential debates.<sup>2</sup></li>
-</ol>
-<p>I also have a few black holes nurtured over time — I’m looking at you, all my Read-It-<del>Never</del>Later apps, the starred section in my RSS app, my YouTube watchlist, and relatives. Maybe about time to go down some of these rabbit holes with the excuse of commentary to follow.</p>
-<p>So yes, that’ll be all for now! Let’s see how this goes 🤞 Meanwhile, <a href="../2021/">please hop on</a> and <a href="https://twitter.com/neeldhara/status/1439668714178105347">spread the word</a> for all of us? Thank you! 🎉</p>
-<hr>
-<p>PS. You might be curious about what participating will <em>look like</em>. I’m trying to setup a separate page for each participant in the challenge that will pull in all your tagged tweets. I’ll share a preview soon!</p>
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>c.f. the next section for a different perspective.↩︎</p></li>
-<li id="fn2"><p>Let me know if you want prompts.↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>exportober</category>
-  <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/exportober/about/index.html</guid>
-  <pubDate>Thu, 23 Sep 2021 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" medium="image" type="image/png" height="143" width="144"/>
 </item>
 </channel>
 </rss>

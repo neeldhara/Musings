@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://www.neeldhara.blog/exportober.html</link>
-<atom:link href="https://www.neeldhara.blog/exportober.xml" rel="self" type="application/rss+xml"/>
+<link>https://neeldhara.blog/exportober.html</link>
+<atom:link href="https://neeldhara.blog/exportober.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
 <lastBuildDate>Thu, 06 Oct 2022 18:30:00 GMT</lastBuildDate>
 <item>
   <title>2022 Exportober Tracker</title>
-  <link>https://www.neeldhara.blog/posts/exportober/2022-tracker/index.html</link>
+  <link>https://neeldhara.blog/posts/exportober/2022-tracker/index.html</link>
   <description><![CDATA[ 
 
 
@@ -49,12 +49,12 @@
  ]]></description>
   <category>exportober</category>
   <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/exportober/2022-tracker/index.html</guid>
+  <guid>https://neeldhara.blog/posts/exportober/2022-tracker/index.html</guid>
   <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>2021 Exportober Tracker</title>
-  <link>https://www.neeldhara.blog/posts/exportober/2021-tracker/index.html</link>
+  <link>https://neeldhara.blog/posts/exportober/2021-tracker/index.html</link>
   <description><![CDATA[ 
 
 
@@ -94,12 +94,12 @@
  ]]></description>
   <category>exportober</category>
   <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/exportober/2021-tracker/index.html</guid>
+  <guid>https://neeldhara.blog/posts/exportober/2021-tracker/index.html</guid>
   <pubDate>Fri, 24 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>About Exportober</title>
-  <link>https://www.neeldhara.blog/posts/exportober/about/index.html</link>
+  <link>https://neeldhara.blog/posts/exportober/about/index.html</link>
   <description><![CDATA[ 
 
 
@@ -229,12 +229,12 @@ I really don’t like the illusion that there is one process for making and that
 </section></div> ]]></description>
   <category>exportober</category>
   <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/exportober/about/index.html</guid>
+  <guid>https://neeldhara.blog/posts/exportober/about/index.html</guid>
   <pubDate>Thu, 23 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>An Invitation to Exportober 2021</title>
-  <link>https://www.neeldhara.blog/posts/exportober/2021/index.html</link>
+  <link>https://neeldhara.blog/posts/exportober/2021/index.html</link>
   <description><![CDATA[ 
 
 
@@ -300,7 +300,7 @@ May not commit for mutual accountability :) But a suggestion.<br><br>Instead of 
  ]]></description>
   <category>exportober</category>
   <category>funda</category>
-  <guid>https://www.neeldhara.blog/posts/exportober/2021/index.html</guid>
+  <guid>https://neeldhara.blog/posts/exportober/2021/index.html</guid>
   <pubDate>Sat, 18 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 </channel>

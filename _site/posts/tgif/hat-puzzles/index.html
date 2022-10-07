@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2021-10-07">
 
-<title>Pseudorandom Musings – index</title>
+<title>Pseudorandom Musings - Hat Puzzles</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,11 +60,30 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 <link rel="stylesheet" href="../../../styles.css">
+<meta name="twitter:title" content="Pseudorandom Musings - Hat Puzzles">
+<meta name="twitter:description" content="We discussed a variety of puzzles in the genre of hat puzzles, which roughly have following story arc:">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -116,15 +136,85 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Hat Puzzles</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">puzzles</div>
+                <div class="quarto-category">tgif</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 7, 2021</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
+
+<p>We discussed a variety of puzzles in the genre of hat puzzles, which roughly have following story arc:</p>
+<ul>
+<li>a bunch of (not necessarily finite (!!!)) people are in a location</li>
+<li>all of them are wearing hats of one of <span class="math inline">c</span> colors, typically <span class="math inline">c = 2</span> (we will assume that hats are either red or blue)</li>
+<li>nobody knows the color of their own hat</li>
+<li>folks can see the colors of other’s hats (but not necessarily all of them; this depends on the setting)</li>
+<li>everyone is tasked with determining/guessing the color of their own hat, and failure to get it right (most of the time) will usually lead to unpleasant outcomes</li>
+</ul>
+<p>A traditional special case is the following:</p>
+<ul>
+<li>There are <span class="math inline">n</span> people standing on a line.</li>
+<li>Everyone can see the colors of the hats of everyone ahead of them.</li>
+<li>A strategy for how one’s own hat color is determined can be coordinated in advance.</li>
+<li>Starting from the person who can see everyone else (and their hats, more importantly), to the person at the end who sees nothing, everyone spells out their guess of the color of their own hat loudly and clearly for everyone else to hear. There is no communication between poeple other than this.</li>
+<li>All but one person must figure out the color of their hat correctly.</li>
+</ul>
+<div class="callout-caution callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+A Strategy for the Finite Case
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The first person says “red” if the number of red hats s/he sees is even, and “blue” otherwise. This person may be mistaken about the color of their own hat. However, knowing the rationale for what the first person called out, the second can tally up parities to determine the color of their own hat (e.g, if the first person said red and the second person sees an even number of red hats, they conclude they are wearing a blue hat, otherwise they know they are wearing a read hat; and so on).</p>
+</div>
+</div>
+</div>
+<p>A crazier version is the following:</p>
+<ul>
+<li>There are infinitely many people in a room.</li>
+<li>Everyone can see the colors of the hats of everyone else, but not their own.</li>
+<li>Nobody can hear anyone else’s guess.</li>
+<li>Everyone guesses simultaneously.</li>
+<li>Is there a strategy to ensure that infinitely many guesses are correct?</li>
+<li>[Level Up]: Is there a strategy to ensure that at most finitely many guesses are wrong?</li>
+</ul>
+<div class="page-columns page-full"><p>This is fun to think about, and you’re probably going to have to invoke something something <a href="https://divisbyzero.com/2009/08/11/infinite-hat-problems-solutions/">axiom of choice</a> something something to tackle the situation! </p><div class="no-row-height column-margin column-container"><span class="aside">Spoiler Alert!</span></div></div>
 
 
 

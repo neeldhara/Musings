@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://www.neeldhara.blog/cp.html</link>
-<atom:link href="https://www.neeldhara.blog/cp.xml" rel="self" type="application/rss+xml"/>
+<link>https://neeldhara.blog/cp.html</link>
+<atom:link href="https://neeldhara.blog/cp.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
 <lastBuildDate>Thu, 30 Sep 2021 18:30:00 GMT</lastBuildDate>
 <item>
   <title>Sam I Am</title>
-  <link>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</link>
+  <link>https://neeldhara.blog/posts/cp/sam-i-am/index.html</link>
   <description><![CDATA[ 
 
 
@@ -35,7 +35,7 @@
 <p>So to begin with, we have a grid with some cells identified as locations where Sam’s enemies are positioned, and here’s an example:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A first example of a configuration of Sam’s enemies location</figcaption><p></p>
 </figure>
 </div>
@@ -43,28 +43,28 @@
 <p>We want to <em>hit</em> all of these locations, and what we have at our disposal is giant cannon balls which can destroy all enemies that are positioned on a single row, or a single column. For example, if we were obsessed about only firing along rows, we would need four cannon balls to tackle ’em all, like so:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution were we fire along rows alone</figcaption><p></p>
 </figure>
 </div>
 <p>If Sam was superstitious about shooting along columns only, then he would again need four of these cannon balls to take care of everything:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution were we fire along columns alone</figcaption><p></p>
 </figure>
 </div>
 <p>However, our friend Sam is smart, not superstitious! And if there is anything that he is obsessed about, it is ruthlessly optimal destruction! In other words, he wants to fix everything up, but while using the smallest number of cannon balls possible… and if that means mixing up ranks and files, so be it — notice that you can manage with just three once you combine the use of both axes:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution leveraging a combination of rows and columns</figcaption><p></p>
 </figure>
 </div>
 <p>And for this example in particular, notice that three cannon balls are <em>necessary</em>, because we have at least three enemies positioned at locations that share <em>neither a row nor a column</em>, implying that no row-fire or column-fire can handle more than one of these locations at once:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Demonstrating that three canonballs are in fact necessary</figcaption><p></p>
 </figure>
 </div>
@@ -95,7 +95,7 @@
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The vertices of the auxiliary graph</figcaption><p></p>
 </figure>
 </div>
@@ -104,13 +104,13 @@
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The edges of the auxiliary graph</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A bipartite graph!</figcaption><p></p>
 </figure>
 </div>
@@ -121,7 +121,7 @@
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A vertex cover</figcaption><p></p>
 </figure>
 </div>
@@ -144,7 +144,7 @@
 <p>So first things first: we are going to setup a flow network around the graph <img src="https://latex.codecogs.com/png.latex?G">, and here’s a partial picture of what it looks like:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The flow graph</figcaption><p></p>
 </figure>
 </div>
@@ -158,7 +158,7 @@
 <p>That’s it, that’s the flow network <img src="https://latex.codecogs.com/png.latex?(%5Ctilde%7BG%7D,%5Ckappa)"> based on <img src="https://latex.codecogs.com/png.latex?G">, where I’m using <img src="https://latex.codecogs.com/png.latex?%5Ckappa"> to denote the capacity function. Now let’s stare at any valid integral flow in this network — what does it pull out from the middle? 🤔</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A matching hiding in plain sight</figcaption><p></p>
 </figure>
 </div>
@@ -170,7 +170,7 @@
 <p>Based on these observations, we have that the set of original edges for which <img src="https://latex.codecogs.com/png.latex?f(e)%20=%201"> forms a matching in back in <img src="https://latex.codecogs.com/png.latex?G">, and in particular, if <img src="https://latex.codecogs.com/png.latex?f"> was maximum flow, then this set would correspond to a maximum-sized matching. Now, let’s look at the corresponding mincut by building the residual graph:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Edges in the residual graph that have a residual capacity of zero are not shown. Also, the original edges that were used by <img src="https://latex.codecogs.com/png.latex?f"> have infinite residual capacity but their corresponding back-edges have unit capacity, but this distinction is not emphasised in the picture because it’s not particularly relevant to our discussion.</figcaption><p></p>
 </figure>
 </div>
@@ -178,7 +178,7 @@
 <p>and considering what vertices are reachable from <img src="https://latex.codecogs.com/png.latex?s">:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> are marked green, while all remaining vertices are marked red.</figcaption><p></p>
 </figure>
 </div>
@@ -191,14 +191,14 @@
 <p>We will refer to these vertices as the <em>misfits —</em> they are highlighted for you in the picture below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The misfits</figcaption><p></p>
 </figure>
 </div>
 <p>Now roll up your sleeves for some magic. Let’s pull up the cut — which we know is in fact a mincut — obtained by considering the set of vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> the residual graph corresponding to the maxflow <img src="https://latex.codecogs.com/png.latex?f">. In pictures, note how we have attracted some column vertices to the <img src="https://latex.codecogs.com/png.latex?s">-side, and pushed away some row vertices to the <img src="https://latex.codecogs.com/png.latex?t">-side:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Some reorganization</figcaption><p></p>
 </figure>
 </div>
@@ -224,9 +224,9 @@
  ]]></description>
   <category>cp</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
+  <guid>https://neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
   <pubDate>Thu, 30 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://www.neeldhara.blog/dsanotes.html</link>
-<atom:link href="https://www.neeldhara.blog/dsanotes.xml" rel="self" type="application/rss+xml"/>
+<link>https://neeldhara.blog/dsanotes.html</link>
+<atom:link href="https://neeldhara.blog/dsanotes.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
 <lastBuildDate>Sat, 10 Sep 2022 18:30:00 GMT</lastBuildDate>
 <item>
   <title>On Cards and Graphs</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/debruijn/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</link>
   <description><![CDATA[ 
 
 
@@ -53,7 +53,7 @@ S takes the top card and passes the deck to the next person (T).</code></pre></l
 <p>The diagram below shows why cut shuffles still result in sequences where the signal from any location continues to be unique, and in some sense, <em>invariant</em> across shuffles: suppose a position <img src="https://latex.codecogs.com/png.latex?x"> corresponds to a certain signal <img src="https://latex.codecogs.com/png.latex?S_x"> before a cut shuffle, then after a cut shuffle, if position <img src="https://latex.codecogs.com/png.latex?x"> shifts to <img src="https://latex.codecogs.com/png.latex?y">, then <img src="https://latex.codecogs.com/png.latex?S_y%20=%20S_x">. Note that this would <em>not</em> be true if someone, say, enthusiastically riffle shuffled the pack — so do make sure to prevent this at all cost.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Examples of cut shuffles and why they don’t affect the addressing technique. The first column shows the original sequence, the second shows the proposed cut, and the last shows the final sequence after the cut shuffle is excecuted.</figcaption><p></p>
 </figure>
 </div>
@@ -85,7 +85,7 @@ You perhaps see now how you can perform the entire trick:
 <p>If you want to make your life easier, you could use an association that is easy to remember:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A useful dictionary between 5-bit strings and cards from a standard deck of cards</figcaption><p></p>
 </figure>
 </div>
@@ -129,7 +129,7 @@ If you want to take a look at the graph, it’s right here…
 <p>…although a bit of a monstrosity!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
 <p></p><figcaption class="figure-caption">The de Bruijn graph of order 4</figcaption><p></p>
 </figure>
 </div>
@@ -223,13 +223,13 @@ there are exactly _____ self-loops
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/debruijn/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</guid>
   <pubDate>Sat, 10 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" medium="image" type="image/png" height="185" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" medium="image" type="image/png" height="185" width="144"/>
 </item>
 <item>
   <title>Walking Around via Euler Tours</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/eulertours/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/eulertours/index.html</link>
   <description><![CDATA[ 
 
 
@@ -404,12 +404,12 @@ which is not in S or marked</code></pre>
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/eulertours/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/eulertours/index.html</guid>
   <pubDate>Thu, 08 Sep 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Representing Graphs</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/graphs/index.html</link>
   <description><![CDATA[ 
 
 
@@ -420,7 +420,7 @@ which is not in S or marked</code></pre>
 <p>At some point of time in your life, you have likely been challenged to draw a kite-like figure:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A common drawing challenge.</figcaption><p></p>
 </figure>
 </div>
@@ -458,7 +458,7 @@ The Problem
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Konigsberg Classic: Map of Königsberg in Euler’s time showing the actual layout of the seven bridges, highlighting the river Pregel and the bridges. Image by Bogdan Giuşcă, in the public domain (CC BY-SA 3.0) and sourced from Wikipedia.</figcaption><p></p>
 </figure>
 </div>
@@ -494,7 +494,7 @@ Classroom Activity with Eulerian Paths
 <p>We can work through the “bridges puzzle” on this graph. In the classroom, we all started with the vertex representing Juhi Chawla, “walked around” using every connection exactly once, and the fun effect is that everyone ends up at the vertex representing Rishi Kapoor (or solves the puzzle incorrectly). From here, you can probably begin to guess the role of the two special vertices in the puzzle.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An actor collaboration graph</figcaption><p></p>
 </figure>
 </div>
@@ -508,7 +508,7 @@ Classroom Activity with Eulerian Paths
 <p>The origins of this problem — the so-called “Knight’s Tour” — goes all the way back to the 9th century AD, where it is described in <a href="https://www.ias.ac.in/article/fulltext/reso/025/08/1095-1116">Rudraṭa’s Kavyalankara</a>. Here’s an example of a knight’s tour, as seen on Wikipedia:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An animated example of a knight’s tour.</figcaption><p></p>
 </figure>
 </div>
@@ -716,13 +716,13 @@ How would you do it?
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
   <pubDate>Tue, 09 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Representing Sequences</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/sequences/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/sequences/index.html</link>
   <description><![CDATA[ 
 
 
@@ -745,7 +745,7 @@ How would you do it?
 <p>Now here comes our first dilemma: how many houses do we reserve? Say we have 20 clients: it is clear that we need to reserve <em>at least</em> 20 houses, but should we reserve a few more? Reservations are not free, so we don’t want to reserve a very large number of houses either: remember, there are no refunds. But on the other hand, if we reserve too few, and we end up with more clients than the number of houses we’ve reserved, we will be in a sticky situation — worst case some clients may have to move, which is not ideal. You will have to work on coming up with a reasonable estimate of how many clients you will eventually have, and hope for the best.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">Expanding your reservations can get tricky</figcaption><p></p>
 </figure>
 </div>
@@ -753,7 +753,7 @@ How would you do it?
 <p>You could, of course, just call your clients and ask them for their house numbers, but then this requires you to maintain some kind of register, and let us just say that you are not good with that kind of thing. So here’s what you do instead: you only keep the first client’s address, because that’s just one thing that’s easy to remember. Then you ask your <img src="https://latex.codecogs.com/png.latex?i">-th client to remember the address of the <img src="https://latex.codecogs.com/png.latex?(i+1)">-th client: they are slightly bewildered but you tell them it’s for insurance. Now if you want to pay a visit to your <img src="https://latex.codecogs.com/png.latex?%5Cell">-th client, you just start from your first one, and follow the trail. Peculiar, but works.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-02.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-02.gif" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">Walking around to find your clients with new management.</figcaption><p></p>
 </figure>
 </div>
@@ -845,13 +845,13 @@ How would you do it?
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/sequences/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/sequences/index.html</guid>
   <pubDate>Mon, 01 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Data Structures and Structured Data</title>
-  <link>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</link>
+  <link>https://neeldhara.blog/posts/dsanotes/introduction/index.html</link>
   <description><![CDATA[ 
 
 
@@ -919,7 +919,7 @@ This <em>is</em> in fact a useful framing!
 <div class="callout-body-container callout-body">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Table 1 Revisited. No Free Lunches</figcaption><p></p>
 </figure>
 </div>
@@ -932,7 +932,7 @@ This <em>is</em> in fact a useful framing!
 <p>Let’s say that you are spending a fine evening watching the #LockdownMath playlist from 3blue1brown. The first episode happens to be all about solving quadratics:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A screenshot from #LockdownMath showing Grant Sanderson solving quadratics.</figcaption><p></p>
 </figure>
 </div>
@@ -952,7 +952,7 @@ Now…
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1042,7 +1042,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
+<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">Illustration from an implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -1051,7 +1051,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
+<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">A second illustration from the same implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -1153,7 +1153,7 @@ After all…
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
+<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1243,9 +1243,9 @@ Food for thought.
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
+  <guid>https://neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
   <pubDate>Sun, 31 Jul 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
+  <media:content url="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
 </item>
 </channel>
 </rss>

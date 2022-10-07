@@ -6,14 +6,246 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://www.neeldhara.blog/tgif.html</link>
-<atom:link href="https://www.neeldhara.blog/tgif.xml" rel="self" type="application/rss+xml"/>
+<link>https://neeldhara.blog/tgif.html</link>
+<atom:link href="https://neeldhara.blog/tgif.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
-<lastBuildDate>Wed, 24 Mar 2021 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 06 Oct 2022 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>AB Separation</title>
+  <link>https://neeldhara.blog/posts/tgif/ab-separation/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Shared by <a href="https://twitter.com/10kdiver"><span class="citation" data-cites="10kdiver">@10kdiver</span></a>.</p>
+</div>
+</div>
+</div>
+<p>A probability puzzle involving tournaments and elimination matches:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Here’s a neat probability puzzle — somewhat counter-intuitive: <a href="https://t.co/QA6jxaIYFT">pic.twitter.com/QA6jxaIYFT</a>
+</p>
+— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1573280126061740032?ref_src=twsrc%5Etfw">September 23, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="page-columns page-full"><p>To begin with, a clarification: to say that Alex is the best player is to say that Alex will always win a match that he plays; and to say that Bob is the second best player is to say that Bob will win any match that he plays other than one against Alex. The puzzle asks for the probability that Bob emerges the runner up in the tournament. </p><div class="no-row-height column-margin column-container"><span class="aside">This is indicated in the tweet but the crop seems to hide it.</span></div></div>
+<p>Suppose we denote the players <img src="https://latex.codecogs.com/png.latex?%5C%7Ba_1,a_2,a_3,a_4,b_1,b_2,b_3,b_4%5C%7D">, and say the players are initially matched up like so:</p>
+<p><img src="https://latex.codecogs.com/png.latex?(a_1,a_2);%20(a_3,a_4);%20(b_1,b_2);%20(b_3,b_4),"></p>
+<p>and in particular we have:</p>
+<ul>
+<li>one of the quarter finals will be between <img src="https://latex.codecogs.com/png.latex?a_p"> and <img src="https://latex.codecogs.com/png.latex?a_q"> for <img src="https://latex.codecogs.com/png.latex?p%20%5Cin%20%5C%7B1,2%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?q%20%5Cin%20%5C%7B3,4%5C%7D">,</li>
+<li>the quarter finals will be between <img src="https://latex.codecogs.com/png.latex?b_r"> and <img src="https://latex.codecogs.com/png.latex?b_s"> for <img src="https://latex.codecogs.com/png.latex?r%20%5Cin%20%5C%7B1,2%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?s%20%5Cin%20%5C%7B3,4%5C%7D">, and</li>
+<li>the semi finals will be between an <img src="https://latex.codecogs.com/png.latex?a">-player and a <img src="https://latex.codecogs.com/png.latex?b">-player.</li>
+</ul>
+<p>A moment’s reflection reveals that for Bob to be a runner up, he should not meet Alex in the quarter-finals or earlier. This happens if and only if:</p>
+<ul>
+<li>either Alex is one of the <img src="https://latex.codecogs.com/png.latex?a">-players and Bob is one of the <img src="https://latex.codecogs.com/png.latex?b">-players, or</li>
+<li>Bob is one of the <img src="https://latex.codecogs.com/png.latex?a">-players and Alex is one of the <img src="https://latex.codecogs.com/png.latex?b">-players.</li>
+</ul>
+<p>From here it is a counting argument. I was distracted by some idea of symmetry and originally <a href="https://twitter.com/neeldhara/status/1573691611002769408?s=20&amp;t=-A9VW9YgGCp2qDAyY_Yw6Q">jumped to the conclusion</a> that the answer is one-half. Spoiler alert: I quickly learned that it’s not!</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/ab-separation/index.html</guid>
+  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Hat Puzzles</title>
+  <link>https://neeldhara.blog/posts/tgif/hat-puzzles/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>We discussed a variety of puzzles in the genre of hat puzzles, which roughly have following story arc:</p>
+<ul>
+<li>a bunch of (not necessarily finite (!!!)) people are in a location</li>
+<li>all of them are wearing hats of one of <img src="https://latex.codecogs.com/png.latex?c"> colors, typically <img src="https://latex.codecogs.com/png.latex?c%20=%202"> (we will assume that hats are either red or blue)</li>
+<li>nobody knows the color of their own hat</li>
+<li>folks can see the colors of other’s hats (but not necessarily all of them; this depends on the setting)</li>
+<li>everyone is tasked with determining/guessing the color of their own hat, and failure to get it right (most of the time) will usually lead to unpleasant outcomes</li>
+</ul>
+<p>A traditional special case is the following:</p>
+<ul>
+<li>There are <img src="https://latex.codecogs.com/png.latex?n"> people standing on a line.</li>
+<li>Everyone can see the colors of the hats of everyone ahead of them.</li>
+<li>A strategy for how one’s own hat color is determined can be coordinated in advance.</li>
+<li>Starting from the person who can see everyone else (and their hats, more importantly), to the person at the end who sees nothing, everyone spells out their guess of the color of their own hat loudly and clearly for everyone else to hear. There is no communication between poeple other than this.</li>
+<li>All but one person must figure out the color of their hat correctly.</li>
+</ul>
+<div class="callout-caution callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+A Strategy for the Finite Case
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The first person says “red” if the number of red hats s/he sees is even, and “blue” otherwise. This person may be mistaken about the color of their own hat. However, knowing the rationale for what the first person called out, the second can tally up parities to determine the color of their own hat (e.g, if the first person said red and the second person sees an even number of red hats, they conclude they are wearing a blue hat, otherwise they know they are wearing a read hat; and so on).</p>
+</div>
+</div>
+</div>
+<p>A crazier version is the following:</p>
+<ul>
+<li>There are infinitely many people in a room.</li>
+<li>Everyone can see the colors of the hats of everyone else, but not their own.</li>
+<li>Nobody can hear anyone else’s guess.</li>
+<li>Everyone guesses simultaneously.</li>
+<li>Is there a strategy to ensure that infinitely many guesses are correct?</li>
+<li>[Level Up]: Is there a strategy to ensure that at most finitely many guesses are wrong?</li>
+</ul>
+<div class="page-columns page-full"><p>This is fun to think about, and you’re probably going to have to invoke something something <a href="https://divisbyzero.com/2009/08/11/infinite-hat-problems-solutions/">axiom of choice</a> something something to tackle the situation! </p><div class="no-row-height column-margin column-container"><span class="aside">Spoiler Alert!</span></div></div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/hat-puzzles/index.html</guid>
+  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>Folding Stamps</title>
+  <link>https://neeldhara.blog/posts/tgif/folding-stamps/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Source: Dave Richeson <a href="https://twitter.com/divbyzero"><span class="citation" data-cites="divbyzero">@divbyzero</span></a> and Henry Dudeny.</p>
+</div>
+</div>
+</div>
+<p>The following is perhaps best attempted with a physical prop.</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Yesterday's puzzles seem to be a hit, so here's another one, due to Henry Dudeny. Fold the paper so the squares end up in numerical order (1 on top, 8 on bottom, sequential in between, not necessarily "face up" in the stack, as shown). The first one is easier than the second. <a href="https://t.co/oRGXl90mKp">pic.twitter.com/oRGXl90mKp</a>
+</p>
+— Dave Richeson (<span class="citation" data-cites="divbyzero">@divbyzero</span>) <a href="https://twitter.com/divbyzero/status/1577640987412807680?ref_src=twsrc%5Etfw">October 5, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="callout-tip callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Here’s <a href="https://twitter.com/divbyzero/status/1577680402289917952">a bit from the original</a> source:
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/tgif/folding-stamps/source.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of a text containing the original problem</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/folding-stamps/index.html</guid>
+  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/tgif/folding-stamps/source.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Iwahiro’s Square in Bag Puzzle</title>
+  <link>https://neeldhara.blog/posts/tgif/square-in-bag/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Source: Dave Richeson <a href="https://twitter.com/divbyzero"><span class="citation" data-cites="divbyzero">@divbyzero</span></a>.</p>
+</div>
+</div>
+</div>
+<p>Here’s a very fun packing puzzle.</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+One of my all-time favorite puzzles: Iwahiro's "Square in a Bag" puzzle. Put a square piece of paper (14 cm x 14 cm) completely inside a bag (20 cm x 11 cm) without folding, cutting, or rolling up the paper; it should end up lying completely flat. <a href="https://t.co/nGv2TwR8Wp">pic.twitter.com/nGv2TwR8Wp</a>
+</p>
+— Dave Richeson (<span class="citation" data-cites="divbyzero">@divbyzero</span>) <a href="https://twitter.com/divbyzero/status/1577308868476108806?ref_src=twsrc%5Etfw">October 4, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>When we discussed this in the meetup, it was a little hard to describe what’s allowed and what’s not with the <em>bag</em>. Another thing that was important to emphasize is the side of the bag that is open: I am not sure this is even possible if the bag is sealed on both the long sides and only the short side is the one that is open.</p>
+<p>A quick sanity check with respect to surface areas reassures us of the potential feasibility of the task: the total surface area of the square is indeed smaller than the surface area of the bag. So if you imagine cutting the bag along the short sides, and using it as a gift wrap to cover up the square, that’s very much doable.</p>
+<p>The other hint was the fact that the length of the diagonal of the square is less than the length of the longer side of the bag. This prompts us to line up the square so that it’s opposite corners align with the long and open edge of the bag.</p>
+<div class="callout-caution callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Spoiler Alert
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The solution does indeed involve starting here and squishing the bag gradually so that it engulfs the square. Here’s a nice video demonstration:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SACE14qPVo0?start=80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
+</div>
+</div>
+</div>
+<p>We did wonder about formalizing the question and the process above a little more, but we were not able to come up with any appropriate language. At least as an activity-based puzzle I think the instructions are quite clear:</p>
+<blockquote class="twitter-tweet blockquote" data-conversation="none">
+<p lang="en" dir="ltr">
+Ah. The bag can stretch and fold as much as any ordinary kitchen bag can. And for that matter, the paper can warp and bend as you'd expect it would. But in the end everything will end up flat on the tabletop.
+</p>
+— Dave Richeson (<span class="citation" data-cites="divbyzero">@divbyzero</span>) <a href="https://twitter.com/divbyzero/status/1578482477869715457?ref_src=twsrc%5Etfw">October 7, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>It would be nice to be come up with a procedure that, given the dimensions of the square and the bag, can determine if the square can in fact be accommodated in the bag playing by the rules here. Already here, it was pointed out later that it would have worked with <a href="https://twitter.com/divbyzero/status/1577322638783004675?s=20&amp;t=346fCpYPw5ZtAIAQJZ-PtA">a slightly smaller bag too</a>, and at least for the purpose of getting to this particular solution, all that matters is the <a href="https://twitter.com/divbyzero/status/1577322638783004675?s=20&amp;t=346fCpYPw5ZtAIAQJZ-PtA">proportions of the side lengths</a>.</p>
+<p>It might also be interesting to think about what happens with other combinations of shapes.</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/square-in-bag/index.html</guid>
+  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+</item>
 <item>
   <title>Turn the LED on</title>
-  <link>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</link>
   <description><![CDATA[ 
 
 
@@ -43,12 +275,12 @@ Each switch has a 50/50 chance of being ON or OFF.<br><br>The switches are all i
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/turn-the-led-on/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>4 Person Gift Exchange</title>
-  <link>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</link>
   <description><![CDATA[ 
 
 
@@ -95,12 +327,56 @@ Here's a beautiful probability puzzle inspired by Professor Henk Tijms (<a href=
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
+  <title>Making Grids</title>
+  <link>https://neeldhara.blog/posts/tgif/making-grids/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Source: <a href="https://twitter.com/algopuzzles"><span class="citation" data-cites="algopuzzles">@algopuzzles</span></a> and Micheal Brand.</p>
+</div>
+</div>
+</div>
+<p>This is a tiling puzzle:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+A tiling problem with wireframes. [Source: Micheal Brand]. <a href="https://twitter.com/hashtag/exportober?src=hash&amp;ref_src=twsrc%5Etfw">#exportober</a> <a href="https://t.co/vhhoc0OB9C">pic.twitter.com/vhhoc0OB9C</a>
+</p>
+— Algorithmic Puzzles (<span class="citation" data-cites="algopuzzles">@algopuzzles</span>) <a href="https://twitter.com/algopuzzles/status/1578429462177542144?ref_src=twsrc%5Etfw">October 7, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>The lines cannot overlay, I imagine. Here’s a valid looking 2 x 2:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/tgif/making-grids/2by2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A 2 x 2 grid made from the given wireframe.</figcaption><p></p>
+</figure>
+</div>
+<p>More soon on this as the story develops!</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/making-grids/index.html</guid>
+  <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/tgif/making-grids/2by2.png" medium="image" type="image/png" height="143" width="144"/>
+</item>
+<item>
   <title>Conway’s Checkers</title>
-  <link>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</link>
   <description><![CDATA[ 
 
 
@@ -154,12 +430,12 @@ Spoilers
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/conways-checkers/index.html</guid>
   <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Coin Tossing</title>
-  <link>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/coin-tossing/index.html</link>
   <description><![CDATA[ 
 
 
@@ -200,12 +476,12 @@ Solution
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/coin-tossing/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/coin-tossing/index.html</guid>
   <pubDate>Mon, 22 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Estimating Pi</title>
-  <link>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/estimating-pi/index.html</link>
   <description><![CDATA[ 
 
 
@@ -251,12 +527,12 @@ Folks, here’s one way to reason <em>why</em> this probability should be (5 - p
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/estimating-pi/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/estimating-pi/index.html</guid>
   <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Coming to Agreement</title>
-  <link>https://www.neeldhara.blog/posts/tgif/coming-to-agreement/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/coming-to-agreement/index.html</link>
   <description><![CDATA[ 
 
 
@@ -296,12 +572,12 @@ An Oxford University admissions interview question. You are a contestant on a ga
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/coming-to-agreement/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/coming-to-agreement/index.html</guid>
   <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Death’s Dice</title>
-  <link>https://www.neeldhara.blog/posts/tgif/deaths-dice/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/deaths-dice/index.html</link>
   <description><![CDATA[ 
 
 
@@ -348,7 +624,7 @@ Hint
 <div class="callout-body-container callout-body">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://www.neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" class="img-fluid figure-img"></p>
+<p><img src="https://neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An image that shows a square circumscribed inside a circle.</figcaption><p></p>
 </figure>
 </div>
@@ -361,13 +637,13 @@ Hint
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/deaths-dice/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/deaths-dice/index.html</guid>
   <pubDate>Sun, 14 Mar 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://www.neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" medium="image" type="image/png" height="83" width="144"/>
+  <media:content url="https://neeldhara.blog/posts/tgif/deaths-dice/deathsdice-hint.png" medium="image" type="image/png" height="83" width="144"/>
 </item>
 <item>
   <title>Find The Puppy</title>
-  <link>https://www.neeldhara.blog/posts/tgif/find-the-puppy/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/find-the-puppy/index.html</link>
   <description><![CDATA[ 
 
 
@@ -447,12 +723,12 @@ Spoilers: based on our discussion in the second TGIF meetup.
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/find-the-puppy/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/find-the-puppy/index.html</guid>
   <pubDate>Sat, 13 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>The Blue-Eyed Islanders</title>
-  <link>https://www.neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</link>
   <description><![CDATA[ 
 
 
@@ -477,12 +753,12 @@ Spoilers: based on our discussion in the second TGIF meetup.
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/blue-eyed-islanders-puzzle/index.html</guid>
   <pubDate>Wed, 10 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Lighting Up a Grid</title>
-  <link>https://www.neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</link>
+  <link>https://neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</link>
   <description><![CDATA[ 
 
 
@@ -536,7 +812,7 @@ Here’s an argument for the lower bound by Harshil Mittal.
  ]]></description>
   <category>puzzles</category>
   <category>tgif</category>
-  <guid>https://www.neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</guid>
+  <guid>https://neeldhara.blog/posts/tgif/lighting-up-a-grid/index.html</guid>
   <pubDate>Wed, 10 Mar 2021 18:30:00 GMT</pubDate>
 </item>
 </channel>
