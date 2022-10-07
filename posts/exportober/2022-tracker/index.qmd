@@ -1,6 +1,6 @@
 ---
 title: "2022 Exportober Tracker"
-date: "2021-10-07"
+date: "2022-10-07"
 categories: [exportober, funda]
 fields: [date, title]
 page-layout: article
@@ -19,11 +19,9 @@ toc: true
 
 You can find the original announcement [here](../2022/) and more specifics clarifying the format (or the lack of it) [here](../about/). Here's the short version:
 
-- Put up a piece of content everyday between 27th September and 30th October, with the possibility of skipping one day per week;
+- Put up a piece of content everyday between 1st October and 30th October, with the possibility of skipping one day per week;
 - Post a link to your content on Twitter with #exportober
 - That's it, actually. 🤷‍♀️
-
-[📝 If you'd like to participate ~~you can sign up below~~; and if you'd like to help, please encourage everyone participating by checking out the tweets coming in above!]{.aside}
 
 Psst. It's quite fine to sign up even if you're reading this after the 1st of October. The automated tracking exercise here will stop after the 15th of November, so you can be a part of this by just contributing in this window. It certainly does't *have* to be daily and it doesn't *have* to be 30 things, although I found those to be useful default targets to work with for myself.
 
