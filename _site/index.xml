@@ -6,14 +6,55 @@
       version="2.0">
 <channel>
 <title>Pseudorandom Musings</title>
-<link>https://neeldhara.blog/index.html</link>
-<atom:link href="https://neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://www.neeldhara.blog/index.html</link>
+<atom:link href="https://www.neeldhara.blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.1.189</generator>
-<lastBuildDate>Thu, 22 Sep 2022 18:30:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 06 Oct 2022 18:30:00 GMT</lastBuildDate>
+<item>
+  <title>2022 Exportober Tracker</title>
+  <link>https://www.neeldhara.blog/posts/exportober/2022-tracker/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="the-leaderboard" class="level2">
+<h2 class="anchored" data-anchor-id="the-leaderboard">The Leaderboard</h2>
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrjgp87jlNqDMCy4?backgroundColor=yellow&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
+</iframe>
+</section>
+<section id="the-tweets" class="level2">
+<h2 class="anchored" data-anchor-id="the-tweets">The Tweets</h2>
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrwXyP8mGB3KH86i?backgroundColor=yellow&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
+</iframe>
+</section>
+<section id="what-was-this-about-again" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-this-about-again">What was this about again?</h2>
+<p>You can find the original announcement <a href="../2022/">here</a> and more specifics clarifying the format (or the lack of it) <a href="../about/">here</a>. Here’s the short version:</p>
+<ul>
+<li>Put up a piece of content everyday between 1st October and 30th October, with the possibility of skipping one day per week;</li>
+<li>Post a link to your content on Twitter with #exportober</li>
+<li>That’s it, actually. 🤷‍♀️</li>
+</ul>
+<p>Psst. It’s quite fine to sign up even if you’re reading this after the 1st of October. The automated tracking exercise here will stop after the 15th of November, so you can be a part of this by just contributing in this window. It certainly does’t <em>have</em> to be daily and it doesn’t <em>have</em> to be 30 things, although I found those to be useful default targets to work with for myself.</p>
+<!-- ## Sign up! -->
+<!-- While I'm not going to write a Twitter bot that will send you daily reminders over DM, I do hope to create a separate page for each registered participant at the end of the challenge that shows off just their entries in one place, so it's helpful to know who you are 😀 -->
+
+
+</section>
+
+ ]]></description>
+  <category>exportober</category>
+  <category>funda</category>
+  <guid>https://www.neeldhara.blog/posts/exportober/2022-tracker/index.html</guid>
+  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
+</item>
 <item>
   <title>SKJ</title>
-  <link>https://neeldhara.blog/posts/skj/index.html</link>
+  <link>https://www.neeldhara.blog/posts/skj/index.html</link>
   <description><![CDATA[ 
 
 
@@ -22,7 +63,7 @@
 <p>This is the text of a short speech I gave at the farewell event for <a href="https://sudhirjain.info/">Prof.&nbsp;Sudhir Jain</a> as he left IITGN for BHU.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/skj/skj.jpg" class="img-fluid figure-img" style="width:87.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/skj/skj.jpg" class="img-fluid figure-img" style="width:87.0%"></p>
 <p></p><figcaption class="figure-caption">Prof.&nbsp;Jain at the farewell event held on the 3rd January, 2022.</figcaption><p></p>
 </figure>
 </div>
@@ -45,13 +86,13 @@
 
  ]]></description>
   <category>iitgn</category>
-  <guid>https://neeldhara.blog/posts/skj/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/skj/index.html</guid>
   <pubDate>Thu, 22 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/skj/skj.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.neeldhara.blog/posts/skj/skj.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>External Communications</title>
-  <link>https://neeldhara.blog/posts/comms/index.html</link>
+  <link>https://www.neeldhara.blog/posts/comms/index.html</link>
   <description><![CDATA[ 
 
 
@@ -63,7 +104,7 @@
 <p>Here’s collection of some randomly chosen memories: my hat-tip to a stellar team.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/comms/1.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/comms/1.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The External Communications Team. From left to right: Hatim, Dilip, Tej, Apeksha, Dhara, Divyangi, Yours Truly, Chandni, Vandana, Shivangi, Gaurav, and Devarsh.</figcaption><p></p>
 </figure>
 </div>
@@ -83,14 +124,14 @@
 <p>One of my most memorable projects with Tej (along with Dilip, Divyangi, and the rest of the team) is the revamp of the main IITGN website. We went from this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/comms/old.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/comms/old.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">The old IITGN website, <a href="https://legacy.iitgn.ac.in">here</a>.</figcaption><p></p>
 </figure>
 </div>
 <p>to this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/comms/new.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/comms/new.gif" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">The current IITGN website, <a href="https://www.iitgn.ac.in">here</a>.</figcaption><p></p>
 </figure>
 </div>
@@ -119,7 +160,7 @@
 <p>Chandni joined us in the summer of 2019 for a year. She was already a very talented photographer at the time of joining us. As our events and activities grew in number and scale, we found very valuable support in Chandni’s presence. Check out her <a href="https://www.instagram.com/visi_lens/">Instagram</a> here!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/comms/chand.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/comms/chand.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">A sample of Chandni’s photography</figcaption><p></p>
 </figure>
 </div>
@@ -169,13 +210,13 @@
 </ol>
 </section></div> ]]></description>
   <category>iitgn</category>
-  <guid>https://neeldhara.blog/posts/comms/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/comms/index.html</guid>
   <pubDate>Thu, 22 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/comms/1.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.neeldhara.blog/posts/comms/1.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Dog Bunny Puzzle</title>
-  <link>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</link>
+  <link>https://www.neeldhara.blog/posts/dogs-bunny-puzzle/index.html</link>
   <description><![CDATA[ 
 
 
@@ -186,7 +227,7 @@
 <p>Conrad Barski (<a href="https://twitter.com/lisperati"><span class="citation" data-cites="lisperati">@lisperati</span></a>)’s latest, <a href="http://www.dogbunnypuzzle.com/">Dog Bunny Puzzle</a>, had <a href="https://news.ycombinator.com/item?id=32884467">jumped to #1 on HN</a>. The puzzle presents the following somewhat minimalist interface:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" class="img-fluid figure-img" style="width:77.0%"></p>
 <p></p><figcaption class="figure-caption">The Dogs Bunny Puzzle</figcaption><p></p>
 </figure>
 </div>
@@ -308,7 +349,7 @@ BunnyCarrot
 <p>We are going to show that <code>BunnyCarrot</code> is NP-complete by reducing from <code>3SAT</code>. So let <img src="https://latex.codecogs.com/png.latex?%5Cphi%20:=%20%5C%7BC_1,%20%5Cldots,%20C_m%5C%7D"> be a collection of <img src="https://latex.codecogs.com/png.latex?m"> 3SAT clauses over variables <img src="https://latex.codecogs.com/png.latex?%5C%7Bx_1,%20%5Cldots,%20x_n%5C%7D">. The reduced instance of <code>BunnyCarrot</code> corresponding to <img src="https://latex.codecogs.com/png.latex?%5Cphi"> looks like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dogs-bunny-puzzle/reduction2.png" class="img-fluid figure-img" style="width:87.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/dogs-bunny-puzzle/reduction2.png" class="img-fluid figure-img" style="width:87.0%"></p>
 <p></p><figcaption class="figure-caption">A cartoon sketch of the reduced instance of BunnyCarrot from 3SAT.</figcaption><p></p>
 </figure>
 </div>
@@ -386,13 +427,13 @@ BunnyCarrot
  ]]></description>
   <category>puzzles</category>
   <category>exposition</category>
-  <guid>https://neeldhara.blog/posts/dogs-bunny-puzzle/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/dogs-bunny-puzzle/index.html</guid>
   <pubDate>Sun, 18 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" medium="image" type="image/png" height="168" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/dogs-bunny-puzzle/puzzlescreenshot.png" medium="image" type="image/png" height="168" width="144"/>
 </item>
 <item>
   <title>On Cards and Graphs</title>
-  <link>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</link>
+  <link>https://www.neeldhara.blog/posts/dsanotes/debruijn/index.html</link>
   <description><![CDATA[ 
 
 
@@ -432,7 +473,7 @@ S takes the top card and passes the deck to the next person (T).</code></pre></l
 <p>The diagram below shows why cut shuffles still result in sequences where the signal from any location continues to be unique, and in some sense, <em>invariant</em> across shuffles: suppose a position <img src="https://latex.codecogs.com/png.latex?x"> corresponds to a certain signal <img src="https://latex.codecogs.com/png.latex?S_x"> before a cut shuffle, then after a cut shuffle, if position <img src="https://latex.codecogs.com/png.latex?x"> shifts to <img src="https://latex.codecogs.com/png.latex?y">, then <img src="https://latex.codecogs.com/png.latex?S_y%20=%20S_x">. Note that this would <em>not</em> be true if someone, say, enthusiastically riffle shuffled the pack — so do make sure to prevent this at all cost.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Examples of cut shuffles and why they don’t affect the addressing technique. The first column shows the original sequence, the second shows the proposed cut, and the last shows the final sequence after the cut shuffle is excecuted.</figcaption><p></p>
 </figure>
 </div>
@@ -464,7 +505,7 @@ You perhaps see now how you can perform the entire trick:
 <p>If you want to make your life easier, you could use an association that is easy to remember:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-dictionary.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A useful dictionary between 5-bit strings and cards from a standard deck of cards</figcaption><p></p>
 </figure>
 </div>
@@ -508,7 +549,7 @@ If you want to take a look at the graph, it’s right here…
 <p>…although a bit of a monstrosity!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-debruijngraph.png" class="img-fluid figure-img" style="width:75.0%"></p>
 <p></p><figcaption class="figure-caption">The de Bruijn graph of order 4</figcaption><p></p>
 </figure>
 </div>
@@ -602,13 +643,13 @@ there are exactly _____ self-loops
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/dsanotes/debruijn/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/debruijn/index.html</guid>
   <pubDate>Sat, 10 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" medium="image" type="image/png" height="185" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/ch5-cutshuffleex.png" medium="image" type="image/png" height="185" width="144"/>
 </item>
 <item>
   <title>Walking Around via Euler Tours</title>
-  <link>https://neeldhara.blog/posts/dsanotes/eulertours/index.html</link>
+  <link>https://www.neeldhara.blog/posts/dsanotes/eulertours/index.html</link>
   <description><![CDATA[ 
 
 
@@ -783,12 +824,12 @@ which is not in S or marked</code></pre>
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/dsanotes/eulertours/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/eulertours/index.html</guid>
   <pubDate>Thu, 08 Sep 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>On Teaching</title>
-  <link>https://neeldhara.blog/posts/on-teaching/index.html</link>
+  <link>https://www.neeldhara.blog/posts/on-teaching/index.html</link>
   <description><![CDATA[ 
 
 
@@ -813,7 +854,7 @@ These are some parts of the teaching statment that I wrote roughly seven years a
 </div><div class="column" style="width:4%;">
 
 </div><div class="column" style="width:51%;">
-<p><a href="https://imgflip.com/i/6s9ym6"><img src="https://neeldhara.blog/posts/on-teaching/https:/i.imgflip.com/6s9ym6.jpg" title="made at imgflip.com" width="100%"></a></p>
+<p><a href="https://imgflip.com/i/6s9ym6"><img src="https://www.neeldhara.blog/posts/on-teaching/https:/i.imgflip.com/6s9ym6.jpg" title="made at imgflip.com" width="100%"></a></p>
 </div>
 </div>
 <p>All this is to say that I walked into a career involving a substantial teaching component with plenty of hesitation. The delivery was/is still largely confined to classroom settings in broadcast mode. It is not entirely clear what this format has to offer over YouTube. Basic interactivity is being increasingly solved with questions built into video players. Peer learning is quite doable with WhatsApp/Slack/Discord groups and local chapter meetups. Scale in the context of assessments is somewhat addressed by peer evaluation. And then there are all the things you can do on YouTube that you can’t do with traditional lectures: find a teacher whose style resonates, find an accent you understand, replay, play at 2x, 0.5x, binge watch, don’t watch…</p>
@@ -860,7 +901,7 @@ I am going to attend college lectures from now on just to increase my attention 
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Calvin on 21st Century Education</figcaption><p></p>
 </figure>
 </div>
@@ -872,7 +913,7 @@ I am going to attend college lectures from now on just to increase my attention 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/on-teaching/https:/www.explainxkcd.com/wiki/images/7/79/obsolete_technology.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/on-teaching/https:/www.explainxkcd.com/wiki/images/7/79/obsolete_technology.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Cutting Edge</figcaption><p></p>
 </figure>
 </div>
@@ -892,7 +933,7 @@ I am going to attend college lectures from now on just to increase my attention 
 </blockquote>
 </div></div><div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/on-teaching/https:/phdcomics.com/comics/archive/phd062613s.gif" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/on-teaching/https:/phdcomics.com/comics/archive/phd062613s.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">On hope in teaching.</figcaption><p></p>
 </figure>
 </div>
@@ -913,13 +954,13 @@ New blog, new post:<a href="https://t.co/c2lEHM0lTI">https://t.co/c2lEHM0lTI</a>
 
  ]]></description>
   <category>funda</category>
-  <guid>https://neeldhara.blog/posts/on-teaching/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/on-teaching/index.html</guid>
   <pubDate>Sun, 04 Sep 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.neeldhara.blog/posts/on-teaching/calvin-21stcentury.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Representing Graphs</title>
-  <link>https://neeldhara.blog/posts/dsanotes/graphs/index.html</link>
+  <link>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</link>
   <description><![CDATA[ 
 
 
@@ -930,7 +971,7 @@ New blog, new post:<a href="https://t.co/c2lEHM0lTI">https://t.co/c2lEHM0lTI</a>
 <p>At some point of time in your life, you have likely been challenged to draw a kite-like figure:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A common drawing challenge.</figcaption><p></p>
 </figure>
 </div>
@@ -968,7 +1009,7 @@ The Problem
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-knbridges.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Konigsberg Classic: Map of Königsberg in Euler’s time showing the actual layout of the seven bridges, highlighting the river Pregel and the bridges. Image by Bogdan Giuşcă, in the public domain (CC BY-SA 3.0) and sourced from Wikipedia.</figcaption><p></p>
 </figure>
 </div>
@@ -1004,7 +1045,7 @@ Classroom Activity with Eulerian Paths
 <p>We can work through the “bridges puzzle” on this graph. In the classroom, we all started with the vertex representing Juhi Chawla, “walked around” using every connection exactly once, and the fun effect is that everyone ends up at the vertex representing Rishi Kapoor (or solves the puzzle incorrectly). From here, you can probably begin to guess the role of the two special vertices in the puzzle.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-eulerpath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An actor collaboration graph</figcaption><p></p>
 </figure>
 </div>
@@ -1018,7 +1059,7 @@ Classroom Activity with Eulerian Paths
 <p>The origins of this problem — the so-called “Knight’s Tour” — goes all the way back to the 9th century AD, where it is described in <a href="https://www.ias.ac.in/article/fulltext/reso/025/08/1095-1116">Rudraṭa’s Kavyalankara</a>. Here’s an example of a knight’s tour, as seen on Wikipedia:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch3-kt-anim.gif" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">An animated example of a knight’s tour.</figcaption><p></p>
 </figure>
 </div>
@@ -1226,13 +1267,13 @@ How would you do it?
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/graphs/index.html</guid>
   <pubDate>Tue, 09 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/draw-K4.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Representing Sequences</title>
-  <link>https://neeldhara.blog/posts/dsanotes/sequences/index.html</link>
+  <link>https://www.neeldhara.blog/posts/dsanotes/sequences/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1255,7 +1296,7 @@ How would you do it?
 <p>Now here comes our first dilemma: how many houses do we reserve? Say we have 20 clients: it is clear that we need to reserve <em>at least</em> 20 houses, but should we reserve a few more? Reservations are not free, so we don’t want to reserve a very large number of houses either: remember, there are no refunds. But on the other hand, if we reserve too few, and we end up with more clients than the number of houses we’ve reserved, we will be in a sticky situation — worst case some clients may have to move, which is not ideal. You will have to work on coming up with a reasonable estimate of how many clients you will eventually have, and hope for the best.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">Expanding your reservations can get tricky</figcaption><p></p>
 </figure>
 </div>
@@ -1263,7 +1304,7 @@ How would you do it?
 <p>You could, of course, just call your clients and ask them for their house numbers, but then this requires you to maintain some kind of register, and let us just say that you are not good with that kind of thing. So here’s what you do instead: you only keep the first client’s address, because that’s just one thing that’s easy to remember. Then you ask your <img src="https://latex.codecogs.com/png.latex?i">-th client to remember the address of the <img src="https://latex.codecogs.com/png.latex?(i+1)">-th client: they are slightly bewildered but you tell them it’s for insurance. Now if you want to pay a visit to your <img src="https://latex.codecogs.com/png.latex?%5Cell">-th client, you just start from your first one, and follow the trail. Peculiar, but works.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-02.gif" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-02.gif" class="img-fluid figure-img" style="width:70.0%"></p>
 <p></p><figcaption class="figure-caption">Walking around to find your clients with new management.</figcaption><p></p>
 </figure>
 </div>
@@ -1355,13 +1396,13 @@ How would you do it?
  ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/dsanotes/sequences/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/sequences/index.html</guid>
   <pubDate>Mon, 01 Aug 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" medium="image" type="image/png" height="81" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/dsanotes/figures/ch2-houses-01.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
   <title>Data Structures and Structured Data</title>
-  <link>https://neeldhara.blog/posts/dsanotes/introduction/index.html</link>
+  <link>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1429,7 +1470,7 @@ This <em>is</em> in fact a useful framing!
 <div class="callout-body-container callout-body">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Table 1 Revisited. No Free Lunches</figcaption><p></p>
 </figure>
 </div>
@@ -1442,7 +1483,7 @@ This <em>is</em> in fact a useful framing!
 <p>Let’s say that you are spending a fine evening watching the #LockdownMath playlist from 3blue1brown. The first episode happens to be all about solving quadratics:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-lockdownmath.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A screenshot from #LockdownMath showing Grant Sanderson solving quadratics.</figcaption><p></p>
 </figure>
 </div>
@@ -1462,7 +1503,7 @@ Now…
 </div>
 <div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme01.jpeg" title="Meme: So preoccupied with if you could, you didn't stop to ask if you should." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1552,7 +1593,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
+<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-game-trust.png" title="Alt text: The Game of Trust. You have one choice. In front of you is a machine: if you put a coin in the machine, the other player gets three coins and vice versa. You both can either choose to COOPERATE (put in coin), or CHEAT (don't put in coin). The image shows a cartoon machine with players on either side." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">Illustration from an implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -1561,7 +1602,7 @@ Exercise
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figure class="figure">
-<img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
+<img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-players-trust.png" title="Five player strategies also outlined below." class="img-fluid figure-img">
 </figure>
 <p></p><figcaption class="figure-caption">A second illustration from the same implementation by <a href="https://ncase.me/trust/">Nicky Case</a>.</figcaption><p></p>
 </figure>
@@ -1663,7 +1704,7 @@ After all…
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
+<p><img src="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-meme02.jpeg" title="Meme: we are professionals." class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -1753,13 +1794,13 @@ Food for thought.
 </section></div> ]]></description>
   <category>dsanotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/dsanotes/introduction/index.html</guid>
   <pubDate>Sun, 31 Jul 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
+  <media:content url="https://www.neeldhara.blog/posts/dsanotes/introduction/figures/ch1-table01.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Solo Chess</title>
-  <link>https://neeldhara.blog/posts/solo-chess/index.html</link>
+  <link>https://www.neeldhara.blog/posts/solo-chess/index.html</link>
   <description><![CDATA[ 
 
 
@@ -1772,21 +1813,21 @@ Food for thought.
 <p>*when appropriately generalized</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Rules of the Game</figcaption><p></p>
 </figure>
 </div>
 <p>So this is a single-player, peg-solitaire-ish chess variant, where you have to clear board by making a sequence of valid captures, albeit starting with unorthodox — and even unrealistic — positions.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.30.34.png" class="img-fluid figure-img" style="width:42.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.30.34.png" class="img-fluid figure-img" style="width:42.0%"></p>
 <p></p><figcaption class="figure-caption">An example position</figcaption><p></p>
 </figure>
 </div>
 <p>To begin with the boards start easy, with a few pieces at a time. Notice, even in the early games, how some positions have just one solution while others may have several.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot%202022-08-30%20at%2008.46.16.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot%202022-08-30%20at%2008.46.16.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">More positions</figcaption><p></p>
 </figure>
 </div>
@@ -1806,7 +1847,7 @@ Food for thought.
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.47.53.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.47.53.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">1D Boards</figcaption><p></p>
 </figure>
 </div>
@@ -1819,13 +1860,13 @@ Food for thought.
 <p>No Hamiltonian Path though — this one was from bipartite dominating set 😎</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.58.23.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.58.23.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A reduction from bipartite dominating set - I</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.53.21.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_04.53.21.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A reduction from bipartite dominating set - II</figcaption><p></p>
 </figure>
 </div>
@@ -1843,7 +1884,7 @@ Food for thought.
 <p>*at most two.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.23.22.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.23.22.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Lemma for pawns</figcaption><p></p>
 </figure>
 </div>
@@ -1853,20 +1894,20 @@ Food for thought.
 <p>Knights are special because we don’t have to worry about obstructions. So the game can be described by a more general token game on graphs:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.28.55.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.28.55.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The Graph Capture Problem</figcaption><p></p>
 </figure>
 </div>
 <p>We do show that Graph Capture is hard by a reduction, again from bipartite dominating set. This might hint at the hardness for Solo Chess played with knights only, but we are not betting on this yet.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.11.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.11.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Another reduction from bipartite dominating set - I</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.06.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.29.06.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Another reduction from bipartite dominating set - II</figcaption><p></p>
 </figure>
 </div>
@@ -1882,7 +1923,7 @@ Food for thought.
 <p>PS. Also if you enjoy chess and algorithms, don’t miss <a href="https://miguel-ambrona.github.io/">Miguel Ambrona’s</a> amazing <a href="https://chasolver.org/">Chess Unwinnability Analyzer</a>, which also appears at FUN 2022!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.56.43.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/solo-chess/CleanShot_2022-03-24_at_05.56.43.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Chess Unwinnability</figcaption><p></p>
 </figure>
 </div>
@@ -1893,13 +1934,13 @@ Food for thought.
  ]]></description>
   <category>exposition</category>
   <category>twitterthread</category>
-  <guid>https://neeldhara.blog/posts/solo-chess/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/solo-chess/index.html</guid>
   <pubDate>Wed, 23 Mar 2022 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.neeldhara.blog/posts/solo-chess/FOk1WJZXwAUb7V7.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Eight Self-Sabotaging Behaviors</title>
-  <link>https://neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</link>
+  <link>https://www.neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2076,12 +2117,12 @@ Postpone gratification
  ]]></description>
   <category>funda</category>
   <category>twitterthread</category>
-  <guid>https://neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/eight-self-sabotaging-behaviors/index.html</guid>
   <pubDate>Mon, 14 Mar 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Kidney Exchanges</title>
-  <link>https://neeldhara.blog/posts/kidney-exchanges/index.html</link>
+  <link>https://www.neeldhara.blog/posts/kidney-exchanges/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2207,12 +2248,12 @@ Postpone gratification
 </ol>
 </section></div> ]]></description>
   <category>exposition</category>
-  <guid>https://neeldhara.blog/posts/kidney-exchanges/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/kidney-exchanges/index.html</guid>
   <pubDate>Thu, 24 Feb 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Women in Mathematics</title>
-  <link>https://neeldhara.blog/posts/women-in-mathematics/index.html</link>
+  <link>https://www.neeldhara.blog/posts/women-in-mathematics/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2270,12 +2311,12 @@ Postpone gratification
  ]]></description>
   <category>books</category>
   <category>list</category>
-  <guid>https://neeldhara.blog/posts/women-in-mathematics/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/women-in-mathematics/index.html</guid>
   <pubDate>Sun, 20 Feb 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>On the Communication Complexity of Equality</title>
-  <link>https://neeldhara.blog/posts/communication-complexity-equality/index.html</link>
+  <link>https://www.neeldhara.blog/posts/communication-complexity-equality/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2298,12 +2339,12 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>sketchnotes</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/communication-complexity-equality/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/communication-complexity-equality/index.html</guid>
   <pubDate>Sun, 03 Oct 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Two approaches to the 15 puzzle</title>
-  <link>https://neeldhara.blog/posts/15-puzzle/index.html</link>
+  <link>https://www.neeldhara.blog/posts/15-puzzle/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2317,14 +2358,14 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>*I do believe the two proofs are essentially the same with slight differences of language.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" class="img-fluid figure-img" style="width:34.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" class="img-fluid figure-img" style="width:34.0%"></p>
 <p></p><figcaption class="figure-caption">An example of the 15 puzzle</figcaption><p></p>
 </figure>
 </div>
 <p>Common to both approaches is the idea of associating a <em>permutation</em> with every state of the puzzle. For the purposes of this discussion, we will think of a permutation simply as a sequence of elements. To turn the grid layout into a sequence, you could, for instance, line up the rows next to each other, in other words, read off the numbers from left-to-right and top-to-bottom:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.45.04_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.45.04_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Associating the puzzle with a permutation</figcaption><p></p>
 </figure>
 </div>
@@ -2361,7 +2402,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>Now, note that the permutation corresponding to our target state is the following:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.04.12_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.04.12_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The permutation corresponding to our target state</figcaption><p></p>
 </figure>
 </div>
@@ -2378,7 +2419,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>The second approach is based on the notion of inversions. This one is based on <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2010/video-lectures/lecture-3-strong-induction/">the Strong Induction lecture</a> in the MITOCW course on Mathematics for Computer Science. For this proof I’ll actually switch to the <img src="https://latex.codecogs.com/png.latex?3%20%5Ctimes%203"> version of the puzzle because <del>I don’t know how to extend it to the 15-puzzle</del> the case analysis is more manageable for this version:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.30.57_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.30.57_PM.png" class="img-fluid figure-img" style="width:77.0%"></p>
 <p></p><figcaption class="figure-caption">A move in the 3 X 3 version of the puzzle</figcaption><p></p>
 </figure>
 </div>
@@ -2391,7 +2432,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>Neither <img src="https://latex.codecogs.com/png.latex?(p,a)"> nor <img src="https://latex.codecogs.com/png.latex?(p,b)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.51.03_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.51.03_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Neither <img src="https://latex.codecogs.com/png.latex?(p,a)"> nor <img src="https://latex.codecogs.com/png.latex?(p,b)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma"></figcaption><p></p>
 </figure>
 </div>
@@ -2401,7 +2442,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>Both <img src="https://latex.codecogs.com/png.latex?(p,a)"> and <img src="https://latex.codecogs.com/png.latex?(p,b)"> are inversions in <img src="https://latex.codecogs.com/png.latex?%5Csigma">.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.09_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.09_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Both <img src="https://latex.codecogs.com/png.latex?(p,a)"> and <img src="https://latex.codecogs.com/png.latex?(p,b)"> are inversions in <img src="https://latex.codecogs.com/png.latex?%5Csigma"></figcaption><p></p>
 </figure>
 </div>
@@ -2411,7 +2452,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is not.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.54.46_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.54.46_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is not</figcaption><p></p>
 </figure>
 </div>
@@ -2421,7 +2462,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <li><p>While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is not an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is one.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.39_PM.png" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_11.53.39_PM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">While <img src="https://latex.codecogs.com/png.latex?(p,a)"> is not an inversion in <img src="https://latex.codecogs.com/png.latex?%5Csigma">, <img src="https://latex.codecogs.com/png.latex?(p,b)"> is one</figcaption><p></p>
 </figure>
 </div>
@@ -2442,13 +2483,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>puzzles</category>
   <category>exposition</category>
-  <guid>https://neeldhara.blog/posts/15-puzzle/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/15-puzzle/index.html</guid>
   <pubDate>Sat, 02 Oct 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" medium="image" type="image/png" height="143" width="144"/>
+  <media:content url="https://www.neeldhara.blog/posts/15-puzzle/Screenshot_2021-10-03_at_10.36.37_PM.png" medium="image" type="image/png" height="143" width="144"/>
 </item>
 <item>
   <title>Sam I Am</title>
-  <link>https://neeldhara.blog/posts/cp/sam-i-am/index.html</link>
+  <link>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2470,7 +2511,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>So to begin with, we have a grid with some cells identified as locations where Sam’s enemies are positioned, and here’s an example:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A first example of a configuration of Sam’s enemies location</figcaption><p></p>
 </figure>
 </div>
@@ -2478,28 +2519,28 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>We want to <em>hit</em> all of these locations, and what we have at our disposal is giant cannon balls which can destroy all enemies that are positioned on a single row, or a single column. For example, if we were obsessed about only firing along rows, we would need four cannon balls to tackle ’em all, like so:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.006.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution were we fire along rows alone</figcaption><p></p>
 </figure>
 </div>
 <p>If Sam was superstitious about shooting along columns only, then he would again need four of these cannon balls to take care of everything:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.007.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution were we fire along columns alone</figcaption><p></p>
 </figure>
 </div>
 <p>However, our friend Sam is smart, not superstitious! And if there is anything that he is obsessed about, it is ruthlessly optimal destruction! In other words, he wants to fix everything up, but while using the smallest number of cannon balls possible… and if that means mixing up ranks and files, so be it — notice that you can manage with just three once you combine the use of both axes:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.008.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A solution leveraging a combination of rows and columns</figcaption><p></p>
 </figure>
 </div>
 <p>And for this example in particular, notice that three cannon balls are <em>necessary</em>, because we have at least three enemies positioned at locations that share <em>neither a row nor a column</em>, implying that no row-fire or column-fire can handle more than one of these locations at once:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.009.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Demonstrating that three canonballs are in fact necessary</figcaption><p></p>
 </figure>
 </div>
@@ -2530,7 +2571,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.011.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The vertices of the auxiliary graph</figcaption><p></p>
 </figure>
 </div>
@@ -2539,13 +2580,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.027.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The edges of the auxiliary graph</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.028.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A bipartite graph!</figcaption><p></p>
 </figure>
 </div>
@@ -2556,7 +2597,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.030.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A vertex cover</figcaption><p></p>
 </figure>
 </div>
@@ -2579,7 +2620,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>So first things first: we are going to setup a flow network around the graph <img src="https://latex.codecogs.com/png.latex?G">, and here’s a partial picture of what it looks like:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.032.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The flow graph</figcaption><p></p>
 </figure>
 </div>
@@ -2593,7 +2634,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>That’s it, that’s the flow network <img src="https://latex.codecogs.com/png.latex?(%5Ctilde%7BG%7D,%5Ckappa)"> based on <img src="https://latex.codecogs.com/png.latex?G">, where I’m using <img src="https://latex.codecogs.com/png.latex?%5Ckappa"> to denote the capacity function. Now let’s stare at any valid integral flow in this network — what does it pull out from the middle? 🤔</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.035.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A matching hiding in plain sight</figcaption><p></p>
 </figure>
 </div>
@@ -2605,7 +2646,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>Based on these observations, we have that the set of original edges for which <img src="https://latex.codecogs.com/png.latex?f(e)%20=%201"> forms a matching in back in <img src="https://latex.codecogs.com/png.latex?G">, and in particular, if <img src="https://latex.codecogs.com/png.latex?f"> was maximum flow, then this set would correspond to a maximum-sized matching. Now, let’s look at the corresponding mincut by building the residual graph:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.040.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Edges in the residual graph that have a residual capacity of zero are not shown. Also, the original edges that were used by <img src="https://latex.codecogs.com/png.latex?f"> have infinite residual capacity but their corresponding back-edges have unit capacity, but this distinction is not emphasised in the picture because it’s not particularly relevant to our discussion.</figcaption><p></p>
 </figure>
 </div>
@@ -2613,7 +2654,7 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>and considering what vertices are reachable from <img src="https://latex.codecogs.com/png.latex?s">:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.042.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> are marked green, while all remaining vertices are marked red.</figcaption><p></p>
 </figure>
 </div>
@@ -2626,14 +2667,14 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
 <p>We will refer to these vertices as the <em>misfits —</em> they are highlighted for you in the picture below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.044.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">The misfits</figcaption><p></p>
 </figure>
 </div>
 <p>Now roll up your sleeves for some magic. Let’s pull up the cut — which we know is in fact a mincut — obtained by considering the set of vertices reachable from <img src="https://latex.codecogs.com/png.latex?s"> the residual graph corresponding to the maxflow <img src="https://latex.codecogs.com/png.latex?f">. In pictures, note how we have attracted some column vertices to the <img src="https://latex.codecogs.com/png.latex?s">-side, and pushed away some row vertices to the <img src="https://latex.codecogs.com/png.latex?t">-side:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.046.jpeg" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Some reorganization</figcaption><p></p>
 </figure>
 </div>
@@ -2659,13 +2700,13 @@ In the fourth slide from the end, why [DeMillo–Lipton]–Schwartz–Zippel Lem
  ]]></description>
   <category>cp</category>
   <category>lecturenotes</category>
-  <guid>https://neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/cp/sam-i-am/index.html</guid>
   <pubDate>Thu, 30 Sep 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://www.neeldhara.blog/posts/cp/sam-i-am/CP-Week09-Mod03.003.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>New Mac</title>
-  <link>https://neeldhara.blog/posts/new-mac/index.html</link>
+  <link>https://www.neeldhara.blog/posts/new-mac/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2903,54 +2944,12 @@ Omissions
 </section></div> ]]></description>
   <category>apps</category>
   <category>list</category>
-  <guid>https://neeldhara.blog/posts/new-mac/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/new-mac/index.html</guid>
   <pubDate>Wed, 29 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
-  <title>2022 Exportober Tracker</title>
-  <link>https://neeldhara.blog/posts/exportober/2022-tracker/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="the-leaderboard" class="level2">
-<h2 class="anchored" data-anchor-id="the-leaderboard">The Leaderboard</h2>
-
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrVfH6aH5n09dDY0?backgroundColor=yellow&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
-</iframe>
-</section>
-<section id="the-tweets" class="level2">
-<h2 class="anchored" data-anchor-id="the-tweets">The Tweets</h2>
-
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrwXyP8mGB3KH86i?backgroundColor=yellow&amp;viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;">
-</iframe>
-</section>
-<section id="what-was-this-about-again" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="what-was-this-about-again">What was this about again?</h2>
-<p>You can find the original announcement <a href="../2022/">here</a> and more specifics clarifying the format (or the lack of it) <a href="../about/">here</a>. Here’s the short version:</p>
-<ul>
-<li>Put up a piece of content everyday between 27th September and 30th October, with the possibility of skipping one day per week;</li>
-<li>Post a link to your content on Twitter with #exportober</li>
-<li>That’s it, actually. 🤷‍♀️</li>
-</ul>
-<div class="page-columns page-full"><p></p><div class="no-row-height column-margin column-container"><span class="aside">📝 If you’d like to participate <del>you can sign up below</del>; and if you’d like to help, please encourage everyone participating by checking out the tweets coming in above!</span></div></div>
-<p>Psst. It’s quite fine to sign up even if you’re reading this after the 1st of October. The automated tracking exercise here will stop after the 15th of November, so you can be a part of this by just contributing in this window. It certainly does’t <em>have</em> to be daily and it doesn’t <em>have</em> to be 30 things, although I found those to be useful default targets to work with for myself.</p>
-<!-- ## Sign up! -->
-<!-- While I'm not going to write a Twitter bot that will send you daily reminders over DM, I do hope to create a separate page for each registered participant at the end of the challenge that shows off just their entries in one place, so it's helpful to know who you are 😀 -->
-
-
-</section>
-
- ]]></description>
-  <category>exportober</category>
-  <category>funda</category>
-  <guid>https://neeldhara.blog/posts/exportober/2022-tracker/index.html</guid>
-  <pubDate>Fri, 24 Sep 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
   <title>2021 Exportober Tracker</title>
-  <link>https://neeldhara.blog/posts/exportober/2021-tracker/index.html</link>
+  <link>https://www.neeldhara.blog/posts/exportober/2021-tracker/index.html</link>
   <description><![CDATA[ 
 
 
@@ -2990,12 +2989,12 @@ Omissions
  ]]></description>
   <category>exportober</category>
   <category>funda</category>
-  <guid>https://neeldhara.blog/posts/exportober/2021-tracker/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/exportober/2021-tracker/index.html</guid>
   <pubDate>Fri, 24 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>About Exportober</title>
-  <link>https://neeldhara.blog/posts/exportober/about/index.html</link>
+  <link>https://www.neeldhara.blog/posts/exportober/about/index.html</link>
   <description><![CDATA[ 
 
 
@@ -3125,7 +3124,7 @@ I really don’t like the illusion that there is one process for making and that
 </section></div> ]]></description>
   <category>exportober</category>
   <category>funda</category>
-  <guid>https://neeldhara.blog/posts/exportober/about/index.html</guid>
+  <guid>https://www.neeldhara.blog/posts/exportober/about/index.html</guid>
   <pubDate>Thu, 23 Sep 2021 18:30:00 GMT</pubDate>
 </item>
 </channel>
