@@ -1,6 +1,6 @@
 ---
 title: "Hat Puzzles"
-date: "2021-10-07"
+date: "2022-10-07"
 categories: [puzzles, tgif]
 fields: [date, title]
 toc: true

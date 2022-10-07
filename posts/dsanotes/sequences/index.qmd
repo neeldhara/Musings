@@ -78,7 +78,6 @@ The correct answer is: it depends. If you expect your lists to be heavily manipu
 
 <!--
     - index.qmd
-    - intro.qmd
     - sequences.qmd
     - cardtricks.qmd
     - graphs.qmd

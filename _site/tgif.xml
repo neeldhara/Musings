@@ -12,56 +12,6 @@
 <generator>quarto-1.1.189</generator>
 <lastBuildDate>Thu, 06 Oct 2022 18:30:00 GMT</lastBuildDate>
 <item>
-  <title>AB Separation</title>
-  <link>https://neeldhara.blog/posts/tgif/ab-separation/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Shared by <a href="https://twitter.com/10kdiver"><span class="citation" data-cites="10kdiver">@10kdiver</span></a>.</p>
-</div>
-</div>
-</div>
-<p>A probability puzzle involving tournaments and elimination matches:</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-Here’s a neat probability puzzle — somewhat counter-intuitive: <a href="https://t.co/QA6jxaIYFT">pic.twitter.com/QA6jxaIYFT</a>
-</p>
-— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1573280126061740032?ref_src=twsrc%5Etfw">September 23, 2022</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<div class="page-columns page-full"><p>To begin with, a clarification: to say that Alex is the best player is to say that Alex will always win a match that he plays; and to say that Bob is the second best player is to say that Bob will win any match that he plays other than one against Alex. The puzzle asks for the probability that Bob emerges the runner up in the tournament. </p><div class="no-row-height column-margin column-container"><span class="aside">This is indicated in the tweet but the crop seems to hide it.</span></div></div>
-<p>Suppose we denote the players <img src="https://latex.codecogs.com/png.latex?%5C%7Ba_1,a_2,a_3,a_4,b_1,b_2,b_3,b_4%5C%7D">, and say the players are initially matched up like so:</p>
-<p><img src="https://latex.codecogs.com/png.latex?(a_1,a_2);%20(a_3,a_4);%20(b_1,b_2);%20(b_3,b_4),"></p>
-<p>and in particular we have:</p>
-<ul>
-<li>one of the quarter finals will be between <img src="https://latex.codecogs.com/png.latex?a_p"> and <img src="https://latex.codecogs.com/png.latex?a_q"> for <img src="https://latex.codecogs.com/png.latex?p%20%5Cin%20%5C%7B1,2%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?q%20%5Cin%20%5C%7B3,4%5C%7D">,</li>
-<li>the quarter finals will be between <img src="https://latex.codecogs.com/png.latex?b_r"> and <img src="https://latex.codecogs.com/png.latex?b_s"> for <img src="https://latex.codecogs.com/png.latex?r%20%5Cin%20%5C%7B1,2%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?s%20%5Cin%20%5C%7B3,4%5C%7D">, and</li>
-<li>the semi finals will be between an <img src="https://latex.codecogs.com/png.latex?a">-player and a <img src="https://latex.codecogs.com/png.latex?b">-player.</li>
-</ul>
-<p>A moment’s reflection reveals that for Bob to be a runner up, he should not meet Alex in the quarter-finals or earlier. This happens if and only if:</p>
-<ul>
-<li>either Alex is one of the <img src="https://latex.codecogs.com/png.latex?a">-players and Bob is one of the <img src="https://latex.codecogs.com/png.latex?b">-players, or</li>
-<li>Bob is one of the <img src="https://latex.codecogs.com/png.latex?a">-players and Alex is one of the <img src="https://latex.codecogs.com/png.latex?b">-players.</li>
-</ul>
-<p>From here it is a counting argument. I was distracted by some idea of symmetry and originally <a href="https://twitter.com/neeldhara/status/1573691611002769408?s=20&amp;t=-A9VW9YgGCp2qDAyY_Yw6Q">jumped to the conclusion</a> that the answer is one-half. Spoiler alert: I quickly learned that it’s not!</p>
-
-
-
- ]]></description>
-  <category>puzzles</category>
-  <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/ab-separation/index.html</guid>
-  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
-</item>
-<item>
   <title>Hat Puzzles</title>
   <link>https://neeldhara.blog/posts/tgif/hat-puzzles/index.html</link>
   <description><![CDATA[ 
@@ -118,7 +68,57 @@ A Strategy for the Finite Case
   <category>puzzles</category>
   <category>tgif</category>
   <guid>https://neeldhara.blog/posts/tgif/hat-puzzles/index.html</guid>
-  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
+</item>
+<item>
+  <title>AB Separation</title>
+  <link>https://neeldhara.blog/posts/tgif/ab-separation/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Shared by <a href="https://twitter.com/10kdiver"><span class="citation" data-cites="10kdiver">@10kdiver</span></a>.</p>
+</div>
+</div>
+</div>
+<p>A probability puzzle involving tournaments and elimination matches:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+Here’s a neat probability puzzle — somewhat counter-intuitive: <a href="https://t.co/QA6jxaIYFT">pic.twitter.com/QA6jxaIYFT</a>
+</p>
+— 10-K Diver (<span class="citation" data-cites="10kdiver">@10kdiver</span>) <a href="https://twitter.com/10kdiver/status/1573280126061740032?ref_src=twsrc%5Etfw">September 23, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="page-columns page-full"><p>To begin with, a clarification: to say that Alex is the best player is to say that Alex will always win a match that he plays; and to say that Bob is the second best player is to say that Bob will win any match that he plays other than one against Alex. The puzzle asks for the probability that Bob emerges the runner up in the tournament. </p><div class="no-row-height column-margin column-container"><span class="aside">This is indicated in the tweet but the crop seems to hide it.</span></div></div>
+<p>Suppose we denote the players <img src="https://latex.codecogs.com/png.latex?%5C%7Ba_1,a_2,a_3,a_4,b_1,b_2,b_3,b_4%5C%7D">, and say the players are initially matched up like so:</p>
+<p><img src="https://latex.codecogs.com/png.latex?(a_1,a_2);%20(a_3,a_4);%20(b_1,b_2);%20(b_3,b_4),"></p>
+<p>and in particular we have:</p>
+<ul>
+<li>one of the quarter finals will be between <img src="https://latex.codecogs.com/png.latex?a_p"> and <img src="https://latex.codecogs.com/png.latex?a_q"> for <img src="https://latex.codecogs.com/png.latex?p%20%5Cin%20%5C%7B1,2%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?q%20%5Cin%20%5C%7B3,4%5C%7D">,</li>
+<li>the quarter finals will be between <img src="https://latex.codecogs.com/png.latex?b_r"> and <img src="https://latex.codecogs.com/png.latex?b_s"> for <img src="https://latex.codecogs.com/png.latex?r%20%5Cin%20%5C%7B1,2%5C%7D"> and <img src="https://latex.codecogs.com/png.latex?s%20%5Cin%20%5C%7B3,4%5C%7D">, and</li>
+<li>the semi finals will be between an <img src="https://latex.codecogs.com/png.latex?a">-player and a <img src="https://latex.codecogs.com/png.latex?b">-player.</li>
+</ul>
+<p>A moment’s reflection reveals that for Bob to be a runner up, he should not meet Alex in the quarter-finals or earlier. This happens if and only if:</p>
+<ul>
+<li>either Alex is one of the <img src="https://latex.codecogs.com/png.latex?a">-players and Bob is one of the <img src="https://latex.codecogs.com/png.latex?b">-players, or</li>
+<li>Bob is one of the <img src="https://latex.codecogs.com/png.latex?a">-players and Alex is one of the <img src="https://latex.codecogs.com/png.latex?b">-players.</li>
+</ul>
+<p>From here it is a counting argument. I was distracted by some idea of symmetry and originally <a href="https://twitter.com/neeldhara/status/1573691611002769408?s=20&amp;t=-A9VW9YgGCp2qDAyY_Yw6Q">jumped to the conclusion</a> that the answer is one-half. Spoiler alert: I quickly learned that it’s not!</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/ab-separation/index.html</guid>
+  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Folding Stamps</title>
@@ -174,8 +174,52 @@ Here’s <a href="https://twitter.com/divbyzero/status/1577680402289917952">a bi
   <category>puzzles</category>
   <category>tgif</category>
   <guid>https://neeldhara.blog/posts/tgif/folding-stamps/index.html</guid>
-  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
   <media:content url="https://neeldhara.blog/posts/tgif/folding-stamps/source.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Making Grids</title>
+  <link>https://neeldhara.blog/posts/tgif/making-grids/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="callout-tip callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Source: <a href="https://twitter.com/algopuzzles"><span class="citation" data-cites="algopuzzles">@algopuzzles</span></a> and Micheal Brand.</p>
+</div>
+</div>
+</div>
+<p>This is a tiling puzzle:</p>
+<blockquote class="twitter-tweet blockquote">
+<p lang="en" dir="ltr">
+A tiling problem with wireframes. [Source: Micheal Brand]. <a href="https://twitter.com/hashtag/exportober?src=hash&amp;ref_src=twsrc%5Etfw">#exportober</a> <a href="https://t.co/vhhoc0OB9C">pic.twitter.com/vhhoc0OB9C</a>
+</p>
+— Algorithmic Puzzles (<span class="citation" data-cites="algopuzzles">@algopuzzles</span>) <a href="https://twitter.com/algopuzzles/status/1578429462177542144?ref_src=twsrc%5Etfw">October 7, 2022</a>
+</blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>The lines cannot overlay, I imagine. Here’s a valid looking 2 x 2:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://neeldhara.blog/posts/tgif/making-grids/2by2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A 2 x 2 grid made from the given wireframe.</figcaption><p></p>
+</figure>
+</div>
+<p>More soon on this as the story develops!</p>
+
+
+
+ ]]></description>
+  <category>puzzles</category>
+  <category>tgif</category>
+  <guid>https://neeldhara.blog/posts/tgif/making-grids/index.html</guid>
+  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
+  <media:content url="https://neeldhara.blog/posts/tgif/making-grids/2by2.png" medium="image" type="image/png" height="143" width="144"/>
 </item>
 <item>
   <title>Iwahiro’s Square in Bag Puzzle</title>
@@ -241,7 +285,7 @@ Ah. The bag can stretch and fold as much as any ordinary kitchen bag can. And fo
   <category>puzzles</category>
   <category>tgif</category>
   <guid>https://neeldhara.blog/posts/tgif/square-in-bag/index.html</guid>
-  <pubDate>Wed, 06 Oct 2021 18:30:00 GMT</pubDate>
+  <pubDate>Thu, 06 Oct 2022 18:30:00 GMT</pubDate>
 </item>
 <item>
   <title>Turn the LED on</title>
@@ -329,50 +373,6 @@ Here's a beautiful probability puzzle inspired by Professor Henk Tijms (<a href=
   <category>tgif</category>
   <guid>https://neeldhara.blog/posts/tgif/4-person-gift-exchange/index.html</guid>
   <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>Making Grids</title>
-  <link>https://neeldhara.blog/posts/tgif/making-grids/index.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<div class="callout-tip callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>Source: <a href="https://twitter.com/algopuzzles"><span class="citation" data-cites="algopuzzles">@algopuzzles</span></a> and Micheal Brand.</p>
-</div>
-</div>
-</div>
-<p>This is a tiling puzzle:</p>
-<blockquote class="twitter-tweet blockquote">
-<p lang="en" dir="ltr">
-A tiling problem with wireframes. [Source: Micheal Brand]. <a href="https://twitter.com/hashtag/exportober?src=hash&amp;ref_src=twsrc%5Etfw">#exportober</a> <a href="https://t.co/vhhoc0OB9C">pic.twitter.com/vhhoc0OB9C</a>
-</p>
-— Algorithmic Puzzles (<span class="citation" data-cites="algopuzzles">@algopuzzles</span>) <a href="https://twitter.com/algopuzzles/status/1578429462177542144?ref_src=twsrc%5Etfw">October 7, 2022</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>The lines cannot overlay, I imagine. Here’s a valid looking 2 x 2:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://neeldhara.blog/posts/tgif/making-grids/2by2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">A 2 x 2 grid made from the given wireframe.</figcaption><p></p>
-</figure>
-</div>
-<p>More soon on this as the story develops!</p>
-
-
-
- ]]></description>
-  <category>puzzles</category>
-  <category>tgif</category>
-  <guid>https://neeldhara.blog/posts/tgif/making-grids/index.html</guid>
-  <pubDate>Wed, 24 Mar 2021 18:30:00 GMT</pubDate>
-  <media:content url="https://neeldhara.blog/posts/tgif/making-grids/2by2.png" medium="image" type="image/png" height="143" width="144"/>
 </item>
 <item>
   <title>Conway’s Checkers</title>
